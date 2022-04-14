@@ -10,6 +10,9 @@
 		664A037E28081890006C40F8 /* MFStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664A037528081890006C40F8 /* MFStorage.framework */; };
 		664A038328081891006C40F8 /* MFStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A038228081891006C40F8 /* MFStorageTests.swift */; };
 		664A038428081891006C40F8 /* MFStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A037828081890006C40F8 /* MFStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		664A03BA280825FA006C40F8 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A03B9280825FA006C40F8 /* CoreDataService.swift */; };
+		664A03BE28082638006C40F8 /* MyFootprint.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 664A03BC28082638006C40F8 /* MyFootprint.xcdatamodeld */; };
+		664A03C128082688006C40F8 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A03C028082688006C40F8 /* StoreManager.swift */; };
 		AD38887DEB0A3338FBFAE62A /* libPods-Frameworks-MFStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E0560C580F83BD3FF7EF8F /* libPods-Frameworks-MFStorage.a */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +32,9 @@
 		664A037828081890006C40F8 /* MFStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFStorage.h; sourceTree = "<group>"; };
 		664A037D28081890006C40F8 /* MFStorageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFStorageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		664A038228081891006C40F8 /* MFStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFStorageTests.swift; sourceTree = "<group>"; };
+		664A03B9280825FA006C40F8 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		664A03BD28082638006C40F8 /* MyFootprint.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyFootprint.xcdatamodel; sourceTree = "<group>"; };
+		664A03C028082688006C40F8 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		81E0560C580F83BD3FF7EF8F /* libPods-Frameworks-MFStorage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Frameworks-MFStorage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67491191C5C32A351B9F6FF /* Pods-Frameworks-MFStorage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFStorage.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFStorage/Pods-Frameworks-MFStorage.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,6 +62,8 @@
 		664A036B28081890006C40F8 = {
 			isa = PBXGroup;
 			children = (
+				664A03BB28082616006C40F8 /* CoreData */,
+				664A03B7280825E3006C40F8 /* Classes */,
 				664A037728081890006C40F8 /* MFStorage */,
 				664A038128081890006C40F8 /* MFStorageTests */,
 				664A037628081890006C40F8 /* Products */,
@@ -87,6 +95,39 @@
 				664A038228081891006C40F8 /* MFStorageTests.swift */,
 			);
 			path = MFStorageTests;
+			sourceTree = "<group>";
+		};
+		664A03B7280825E3006C40F8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				664A03BF28082671006C40F8 /* Managers */,
+				664A03B8280825E9006C40F8 /* Services */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		664A03B8280825E9006C40F8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				664A03B9280825FA006C40F8 /* CoreDataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		664A03BB28082616006C40F8 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				664A03BC28082638006C40F8 /* MyFootprint.xcdatamodeld */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		664A03BF28082671006C40F8 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				664A03C028082688006C40F8 /* StoreManager.swift */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 		9CCD2D036BF70CE69F86742D /* Pods */ = {
@@ -170,6 +211,7 @@
 				TargetAttributes = {
 					664A037428081890006C40F8 = {
 						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
 					};
 					664A037C28081890006C40F8 = {
 						CreatedOnToolsVersion = 13.3.1;
@@ -242,6 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				664A03C128082688006C40F8 /* StoreManager.swift in Sources */,
+				664A03BA280825FA006C40F8 /* CoreDataService.swift in Sources */,
+				664A03BE28082638006C40F8 /* MyFootprint.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C8B0283529D153A6E6C4A89 /* Pods-Frameworks-MFStorage.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -410,6 +456,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -419,6 +466,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E67491191C5C32A351B9F6FF /* Pods-Frameworks-MFStorage.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -449,6 +497,7 @@
 		664A038B28081891006C40F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52H82A67C3;
@@ -465,6 +514,7 @@
 		664A038C28081891006C40F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52H82A67C3;
@@ -509,6 +559,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		664A03BC28082638006C40F8 /* MyFootprint.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				664A03BD28082638006C40F8 /* MyFootprint.xcdatamodel */,
+			);
+			currentVersion = 664A03BD28082638006C40F8 /* MyFootprint.xcdatamodel */;
+			path = MyFootprint.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 664A036C28081890006C40F8 /* Project object */;
 }

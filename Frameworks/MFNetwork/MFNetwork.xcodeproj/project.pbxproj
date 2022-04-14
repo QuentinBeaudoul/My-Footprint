@@ -10,6 +10,8 @@
 		664A036528081846006C40F8 /* MFNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A036428081846006C40F8 /* MFNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		664A0395280818E4006C40F8 /* MFNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A0394280818E4006C40F8 /* MFNetworkTests.swift */; };
 		664A0396280818E4006C40F8 /* MFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664A036128081846006C40F8 /* MFNetwork.framework */; platformFilter = ios; };
+		664A03B3280824D7006C40F8 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A03B2280824D7006C40F8 /* Service.swift */; };
+		664A03B628082522006C40F8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A03B528082522006C40F8 /* NetworkManager.swift */; };
 		87B0A9C3D46D26743B55CB98 /* libPods-Frameworks-MFNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59617834F9E7C81F89359F92 /* libPods-Frameworks-MFNetwork.a */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		664A036428081846006C40F8 /* MFNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFNetwork.h; sourceTree = "<group>"; };
 		664A0392280818E4006C40F8 /* MFNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		664A0394280818E4006C40F8 /* MFNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFNetworkTests.swift; sourceTree = "<group>"; };
+		664A03B2280824D7006C40F8 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		664A03B528082522006C40F8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C37FA4490F3375060AA17C8C /* Pods-Frameworks-MFNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFNetwork.debug.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFNetwork/Pods-Frameworks-MFNetwork.debug.xcconfig"; sourceTree = "<group>"; };
 		D6D0136D87B4EDCCBD4DFEF8 /* Pods-Frameworks-MFNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFNetwork.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFNetwork/Pods-Frameworks-MFNetwork.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,6 +60,7 @@
 		664A035728081846006C40F8 = {
 			isa = PBXGroup;
 			children = (
+				664A03B02808244E006C40F8 /* Classes */,
 				664A036328081846006C40F8 /* MFNetwork */,
 				664A0393280818E4006C40F8 /* MFNetworkTests */,
 				664A036228081846006C40F8 /* Products */,
@@ -87,6 +92,31 @@
 				664A0394280818E4006C40F8 /* MFNetworkTests.swift */,
 			);
 			path = MFNetworkTests;
+			sourceTree = "<group>";
+		};
+		664A03B02808244E006C40F8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				664A03B4280824EE006C40F8 /* Managers */,
+				664A03B1280824C7006C40F8 /* Services */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		664A03B1280824C7006C40F8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				664A03B2280824D7006C40F8 /* Service.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		664A03B4280824EE006C40F8 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				664A03B528082522006C40F8 /* NetworkManager.swift */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 		E894C8790F9B02C18D998B52 /* Frameworks */ = {
@@ -170,6 +200,7 @@
 				TargetAttributes = {
 					664A036028081846006C40F8 = {
 						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
 					};
 					664A0391280818E4006C40F8 = {
 						CreatedOnToolsVersion = 13.3.1;
@@ -242,6 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				664A03B628082522006C40F8 /* NetworkManager.swift in Sources */,
+				664A03B3280824D7006C40F8 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +422,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C37FA4490F3375060AA17C8C /* Pods-Frameworks-MFNetwork.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -411,6 +445,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -420,6 +455,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D6D0136D87B4EDCCBD4DFEF8 /* Pods-Frameworks-MFNetwork.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -450,6 +486,7 @@
 		664A039A280818E4006C40F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52H82A67C3;
@@ -466,6 +503,7 @@
 		664A039B280818E4006C40F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52H82A67C3;
