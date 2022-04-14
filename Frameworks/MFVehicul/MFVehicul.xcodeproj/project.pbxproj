@@ -7,125 +7,176 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		664A03AA28081973006C40F8 /* MFExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A03A928081973006C40F8 /* MFExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		664A03C3280852EB006C40F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 664A03C2280852EB006C40F8 /* Assets.xcassets */; };
-		77CB7E5255DEDDBCCB3159BC /* libPods-Frameworks-MFExtensions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45263EFCA5A063656946E9FB /* libPods-Frameworks-MFExtensions.a */; };
+		58BB580699E95BB12F233EA9 /* libPods-Frameworks-MFVehicul.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0223F765DA70D852AF81E1 /* libPods-Frameworks-MFVehicul.a */; };
+		664A043D280861AF006C40F8 /* MFVehicul.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664A0434280861AF006C40F8 /* MFVehicul.framework */; };
+		664A0442280861AF006C40F8 /* MFVehiculTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A0441280861AF006C40F8 /* MFVehiculTests.swift */; };
+		664A0443280861AF006C40F8 /* MFVehicul.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A0437280861AF006C40F8 /* MFVehicul.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		664A043E280861AF006C40F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 664A042B280861AF006C40F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 664A0433280861AF006C40F8;
+			remoteInfo = MFVehicul;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		1E25D264A855093AE624F937 /* Pods-Frameworks-MFExtensions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFExtensions.debug.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFExtensions/Pods-Frameworks-MFExtensions.debug.xcconfig"; sourceTree = "<group>"; };
-		45263EFCA5A063656946E9FB /* libPods-Frameworks-MFExtensions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Frameworks-MFExtensions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		463B82F98968E7FD031B08E7 /* Pods-Frameworks-MFExtensions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFExtensions.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFExtensions/Pods-Frameworks-MFExtensions.release.xcconfig"; sourceTree = "<group>"; };
-		664A03A628081973006C40F8 /* MFExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MFExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		664A03A928081973006C40F8 /* MFExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFExtensions.h; sourceTree = "<group>"; };
-		664A03C2280852EB006C40F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E0223F765DA70D852AF81E1 /* libPods-Frameworks-MFVehicul.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Frameworks-MFVehicul.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40BF3C0DB7F025A15A05B482 /* Pods-Frameworks-MFVehicul.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFVehicul.debug.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFVehicul/Pods-Frameworks-MFVehicul.debug.xcconfig"; sourceTree = "<group>"; };
+		47471950C1D46B2B3298611D /* Pods-Frameworks-MFVehicul.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFVehicul.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFVehicul/Pods-Frameworks-MFVehicul.release.xcconfig"; sourceTree = "<group>"; };
+		664A0434280861AF006C40F8 /* MFVehicul.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MFVehicul.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		664A0437280861AF006C40F8 /* MFVehicul.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFVehicul.h; sourceTree = "<group>"; };
+		664A043C280861AF006C40F8 /* MFVehiculTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFVehiculTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		664A0441280861AF006C40F8 /* MFVehiculTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFVehiculTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		664A03A328081973006C40F8 /* Frameworks */ = {
+		664A0431280861AF006C40F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77CB7E5255DEDDBCCB3159BC /* libPods-Frameworks-MFExtensions.a in Frameworks */,
+				58BB580699E95BB12F233EA9 /* libPods-Frameworks-MFVehicul.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		664A0439280861AF006C40F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				664A043D280861AF006C40F8 /* MFVehicul.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		664A039C28081973006C40F8 = {
+		3DEA97CA69AAC0BB97C23528 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				664A03C2280852EB006C40F8 /* Assets.xcassets */,
-				664A03A828081973006C40F8 /* MFExtensions */,
-				664A03A728081973006C40F8 /* Products */,
-				A41E0886528476E047590027 /* Pods */,
-				EAF22F684C1A722C7FFB0D39 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		664A03A728081973006C40F8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				664A03A628081973006C40F8 /* MFExtensions.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		664A03A828081973006C40F8 /* MFExtensions */ = {
-			isa = PBXGroup;
-			children = (
-				664A03A928081973006C40F8 /* MFExtensions.h */,
-			);
-			path = MFExtensions;
-			sourceTree = "<group>";
-		};
-		A41E0886528476E047590027 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1E25D264A855093AE624F937 /* Pods-Frameworks-MFExtensions.debug.xcconfig */,
-				463B82F98968E7FD031B08E7 /* Pods-Frameworks-MFExtensions.release.xcconfig */,
+				40BF3C0DB7F025A15A05B482 /* Pods-Frameworks-MFVehicul.debug.xcconfig */,
+				47471950C1D46B2B3298611D /* Pods-Frameworks-MFVehicul.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../../Pods;
 			sourceTree = "<group>";
 		};
-		EAF22F684C1A722C7FFB0D39 /* Frameworks */ = {
+		40D68E9B6C5CDF3CC3EDCD2E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				45263EFCA5A063656946E9FB /* libPods-Frameworks-MFExtensions.a */,
+				2E0223F765DA70D852AF81E1 /* libPods-Frameworks-MFVehicul.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		664A042A280861AF006C40F8 = {
+			isa = PBXGroup;
+			children = (
+				664A0436280861AF006C40F8 /* MFVehicul */,
+				664A0440280861AF006C40F8 /* MFVehiculTests */,
+				664A0435280861AF006C40F8 /* Products */,
+				3DEA97CA69AAC0BB97C23528 /* Pods */,
+				40D68E9B6C5CDF3CC3EDCD2E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		664A0435280861AF006C40F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				664A0434280861AF006C40F8 /* MFVehicul.framework */,
+				664A043C280861AF006C40F8 /* MFVehiculTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		664A0436280861AF006C40F8 /* MFVehicul */ = {
+			isa = PBXGroup;
+			children = (
+				664A0437280861AF006C40F8 /* MFVehicul.h */,
+			);
+			path = MFVehicul;
+			sourceTree = "<group>";
+		};
+		664A0440280861AF006C40F8 /* MFVehiculTests */ = {
+			isa = PBXGroup;
+			children = (
+				664A0441280861AF006C40F8 /* MFVehiculTests.swift */,
+			);
+			path = MFVehiculTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		664A03A128081973006C40F8 /* Headers */ = {
+		664A042F280861AF006C40F8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				664A03AA28081973006C40F8 /* MFExtensions.h in Headers */,
+				664A0443280861AF006C40F8 /* MFVehicul.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		664A03A528081973006C40F8 /* MFExtensions */ = {
+		664A0433280861AF006C40F8 /* MFVehicul */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 664A03AD28081973006C40F8 /* Build configuration list for PBXNativeTarget "MFExtensions" */;
+			buildConfigurationList = 664A0446280861AF006C40F8 /* Build configuration list for PBXNativeTarget "MFVehicul" */;
 			buildPhases = (
-				FAC6F0904DA65F74F12553C9 /* [CP] Check Pods Manifest.lock */,
-				664A03A128081973006C40F8 /* Headers */,
-				664A03A228081973006C40F8 /* Sources */,
-				664A03A328081973006C40F8 /* Frameworks */,
-				664A03A428081973006C40F8 /* Resources */,
+				F9304D1CD6C81C8092A9358D /* [CP] Check Pods Manifest.lock */,
+				664A042F280861AF006C40F8 /* Headers */,
+				664A0430280861AF006C40F8 /* Sources */,
+				664A0431280861AF006C40F8 /* Frameworks */,
+				664A0432280861AF006C40F8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MFExtensions;
-			productName = MFExtensions;
-			productReference = 664A03A628081973006C40F8 /* MFExtensions.framework */;
+			name = MFVehicul;
+			productName = MFVehicul;
+			productReference = 664A0434280861AF006C40F8 /* MFVehicul.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		664A043B280861AF006C40F8 /* MFVehiculTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 664A0449280861AF006C40F8 /* Build configuration list for PBXNativeTarget "MFVehiculTests" */;
+			buildPhases = (
+				664A0438280861AF006C40F8 /* Sources */,
+				664A0439280861AF006C40F8 /* Frameworks */,
+				664A043A280861AF006C40F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				664A043F280861AF006C40F8 /* PBXTargetDependency */,
+			);
+			name = MFVehiculTests;
+			productName = MFVehiculTests;
+			productReference = 664A043C280861AF006C40F8 /* MFVehiculTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		664A039D28081973006C40F8 /* Project object */ = {
+		664A042B280861AF006C40F8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					664A03A528081973006C40F8 = {
+					664A0433280861AF006C40F8 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					664A043B280861AF006C40F8 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 664A03A028081973006C40F8 /* Build configuration list for PBXProject "MFExtensions" */;
+			buildConfigurationList = 664A042E280861AF006C40F8 /* Build configuration list for PBXProject "MFVehicul" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -133,29 +184,36 @@
 				en,
 				Base,
 			);
-			mainGroup = 664A039C28081973006C40F8;
-			productRefGroup = 664A03A728081973006C40F8 /* Products */;
+			mainGroup = 664A042A280861AF006C40F8;
+			productRefGroup = 664A0435280861AF006C40F8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				664A03A528081973006C40F8 /* MFExtensions */,
+				664A0433280861AF006C40F8 /* MFVehicul */,
+				664A043B280861AF006C40F8 /* MFVehiculTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		664A03A428081973006C40F8 /* Resources */ = {
+		664A0432280861AF006C40F8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				664A03C3280852EB006C40F8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		664A043A280861AF006C40F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		FAC6F0904DA65F74F12553C9 /* [CP] Check Pods Manifest.lock */ = {
+		F9304D1CD6C81C8092A9358D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -170,7 +228,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Frameworks-MFExtensions-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Frameworks-MFVehicul-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -180,17 +238,33 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		664A03A228081973006C40F8 /* Sources */ = {
+		664A0430280861AF006C40F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		664A0438280861AF006C40F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				664A0442280861AF006C40F8 /* MFVehiculTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		664A043F280861AF006C40F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 664A0433280861AF006C40F8 /* MFVehicul */;
+			targetProxy = 664A043E280861AF006C40F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		664A03AB28081973006C40F8 /* Debug */ = {
+		664A0444280861AF006C40F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -253,7 +327,7 @@
 			};
 			name = Debug;
 		};
-		664A03AC28081973006C40F8 /* Release */ = {
+		664A0445280861AF006C40F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -310,9 +384,9 @@
 			};
 			name = Release;
 		};
-		664A03AE28081973006C40F8 /* Debug */ = {
+		664A0447280861AF006C40F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E25D264A855093AE624F937 /* Pods-Frameworks-MFExtensions.debug.xcconfig */;
+			baseConfigurationReference = 40BF3C0DB7F025A15A05B482 /* Pods-Frameworks-MFVehicul.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -331,7 +405,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Quentin.Beaudoul.MFExtensions;
+				PRODUCT_BUNDLE_IDENTIFIER = Quentin.Beaudoul.MFVehicul;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -341,9 +415,9 @@
 			};
 			name = Debug;
 		};
-		664A03AF28081973006C40F8 /* Release */ = {
+		664A0448280861AF006C40F8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 463B82F98968E7FD031B08E7 /* Pods-Frameworks-MFExtensions.release.xcconfig */;
+			baseConfigurationReference = 47471950C1D46B2B3298611D /* Pods-Frameworks-MFVehicul.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -362,7 +436,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Quentin.Beaudoul.MFExtensions;
+				PRODUCT_BUNDLE_IDENTIFIER = Quentin.Beaudoul.MFVehicul;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -372,28 +446,69 @@
 			};
 			name = Release;
 		};
+		664A044A280861AF006C40F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52H82A67C3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Quentin.Beaudoul.MFVehiculTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		664A044B280861AF006C40F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52H82A67C3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Quentin.Beaudoul.MFVehiculTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		664A03A028081973006C40F8 /* Build configuration list for PBXProject "MFExtensions" */ = {
+		664A042E280861AF006C40F8 /* Build configuration list for PBXProject "MFVehicul" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				664A03AB28081973006C40F8 /* Debug */,
-				664A03AC28081973006C40F8 /* Release */,
+				664A0444280861AF006C40F8 /* Debug */,
+				664A0445280861AF006C40F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		664A03AD28081973006C40F8 /* Build configuration list for PBXNativeTarget "MFExtensions" */ = {
+		664A0446280861AF006C40F8 /* Build configuration list for PBXNativeTarget "MFVehicul" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				664A03AE28081973006C40F8 /* Debug */,
-				664A03AF28081973006C40F8 /* Release */,
+				664A0447280861AF006C40F8 /* Debug */,
+				664A0448280861AF006C40F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		664A0449280861AF006C40F8 /* Build configuration list for PBXNativeTarget "MFVehiculTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				664A044A280861AF006C40F8 /* Debug */,
+				664A044B280861AF006C40F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 664A039D28081973006C40F8 /* Project object */;
+	rootObject = 664A042B280861AF006C40F8 /* Project object */;
 }

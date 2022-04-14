@@ -19,6 +19,22 @@ abstract_target 'Frameworks' do
 		project 'Frameworks/MFStorage/MFStorage.xcodeproj'
 	end
 
+	target 'MFVehicul' do
+		project 'Frameworks/MFVehicul/MFVehicul.xcodeproj'
+	end
+
+	target 'MFShipping' do
+		project 'Frameworks/MFShipping/MFShipping.xcodeproj'
+	end
+
+	target 'MFFlight' do
+		project 'Frameworks/MFFlight/MFFlight.xcodeproj'
+	end
+
+	target 'MFElectricity' do 
+		project 'Frameworks/MFElectricity/MFElectricity.xcodeproj'
+	end
+
 	target 'My Footprint' do
 		project 'My Footprint/My Footprint.xcodeproj'
 		use_frameworks!

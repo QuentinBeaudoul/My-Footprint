@@ -7,125 +7,176 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		664A03AA28081973006C40F8 /* MFExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A03A928081973006C40F8 /* MFExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		664A03C3280852EB006C40F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 664A03C2280852EB006C40F8 /* Assets.xcassets */; };
-		77CB7E5255DEDDBCCB3159BC /* libPods-Frameworks-MFExtensions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45263EFCA5A063656946E9FB /* libPods-Frameworks-MFExtensions.a */; };
+		089BD2389FA2EF2E215E3827 /* libPods-Frameworks-MFElectricity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDFDDD39742CAB73F91BFAB /* libPods-Frameworks-MFElectricity.a */; };
+		664A03D728085FA9006C40F8 /* MFElectricity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664A03CE28085FA8006C40F8 /* MFElectricity.framework */; };
+		664A03DC28085FA9006C40F8 /* MFElectricityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A03DB28085FA9006C40F8 /* MFElectricityTests.swift */; };
+		664A03DD28085FA9006C40F8 /* MFElectricity.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A03D128085FA8006C40F8 /* MFElectricity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		664A03D828085FA9006C40F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 664A03C528085FA8006C40F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 664A03CD28085FA8006C40F8;
+			remoteInfo = MFElectricity;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		1E25D264A855093AE624F937 /* Pods-Frameworks-MFExtensions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFExtensions.debug.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFExtensions/Pods-Frameworks-MFExtensions.debug.xcconfig"; sourceTree = "<group>"; };
-		45263EFCA5A063656946E9FB /* libPods-Frameworks-MFExtensions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Frameworks-MFExtensions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		463B82F98968E7FD031B08E7 /* Pods-Frameworks-MFExtensions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFExtensions.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFExtensions/Pods-Frameworks-MFExtensions.release.xcconfig"; sourceTree = "<group>"; };
-		664A03A628081973006C40F8 /* MFExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MFExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		664A03A928081973006C40F8 /* MFExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFExtensions.h; sourceTree = "<group>"; };
-		664A03C2280852EB006C40F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		269606CCA6A9D5BF266E6F56 /* Pods-Frameworks-MFElectricity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFElectricity.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFElectricity/Pods-Frameworks-MFElectricity.release.xcconfig"; sourceTree = "<group>"; };
+		3FDFDDD39742CAB73F91BFAB /* libPods-Frameworks-MFElectricity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Frameworks-MFElectricity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		664A03CE28085FA8006C40F8 /* MFElectricity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MFElectricity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		664A03D128085FA8006C40F8 /* MFElectricity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFElectricity.h; sourceTree = "<group>"; };
+		664A03D628085FA9006C40F8 /* MFElectricityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFElectricityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		664A03DB28085FA9006C40F8 /* MFElectricityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFElectricityTests.swift; sourceTree = "<group>"; };
+		9CEC07378BB9FE6D52F9071A /* Pods-Frameworks-MFElectricity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFElectricity.debug.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFElectricity/Pods-Frameworks-MFElectricity.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		664A03A328081973006C40F8 /* Frameworks */ = {
+		664A03CB28085FA8006C40F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77CB7E5255DEDDBCCB3159BC /* libPods-Frameworks-MFExtensions.a in Frameworks */,
+				089BD2389FA2EF2E215E3827 /* libPods-Frameworks-MFElectricity.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		664A03D328085FA9006C40F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				664A03D728085FA9006C40F8 /* MFElectricity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		664A039C28081973006C40F8 = {
+		05CA15386A1D5F8119C9EC6E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				664A03C2280852EB006C40F8 /* Assets.xcassets */,
-				664A03A828081973006C40F8 /* MFExtensions */,
-				664A03A728081973006C40F8 /* Products */,
-				A41E0886528476E047590027 /* Pods */,
-				EAF22F684C1A722C7FFB0D39 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		664A03A728081973006C40F8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				664A03A628081973006C40F8 /* MFExtensions.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		664A03A828081973006C40F8 /* MFExtensions */ = {
-			isa = PBXGroup;
-			children = (
-				664A03A928081973006C40F8 /* MFExtensions.h */,
-			);
-			path = MFExtensions;
-			sourceTree = "<group>";
-		};
-		A41E0886528476E047590027 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1E25D264A855093AE624F937 /* Pods-Frameworks-MFExtensions.debug.xcconfig */,
-				463B82F98968E7FD031B08E7 /* Pods-Frameworks-MFExtensions.release.xcconfig */,
+				9CEC07378BB9FE6D52F9071A /* Pods-Frameworks-MFElectricity.debug.xcconfig */,
+				269606CCA6A9D5BF266E6F56 /* Pods-Frameworks-MFElectricity.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../../Pods;
 			sourceTree = "<group>";
 		};
-		EAF22F684C1A722C7FFB0D39 /* Frameworks */ = {
+		513FE4DD81CDA14159F80F33 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				45263EFCA5A063656946E9FB /* libPods-Frameworks-MFExtensions.a */,
+				3FDFDDD39742CAB73F91BFAB /* libPods-Frameworks-MFElectricity.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		664A03C428085FA8006C40F8 = {
+			isa = PBXGroup;
+			children = (
+				664A03D028085FA8006C40F8 /* MFElectricity */,
+				664A03DA28085FA9006C40F8 /* MFElectricityTests */,
+				664A03CF28085FA8006C40F8 /* Products */,
+				05CA15386A1D5F8119C9EC6E /* Pods */,
+				513FE4DD81CDA14159F80F33 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		664A03CF28085FA8006C40F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				664A03CE28085FA8006C40F8 /* MFElectricity.framework */,
+				664A03D628085FA9006C40F8 /* MFElectricityTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		664A03D028085FA8006C40F8 /* MFElectricity */ = {
+			isa = PBXGroup;
+			children = (
+				664A03D128085FA8006C40F8 /* MFElectricity.h */,
+			);
+			path = MFElectricity;
+			sourceTree = "<group>";
+		};
+		664A03DA28085FA9006C40F8 /* MFElectricityTests */ = {
+			isa = PBXGroup;
+			children = (
+				664A03DB28085FA9006C40F8 /* MFElectricityTests.swift */,
+			);
+			path = MFElectricityTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		664A03A128081973006C40F8 /* Headers */ = {
+		664A03C928085FA8006C40F8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				664A03AA28081973006C40F8 /* MFExtensions.h in Headers */,
+				664A03DD28085FA9006C40F8 /* MFElectricity.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		664A03A528081973006C40F8 /* MFExtensions */ = {
+		664A03CD28085FA8006C40F8 /* MFElectricity */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 664A03AD28081973006C40F8 /* Build configuration list for PBXNativeTarget "MFExtensions" */;
+			buildConfigurationList = 664A03E028085FA9006C40F8 /* Build configuration list for PBXNativeTarget "MFElectricity" */;
 			buildPhases = (
-				FAC6F0904DA65F74F12553C9 /* [CP] Check Pods Manifest.lock */,
-				664A03A128081973006C40F8 /* Headers */,
-				664A03A228081973006C40F8 /* Sources */,
-				664A03A328081973006C40F8 /* Frameworks */,
-				664A03A428081973006C40F8 /* Resources */,
+				33E9A5DEBBB8B8F1EE06C9FD /* [CP] Check Pods Manifest.lock */,
+				664A03C928085FA8006C40F8 /* Headers */,
+				664A03CA28085FA8006C40F8 /* Sources */,
+				664A03CB28085FA8006C40F8 /* Frameworks */,
+				664A03CC28085FA8006C40F8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MFExtensions;
-			productName = MFExtensions;
-			productReference = 664A03A628081973006C40F8 /* MFExtensions.framework */;
+			name = MFElectricity;
+			productName = MFElectricity;
+			productReference = 664A03CE28085FA8006C40F8 /* MFElectricity.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		664A03D528085FA9006C40F8 /* MFElectricityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 664A03E328085FA9006C40F8 /* Build configuration list for PBXNativeTarget "MFElectricityTests" */;
+			buildPhases = (
+				664A03D228085FA9006C40F8 /* Sources */,
+				664A03D328085FA9006C40F8 /* Frameworks */,
+				664A03D428085FA9006C40F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				664A03D928085FA9006C40F8 /* PBXTargetDependency */,
+			);
+			name = MFElectricityTests;
+			productName = MFElectricityTests;
+			productReference = 664A03D628085FA9006C40F8 /* MFElectricityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		664A039D28081973006C40F8 /* Project object */ = {
+		664A03C528085FA8006C40F8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					664A03A528081973006C40F8 = {
+					664A03CD28085FA8006C40F8 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					664A03D528085FA9006C40F8 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 664A03A028081973006C40F8 /* Build configuration list for PBXProject "MFExtensions" */;
+			buildConfigurationList = 664A03C828085FA8006C40F8 /* Build configuration list for PBXProject "MFElectricity" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -133,29 +184,36 @@
 				en,
 				Base,
 			);
-			mainGroup = 664A039C28081973006C40F8;
-			productRefGroup = 664A03A728081973006C40F8 /* Products */;
+			mainGroup = 664A03C428085FA8006C40F8;
+			productRefGroup = 664A03CF28085FA8006C40F8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				664A03A528081973006C40F8 /* MFExtensions */,
+				664A03CD28085FA8006C40F8 /* MFElectricity */,
+				664A03D528085FA9006C40F8 /* MFElectricityTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		664A03A428081973006C40F8 /* Resources */ = {
+		664A03CC28085FA8006C40F8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				664A03C3280852EB006C40F8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		664A03D428085FA9006C40F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		FAC6F0904DA65F74F12553C9 /* [CP] Check Pods Manifest.lock */ = {
+		33E9A5DEBBB8B8F1EE06C9FD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -170,7 +228,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Frameworks-MFExtensions-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Frameworks-MFElectricity-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -180,17 +238,33 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		664A03A228081973006C40F8 /* Sources */ = {
+		664A03CA28085FA8006C40F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		664A03D228085FA9006C40F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				664A03DC28085FA9006C40F8 /* MFElectricityTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		664A03D928085FA9006C40F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 664A03CD28085FA8006C40F8 /* MFElectricity */;
+			targetProxy = 664A03D828085FA9006C40F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		664A03AB28081973006C40F8 /* Debug */ = {
+		664A03DE28085FA9006C40F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -253,7 +327,7 @@
 			};
 			name = Debug;
 		};
-		664A03AC28081973006C40F8 /* Release */ = {
+		664A03DF28085FA9006C40F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -310,9 +384,9 @@
 			};
 			name = Release;
 		};
-		664A03AE28081973006C40F8 /* Debug */ = {
+		664A03E128085FA9006C40F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E25D264A855093AE624F937 /* Pods-Frameworks-MFExtensions.debug.xcconfig */;
+			baseConfigurationReference = 9CEC07378BB9FE6D52F9071A /* Pods-Frameworks-MFElectricity.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -331,7 +405,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Quentin.Beaudoul.MFExtensions;
+				PRODUCT_BUNDLE_IDENTIFIER = Quentin.Beaudoul.MFElectricity;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -341,9 +415,9 @@
 			};
 			name = Debug;
 		};
-		664A03AF28081973006C40F8 /* Release */ = {
+		664A03E228085FA9006C40F8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 463B82F98968E7FD031B08E7 /* Pods-Frameworks-MFExtensions.release.xcconfig */;
+			baseConfigurationReference = 269606CCA6A9D5BF266E6F56 /* Pods-Frameworks-MFElectricity.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -362,7 +436,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Quentin.Beaudoul.MFExtensions;
+				PRODUCT_BUNDLE_IDENTIFIER = Quentin.Beaudoul.MFElectricity;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -372,28 +446,69 @@
 			};
 			name = Release;
 		};
+		664A03E428085FA9006C40F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52H82A67C3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Quentin.Beaudoul.MFElectricityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		664A03E528085FA9006C40F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52H82A67C3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Quentin.Beaudoul.MFElectricityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		664A03A028081973006C40F8 /* Build configuration list for PBXProject "MFExtensions" */ = {
+		664A03C828085FA8006C40F8 /* Build configuration list for PBXProject "MFElectricity" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				664A03AB28081973006C40F8 /* Debug */,
-				664A03AC28081973006C40F8 /* Release */,
+				664A03DE28085FA9006C40F8 /* Debug */,
+				664A03DF28085FA9006C40F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		664A03AD28081973006C40F8 /* Build configuration list for PBXNativeTarget "MFExtensions" */ = {
+		664A03E028085FA9006C40F8 /* Build configuration list for PBXNativeTarget "MFElectricity" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				664A03AE28081973006C40F8 /* Debug */,
-				664A03AF28081973006C40F8 /* Release */,
+				664A03E128085FA9006C40F8 /* Debug */,
+				664A03E228085FA9006C40F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		664A03E328085FA9006C40F8 /* Build configuration list for PBXNativeTarget "MFElectricityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				664A03E428085FA9006C40F8 /* Debug */,
+				664A03E528085FA9006C40F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 664A039D28081973006C40F8 /* Project object */;
+	rootObject = 664A03C528085FA8006C40F8 /* Project object */;
 }
