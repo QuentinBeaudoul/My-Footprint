@@ -26,25 +26,5 @@ public final class StoreManager {
         }
     }
 
-    public func drop(_ key: String?) -> Bool {
-//        guard let key = key else { return false }
-//
-//        let request = CDRecipe.fetchRequest()
-//        request.predicate = NSPredicate(format: "label LIKE %@", key)
-//
-//        do {
-//
-//            if let recipeToDelete = try context.fetch(request).first {
-//                context.delete(recipeToDelete)
-//                try context.save()
-//                return true
-//            }
-//
-//        } catch let error {
-//            print(error)
-//            return false
-//        }
-
-        return false
-    }
+    // TODO: Do CRUD here
 }
