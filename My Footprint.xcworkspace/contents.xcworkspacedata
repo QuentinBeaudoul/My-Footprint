@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "Frameworks">
+      <FileRef
+         location = "group:Frameworks/MFExtensions/MFExtensions.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Frameworks/MFStorage/MFStorage.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Frameworks/MFNetwork/MFNetwork.xcodeproj">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:My Footprint/My Footprint.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
