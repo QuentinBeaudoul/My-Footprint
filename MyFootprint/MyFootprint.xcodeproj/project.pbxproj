@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0298853002461EF6582F656B /* Pods_Frameworks_MyFootprint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B789DAFF28F5AF2B16CCC814 /* Pods_Frameworks_MyFootprint.framework */; };
+		661580DF28097736006C2170 /* MFExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 661580DE28097736006C2170 /* MFExtensions.framework */; };
+		661580E028097736006C2170 /* MFExtensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 661580DE28097736006C2170 /* MFExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		661580F128099E06006C2170 /* MFVehicul.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 661580F028099E06006C2170 /* MFVehicul.framework */; };
+		661580F228099E06006C2170 /* MFVehicul.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 661580F028099E06006C2170 /* MFVehicul.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		661581012809A7B9006C2170 /* MFShipping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 661581002809A7B9006C2170 /* MFShipping.framework */; };
+		661581022809A7B9006C2170 /* MFShipping.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 661581002809A7B9006C2170 /* MFShipping.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		66A732F6280950DA004CF245 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66A732F5280950DA004CF245 /* Splash.storyboard */; };
 		66A732F92809513E004CF245 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A732F82809513E004CF245 /* SplashViewController.swift */; };
 		66A732FC280955EE004CF245 /* LoadingAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 66A732FB280955EE004CF245 /* LoadingAnimation.json */; };
@@ -19,10 +25,29 @@
 		66E6E5DC2808112E00AC8C13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E6E5DA2808112E00AC8C13 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		661580E128097736006C2170 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				661581022809A7B9006C2170 /* MFShipping.framework in Embed Frameworks */,
+				661580F228099E06006C2170 /* MFVehicul.framework in Embed Frameworks */,
+				661580E028097736006C2170 /* MFExtensions.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0E36238611C542174030CC7D /* Pods-Frameworks-My Footprint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-My Footprint.debug.xcconfig"; path = "Target Support Files/Pods-Frameworks-My Footprint/Pods-Frameworks-My Footprint.debug.xcconfig"; sourceTree = "<group>"; };
 		3BE9FAB9CAA39E9749933998 /* Pods-Frameworks-My Footprint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-My Footprint.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-My Footprint/Pods-Frameworks-My Footprint.release.xcconfig"; sourceTree = "<group>"; };
 		4922BC77D6AB0DAD2DDC758B /* Pods-My Footprint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Footprint.debug.xcconfig"; path = "Target Support Files/Pods-My Footprint/Pods-My Footprint.debug.xcconfig"; sourceTree = "<group>"; };
+		661580DE28097736006C2170 /* MFExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		661580F028099E06006C2170 /* MFVehicul.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFVehicul.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		661581002809A7B9006C2170 /* MFShipping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFShipping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A732F5280950DA004CF245 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		66A732F82809513E004CF245 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		66A732FB280955EE004CF245 /* LoadingAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LoadingAnimation.json; sourceTree = "<group>"; };
@@ -46,6 +71,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0298853002461EF6582F656B /* Pods_Frameworks_MyFootprint.framework in Frameworks */,
+				661581012809A7B9006C2170 /* MFShipping.framework in Frameworks */,
+				661580F128099E06006C2170 /* MFVehicul.framework in Frameworks */,
+				661580DF28097736006C2170 /* MFExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +172,9 @@
 		89E3BAF9AC91922E2D63DF0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				661581002809A7B9006C2170 /* MFShipping.framework */,
+				661580F028099E06006C2170 /* MFVehicul.framework */,
+				661580DE28097736006C2170 /* MFExtensions.framework */,
 				B789DAFF28F5AF2B16CCC814 /* Pods_Frameworks_MyFootprint.framework */,
 			);
 			name = Frameworks;
@@ -162,6 +193,7 @@
 				66E6E5C72808112900AC8C13 /* Resources */,
 				E7C8C2FCCAA5C9A38F220B60 /* [CP] Embed Pods Frameworks */,
 				66A7330028095E06004CF245 /* SwiftLint */,
+				661580E128097736006C2170 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

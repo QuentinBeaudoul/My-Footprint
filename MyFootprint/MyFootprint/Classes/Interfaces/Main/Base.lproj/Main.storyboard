@@ -8,18 +8,18 @@
     </dependencies>
     <scenes>
         <!--Main View Controller-->
-        <scene sceneID="lrt-TK-9Eq">
+        <scene sceneID="Wcr-cc-4N3">
             <objects>
-                <tabBarController storyboardIdentifier="MainViewController" id="C3l-4E-L21" customClass="MainViewController" customModule="My_Footprint" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fsa-oz-ZI5">
+                <tabBarController storyboardIdentifier="MainViewController" id="oDS-9R-Dax" customClass="MainViewController" customModule="MyFootprint" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hFj-Ii-Plx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fpw-tJ-n3z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kcl-cw-auX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-317" y="-165"/>
+            <point key="canvasLocation" x="-1514" y="-600"/>
         </scene>
     </scenes>
 </document>

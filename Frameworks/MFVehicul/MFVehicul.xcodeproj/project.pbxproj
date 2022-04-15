@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		58BB580699E95BB12F233EA9 /* libPods-Frameworks-MFVehicul.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E0223F765DA70D852AF81E1 /* libPods-Frameworks-MFVehicul.a */; };
+		661580E828099A92006C2170 /* Vehicul.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 661580E728099A92006C2170 /* Vehicul.storyboard */; };
+		661580EA28099AD1006C2170 /* VehiculViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661580E928099AD1006C2170 /* VehiculViewController.swift */; };
+		661580EC28099AE3006C2170 /* VehiculViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661580EB28099AE3006C2170 /* VehiculViewModel.swift */; };
+		661580EF28099BAF006C2170 /* VehiculNavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661580EE28099BAF006C2170 /* VehiculNavigationManager.swift */; };
+		661581042809C622006C2170 /* MFExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 661581032809C622006C2170 /* MFExtensions.framework */; };
+		661581052809C622006C2170 /* MFExtensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 661581032809C622006C2170 /* MFExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		664A043D280861AF006C40F8 /* MFVehicul.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664A0434280861AF006C40F8 /* MFVehicul.framework */; };
 		664A0442280861AF006C40F8 /* MFVehiculTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A0441280861AF006C40F8 /* MFVehiculTests.swift */; };
 		664A0443280861AF006C40F8 /* MFVehicul.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A0437280861AF006C40F8 /* MFVehicul.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,10 +29,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		661581062809C622006C2170 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				661581052809C622006C2170 /* MFExtensions.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2E0223F765DA70D852AF81E1 /* libPods-Frameworks-MFVehicul.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Frameworks-MFVehicul.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40BF3C0DB7F025A15A05B482 /* Pods-Frameworks-MFVehicul.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFVehicul.debug.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFVehicul/Pods-Frameworks-MFVehicul.debug.xcconfig"; sourceTree = "<group>"; };
 		47471950C1D46B2B3298611D /* Pods-Frameworks-MFVehicul.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFVehicul.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFVehicul/Pods-Frameworks-MFVehicul.release.xcconfig"; sourceTree = "<group>"; };
+		661580E728099A92006C2170 /* Vehicul.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vehicul.storyboard; sourceTree = "<group>"; };
+		661580E928099AD1006C2170 /* VehiculViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiculViewController.swift; sourceTree = "<group>"; };
+		661580EB28099AE3006C2170 /* VehiculViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiculViewModel.swift; sourceTree = "<group>"; };
+		661580EE28099BAF006C2170 /* VehiculNavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiculNavigationManager.swift; sourceTree = "<group>"; };
+		661581032809C622006C2170 /* MFExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		664A0434280861AF006C40F8 /* MFVehicul.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MFVehicul.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		664A0437280861AF006C40F8 /* MFVehicul.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFVehicul.h; sourceTree = "<group>"; };
 		664A043C280861AF006C40F8 /* MFVehiculTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFVehiculTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +64,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58BB580699E95BB12F233EA9 /* libPods-Frameworks-MFVehicul.a in Frameworks */,
+				661581042809C622006C2170 /* MFExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,14 +92,51 @@
 		40D68E9B6C5CDF3CC3EDCD2E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				661581032809C622006C2170 /* MFExtensions.framework */,
 				2E0223F765DA70D852AF81E1 /* libPods-Frameworks-MFVehicul.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		661580E428097A25006C2170 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				661580ED28099B94006C2170 /* Managers */,
+				661580E528097AD0006C2170 /* Interfaces */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		661580E528097AD0006C2170 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				661580E628099A6E006C2170 /* Main */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		661580E628099A6E006C2170 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				661580E728099A92006C2170 /* Vehicul.storyboard */,
+				661580E928099AD1006C2170 /* VehiculViewController.swift */,
+				661580EB28099AE3006C2170 /* VehiculViewModel.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		661580ED28099B94006C2170 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				661580EE28099BAF006C2170 /* VehiculNavigationManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 		664A042A280861AF006C40F8 = {
 			isa = PBXGroup;
 			children = (
+				661580E428097A25006C2170 /* Classes */,
 				664A0436280861AF006C40F8 /* MFVehicul */,
 				664A0440280861AF006C40F8 /* MFVehiculTests */,
 				664A0435280861AF006C40F8 /* Products */,
@@ -131,6 +194,7 @@
 				664A0431280861AF006C40F8 /* Frameworks */,
 				664A0432280861AF006C40F8 /* Resources */,
 				6657DC43280964B60031BA7C /* SwiftLint */,
+				661581062809C622006C2170 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,6 +235,7 @@
 				TargetAttributes = {
 					664A0433280861AF006C40F8 = {
 						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
 					};
 					664A043B280861AF006C40F8 = {
 						CreatedOnToolsVersion = 13.3.1;
@@ -201,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				661580E828099A92006C2170 /* Vehicul.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +327,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				661580EA28099AD1006C2170 /* VehiculViewController.swift in Sources */,
+				661580EC28099AE3006C2170 /* VehiculViewModel.swift in Sources */,
+				661580EF28099BAF006C2170 /* VehiculNavigationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +476,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 40BF3C0DB7F025A15A05B482 /* Pods-Frameworks-MFVehicul.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -429,6 +499,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -438,6 +509,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 47471950C1D46B2B3298611D /* Pods-Frameworks-MFVehicul.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -468,6 +540,7 @@
 		664A044A280861AF006C40F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52H82A67C3;
@@ -484,6 +557,7 @@
 		664A044B280861AF006C40F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52H82A67C3;

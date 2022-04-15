@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.5.0)
+  - Alamofire (5.6.0)
   - lottie-ios (3.3.0)
   - R.swift (6.1.0):
     - R.swift.Library (~> 5.3.0)
@@ -21,7 +21,7 @@ SPEC REPOS:
     - SwiftLint
 
 SPEC CHECKSUMS:
-  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  Alamofire: 0c07058209f211e3d32824f8e0766d7c44ac83b3
   lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
   R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
@@ -29,4 +29,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: d7d7ea010151ba618417a6cb8ea90f547c300cd7
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
