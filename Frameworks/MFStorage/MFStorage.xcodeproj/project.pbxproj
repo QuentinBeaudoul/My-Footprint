@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		664A037E28081890006C40F8 /* MFStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664A037528081890006C40F8 /* MFStorage.framework */; };
-		664A038328081891006C40F8 /* MFStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A038228081891006C40F8 /* MFStorageTests.swift */; };
 		664A038428081891006C40F8 /* MFStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A037828081890006C40F8 /* MFStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		664A03BA280825FA006C40F8 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A03B9280825FA006C40F8 /* CoreDataService.swift */; };
 		664A03BE28082638006C40F8 /* MyFootprint.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 664A03BC28082638006C40F8 /* MyFootprint.xcdatamodeld */; };
@@ -16,22 +14,10 @@
 		AD38887DEB0A3338FBFAE62A /* libPods-Frameworks-MFStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E0560C580F83BD3FF7EF8F /* libPods-Frameworks-MFStorage.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		664A037F28081890006C40F8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 664A036C28081890006C40F8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 664A037428081890006C40F8;
-			remoteInfo = MFStorage;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		1C8B0283529D153A6E6C4A89 /* Pods-Frameworks-MFStorage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFStorage.debug.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFStorage/Pods-Frameworks-MFStorage.debug.xcconfig"; sourceTree = "<group>"; };
 		664A037528081890006C40F8 /* MFStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MFStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		664A037828081890006C40F8 /* MFStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFStorage.h; sourceTree = "<group>"; };
-		664A037D28081890006C40F8 /* MFStorageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFStorageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		664A038228081891006C40F8 /* MFStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFStorageTests.swift; sourceTree = "<group>"; };
 		664A03B9280825FA006C40F8 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		664A03BD28082638006C40F8 /* MyFootprint.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyFootprint.xcdatamodel; sourceTree = "<group>"; };
 		664A03C028082688006C40F8 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
@@ -48,14 +34,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		664A037A28081890006C40F8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				664A037E28081890006C40F8 /* MFStorage.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,7 +43,6 @@
 				664A03BB28082616006C40F8 /* CoreData */,
 				664A03B7280825E3006C40F8 /* Classes */,
 				664A037728081890006C40F8 /* MFStorage */,
-				664A038128081890006C40F8 /* MFStorageTests */,
 				664A037628081890006C40F8 /* Products */,
 				9CCD2D036BF70CE69F86742D /* Pods */,
 				EB1A9CEED2664D2E07F65F20 /* Frameworks */,
@@ -76,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				664A037528081890006C40F8 /* MFStorage.framework */,
-				664A037D28081890006C40F8 /* MFStorageTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,14 +63,6 @@
 				664A037828081890006C40F8 /* MFStorage.h */,
 			);
 			path = MFStorage;
-			sourceTree = "<group>";
-		};
-		664A038128081890006C40F8 /* MFStorageTests */ = {
-			isa = PBXGroup;
-			children = (
-				664A038228081891006C40F8 /* MFStorageTests.swift */,
-			);
-			path = MFStorageTests;
 			sourceTree = "<group>";
 		};
 		664A03B7280825E3006C40F8 /* Classes */ = {
@@ -181,24 +149,6 @@
 			productReference = 664A037528081890006C40F8 /* MFStorage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		664A037C28081890006C40F8 /* MFStorageTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 664A038A28081891006C40F8 /* Build configuration list for PBXNativeTarget "MFStorageTests" */;
-			buildPhases = (
-				664A037928081890006C40F8 /* Sources */,
-				664A037A28081890006C40F8 /* Frameworks */,
-				664A037B28081890006C40F8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				664A038028081890006C40F8 /* PBXTargetDependency */,
-			);
-			name = MFStorageTests;
-			productName = MFStorageTests;
-			productReference = 664A037D28081890006C40F8 /* MFStorageTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -212,9 +162,6 @@
 					664A037428081890006C40F8 = {
 						CreatedOnToolsVersion = 13.3.1;
 						LastSwiftMigration = 1330;
-					};
-					664A037C28081890006C40F8 = {
-						CreatedOnToolsVersion = 13.3.1;
 					};
 				};
 			};
@@ -232,20 +179,12 @@
 			projectRoot = "";
 			targets = (
 				664A037428081890006C40F8 /* MFStorage */,
-				664A037C28081890006C40F8 /* MFStorageTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		664A037328081890006C40F8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		664A037B28081890006C40F8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -290,23 +229,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		664A037928081890006C40F8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				664A038328081891006C40F8 /* MFStorageTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		664A038028081890006C40F8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 664A037428081890006C40F8 /* MFStorage */;
-			targetProxy = 664A037F28081890006C40F8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		664A038528081891006C40F8 /* Debug */ = {
@@ -494,40 +417,6 @@
 			};
 			name = Release;
 		};
-		664A038B28081891006C40F8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 52H82A67C3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Quentin.Beaudoul.MFStorageTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		664A038C28081891006C40F8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 52H82A67C3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Quentin.Beaudoul.MFStorageTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -545,15 +434,6 @@
 			buildConfigurations = (
 				664A038828081891006C40F8 /* Debug */,
 				664A038928081891006C40F8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		664A038A28081891006C40F8 /* Build configuration list for PBXNativeTarget "MFStorageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				664A038B28081891006C40F8 /* Debug */,
-				664A038C28081891006C40F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

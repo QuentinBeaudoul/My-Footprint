@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		664A03AA28081973006C40F8 /* MFExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A03A928081973006C40F8 /* MFExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		664A03C3280852EB006C40F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 664A03C2280852EB006C40F8 /* Assets.xcassets */; };
+		66A732FF28095D88004CF245 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A732FE28095D88004CF245 /* UIView+.swift */; };
 		77CB7E5255DEDDBCCB3159BC /* libPods-Frameworks-MFExtensions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45263EFCA5A063656946E9FB /* libPods-Frameworks-MFExtensions.a */; };
 /* End PBXBuildFile section */
 
@@ -19,6 +20,7 @@
 		664A03A628081973006C40F8 /* MFExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MFExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		664A03A928081973006C40F8 /* MFExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFExtensions.h; sourceTree = "<group>"; };
 		664A03C2280852EB006C40F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66A732FE28095D88004CF245 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 		664A039C28081973006C40F8 = {
 			isa = PBXGroup;
 			children = (
+				66A732FD28095D58004CF245 /* Classes */,
 				664A03C2280852EB006C40F8 /* Assets.xcassets */,
 				664A03A828081973006C40F8 /* MFExtensions */,
 				664A03A728081973006C40F8 /* Products */,
@@ -58,6 +61,14 @@
 				664A03A928081973006C40F8 /* MFExtensions.h */,
 			);
 			path = MFExtensions;
+			sourceTree = "<group>";
+		};
+		66A732FD28095D58004CF245 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				66A732FE28095D88004CF245 /* UIView+.swift */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 		A41E0886528476E047590027 /* Pods */ = {
@@ -122,6 +133,7 @@
 				TargetAttributes = {
 					664A03A528081973006C40F8 = {
 						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
 					};
 				};
 			};
@@ -184,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66A732FF28095D88004CF245 /* UIView+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +327,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1E25D264A855093AE624F937 /* Pods-Frameworks-MFExtensions.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -336,6 +350,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -345,6 +360,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 463B82F98968E7FD031B08E7 /* Pods-Frameworks-MFExtensions.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;

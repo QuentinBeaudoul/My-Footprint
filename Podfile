@@ -1,5 +1,5 @@
 platform :ios, '13.0'
-workspace 'My Footprint.xcworkspace'
+workspace 'MyFootprint.xcworkspace'
 
 abstract_target 'Frameworks' do 
 
@@ -35,8 +35,10 @@ abstract_target 'Frameworks' do
 		project 'Frameworks/MFElectricity/MFElectricity.xcodeproj'
 	end
 
-	target 'My Footprint' do
-		project 'My Footprint/My Footprint.xcodeproj'
+	target 'MyFootprint' do
+		project 'MyFootprint/MyFootprint.xcodeproj'
 		use_frameworks!
+		
+		pod 'lottie-ios'
 	end
 end

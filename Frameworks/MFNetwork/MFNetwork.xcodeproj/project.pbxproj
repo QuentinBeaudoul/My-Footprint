@@ -8,29 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		664A036528081846006C40F8 /* MFNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A036428081846006C40F8 /* MFNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		664A0395280818E4006C40F8 /* MFNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A0394280818E4006C40F8 /* MFNetworkTests.swift */; };
-		664A0396280818E4006C40F8 /* MFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664A036128081846006C40F8 /* MFNetwork.framework */; platformFilter = ios; };
 		664A03B3280824D7006C40F8 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A03B2280824D7006C40F8 /* Service.swift */; };
 		664A03B628082522006C40F8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A03B528082522006C40F8 /* NetworkManager.swift */; };
 		87B0A9C3D46D26743B55CB98 /* libPods-Frameworks-MFNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59617834F9E7C81F89359F92 /* libPods-Frameworks-MFNetwork.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		664A0397280818E4006C40F8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 664A035828081846006C40F8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 664A036028081846006C40F8;
-			remoteInfo = MFNetwork;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		59617834F9E7C81F89359F92 /* libPods-Frameworks-MFNetwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Frameworks-MFNetwork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		664A036128081846006C40F8 /* MFNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MFNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		664A036428081846006C40F8 /* MFNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFNetwork.h; sourceTree = "<group>"; };
-		664A0392280818E4006C40F8 /* MFNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		664A0394280818E4006C40F8 /* MFNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFNetworkTests.swift; sourceTree = "<group>"; };
 		664A03B2280824D7006C40F8 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		664A03B528082522006C40F8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C37FA4490F3375060AA17C8C /* Pods-Frameworks-MFNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFNetwork.debug.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFNetwork/Pods-Frameworks-MFNetwork.debug.xcconfig"; sourceTree = "<group>"; };
@@ -46,14 +32,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		664A038F280818E4006C40F8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				664A0396280818E4006C40F8 /* MFNetwork.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -62,7 +40,6 @@
 			children = (
 				664A03B02808244E006C40F8 /* Classes */,
 				664A036328081846006C40F8 /* MFNetwork */,
-				664A0393280818E4006C40F8 /* MFNetworkTests */,
 				664A036228081846006C40F8 /* Products */,
 				F91C733865D0E05391B8C490 /* Pods */,
 				E894C8790F9B02C18D998B52 /* Frameworks */,
@@ -73,7 +50,6 @@
 			isa = PBXGroup;
 			children = (
 				664A036128081846006C40F8 /* MFNetwork.framework */,
-				664A0392280818E4006C40F8 /* MFNetworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,14 +60,6 @@
 				664A036428081846006C40F8 /* MFNetwork.h */,
 			);
 			path = MFNetwork;
-			sourceTree = "<group>";
-		};
-		664A0393280818E4006C40F8 /* MFNetworkTests */ = {
-			isa = PBXGroup;
-			children = (
-				664A0394280818E4006C40F8 /* MFNetworkTests.swift */,
-			);
-			path = MFNetworkTests;
 			sourceTree = "<group>";
 		};
 		664A03B02808244E006C40F8 /* Classes */ = {
@@ -170,24 +138,6 @@
 			productReference = 664A036128081846006C40F8 /* MFNetwork.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		664A0391280818E4006C40F8 /* MFNetworkTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 664A0399280818E4006C40F8 /* Build configuration list for PBXNativeTarget "MFNetworkTests" */;
-			buildPhases = (
-				664A038E280818E4006C40F8 /* Sources */,
-				664A038F280818E4006C40F8 /* Frameworks */,
-				664A0390280818E4006C40F8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				664A0398280818E4006C40F8 /* PBXTargetDependency */,
-			);
-			name = MFNetworkTests;
-			productName = MFNetworkTests;
-			productReference = 664A0392280818E4006C40F8 /* MFNetworkTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,9 +151,6 @@
 					664A036028081846006C40F8 = {
 						CreatedOnToolsVersion = 13.3.1;
 						LastSwiftMigration = 1330;
-					};
-					664A0391280818E4006C40F8 = {
-						CreatedOnToolsVersion = 13.3.1;
 					};
 				};
 			};
@@ -221,20 +168,12 @@
 			projectRoot = "";
 			targets = (
 				664A036028081846006C40F8 /* MFNetwork */,
-				664A0391280818E4006C40F8 /* MFNetworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		664A035F28081846006C40F8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		664A0390280818E4006C40F8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -278,24 +217,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		664A038E280818E4006C40F8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				664A0395280818E4006C40F8 /* MFNetworkTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		664A0398280818E4006C40F8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			platformFilter = ios;
-			target = 664A036028081846006C40F8 /* MFNetwork */;
-			targetProxy = 664A0397280818E4006C40F8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		664A036628081846006C40F8 /* Debug */ = {
@@ -483,40 +405,6 @@
 			};
 			name = Release;
 		};
-		664A039A280818E4006C40F8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 52H82A67C3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Quentin.Beaudoul.MFNetworkTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		664A039B280818E4006C40F8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 52H82A67C3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Quentin.Beaudoul.MFNetworkTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -534,15 +422,6 @@
 			buildConfigurations = (
 				664A036928081846006C40F8 /* Debug */,
 				664A036A28081846006C40F8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		664A0399280818E4006C40F8 /* Build configuration list for PBXNativeTarget "MFNetworkTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				664A039A280818E4006C40F8 /* Debug */,
-				664A039B280818E4006C40F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

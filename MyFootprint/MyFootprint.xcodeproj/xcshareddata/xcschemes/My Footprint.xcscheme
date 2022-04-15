@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1330"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "66E6E5C82808112900AC8C13"
+               BuildableName = "MyFootprint.app"
+               BlueprintName = "MyFootprint"
+               ReferencedContainer = "container:MyFootprint.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "664A03A528081973006C40F8"
+               BuildableName = "MFExtensions.framework"
+               BlueprintName = "MFExtensions"
+               ReferencedContainer = "container:../Frameworks/MFExtensions/MFExtensions.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "664A0411280860BE006C40F8"
+               BuildableName = "MFShipping.framework"
+               BlueprintName = "MFShipping"
+               ReferencedContainer = "container:../Frameworks/MFShipping/MFShipping.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "664A0433280861AF006C40F8"
+               BuildableName = "MFVehicul.framework"
+               BlueprintName = "MFVehicul"
+               ReferencedContainer = "container:../Frameworks/MFVehicul/MFVehicul.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "664A037428081890006C40F8"
+               BuildableName = "MFStorage.framework"
+               BlueprintName = "MFStorage"
+               ReferencedContainer = "container:../Frameworks/MFStorage/MFStorage.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "664A03EF2808606B006C40F8"
+               BuildableName = "MFFlight.framework"
+               BlueprintName = "MFFlight"
+               ReferencedContainer = "container:../Frameworks/MFFlight/MFFlight.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "664A036028081846006C40F8"
+               BuildableName = "MFNetwork.framework"
+               BlueprintName = "MFNetwork"
+               ReferencedContainer = "container:../Frameworks/MFNetwork/MFNetwork.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "664A03CD28085FA8006C40F8"
+               BuildableName = "MFElectricity.framework"
+               BlueprintName = "MFElectricity"
+               ReferencedContainer = "container:../Frameworks/MFElectricity/MFElectricity.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "664A0433280861AF006C40F8"
+            BuildableName = "MFVehicul.framework"
+            BlueprintName = "MFVehicul"
+            ReferencedContainer = "container:../Frameworks/MFVehicul/MFVehicul.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "664A0411280860BE006C40F8"
+            BuildableName = "MFShipping.framework"
+            BlueprintName = "MFShipping"
+            ReferencedContainer = "container:../Frameworks/MFShipping/MFShipping.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "664A03CD28085FA8006C40F8"
+            BuildableName = "MFElectricity.framework"
+            BlueprintName = "MFElectricity"
+            ReferencedContainer = "container:../Frameworks/MFElectricity/MFElectricity.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "664A03EF2808606B006C40F8"
+            BuildableName = "MFFlight.framework"
+            BlueprintName = "MFFlight"
+            ReferencedContainer = "container:../Frameworks/MFFlight/MFFlight.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "664A03D528085FA9006C40F8"
+               BuildableName = "MFElectricityTests.xctest"
+               BlueprintName = "MFElectricityTests"
+               ReferencedContainer = "container:../Frameworks/MFElectricity/MFElectricity.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "664A03F72808606B006C40F8"
+               BuildableName = "MFFlightTests.xctest"
+               BlueprintName = "MFFlightTests"
+               ReferencedContainer = "container:../Frameworks/MFFlight/MFFlight.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "664A0419280860BE006C40F8"
+               BuildableName = "MFShippingTests.xctest"
+               BlueprintName = "MFShippingTests"
+               ReferencedContainer = "container:../Frameworks/MFShipping/MFShipping.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "664A043B280861AF006C40F8"
+               BuildableName = "MFVehiculTests.xctest"
+               BlueprintName = "MFVehiculTests"
+               ReferencedContainer = "container:../Frameworks/MFVehicul/MFVehicul.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "66E6E5C82808112900AC8C13"
+            BuildableName = "MyFootprint.app"
+            BlueprintName = "MyFootprint"
+            ReferencedContainer = "container:MyFootprint.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
