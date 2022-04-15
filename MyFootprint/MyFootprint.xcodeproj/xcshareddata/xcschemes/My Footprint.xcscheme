@@ -22,35 +22,7 @@
          </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "NO"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "664A03A528081973006C40F8"
-               BuildableName = "MFExtensions.framework"
-               BlueprintName = "MFExtensions"
-               ReferencedContainer = "container:../Frameworks/MFExtensions/MFExtensions.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "NO"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "664A0411280860BE006C40F8"
-               BuildableName = "MFShipping.framework"
-               BlueprintName = "MFShipping"
-               ReferencedContainer = "container:../Frameworks/MFShipping/MFShipping.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "NO"
-            buildForRunning = "NO"
+            buildForRunning = "YES"
             buildForProfiling = "NO"
             buildForArchiving = "NO"
             buildForAnalyzing = "YES">
@@ -64,21 +36,21 @@
          </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "NO"
-            buildForRunning = "NO"
+            buildForRunning = "YES"
             buildForProfiling = "NO"
             buildForArchiving = "NO"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "664A037428081890006C40F8"
-               BuildableName = "MFStorage.framework"
-               BlueprintName = "MFStorage"
-               ReferencedContainer = "container:../Frameworks/MFStorage/MFStorage.xcodeproj">
+               BlueprintIdentifier = "664A03A528081973006C40F8"
+               BuildableName = "MFExtensions.framework"
+               BlueprintName = "MFExtensions"
+               ReferencedContainer = "container:../Frameworks/MFExtensions/MFExtensions.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "NO"
-            buildForRunning = "NO"
+            buildForRunning = "YES"
             buildForProfiling = "NO"
             buildForArchiving = "NO"
             buildForAnalyzing = "YES">
@@ -92,7 +64,35 @@
          </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "NO"
-            buildForRunning = "NO"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "664A03CD28085FA8006C40F8"
+               BuildableName = "MFElectricity.framework"
+               BlueprintName = "MFElectricity"
+               ReferencedContainer = "container:../Frameworks/MFElectricity/MFElectricity.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "664A0411280860BE006C40F8"
+               BuildableName = "MFShipping.framework"
+               BlueprintName = "MFShipping"
+               ReferencedContainer = "container:../Frameworks/MFShipping/MFShipping.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "YES"
             buildForProfiling = "NO"
             buildForArchiving = "NO"
             buildForAnalyzing = "YES">
@@ -106,16 +106,16 @@
          </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "NO"
-            buildForRunning = "NO"
+            buildForRunning = "YES"
             buildForProfiling = "NO"
             buildForArchiving = "NO"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "664A03CD28085FA8006C40F8"
-               BuildableName = "MFElectricity.framework"
-               BlueprintName = "MFElectricity"
-               ReferencedContainer = "container:../Frameworks/MFElectricity/MFElectricity.xcodeproj">
+               BlueprintIdentifier = "664A037428081890006C40F8"
+               BuildableName = "MFStorage.framework"
+               BlueprintName = "MFStorage"
+               ReferencedContainer = "container:../Frameworks/MFStorage/MFStorage.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -210,6 +210,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "66E6E5C82808112900AC8C13"
+            BuildableName = "MyFootprint.app"
+            BlueprintName = "MyFootprint"
+            ReferencedContainer = "container:MyFootprint.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
