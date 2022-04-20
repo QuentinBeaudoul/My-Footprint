@@ -35,6 +35,10 @@ abstract_target 'Frameworks' do
 		project 'Frameworks/MFElectricity/MFElectricity.xcodeproj'
 	end
 
+	target 'MFFuelCombustion' do
+		project 'Frameworks/MFFuelCombustion/MFFuelCombustion.xcodeproj'	
+	end
+
 	target 'MyFootprint' do
 		project 'MyFootprint/MyFootprint.xcodeproj'
 		use_frameworks!

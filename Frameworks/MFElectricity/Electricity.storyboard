@@ -11,49 +11,49 @@
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
-        <scene sceneID="ENI-sV-H6P">
+        <scene sceneID="D3y-Pw-RAn">
             <objects>
-                <navigationController storyboardIdentifier="VehicleNavViewController" id="8Ex-aA-DS3" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Bg-UB-KeI">
+                <navigationController storyboardIdentifier="ElectricityNavViewController" id="RbT-J3-4xZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kiu-sr-jo5">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" name="backgroundGradientTop"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="4Q5-Hi-jTe" kind="relationship" relationship="rootViewController" id="R87-bN-iSh"/>
+                        <segue destination="oPt-Q7-LGr" kind="relationship" relationship="rootViewController" id="VBg-Vh-HeG"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C3T-uq-nV7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="69O-Bb-vGu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-475" y="28"/>
+            <point key="canvasLocation" x="-322" y="108"/>
         </scene>
-        <!--Vehicle View Controller-->
-        <scene sceneID="QI4-ry-w3x">
+        <!--Electricity View Controller-->
+        <scene sceneID="gHq-k2-ezZ">
             <objects>
-                <viewController storyboardIdentifier="VehicleViewController" id="4Q5-Hi-jTe" customClass="VehicleViewController" customModule="MFVehicle" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="MrR-hY-UaS">
+                <viewController storyboardIdentifier="ElectricityViewController" id="oPt-Q7-LGr" customClass="ElectricityViewController" customModule="MFElectricity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FYb-eK-U9K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vehicle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvM-Ql-Bxz">
-                                <rect key="frame" x="179.5" y="437.5" width="55.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Electricity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dra-b4-O4a">
+                                <rect key="frame" x="169.5" y="437.5" width="75.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="OSm-Dd-KAM"/>
+                        <viewLayoutGuide key="safeArea" id="1Jj-AN-dJN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="gvM-Ql-Bxz" firstAttribute="centerX" secondItem="MrR-hY-UaS" secondAttribute="centerX" id="2c5-e6-Kjg"/>
-                            <constraint firstItem="gvM-Ql-Bxz" firstAttribute="centerY" secondItem="MrR-hY-UaS" secondAttribute="centerY" id="5dD-9i-6KO"/>
+                            <constraint firstItem="dra-b4-O4a" firstAttribute="centerX" secondItem="FYb-eK-U9K" secondAttribute="centerX" id="F5H-gQ-CRe"/>
+                            <constraint firstItem="dra-b4-O4a" firstAttribute="centerY" secondItem="FYb-eK-U9K" secondAttribute="centerY" id="bgI-VZ-Btp"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="jz7-zO-bb2"/>
+                    <navigationItem key="navigationItem" id="xe6-zu-Jka"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="w5S-F0-Xgw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xSh-Ec-DOB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="562" y="27"/>
+            <point key="canvasLocation" x="500" y="108"/>
         </scene>
     </scenes>
     <resources>

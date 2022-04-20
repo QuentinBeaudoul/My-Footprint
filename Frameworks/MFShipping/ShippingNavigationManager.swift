@@ -21,8 +21,8 @@ public final class ShippingNavigationManager {
                                                                       in: Bundle(for: Self.self))
 
         navController.tabBarItem = UITabBarItem(title: nil,
-                                                 image: UIImage(systemName: "shippingbox"),
-                                                 selectedImage: UIImage(systemName: "shippingbox.fill"))
+                                                image: R.image.ic_25_shipping(),
+                                                selectedImage: R.image.ic_35_shipping())
 
         return navController
     }

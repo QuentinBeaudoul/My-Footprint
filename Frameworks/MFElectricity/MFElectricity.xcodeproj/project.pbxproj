@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		089BD2389FA2EF2E215E3827 /* libPods-Frameworks-MFElectricity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDFDDD39742CAB73F91BFAB /* libPods-Frameworks-MFElectricity.a */; };
+		6645E82528103700002387BB /* ElectricityNavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6645E82428103700002387BB /* ElectricityNavigationManager.swift */; };
+		6645E8282810376E002387BB /* Electricity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6645E8272810376E002387BB /* Electricity.storyboard */; };
+		6645E82A281037EA002387BB /* ElectricityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6645E829281037EA002387BB /* ElectricityViewController.swift */; };
+		6645E82C281037FA002387BB /* ElectricityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6645E82B281037FA002387BB /* ElectricityViewModel.swift */; };
 		664A03D728085FA9006C40F8 /* MFElectricity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664A03CE28085FA8006C40F8 /* MFElectricity.framework */; };
 		664A03DC28085FA9006C40F8 /* MFElectricityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A03DB28085FA9006C40F8 /* MFElectricityTests.swift */; };
 		664A03DD28085FA9006C40F8 /* MFElectricity.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A03D128085FA8006C40F8 /* MFElectricity.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,6 +30,10 @@
 /* Begin PBXFileReference section */
 		269606CCA6A9D5BF266E6F56 /* Pods-Frameworks-MFElectricity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFElectricity.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFElectricity/Pods-Frameworks-MFElectricity.release.xcconfig"; sourceTree = "<group>"; };
 		3FDFDDD39742CAB73F91BFAB /* libPods-Frameworks-MFElectricity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Frameworks-MFElectricity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6645E82428103700002387BB /* ElectricityNavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricityNavigationManager.swift; sourceTree = "<group>"; };
+		6645E8272810376E002387BB /* Electricity.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Electricity.storyboard; sourceTree = "<group>"; };
+		6645E829281037EA002387BB /* ElectricityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricityViewController.swift; sourceTree = "<group>"; };
+		6645E82B281037FA002387BB /* ElectricityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricityViewModel.swift; sourceTree = "<group>"; };
 		664A03CE28085FA8006C40F8 /* MFElectricity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MFElectricity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		664A03D128085FA8006C40F8 /* MFElectricity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFElectricity.h; sourceTree = "<group>"; };
 		664A03D628085FA9006C40F8 /* MFElectricityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFElectricityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,9 +79,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6645E821281036D1002387BB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6645E822281036DB002387BB /* Managers */,
+				6645E823281036E1002387BB /* Interfaces */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		6645E822281036DB002387BB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				6645E82428103700002387BB /* ElectricityNavigationManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		6645E823281036E1002387BB /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				6645E82628103739002387BB /* Main */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		6645E82628103739002387BB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6645E8272810376E002387BB /* Electricity.storyboard */,
+				6645E829281037EA002387BB /* ElectricityViewController.swift */,
+				6645E82B281037FA002387BB /* ElectricityViewModel.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		664A03C428085FA8006C40F8 = {
 			isa = PBXGroup;
 			children = (
+				6645E821281036D1002387BB /* Classes */,
 				664A03D028085FA8006C40F8 /* MFElectricity */,
 				664A03DA28085FA9006C40F8 /* MFElectricityTests */,
 				664A03CF28085FA8006C40F8 /* Products */,
@@ -171,6 +215,7 @@
 				TargetAttributes = {
 					664A03CD28085FA8006C40F8 = {
 						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
 					};
 					664A03D528085FA9006C40F8 = {
 						CreatedOnToolsVersion = 13.3.1;
@@ -201,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6645E8282810376E002387BB /* Electricity.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +307,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6645E82A281037EA002387BB /* ElectricityViewController.swift in Sources */,
+				6645E82C281037FA002387BB /* ElectricityViewModel.swift in Sources */,
+				6645E82528103700002387BB /* ElectricityNavigationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9CEC07378BB9FE6D52F9071A /* Pods-Frameworks-MFElectricity.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -429,6 +479,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -438,6 +489,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 269606CCA6A9D5BF266E6F56 /* Pods-Frameworks-MFElectricity.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -468,6 +520,7 @@
 		664A03E428085FA9006C40F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52H82A67C3;
@@ -484,6 +537,7 @@
 		664A03E528085FA9006C40F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52H82A67C3;

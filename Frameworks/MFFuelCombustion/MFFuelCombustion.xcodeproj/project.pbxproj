@@ -7,222 +7,222 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6645E7F52810308D002387BB /* FlightNavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6645E7F42810308D002387BB /* FlightNavigationManager.swift */; };
-		6645E7F828103117002387BB /* Flight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6645E7F728103117002387BB /* Flight.storyboard */; };
-		6645E7FA28103125002387BB /* FlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6645E7F928103125002387BB /* FlightViewController.swift */; };
-		6645E7FC2810313C002387BB /* FlightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6645E7FB2810313C002387BB /* FlightViewModel.swift */; };
-		664A03F92808606B006C40F8 /* MFFlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664A03F02808606B006C40F8 /* MFFlight.framework */; };
-		664A03FE2808606B006C40F8 /* MFFlightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A03FD2808606B006C40F8 /* MFFlightTests.swift */; };
-		664A03FF2808606B006C40F8 /* MFFlight.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A03F32808606B006C40F8 /* MFFlight.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9ABA69DE6FA03B882007C64F /* libPods-Frameworks-MFFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE9DD7EF9F16F569CAB688DC /* libPods-Frameworks-MFFlight.a */; };
+		1B47F136980CCA2310599F7D /* libPods-Frameworks-MFFuelCombustion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4FFEB1B9751227E08A98F00 /* libPods-Frameworks-MFFuelCombustion.a */; };
+		6645E81028103565002387BB /* MFFuelCombustion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6645E80728103564002387BB /* MFFuelCombustion.framework */; };
+		6645E81528103565002387BB /* MFFuelCombustionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6645E81428103565002387BB /* MFFuelCombustionTests.swift */; };
+		6645E81628103565002387BB /* MFFuelCombustion.h in Headers */ = {isa = PBXBuildFile; fileRef = 6645E80A28103564002387BB /* MFFuelCombustion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6645E831281039C5002387BB /* FuelCombustionNavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6645E830281039C5002387BB /* FuelCombustionNavigationManager.swift */; };
+		6645E83428103A50002387BB /* FuelCombustion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6645E83328103A50002387BB /* FuelCombustion.storyboard */; };
+		6645E83628103B27002387BB /* FuelCombustionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6645E83528103B27002387BB /* FuelCombustionViewController.swift */; };
+		6645E83828103B47002387BB /* FuelCombustionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6645E83728103B47002387BB /* FuelCombustionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		664A03FA2808606B006C40F8 /* PBXContainerItemProxy */ = {
+		6645E81128103565002387BB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 664A03E72808606B006C40F8 /* Project object */;
+			containerPortal = 6645E7FE28103564002387BB /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 664A03EF2808606B006C40F8;
-			remoteInfo = MFFlight;
+			remoteGlobalIDString = 6645E80628103564002387BB;
+			remoteInfo = MFFuelCombustion;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B583D8939DAC51D79A4D842 /* Pods-Frameworks-MFFlight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFFlight.debug.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFFlight/Pods-Frameworks-MFFlight.debug.xcconfig"; sourceTree = "<group>"; };
-		6645E7F42810308D002387BB /* FlightNavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightNavigationManager.swift; sourceTree = "<group>"; };
-		6645E7F728103117002387BB /* Flight.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Flight.storyboard; sourceTree = "<group>"; };
-		6645E7F928103125002387BB /* FlightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightViewController.swift; sourceTree = "<group>"; };
-		6645E7FB2810313C002387BB /* FlightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightViewModel.swift; sourceTree = "<group>"; };
-		664A03F02808606B006C40F8 /* MFFlight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MFFlight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		664A03F32808606B006C40F8 /* MFFlight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFFlight.h; sourceTree = "<group>"; };
-		664A03F82808606B006C40F8 /* MFFlightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFFlightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		664A03FD2808606B006C40F8 /* MFFlightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFFlightTests.swift; sourceTree = "<group>"; };
-		A1B68670F53FA9C634D9D7F5 /* Pods-Frameworks-MFFlight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFFlight.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFFlight/Pods-Frameworks-MFFlight.release.xcconfig"; sourceTree = "<group>"; };
-		FE9DD7EF9F16F569CAB688DC /* libPods-Frameworks-MFFlight.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Frameworks-MFFlight.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		344206E70FA4B6BC83FA3AF9 /* Pods-Frameworks-MFFuelCombustion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFFuelCombustion.debug.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFFuelCombustion/Pods-Frameworks-MFFuelCombustion.debug.xcconfig"; sourceTree = "<group>"; };
+		6645E80728103564002387BB /* MFFuelCombustion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MFFuelCombustion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6645E80A28103564002387BB /* MFFuelCombustion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFFuelCombustion.h; sourceTree = "<group>"; };
+		6645E80F28103565002387BB /* MFFuelCombustionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFFuelCombustionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6645E81428103565002387BB /* MFFuelCombustionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFFuelCombustionTests.swift; sourceTree = "<group>"; };
+		6645E830281039C5002387BB /* FuelCombustionNavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelCombustionNavigationManager.swift; sourceTree = "<group>"; };
+		6645E83328103A50002387BB /* FuelCombustion.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FuelCombustion.storyboard; sourceTree = "<group>"; };
+		6645E83528103B27002387BB /* FuelCombustionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelCombustionViewController.swift; sourceTree = "<group>"; };
+		6645E83728103B47002387BB /* FuelCombustionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelCombustionViewModel.swift; sourceTree = "<group>"; };
+		B4FFEB1B9751227E08A98F00 /* libPods-Frameworks-MFFuelCombustion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Frameworks-MFFuelCombustion.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECFFFF8E9A355E8DECD4912 /* Pods-Frameworks-MFFuelCombustion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFFuelCombustion.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFFuelCombustion/Pods-Frameworks-MFFuelCombustion.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		664A03ED2808606B006C40F8 /* Frameworks */ = {
+		6645E80428103564002387BB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9ABA69DE6FA03B882007C64F /* libPods-Frameworks-MFFlight.a in Frameworks */,
+				1B47F136980CCA2310599F7D /* libPods-Frameworks-MFFuelCombustion.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		664A03F52808606B006C40F8 /* Frameworks */ = {
+		6645E80C28103565002387BB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				664A03F92808606B006C40F8 /* MFFlight.framework in Frameworks */,
+				6645E81028103565002387BB /* MFFuelCombustion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		210BFCE7A9879C04FCC93595 /* Frameworks */ = {
+		35DEF9FA9F6CE823040D4730 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FE9DD7EF9F16F569CAB688DC /* libPods-Frameworks-MFFlight.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6645E7F128103058002387BB /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				6645E7F228103065002387BB /* Managers */,
-				6645E7F32810306D002387BB /* Interfaces */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
-		6645E7F228103065002387BB /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				6645E7F42810308D002387BB /* FlightNavigationManager.swift */,
-			);
-			name = Managers;
-			sourceTree = "<group>";
-		};
-		6645E7F32810306D002387BB /* Interfaces */ = {
-			isa = PBXGroup;
-			children = (
-				6645E7F628103104002387BB /* Main */,
-			);
-			name = Interfaces;
-			sourceTree = "<group>";
-		};
-		6645E7F628103104002387BB /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				6645E7F728103117002387BB /* Flight.storyboard */,
-				6645E7F928103125002387BB /* FlightViewController.swift */,
-				6645E7FB2810313C002387BB /* FlightViewModel.swift */,
-			);
-			name = Main;
-			sourceTree = "<group>";
-		};
-		664A03E62808606B006C40F8 = {
-			isa = PBXGroup;
-			children = (
-				6645E7F128103058002387BB /* Classes */,
-				664A03F22808606B006C40F8 /* MFFlight */,
-				664A03FC2808606B006C40F8 /* MFFlightTests */,
-				664A03F12808606B006C40F8 /* Products */,
-				C523B8DB25FF5DE306DAB4CE /* Pods */,
-				210BFCE7A9879C04FCC93595 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		664A03F12808606B006C40F8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				664A03F02808606B006C40F8 /* MFFlight.framework */,
-				664A03F82808606B006C40F8 /* MFFlightTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		664A03F22808606B006C40F8 /* MFFlight */ = {
-			isa = PBXGroup;
-			children = (
-				664A03F32808606B006C40F8 /* MFFlight.h */,
-			);
-			path = MFFlight;
-			sourceTree = "<group>";
-		};
-		664A03FC2808606B006C40F8 /* MFFlightTests */ = {
-			isa = PBXGroup;
-			children = (
-				664A03FD2808606B006C40F8 /* MFFlightTests.swift */,
-			);
-			path = MFFlightTests;
-			sourceTree = "<group>";
-		};
-		C523B8DB25FF5DE306DAB4CE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0B583D8939DAC51D79A4D842 /* Pods-Frameworks-MFFlight.debug.xcconfig */,
-				A1B68670F53FA9C634D9D7F5 /* Pods-Frameworks-MFFlight.release.xcconfig */,
+				344206E70FA4B6BC83FA3AF9 /* Pods-Frameworks-MFFuelCombustion.debug.xcconfig */,
+				CECFFFF8E9A355E8DECD4912 /* Pods-Frameworks-MFFuelCombustion.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../../Pods;
 			sourceTree = "<group>";
 		};
+		6645E7FD28103564002387BB = {
+			isa = PBXGroup;
+			children = (
+				6645E81F2810356D002387BB /* Classes */,
+				6645E80928103564002387BB /* MFFuelCombustion */,
+				6645E81328103565002387BB /* MFFuelCombustionTests */,
+				6645E80828103564002387BB /* Products */,
+				35DEF9FA9F6CE823040D4730 /* Pods */,
+				D5315088DB34A6FBBF1C2383 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6645E80828103564002387BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6645E80728103564002387BB /* MFFuelCombustion.framework */,
+				6645E80F28103565002387BB /* MFFuelCombustionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6645E80928103564002387BB /* MFFuelCombustion */ = {
+			isa = PBXGroup;
+			children = (
+				6645E80A28103564002387BB /* MFFuelCombustion.h */,
+			);
+			path = MFFuelCombustion;
+			sourceTree = "<group>";
+		};
+		6645E81328103565002387BB /* MFFuelCombustionTests */ = {
+			isa = PBXGroup;
+			children = (
+				6645E81428103565002387BB /* MFFuelCombustionTests.swift */,
+			);
+			path = MFFuelCombustionTests;
+			sourceTree = "<group>";
+		};
+		6645E81F2810356D002387BB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6645E82E2810396B002387BB /* Managers */,
+				6645E82F28103971002387BB /* Interfaces */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		6645E82E2810396B002387BB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				6645E830281039C5002387BB /* FuelCombustionNavigationManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		6645E82F28103971002387BB /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				6645E83228103A32002387BB /* Main */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		6645E83228103A32002387BB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6645E83328103A50002387BB /* FuelCombustion.storyboard */,
+				6645E83528103B27002387BB /* FuelCombustionViewController.swift */,
+				6645E83728103B47002387BB /* FuelCombustionViewModel.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		D5315088DB34A6FBBF1C2383 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4FFEB1B9751227E08A98F00 /* libPods-Frameworks-MFFuelCombustion.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		664A03EB2808606B006C40F8 /* Headers */ = {
+		6645E80228103564002387BB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				664A03FF2808606B006C40F8 /* MFFlight.h in Headers */,
+				6645E81628103565002387BB /* MFFuelCombustion.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		664A03EF2808606B006C40F8 /* MFFlight */ = {
+		6645E80628103564002387BB /* MFFuelCombustion */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 664A04022808606B006C40F8 /* Build configuration list for PBXNativeTarget "MFFlight" */;
+			buildConfigurationList = 6645E81928103565002387BB /* Build configuration list for PBXNativeTarget "MFFuelCombustion" */;
 			buildPhases = (
-				E4C2ADC492AA8F80A8B396DA /* [CP] Check Pods Manifest.lock */,
-				664A03EB2808606B006C40F8 /* Headers */,
-				664A03EC2808606B006C40F8 /* Sources */,
-				664A03ED2808606B006C40F8 /* Frameworks */,
-				664A03EE2808606B006C40F8 /* Resources */,
-				6657DC452809651D0031BA7C /* SwiftLint */,
+				C620967DD73550C03155E446 /* [CP] Check Pods Manifest.lock */,
+				6645E80228103564002387BB /* Headers */,
+				6645E80328103564002387BB /* Sources */,
+				6645E80428103564002387BB /* Frameworks */,
+				6645E80528103564002387BB /* Resources */,
+				6645E82D2810389E002387BB /* SwiftLint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MFFlight;
-			productName = MFFlight;
-			productReference = 664A03F02808606B006C40F8 /* MFFlight.framework */;
+			name = MFFuelCombustion;
+			productName = MFFuelCombustion;
+			productReference = 6645E80728103564002387BB /* MFFuelCombustion.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		664A03F72808606B006C40F8 /* MFFlightTests */ = {
+		6645E80E28103565002387BB /* MFFuelCombustionTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 664A04052808606B006C40F8 /* Build configuration list for PBXNativeTarget "MFFlightTests" */;
+			buildConfigurationList = 6645E81C28103565002387BB /* Build configuration list for PBXNativeTarget "MFFuelCombustionTests" */;
 			buildPhases = (
-				664A03F42808606B006C40F8 /* Sources */,
-				664A03F52808606B006C40F8 /* Frameworks */,
-				664A03F62808606B006C40F8 /* Resources */,
+				6645E80B28103565002387BB /* Sources */,
+				6645E80C28103565002387BB /* Frameworks */,
+				6645E80D28103565002387BB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				664A03FB2808606B006C40F8 /* PBXTargetDependency */,
+				6645E81228103565002387BB /* PBXTargetDependency */,
 			);
-			name = MFFlightTests;
-			productName = MFFlightTests;
-			productReference = 664A03F82808606B006C40F8 /* MFFlightTests.xctest */;
+			name = MFFuelCombustionTests;
+			productName = MFFuelCombustionTests;
+			productReference = 6645E80F28103565002387BB /* MFFuelCombustionTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		664A03E72808606B006C40F8 /* Project object */ = {
+		6645E7FE28103564002387BB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					664A03EF2808606B006C40F8 = {
+					6645E80628103564002387BB = {
 						CreatedOnToolsVersion = 13.3.1;
 						LastSwiftMigration = 1330;
 					};
-					664A03F72808606B006C40F8 = {
+					6645E80E28103565002387BB = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 664A03EA2808606B006C40F8 /* Build configuration list for PBXProject "MFFlight" */;
+			buildConfigurationList = 6645E80128103564002387BB /* Build configuration list for PBXProject "MFFuelCombustion" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -230,27 +230,27 @@
 				en,
 				Base,
 			);
-			mainGroup = 664A03E62808606B006C40F8;
-			productRefGroup = 664A03F12808606B006C40F8 /* Products */;
+			mainGroup = 6645E7FD28103564002387BB;
+			productRefGroup = 6645E80828103564002387BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				664A03EF2808606B006C40F8 /* MFFlight */,
-				664A03F72808606B006C40F8 /* MFFlightTests */,
+				6645E80628103564002387BB /* MFFuelCombustion */,
+				6645E80E28103565002387BB /* MFFuelCombustionTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		664A03EE2808606B006C40F8 /* Resources */ = {
+		6645E80528103564002387BB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6645E7F828103117002387BB /* Flight.storyboard in Resources */,
+				6645E83428103A50002387BB /* FuelCombustion.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		664A03F62808606B006C40F8 /* Resources */ = {
+		6645E80D28103565002387BB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -260,7 +260,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6657DC452809651D0031BA7C /* SwiftLint */ = {
+		6645E82D2810389E002387BB /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -278,7 +278,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
-		E4C2ADC492AA8F80A8B396DA /* [CP] Check Pods Manifest.lock */ = {
+		C620967DD73550C03155E446 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -293,7 +293,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Frameworks-MFFlight-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Frameworks-MFFuelCombustion-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -303,36 +303,36 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		664A03EC2808606B006C40F8 /* Sources */ = {
+		6645E80328103564002387BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6645E7FC2810313C002387BB /* FlightViewModel.swift in Sources */,
-				6645E7FA28103125002387BB /* FlightViewController.swift in Sources */,
-				6645E7F52810308D002387BB /* FlightNavigationManager.swift in Sources */,
+				6645E831281039C5002387BB /* FuelCombustionNavigationManager.swift in Sources */,
+				6645E83628103B27002387BB /* FuelCombustionViewController.swift in Sources */,
+				6645E83828103B47002387BB /* FuelCombustionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		664A03F42808606B006C40F8 /* Sources */ = {
+		6645E80B28103565002387BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				664A03FE2808606B006C40F8 /* MFFlightTests.swift in Sources */,
+				6645E81528103565002387BB /* MFFuelCombustionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		664A03FB2808606B006C40F8 /* PBXTargetDependency */ = {
+		6645E81228103565002387BB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 664A03EF2808606B006C40F8 /* MFFlight */;
-			targetProxy = 664A03FA2808606B006C40F8 /* PBXContainerItemProxy */;
+			target = 6645E80628103564002387BB /* MFFuelCombustion */;
+			targetProxy = 6645E81128103565002387BB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		664A04002808606B006C40F8 /* Debug */ = {
+		6645E81728103565002387BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -395,7 +395,7 @@
 			};
 			name = Debug;
 		};
-		664A04012808606B006C40F8 /* Release */ = {
+		6645E81828103565002387BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -452,9 +452,9 @@
 			};
 			name = Release;
 		};
-		664A04032808606B006C40F8 /* Debug */ = {
+		6645E81A28103565002387BB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B583D8939DAC51D79A4D842 /* Pods-Frameworks-MFFlight.debug.xcconfig */;
+			baseConfigurationReference = 344206E70FA4B6BC83FA3AF9 /* Pods-Frameworks-MFFuelCombustion.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -474,7 +474,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Quentin.Beaudoul.MFFlight;
+				PRODUCT_BUNDLE_IDENTIFIER = Quentin.Beaudoul.MFFuelCombustion;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -485,9 +485,9 @@
 			};
 			name = Debug;
 		};
-		664A04042808606B006C40F8 /* Release */ = {
+		6645E81B28103565002387BB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1B68670F53FA9C634D9D7F5 /* Pods-Frameworks-MFFlight.release.xcconfig */;
+			baseConfigurationReference = CECFFFF8E9A355E8DECD4912 /* Pods-Frameworks-MFFuelCombustion.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -507,7 +507,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Quentin.Beaudoul.MFFlight;
+				PRODUCT_BUNDLE_IDENTIFIER = Quentin.Beaudoul.MFFuelCombustion;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -517,7 +517,7 @@
 			};
 			name = Release;
 		};
-		664A04062808606B006C40F8 /* Debug */ = {
+		6645E81D28103565002387BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -526,7 +526,7 @@
 				DEVELOPMENT_TEAM = 52H82A67C3;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Quentin.Beaudoul.MFFlightTests;
+				PRODUCT_BUNDLE_IDENTIFIER = Quentin.Beaudoul.MFFuelCombustionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -534,7 +534,7 @@
 			};
 			name = Debug;
 		};
-		664A04072808606B006C40F8 /* Release */ = {
+		6645E81E28103565002387BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -543,7 +543,7 @@
 				DEVELOPMENT_TEAM = 52H82A67C3;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Quentin.Beaudoul.MFFlightTests;
+				PRODUCT_BUNDLE_IDENTIFIER = Quentin.Beaudoul.MFFuelCombustionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -554,34 +554,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		664A03EA2808606B006C40F8 /* Build configuration list for PBXProject "MFFlight" */ = {
+		6645E80128103564002387BB /* Build configuration list for PBXProject "MFFuelCombustion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				664A04002808606B006C40F8 /* Debug */,
-				664A04012808606B006C40F8 /* Release */,
+				6645E81728103565002387BB /* Debug */,
+				6645E81828103565002387BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		664A04022808606B006C40F8 /* Build configuration list for PBXNativeTarget "MFFlight" */ = {
+		6645E81928103565002387BB /* Build configuration list for PBXNativeTarget "MFFuelCombustion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				664A04032808606B006C40F8 /* Debug */,
-				664A04042808606B006C40F8 /* Release */,
+				6645E81A28103565002387BB /* Debug */,
+				6645E81B28103565002387BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		664A04052808606B006C40F8 /* Build configuration list for PBXNativeTarget "MFFlightTests" */ = {
+		6645E81C28103565002387BB /* Build configuration list for PBXNativeTarget "MFFuelCombustionTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				664A04062808606B006C40F8 /* Debug */,
-				664A04072808606B006C40F8 /* Release */,
+				6645E81D28103565002387BB /* Debug */,
+				6645E81E28103565002387BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 664A03E72808606B006C40F8 /* Project object */;
+	rootObject = 6645E7FE28103564002387BB /* Project object */;
 }

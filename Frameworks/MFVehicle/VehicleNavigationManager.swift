@@ -21,8 +21,8 @@ public final class VehicleNavigationManager {
                                                                       in: Bundle(for: Self.self))
 
         navController.tabBarItem = UITabBarItem(title: nil,
-                                                image: UIImage(systemName: "star"),
-                                                 selectedImage: UIImage(systemName: "star.fill"))
+                                                image: R.image.ic_25_car(),
+                                                selectedImage: R.image.ic_35_car())
 
         return navController
     }

@@ -11,49 +11,49 @@
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
-        <scene sceneID="ENI-sV-H6P">
+        <scene sceneID="FOE-JW-QUX">
             <objects>
-                <navigationController storyboardIdentifier="VehicleNavViewController" id="8Ex-aA-DS3" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Bg-UB-KeI">
+                <navigationController storyboardIdentifier="FlightNavViewController" id="h2Q-BA-vNi" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aOV-1j-O9J">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" name="backgroundGradientTop"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="4Q5-Hi-jTe" kind="relationship" relationship="rootViewController" id="R87-bN-iSh"/>
+                        <segue destination="tDq-DN-Ser" kind="relationship" relationship="rootViewController" id="N56-Va-BvR"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C3T-uq-nV7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="03H-cz-6fZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-475" y="28"/>
+            <point key="canvasLocation" x="-399" y="65"/>
         </scene>
-        <!--Vehicle View Controller-->
-        <scene sceneID="QI4-ry-w3x">
+        <!--Flight View Controller-->
+        <scene sceneID="FBk-pq-9ya">
             <objects>
-                <viewController storyboardIdentifier="VehicleViewController" id="4Q5-Hi-jTe" customClass="VehicleViewController" customModule="MFVehicle" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="MrR-hY-UaS">
+                <viewController storyboardIdentifier="FlightViewController" id="tDq-DN-Ser" customClass="FlightViewController" customModule="MFFlight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BUF-kt-NTS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vehicle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvM-Ql-Bxz">
-                                <rect key="frame" x="179.5" y="437.5" width="55.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ni-DH-GVm">
+                                <rect key="frame" x="186" y="437.5" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="OSm-Dd-KAM"/>
+                        <viewLayoutGuide key="safeArea" id="aKM-aq-frA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="gvM-Ql-Bxz" firstAttribute="centerX" secondItem="MrR-hY-UaS" secondAttribute="centerX" id="2c5-e6-Kjg"/>
-                            <constraint firstItem="gvM-Ql-Bxz" firstAttribute="centerY" secondItem="MrR-hY-UaS" secondAttribute="centerY" id="5dD-9i-6KO"/>
+                            <constraint firstItem="2ni-DH-GVm" firstAttribute="centerY" secondItem="BUF-kt-NTS" secondAttribute="centerY" id="Ybe-Xa-4Pe"/>
+                            <constraint firstItem="2ni-DH-GVm" firstAttribute="centerX" secondItem="BUF-kt-NTS" secondAttribute="centerX" id="rk1-xE-sW1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="jz7-zO-bb2"/>
+                    <navigationItem key="navigationItem" id="11P-BD-gr2"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="w5S-F0-Xgw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gKg-Vj-QXk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="562" y="27"/>
+            <point key="canvasLocation" x="484" y="65"/>
         </scene>
     </scenes>
     <resources>

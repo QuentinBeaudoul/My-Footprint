@@ -1,14 +1,14 @@
 //
-//  ShippingViewController.swift
-//  MFShipping
+//  ElectricityViewController.swift
+//  MFElectricity
 //
-//  Created by Quentin on 15/04/2022.
+//  Created by Quentin on 20/04/2022.
 //
 
 import UIKit
 import MFExtensions
 
-class ShippingViewController: UIViewController {
+class ElectricityViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

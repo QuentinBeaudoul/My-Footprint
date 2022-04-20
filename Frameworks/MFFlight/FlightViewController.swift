@@ -1,14 +1,14 @@
 //
-//  ShippingViewController.swift
-//  MFShipping
+//  FlightViewController.swift
+//  MFFlight
 //
-//  Created by Quentin on 15/04/2022.
+//  Created by Quentin on 20/04/2022.
 //
 
 import UIKit
 import MFExtensions
 
-class ShippingViewController: UIViewController {
+class FlightViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

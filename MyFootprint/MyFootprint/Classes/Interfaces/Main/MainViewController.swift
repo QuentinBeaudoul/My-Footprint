@@ -8,6 +8,9 @@
 import UIKit
 import MFVehicle
 import MFShipping
+import MFFuelCombustion
+import MFFlight
+import MFElectricity
 
 class MainViewController: UITabBarController {
 
@@ -15,9 +18,14 @@ class MainViewController: UITabBarController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
+        let fuelCombustionVC = FuelCombustionNavigationManager.shared.getFuelCombustionViewController()
         let vehicleVC = VehicleNavigationManager.shared.getVehicleViewController()
         let shippingVC = ShippingNavigationManager.shared.getShippingViewController()
+        let flightVC = FlightNavigationManager.shared.getFlightViewController()
+        let electricityVC = ElectricityNavigationManager.shared.getElectricityViewController()
 
-        setViewControllers([vehicleVC, shippingVC], animated: false)
+        setViewControllers([fuelCombustionVC, vehicleVC, shippingVC, flightVC, electricityVC], animated: false)
+
+        selectedViewController = shippingVC
     }
 }

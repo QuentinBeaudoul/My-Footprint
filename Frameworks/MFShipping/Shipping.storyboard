@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,6 +17,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2vZ-kO-gwF">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="backgroundGradientTop"/>
                     </navigationBar>
                     <connections>
                         <segue destination="LZz-lF-qld" kind="relationship" relationship="rootViewController" id="Oiq-IM-BXC"/>
@@ -25,10 +27,10 @@
             </objects>
             <point key="canvasLocation" x="-596" y="109"/>
         </scene>
-        <!--View Controller-->
+        <!--Shipping View Controller-->
         <scene sceneID="ZZ6-ue-Kwf">
             <objects>
-                <viewController id="LZz-lF-qld" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShippingViewController" id="LZz-lF-qld" customClass="ShippingViewController" customModule="MFShipping" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qHI-aa-09f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,6 +57,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="backgroundGradientTop">
+            <color red="0.70399999618530273" green="0.88599997758865356" blue="0.86799997091293335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
