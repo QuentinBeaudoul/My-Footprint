@@ -72,6 +72,7 @@
 		6645E7F128103058002387BB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6645E845281058CD002387BB /* Models */,
 				6645E7F228103065002387BB /* Managers */,
 				6645E7F32810306D002387BB /* Interfaces */,
 			);
@@ -102,6 +103,13 @@
 				6645E7FB2810313C002387BB /* FlightViewModel.swift */,
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		6645E845281058CD002387BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		664A03E62808606B006C40F8 = {

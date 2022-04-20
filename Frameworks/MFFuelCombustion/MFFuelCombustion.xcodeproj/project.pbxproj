@@ -111,6 +111,7 @@
 		6645E81F2810356D002387BB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6645E84228105667002387BB /* Models */,
 				6645E82E2810396B002387BB /* Managers */,
 				6645E82F28103971002387BB /* Interfaces */,
 			);
@@ -141,6 +142,13 @@
 				6645E83728103B47002387BB /* FuelCombustionViewModel.swift */,
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		6645E84228105667002387BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		D5315088DB34A6FBBF1C2383 /* Frameworks */ = {

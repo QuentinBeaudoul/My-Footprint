@@ -103,6 +103,7 @@
 		661580E428097A25006C2170 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6645E843281058AE002387BB /* Models */,
 				661580ED28099B94006C2170 /* Managers */,
 				661580E528097AD0006C2170 /* Interfaces */,
 			);
@@ -133,6 +134,13 @@
 				661580EE28099BAF006C2170 /* VehicleNavigationManager.swift */,
 			);
 			name = Managers;
+			sourceTree = "<group>";
+		};
+		6645E843281058AE002387BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		664A042A280861AF006C40F8 = {

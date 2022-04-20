@@ -82,6 +82,7 @@
 		6645E821281036D1002387BB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6645E846281058D5002387BB /* Models */,
 				6645E822281036DB002387BB /* Managers */,
 				6645E823281036E1002387BB /* Interfaces */,
 			);
@@ -112,6 +113,13 @@
 				6645E82B281037FA002387BB /* ElectricityViewModel.swift */,
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		6645E846281058D5002387BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		664A03C428085FA8006C40F8 = {
