@@ -30,8 +30,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "664A0433280861AF006C40F8"
                BuildableName = "MFVehicul.framework"
-               BlueprintName = "MFVehicul"
-               ReferencedContainer = "container:../Frameworks/MFVehicul/MFVehicul.xcodeproj">
+               BlueprintName = "MFVehicle"
+               ReferencedContainer = "container:../Frameworks/MFVehicul/MFVehicle.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -132,8 +132,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "664A0433280861AF006C40F8"
             BuildableName = "MFVehicul.framework"
-            BlueprintName = "MFVehicul"
-            ReferencedContainer = "container:../Frameworks/MFVehicul/MFVehicul.xcodeproj">
+            BlueprintName = "MFVehicle"
+            ReferencedContainer = "container:../Frameworks/MFVehicul/MFVehicle.xcodeproj">
          </BuildableReference>
          <BuildableReference
             BuildableIdentifier = "primary"
@@ -194,8 +194,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "664A043B280861AF006C40F8"
                BuildableName = "MFVehiculTests.xctest"
-               BlueprintName = "MFVehiculTests"
-               ReferencedContainer = "container:../Frameworks/MFVehicul/MFVehicul.xcodeproj">
+               BlueprintName = "MFVehicleTests"
+               ReferencedContainer = "container:../Frameworks/MFVehicul/MFVehicle.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

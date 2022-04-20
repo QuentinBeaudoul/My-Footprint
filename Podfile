@@ -19,8 +19,8 @@ abstract_target 'Frameworks' do
 		project 'Frameworks/MFStorage/MFStorage.xcodeproj'
 	end
 
-	target 'MFVehicul' do
-		project 'Frameworks/MFVehicul/MFVehicul.xcodeproj'
+	target 'MFVehicle' do
+		project 'Frameworks/MFVehicle/MFVehicle.xcodeproj'
 	end
 
 	target 'MFShipping' do

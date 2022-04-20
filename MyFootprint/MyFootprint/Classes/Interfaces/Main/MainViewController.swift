@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import MFVehicul
+import MFVehicle
 import MFShipping
 
 class MainViewController: UITabBarController {
@@ -15,9 +15,9 @@ class MainViewController: UITabBarController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
-        let vehiculVC = VehiculNavigationManager.shared.getVehiculViewController()
+        let vehicleVC = VehicleNavigationManager.shared.getVehicleViewController()
         let shippingVC = ShippingNavigationManager.shared.getShippingViewController()
 
-        setViewControllers([vehiculVC, shippingVC], animated: false)
+        setViewControllers([vehicleVC, shippingVC], animated: false)
     }
 }

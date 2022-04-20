@@ -8,16 +8,16 @@
 import UIKit
 import MFExtensions
 
-public final class VehiculNavigationManager {
+public final class VehicleNavigationManager {
 
-    public static let shared = VehiculNavigationManager()
+    public static let shared = VehicleNavigationManager()
 
     private init() {}
 
-    public func getVehiculViewController() -> UIViewController {
+    public func getVehicleViewController() -> UIViewController {
 
-        let navController = UINavigationController.makeFromStoryboard("Vehicul",
-                                                                      withIdentifier: "VehiculNavViewController",
+        let navController = UINavigationController.makeFromStoryboard("Vehicle",
+                                                                      withIdentifier: "VehicleNavViewController",
                                                                       in: Bundle(for: Self.self))
 
         navController.tabBarItem = UITabBarItem(title: nil,

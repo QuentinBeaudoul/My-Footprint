@@ -7,7 +7,7 @@
 
 import UIKit
 
-class VehiculViewController: UIViewController {
+class VehicleViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
