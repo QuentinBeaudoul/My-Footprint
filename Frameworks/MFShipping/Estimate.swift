@@ -1,6 +1,6 @@
 //
 //  Estimate.swift
-//  MFFuelCombustion
+//  MFShipping
 //
 //  Created by Quentin on 21/04/2022.
 //
@@ -9,9 +9,10 @@ import Foundation
 
 class Estimate: Decodable {
     let id: String
-    let fuelSourceType: String
-    let fuelSourceUnit: String
-    let fuelSourceValue: Double
+    let distanceValue: Int
+    let weightUnit, transportMethod: String
+    let weightValue: Double
+    let distanceUnit: String
     let estimatedAt: String
     let carbonG: Double
     let carbonLb: Double
@@ -28,9 +29,11 @@ class Estimate: Decodable {
     }
 
     enum AttributesContainer: String, CodingKey {
-        case fuelSourceType = "fuel_source_type"
-        case fuelSourceUnit = "fuel_source_unit"
-        case fuelSourceValue = "fuel_source_value"
+        case distanceValue = "distance_value"
+        case weightUnit = "weight_unit"
+        case transportMethod = "transport_method"
+        case weightValue = "weight_value"
+        case distanceUnit = "distance_unit"
         case estimatedAt = "estimated_at"
         case carbonG = "carbon_g"
         case carbonLb = "carbon_lb"
@@ -46,9 +49,11 @@ class Estimate: Decodable {
         let attributesContainer = try metadataContainer.nestedContainer(keyedBy: AttributesContainer.self,
                                                                         forKey: .attributes)
 
-        fuelSourceType = try attributesContainer.decode(String.self, forKey: .fuelSourceType)
-        fuelSourceUnit = try attributesContainer.decode(String.self, forKey: .fuelSourceUnit)
-        fuelSourceValue = try attributesContainer.decode(Double.self, forKey: .fuelSourceValue)
+        distanceValue = try attributesContainer.decode(Int.self, forKey: .distanceValue)
+        distanceUnit = try attributesContainer.decode(String.self, forKey: .distanceValue)
+        transportMethod = try attributesContainer.decode(String.self, forKey: .transportMethod)
+        weightValue = try attributesContainer.decode(Double.self, forKey: .weightValue)
+        weightUnit = try attributesContainer.decode(String.self, forKey: .weightUnit)
         estimatedAt = try attributesContainer.decode(String.self, forKey: .estimatedAt)
         carbonG = try attributesContainer.decode(Double.self, forKey: .carbonG)
         carbonLb = try attributesContainer.decode(Double.self, forKey: .carbonLb)

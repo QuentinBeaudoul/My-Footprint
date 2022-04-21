@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1394CC2064145B8E8D4A41DB /* libPods-Frameworks-MFShipping.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45A7EC43D017B0CD63AD130 /* libPods-Frameworks-MFShipping.a */; };
+		6605CD6C281191CE00B226A5 /* Estimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6605CD6B281191CE00B226A5 /* Estimate.swift */; };
 		661580F92809A64C006C2170 /* Shipping.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 661580F82809A64C006C2170 /* Shipping.storyboard */; };
 		661580FB2809A698006C2170 /* ShippingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661580FA2809A698006C2170 /* ShippingViewController.swift */; };
 		661580FD2809A6AB006C2170 /* ShippingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661580FC2809A6AB006C2170 /* ShippingViewModel.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6605CD6B281191CE00B226A5 /* Estimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estimate.swift; sourceTree = "<group>"; };
 		661580F82809A64C006C2170 /* Shipping.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shipping.storyboard; sourceTree = "<group>"; };
 		661580FA2809A698006C2170 /* ShippingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingViewController.swift; sourceTree = "<group>"; };
 		661580FC2809A6AB006C2170 /* ShippingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingViewModel.swift; sourceTree = "<group>"; };
@@ -79,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6605CD6A281191B300B226A5 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				6605CD6B281191CE00B226A5 /* Estimate.swift */,
+			);
+			name = Response;
+			sourceTree = "<group>";
+		};
 		661580F32809A5A7006C2170 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +128,7 @@
 		6645E844281058C0002387BB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6605CD6A281191B300B226A5 /* Response */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -336,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				661580FD2809A6AB006C2170 /* ShippingViewModel.swift in Sources */,
+				6605CD6C281191CE00B226A5 /* Estimate.swift in Sources */,
 				661580FB2809A698006C2170 /* ShippingViewController.swift in Sources */,
 				661580FF2809A6EC006C2170 /* ShippingNavigationManager.swift in Sources */,
 			);
