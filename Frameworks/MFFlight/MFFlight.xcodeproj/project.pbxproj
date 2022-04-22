@@ -14,6 +14,8 @@
 		664A03F92808606B006C40F8 /* MFFlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664A03F02808606B006C40F8 /* MFFlight.framework */; };
 		664A03FE2808606B006C40F8 /* MFFlightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A03FD2808606B006C40F8 /* MFFlightTests.swift */; };
 		664A03FF2808606B006C40F8 /* MFFlight.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A03F32808606B006C40F8 /* MFFlight.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66A29D5A281292FF0057A787 /* Estimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A29D59281292FF0057A787 /* Estimate.swift */; };
+		66A29D5C281295860057A787 /* Legs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A29D5B281295860057A787 /* Legs.swift */; };
 		9ABA69DE6FA03B882007C64F /* libPods-Frameworks-MFFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE9DD7EF9F16F569CAB688DC /* libPods-Frameworks-MFFlight.a */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		664A03F32808606B006C40F8 /* MFFlight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFFlight.h; sourceTree = "<group>"; };
 		664A03F82808606B006C40F8 /* MFFlightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFFlightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		664A03FD2808606B006C40F8 /* MFFlightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFFlightTests.swift; sourceTree = "<group>"; };
+		66A29D59281292FF0057A787 /* Estimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estimate.swift; sourceTree = "<group>"; };
+		66A29D5B281295860057A787 /* Legs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legs.swift; sourceTree = "<group>"; };
 		A1B68670F53FA9C634D9D7F5 /* Pods-Frameworks-MFFlight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFFlight.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFFlight/Pods-Frameworks-MFFlight.release.xcconfig"; sourceTree = "<group>"; };
 		FE9DD7EF9F16F569CAB688DC /* libPods-Frameworks-MFFlight.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Frameworks-MFFlight.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -108,6 +112,7 @@
 		6645E845281058CD002387BB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				66A29D58281292EB0057A787 /* Response */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -147,6 +152,15 @@
 				664A03FD2808606B006C40F8 /* MFFlightTests.swift */,
 			);
 			path = MFFlightTests;
+			sourceTree = "<group>";
+		};
+		66A29D58281292EB0057A787 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				66A29D59281292FF0057A787 /* Estimate.swift */,
+				66A29D5B281295860057A787 /* Legs.swift */,
+			);
+			name = Response;
 			sourceTree = "<group>";
 		};
 		C523B8DB25FF5DE306DAB4CE /* Pods */ = {
@@ -315,7 +329,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66A29D5C281295860057A787 /* Legs.swift in Sources */,
 				6645E7FC2810313C002387BB /* FlightViewModel.swift in Sources */,
+				66A29D5A281292FF0057A787 /* Estimate.swift in Sources */,
 				6645E7FA28103125002387BB /* FlightViewController.swift in Sources */,
 				6645E7F52810308D002387BB /* FlightNavigationManager.swift in Sources */,
 			);

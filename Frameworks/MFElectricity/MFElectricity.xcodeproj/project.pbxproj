@@ -15,6 +15,7 @@
 		664A03D728085FA9006C40F8 /* MFElectricity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664A03CE28085FA8006C40F8 /* MFElectricity.framework */; };
 		664A03DC28085FA9006C40F8 /* MFElectricityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A03DB28085FA9006C40F8 /* MFElectricityTests.swift */; };
 		664A03DD28085FA9006C40F8 /* MFElectricity.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A03D128085FA8006C40F8 /* MFElectricity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66A29D5F28129A5B0057A787 /* Estimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A29D5E28129A5B0057A787 /* Estimate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		664A03D128085FA8006C40F8 /* MFElectricity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFElectricity.h; sourceTree = "<group>"; };
 		664A03D628085FA9006C40F8 /* MFElectricityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFElectricityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		664A03DB28085FA9006C40F8 /* MFElectricityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFElectricityTests.swift; sourceTree = "<group>"; };
+		66A29D5E28129A5B0057A787 /* Estimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estimate.swift; sourceTree = "<group>"; };
 		9CEC07378BB9FE6D52F9071A /* Pods-Frameworks-MFElectricity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFElectricity.debug.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFElectricity/Pods-Frameworks-MFElectricity.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 		6645E846281058D5002387BB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				66A29D5D28129A460057A787 /* Response */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -157,6 +160,14 @@
 				664A03DB28085FA9006C40F8 /* MFElectricityTests.swift */,
 			);
 			path = MFElectricityTests;
+			sourceTree = "<group>";
+		};
+		66A29D5D28129A460057A787 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				66A29D5E28129A5B0057A787 /* Estimate.swift */,
+			);
+			name = Response;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6645E82A281037EA002387BB /* ElectricityViewController.swift in Sources */,
+				66A29D5F28129A5B0057A787 /* Estimate.swift in Sources */,
 				6645E82C281037FA002387BB /* ElectricityViewModel.swift in Sources */,
 				6645E82528103700002387BB /* ElectricityNavigationManager.swift in Sources */,
 			);

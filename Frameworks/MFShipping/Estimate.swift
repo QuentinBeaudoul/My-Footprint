@@ -46,6 +46,7 @@ class Estimate: Decodable {
         let metadataContainer = try container.nestedContainer(keyedBy: MetadataContainer.self, forKey: .data)
 
         id = try metadataContainer.decode(String.self, forKey: .id)
+
         let attributesContainer = try metadataContainer.nestedContainer(keyedBy: AttributesContainer.self,
                                                                         forKey: .attributes)
 
