@@ -35,18 +35,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fuel Combustion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEt-IQ-BMl">
-                                <rect key="frame" x="143" y="437.5" width="128.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7eV-fw-vwh" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="JaB-2g-YMX"/>
+                                    <constraint firstAttribute="width" secondItem="7eV-fw-vwh" secondAttribute="height" multiplier="1:1" id="t8b-fQ-V9I"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="EcoFuelAnimation"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QEv-3k-05y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="LEt-IQ-BMl" firstAttribute="centerY" secondItem="M3c-Yi-8MB" secondAttribute="centerY" id="8P4-qB-xO6"/>
-                            <constraint firstItem="LEt-IQ-BMl" firstAttribute="centerX" secondItem="M3c-Yi-8MB" secondAttribute="centerX" id="YzQ-uf-eaj"/>
+                            <constraint firstItem="7eV-fw-vwh" firstAttribute="centerX" secondItem="M3c-Yi-8MB" secondAttribute="centerX" id="4p5-CY-oEG"/>
+                            <constraint firstItem="7eV-fw-vwh" firstAttribute="centerY" secondItem="M3c-Yi-8MB" secondAttribute="centerY" id="p0T-5h-6sr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bsp-rj-j1q"/>

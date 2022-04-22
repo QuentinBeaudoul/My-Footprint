@@ -7,24 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40FB2A157813B31728300DA3 /* libPods-Shared-MFNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA543971EAABA6CDAB8EC3D /* libPods-Shared-MFNetwork.a */; };
 		6605CD5D28113B5E00B226A5 /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6605CD5C28113B5E00B226A5 /* Constantes.swift */; };
 		6605CD6428114CC100B226A5 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6605CD6328114CC100B226A5 /* Request.swift */; };
 		664A036528081846006C40F8 /* MFNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A036428081846006C40F8 /* MFNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		664A03B3280824D7006C40F8 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A03B2280824D7006C40F8 /* Service.swift */; };
 		664A03B628082522006C40F8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A03B528082522006C40F8 /* NetworkManager.swift */; };
-		87B0A9C3D46D26743B55CB98 /* libPods-Frameworks-MFNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59617834F9E7C81F89359F92 /* libPods-Frameworks-MFNetwork.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		59617834F9E7C81F89359F92 /* libPods-Frameworks-MFNetwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Frameworks-MFNetwork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3675CF6C54EECF06497F3FC9 /* Pods-MFNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFNetwork.release.xcconfig"; path = "Target Support Files/Pods-MFNetwork/Pods-MFNetwork.release.xcconfig"; sourceTree = "<group>"; };
 		6605CD5C28113B5E00B226A5 /* Constantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
 		6605CD6328114CC100B226A5 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		664A036128081846006C40F8 /* MFNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MFNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		664A036428081846006C40F8 /* MFNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFNetwork.h; sourceTree = "<group>"; };
 		664A03B2280824D7006C40F8 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		664A03B528082522006C40F8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7FA543971EAABA6CDAB8EC3D /* libPods-Shared-MFNetwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shared-MFNetwork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A308F4B0C4D6C6F420E570D1 /* Pods-Shared-MFNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFNetwork.debug.xcconfig"; path = "Target Support Files/Pods-Shared-MFNetwork/Pods-Shared-MFNetwork.debug.xcconfig"; sourceTree = "<group>"; };
+		C0146AB0E86483B91EF4BE22 /* Pods-MFNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFNetwork.debug.xcconfig"; path = "Target Support Files/Pods-MFNetwork/Pods-MFNetwork.debug.xcconfig"; sourceTree = "<group>"; };
 		C37FA4490F3375060AA17C8C /* Pods-Frameworks-MFNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFNetwork.debug.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFNetwork/Pods-Frameworks-MFNetwork.debug.xcconfig"; sourceTree = "<group>"; };
 		D6D0136D87B4EDCCBD4DFEF8 /* Pods-Frameworks-MFNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFNetwork.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFNetwork/Pods-Frameworks-MFNetwork.release.xcconfig"; sourceTree = "<group>"; };
+		DE1090A7BA9584D9A4A06298 /* Pods-Shared-MFNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFNetwork.release.xcconfig"; path = "Target Support Files/Pods-Shared-MFNetwork/Pods-Shared-MFNetwork.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87B0A9C3D46D26743B55CB98 /* libPods-Frameworks-MFNetwork.a in Frameworks */,
+				40FB2A157813B31728300DA3 /* libPods-Shared-MFNetwork.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +116,7 @@
 		E894C8790F9B02C18D998B52 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				59617834F9E7C81F89359F92 /* libPods-Frameworks-MFNetwork.a */,
+				7FA543971EAABA6CDAB8EC3D /* libPods-Shared-MFNetwork.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,6 +126,10 @@
 			children = (
 				C37FA4490F3375060AA17C8C /* Pods-Frameworks-MFNetwork.debug.xcconfig */,
 				D6D0136D87B4EDCCBD4DFEF8 /* Pods-Frameworks-MFNetwork.release.xcconfig */,
+				C0146AB0E86483B91EF4BE22 /* Pods-MFNetwork.debug.xcconfig */,
+				3675CF6C54EECF06497F3FC9 /* Pods-MFNetwork.release.xcconfig */,
+				A308F4B0C4D6C6F420E570D1 /* Pods-Shared-MFNetwork.debug.xcconfig */,
+				DE1090A7BA9584D9A4A06298 /* Pods-Shared-MFNetwork.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../../Pods;
@@ -220,7 +228,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Frameworks-MFNetwork-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Shared-MFNetwork-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -366,7 +374,7 @@
 		};
 		664A036928081846006C40F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C37FA4490F3375060AA17C8C /* Pods-Frameworks-MFNetwork.debug.xcconfig */;
+			baseConfigurationReference = A308F4B0C4D6C6F420E570D1 /* Pods-Shared-MFNetwork.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -399,7 +407,7 @@
 		};
 		664A036A28081846006C40F8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6D0136D87B4EDCCBD4DFEF8 /* Pods-Frameworks-MFNetwork.release.xcconfig */;
+			baseConfigurationReference = DE1090A7BA9584D9A4A06298 /* Pods-Shared-MFNetwork.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;

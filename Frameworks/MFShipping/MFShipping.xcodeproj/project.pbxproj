@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1394CC2064145B8E8D4A41DB /* libPods-Frameworks-MFShipping.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C45A7EC43D017B0CD63AD130 /* libPods-Frameworks-MFShipping.a */; };
 		6605CD6C281191CE00B226A5 /* Estimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6605CD6B281191CE00B226A5 /* Estimate.swift */; };
 		661580F92809A64C006C2170 /* Shipping.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 661580F82809A64C006C2170 /* Shipping.storyboard */; };
 		661580FB2809A698006C2170 /* ShippingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661580FA2809A698006C2170 /* ShippingViewController.swift */; };
@@ -18,6 +17,7 @@
 		664A041B280860BE006C40F8 /* MFShipping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664A0412280860BE006C40F8 /* MFShipping.framework */; };
 		664A0420280860BE006C40F8 /* MFShippingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A041F280860BE006C40F8 /* MFShippingTests.swift */; };
 		664A0421280860BE006C40F8 /* MFShipping.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A0415280860BE006C40F8 /* MFShipping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67358331DCC0F7D341752230 /* libPods-Shared-MFShipping.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 475591E6E929BDF882C2D50F /* libPods-Shared-MFShipping.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +45,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		21D5DD6855B0A5595F3E3E71 /* Pods-MFShipping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFShipping.debug.xcconfig"; path = "Target Support Files/Pods-MFShipping/Pods-MFShipping.debug.xcconfig"; sourceTree = "<group>"; };
+		475591E6E929BDF882C2D50F /* libPods-Shared-MFShipping.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shared-MFShipping.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		553D39860F39F1293AE76311 /* Pods-Shared-MFShipping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFShipping.release.xcconfig"; path = "Target Support Files/Pods-Shared-MFShipping/Pods-Shared-MFShipping.release.xcconfig"; sourceTree = "<group>"; };
 		6605CD6B281191CE00B226A5 /* Estimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estimate.swift; sourceTree = "<group>"; };
 		661580F82809A64C006C2170 /* Shipping.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shipping.storyboard; sourceTree = "<group>"; };
 		661580FA2809A698006C2170 /* ShippingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingViewController.swift; sourceTree = "<group>"; };
@@ -55,8 +58,9 @@
 		664A0415280860BE006C40F8 /* MFShipping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFShipping.h; sourceTree = "<group>"; };
 		664A041A280860BE006C40F8 /* MFShippingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFShippingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		664A041F280860BE006C40F8 /* MFShippingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFShippingTests.swift; sourceTree = "<group>"; };
+		944BD4F852AC860A0DD4952D /* Pods-MFShipping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFShipping.release.xcconfig"; path = "Target Support Files/Pods-MFShipping/Pods-MFShipping.release.xcconfig"; sourceTree = "<group>"; };
+		A9DCBF8448815B32A873DFEB /* Pods-Shared-MFShipping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFShipping.debug.xcconfig"; path = "Target Support Files/Pods-Shared-MFShipping/Pods-Shared-MFShipping.debug.xcconfig"; sourceTree = "<group>"; };
 		ADC95A3EA5F39E57FBC006A4 /* Pods-Frameworks-MFShipping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFShipping.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFShipping/Pods-Frameworks-MFShipping.release.xcconfig"; sourceTree = "<group>"; };
-		C45A7EC43D017B0CD63AD130 /* libPods-Frameworks-MFShipping.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Frameworks-MFShipping.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8A0F8A7571A59283E74EB78 /* Pods-Frameworks-MFShipping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFShipping.debug.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFShipping/Pods-Frameworks-MFShipping.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,8 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1394CC2064145B8E8D4A41DB /* libPods-Frameworks-MFShipping.a in Frameworks */,
 				661581082809C633006C2170 /* MFExtensions.framework in Frameworks */,
+				67358331DCC0F7D341752230 /* libPods-Shared-MFShipping.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +140,7 @@
 		664A0408280860BE006C40F8 = {
 			isa = PBXGroup;
 			children = (
+				66A29D732812D2430057A787 /* Ressources */,
 				661580F32809A5A7006C2170 /* Classes */,
 				664A0414280860BE006C40F8 /* MFShipping */,
 				664A041E280860BE006C40F8 /* MFShippingTests */,
@@ -170,11 +175,22 @@
 			path = MFShippingTests;
 			sourceTree = "<group>";
 		};
+		66A29D732812D2430057A787 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
 		757DC64BECA43CBAFA35BE10 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				E8A0F8A7571A59283E74EB78 /* Pods-Frameworks-MFShipping.debug.xcconfig */,
 				ADC95A3EA5F39E57FBC006A4 /* Pods-Frameworks-MFShipping.release.xcconfig */,
+				21D5DD6855B0A5595F3E3E71 /* Pods-MFShipping.debug.xcconfig */,
+				944BD4F852AC860A0DD4952D /* Pods-MFShipping.release.xcconfig */,
+				A9DCBF8448815B32A873DFEB /* Pods-Shared-MFShipping.debug.xcconfig */,
+				553D39860F39F1293AE76311 /* Pods-Shared-MFShipping.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../../Pods;
@@ -184,7 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				661581072809C633006C2170 /* MFExtensions.framework */,
-				C45A7EC43D017B0CD63AD130 /* libPods-Frameworks-MFShipping.a */,
+				475591E6E929BDF882C2D50F /* libPods-Shared-MFShipping.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -332,7 +348,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Frameworks-MFShipping-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Shared-MFShipping-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -494,7 +510,7 @@
 		};
 		664A0425280860BE006C40F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8A0F8A7571A59283E74EB78 /* Pods-Frameworks-MFShipping.debug.xcconfig */;
+			baseConfigurationReference = A9DCBF8448815B32A873DFEB /* Pods-Shared-MFShipping.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,7 +543,7 @@
 		};
 		664A0426280860BE006C40F8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADC95A3EA5F39E57FBC006A4 /* Pods-Frameworks-MFShipping.release.xcconfig */;
+			baseConfigurationReference = 553D39860F39F1293AE76311 /* Pods-Shared-MFShipping.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;

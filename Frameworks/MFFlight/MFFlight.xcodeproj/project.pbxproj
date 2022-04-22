@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		281545818B4CA2FB0BEBFA3E /* libPods-Shared-MFFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E42FC070589AFC1A44FDB7 /* libPods-Shared-MFFlight.a */; };
 		6645E7F52810308D002387BB /* FlightNavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6645E7F42810308D002387BB /* FlightNavigationManager.swift */; };
 		6645E7F828103117002387BB /* Flight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6645E7F728103117002387BB /* Flight.storyboard */; };
 		6645E7FA28103125002387BB /* FlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6645E7F928103125002387BB /* FlightViewController.swift */; };
@@ -16,7 +17,8 @@
 		664A03FF2808606B006C40F8 /* MFFlight.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A03F32808606B006C40F8 /* MFFlight.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66A29D5A281292FF0057A787 /* Estimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A29D59281292FF0057A787 /* Estimate.swift */; };
 		66A29D5C281295860057A787 /* Legs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A29D5B281295860057A787 /* Legs.swift */; };
-		9ABA69DE6FA03B882007C64F /* libPods-Frameworks-MFFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE9DD7EF9F16F569CAB688DC /* libPods-Frameworks-MFFlight.a */; };
+		66A29D792812DB720057A787 /* MFExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A29D782812DB720057A787 /* MFExtensions.framework */; };
+		66A29D7A2812DB720057A787 /* MFExtensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66A29D782812DB720057A787 /* MFExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,8 +31,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		66A29D7B2812DB730057A787 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				66A29D7A2812DB720057A787 /* MFExtensions.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0532E97E401DF76E6DC9DD4F /* Pods-Shared-MFFlight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFFlight.release.xcconfig"; path = "Target Support Files/Pods-Shared-MFFlight/Pods-Shared-MFFlight.release.xcconfig"; sourceTree = "<group>"; };
 		0B583D8939DAC51D79A4D842 /* Pods-Frameworks-MFFlight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFFlight.debug.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFFlight/Pods-Frameworks-MFFlight.debug.xcconfig"; sourceTree = "<group>"; };
+		1CFC86255C611213E5E55CC7 /* Pods-Shared-MFFlight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFFlight.debug.xcconfig"; path = "Target Support Files/Pods-Shared-MFFlight/Pods-Shared-MFFlight.debug.xcconfig"; sourceTree = "<group>"; };
+		295BB260B75A2D7441F73803 /* Pods-MFFlight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFFlight.debug.xcconfig"; path = "Target Support Files/Pods-MFFlight/Pods-MFFlight.debug.xcconfig"; sourceTree = "<group>"; };
 		6645E7F42810308D002387BB /* FlightNavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightNavigationManager.swift; sourceTree = "<group>"; };
 		6645E7F728103117002387BB /* Flight.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Flight.storyboard; sourceTree = "<group>"; };
 		6645E7F928103125002387BB /* FlightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightViewController.swift; sourceTree = "<group>"; };
@@ -41,8 +60,10 @@
 		664A03FD2808606B006C40F8 /* MFFlightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFFlightTests.swift; sourceTree = "<group>"; };
 		66A29D59281292FF0057A787 /* Estimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estimate.swift; sourceTree = "<group>"; };
 		66A29D5B281295860057A787 /* Legs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legs.swift; sourceTree = "<group>"; };
+		66A29D782812DB720057A787 /* MFExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B68670F53FA9C634D9D7F5 /* Pods-Frameworks-MFFlight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFFlight.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFFlight/Pods-Frameworks-MFFlight.release.xcconfig"; sourceTree = "<group>"; };
-		FE9DD7EF9F16F569CAB688DC /* libPods-Frameworks-MFFlight.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Frameworks-MFFlight.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7E42FC070589AFC1A44FDB7 /* libPods-Shared-MFFlight.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shared-MFFlight.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8AB3F7FC63D61F6C3219DD3 /* Pods-MFFlight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFFlight.release.xcconfig"; path = "Target Support Files/Pods-MFFlight/Pods-MFFlight.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9ABA69DE6FA03B882007C64F /* libPods-Frameworks-MFFlight.a in Frameworks */,
+				66A29D792812DB720057A787 /* MFExtensions.framework in Frameworks */,
+				281545818B4CA2FB0BEBFA3E /* libPods-Shared-MFFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +90,8 @@
 		210BFCE7A9879C04FCC93595 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FE9DD7EF9F16F569CAB688DC /* libPods-Frameworks-MFFlight.a */,
+				66A29D782812DB720057A787 /* MFExtensions.framework */,
+				A7E42FC070589AFC1A44FDB7 /* libPods-Shared-MFFlight.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -168,6 +191,10 @@
 			children = (
 				0B583D8939DAC51D79A4D842 /* Pods-Frameworks-MFFlight.debug.xcconfig */,
 				A1B68670F53FA9C634D9D7F5 /* Pods-Frameworks-MFFlight.release.xcconfig */,
+				295BB260B75A2D7441F73803 /* Pods-MFFlight.debug.xcconfig */,
+				E8AB3F7FC63D61F6C3219DD3 /* Pods-MFFlight.release.xcconfig */,
+				1CFC86255C611213E5E55CC7 /* Pods-Shared-MFFlight.debug.xcconfig */,
+				0532E97E401DF76E6DC9DD4F /* Pods-Shared-MFFlight.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../../Pods;
@@ -197,6 +224,7 @@
 				664A03ED2808606B006C40F8 /* Frameworks */,
 				664A03EE2808606B006C40F8 /* Resources */,
 				6657DC452809651D0031BA7C /* SwiftLint */,
+				66A29D7B2812DB730057A787 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -315,7 +343,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Frameworks-MFFlight-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Shared-MFFlight-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -478,7 +506,7 @@
 		};
 		664A04032808606B006C40F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B583D8939DAC51D79A4D842 /* Pods-Frameworks-MFFlight.debug.xcconfig */;
+			baseConfigurationReference = 1CFC86255C611213E5E55CC7 /* Pods-Shared-MFFlight.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -511,7 +539,7 @@
 		};
 		664A04042808606B006C40F8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1B68670F53FA9C634D9D7F5 /* Pods-Frameworks-MFFlight.release.xcconfig */;
+			baseConfigurationReference = 0532E97E401DF76E6DC9DD4F /* Pods-Shared-MFFlight.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -10,6 +10,8 @@ import MFExtensions
 
 class FuelCombustionViewController: UIViewController {
 
+//    @IBOutlet weak var animationView: AnimationView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,5 +20,11 @@ class FuelCombustionViewController: UIViewController {
         if let topColor = R.color.backgroundGradientTop(), let bottomColor = R.color.backgroundGradientBottom() {
             view.setGradientBackground(colorTop: topColor, colorBottom: bottomColor)
         }
+
+//        // Setting up animation
+//        animationView.contentMode = .scaleAspectFit
+//        animationView.loopMode = .loop
+//        animationView.animationSpeed = 2
+//        animationView.play()
     }
 }

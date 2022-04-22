@@ -1,11 +1,12 @@
 platform :ios, '13.0'
 workspace 'MyFootprint.xcworkspace'
 
-abstract_target 'Frameworks' do 
+abstract_target 'Shared' do
 
 	pod 'R.swift'
 	pod 'Alamofire'
-	pod 'SwiftLint'	
+	pod 'SwiftLint'
+	
 
 	target 'MFExtensions' do
 		project 'Frameworks/MFExtensions/MFExtensions.xcodeproj'
@@ -36,13 +37,12 @@ abstract_target 'Frameworks' do
 	end
 
 	target 'MFFuelCombustion' do
-		project 'Frameworks/MFFuelCombustion/MFFuelCombustion.xcodeproj'	
+		project 'Frameworks/MFFuelCombustion/MFFuelCombustion.xcodeproj'
 	end
 
 	target 'MyFootprint' do
 		project 'MyFootprint/MyFootprint.xcodeproj'
-		use_frameworks!
-		
 		pod 'lottie-ios'
 	end
 end
+

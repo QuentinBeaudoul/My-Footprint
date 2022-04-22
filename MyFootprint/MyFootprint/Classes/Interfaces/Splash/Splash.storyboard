@@ -47,9 +47,6 @@
             <point key="canvasLocation" x="133" y="110"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="gLS-ZV-bWZ"/>
-    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
