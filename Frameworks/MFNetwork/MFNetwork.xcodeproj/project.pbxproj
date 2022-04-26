@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		40FB2A157813B31728300DA3 /* libPods-Shared-MFNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA543971EAABA6CDAB8EC3D /* libPods-Shared-MFNetwork.a */; };
+		2917FD30DFA7A8304B005580 /* Pods_Shared_MFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183AC04D9C6B8815C101EFE4 /* Pods_Shared_MFNetwork.framework */; };
 		6605CD5D28113B5E00B226A5 /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6605CD5C28113B5E00B226A5 /* Constantes.swift */; };
 		6605CD6428114CC100B226A5 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6605CD6328114CC100B226A5 /* Request.swift */; };
 		664A036528081846006C40F8 /* MFNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A036428081846006C40F8 /* MFNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		183AC04D9C6B8815C101EFE4 /* Pods_Shared_MFNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MFNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3675CF6C54EECF06497F3FC9 /* Pods-MFNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFNetwork.release.xcconfig"; path = "Target Support Files/Pods-MFNetwork/Pods-MFNetwork.release.xcconfig"; sourceTree = "<group>"; };
 		6605CD5C28113B5E00B226A5 /* Constantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
 		6605CD6328114CC100B226A5 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
@@ -23,7 +24,6 @@
 		664A036428081846006C40F8 /* MFNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFNetwork.h; sourceTree = "<group>"; };
 		664A03B2280824D7006C40F8 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		664A03B528082522006C40F8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		7FA543971EAABA6CDAB8EC3D /* libPods-Shared-MFNetwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shared-MFNetwork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A308F4B0C4D6C6F420E570D1 /* Pods-Shared-MFNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFNetwork.debug.xcconfig"; path = "Target Support Files/Pods-Shared-MFNetwork/Pods-Shared-MFNetwork.debug.xcconfig"; sourceTree = "<group>"; };
 		C0146AB0E86483B91EF4BE22 /* Pods-MFNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFNetwork.debug.xcconfig"; path = "Target Support Files/Pods-MFNetwork/Pods-MFNetwork.debug.xcconfig"; sourceTree = "<group>"; };
 		C37FA4490F3375060AA17C8C /* Pods-Frameworks-MFNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFNetwork.debug.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFNetwork/Pods-Frameworks-MFNetwork.debug.xcconfig"; sourceTree = "<group>"; };
@@ -36,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40FB2A157813B31728300DA3 /* libPods-Shared-MFNetwork.a in Frameworks */,
+				2917FD30DFA7A8304B005580 /* Pods_Shared_MFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +116,7 @@
 		E894C8790F9B02C18D998B52 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7FA543971EAABA6CDAB8EC3D /* libPods-Shared-MFNetwork.a */,
+				183AC04D9C6B8815C101EFE4 /* Pods_Shared_MFNetwork.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

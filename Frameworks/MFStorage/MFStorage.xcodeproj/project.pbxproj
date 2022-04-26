@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5CD41C79D707D71C709BF36D /* libPods-Shared-MFStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB5E1976DE380DC3C322292 /* libPods-Shared-MFStorage.a */; };
+		5911035B524EB09D29B448D0 /* Pods_Shared_MFStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A323FC74F2E5889E90C825B /* Pods_Shared_MFStorage.framework */; };
 		664A038428081891006C40F8 /* MFStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A037828081890006C40F8 /* MFStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		664A03BA280825FA006C40F8 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A03B9280825FA006C40F8 /* CoreDataService.swift */; };
 		664A03BE28082638006C40F8 /* MyFootprint.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 664A03BC28082638006C40F8 /* MyFootprint.xcdatamodeld */; };
@@ -24,7 +24,7 @@
 		664A03BD28082638006C40F8 /* MyFootprint.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyFootprint.xcdatamodel; sourceTree = "<group>"; };
 		664A03C028082688006C40F8 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		7BF5C1E6D598E8DE41ED613F /* Pods-MFStorage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFStorage.release.xcconfig"; path = "Target Support Files/Pods-MFStorage/Pods-MFStorage.release.xcconfig"; sourceTree = "<group>"; };
-		ABB5E1976DE380DC3C322292 /* libPods-Shared-MFStorage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shared-MFStorage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A323FC74F2E5889E90C825B /* Pods_Shared_MFStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MFStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67491191C5C32A351B9F6FF /* Pods-Frameworks-MFStorage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFStorage.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFStorage/Pods-Frameworks-MFStorage.release.xcconfig"; sourceTree = "<group>"; };
 		F04CA802717588797925B58B /* Pods-Shared-MFStorage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFStorage.debug.xcconfig"; path = "Target Support Files/Pods-Shared-MFStorage/Pods-Shared-MFStorage.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -34,7 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CD41C79D707D71C709BF36D /* libPods-Shared-MFStorage.a in Frameworks */,
+				5911035B524EB09D29B448D0 /* Pods_Shared_MFStorage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +119,7 @@
 		EB1A9CEED2664D2E07F65F20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ABB5E1976DE380DC3C322292 /* libPods-Shared-MFStorage.a */,
+				9A323FC74F2E5889E90C825B /* Pods_Shared_MFStorage.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

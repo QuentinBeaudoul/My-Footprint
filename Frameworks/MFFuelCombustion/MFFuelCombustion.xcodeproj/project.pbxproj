@@ -17,7 +17,7 @@
 		6645E83828103B47002387BB /* FuelCombustionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6645E83728103B47002387BB /* FuelCombustionViewModel.swift */; };
 		66A29D702812B3240057A787 /* MFExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A29D6F2812B3240057A787 /* MFExtensions.framework */; };
 		66A29D712812B3240057A787 /* MFExtensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66A29D6F2812B3240057A787 /* MFExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		992B5DB8B37C930FD28790C3 /* libPods-Shared-MFFuelCombustion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFDD42E69ACF9E1AC9D1D973 /* libPods-Shared-MFFuelCombustion.a */; };
+		67CA5667B05B6E6B5EB8A58C /* Pods_Shared_MFFuelCombustion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B9E696DA572B7FEEE96C9AD /* Pods_Shared_MFFuelCombustion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,10 +58,10 @@
 		6645E83728103B47002387BB /* FuelCombustionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelCombustionViewModel.swift; sourceTree = "<group>"; };
 		66A29D6F2812B3240057A787 /* MFExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AAA841A977ED1BAB24E7B37 /* Pods-Shared-MFFuelCombustion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFFuelCombustion.release.xcconfig"; path = "Target Support Files/Pods-Shared-MFFuelCombustion/Pods-Shared-MFFuelCombustion.release.xcconfig"; sourceTree = "<group>"; };
+		6B9E696DA572B7FEEE96C9AD /* Pods_Shared_MFFuelCombustion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MFFuelCombustion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		786DBC2B0E2AB1ABB830163C /* Pods-MFFuelCombustion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFFuelCombustion.release.xcconfig"; path = "Target Support Files/Pods-MFFuelCombustion/Pods-MFFuelCombustion.release.xcconfig"; sourceTree = "<group>"; };
 		C475E9E1606917E255394E82 /* Pods-Shared-MFFuelCombustion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFFuelCombustion.debug.xcconfig"; path = "Target Support Files/Pods-Shared-MFFuelCombustion/Pods-Shared-MFFuelCombustion.debug.xcconfig"; sourceTree = "<group>"; };
 		CECFFFF8E9A355E8DECD4912 /* Pods-Frameworks-MFFuelCombustion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFFuelCombustion.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFFuelCombustion/Pods-Frameworks-MFFuelCombustion.release.xcconfig"; sourceTree = "<group>"; };
-		DFDD42E69ACF9E1AC9D1D973 /* libPods-Shared-MFFuelCombustion.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shared-MFFuelCombustion.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66A29D702812B3240057A787 /* MFExtensions.framework in Frameworks */,
-				992B5DB8B37C930FD28790C3 /* libPods-Shared-MFFuelCombustion.a in Frameworks */,
+				67CA5667B05B6E6B5EB8A58C /* Pods_Shared_MFFuelCombustion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				66A29D6F2812B3240057A787 /* MFExtensions.framework */,
-				DFDD42E69ACF9E1AC9D1D973 /* libPods-Shared-MFFuelCombustion.a */,
+				6B9E696DA572B7FEEE96C9AD /* Pods_Shared_MFFuelCombustion.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

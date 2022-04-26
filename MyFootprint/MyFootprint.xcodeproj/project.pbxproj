@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05481E083A90E4D511FF1722 /* libPods-Shared-MyFootprint.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D06EC787FCD90FADF0F4425 /* libPods-Shared-MyFootprint.a */; };
+		35481E15864B47FD4CAB6DDA /* Pods_Shared_MyFootprint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4BE83B37C19017AD1BCF55 /* Pods_Shared_MyFootprint.framework */; };
+		4FE335E228181FF600DFD8D2 /* LoadingAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 4FE335E128181FF600DFD8D2 /* LoadingAnimation.json */; };
 		661580DF28097736006C2170 /* MFExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 661580DE28097736006C2170 /* MFExtensions.framework */; };
 		661580E028097736006C2170 /* MFExtensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 661580DE28097736006C2170 /* MFExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		661581012809A7B9006C2170 /* MFShipping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 661581002809A7B9006C2170 /* MFShipping.framework */; };
@@ -22,7 +23,6 @@
 		6645E84128103DD0002387BB /* MFElectricity.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6645E83F28103DD0002387BB /* MFElectricity.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		66A732F6280950DA004CF245 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66A732F5280950DA004CF245 /* Splash.storyboard */; };
 		66A732F92809513E004CF245 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A732F82809513E004CF245 /* SplashViewController.swift */; };
-		66A732FC280955EE004CF245 /* LoadingAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 66A732FB280955EE004CF245 /* LoadingAnimation.json */; };
 		66E6E5CD2808112900AC8C13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E6E5CC2808112900AC8C13 /* AppDelegate.swift */; };
 		66E6E5CF2808112900AC8C13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E6E5CE2808112900AC8C13 /* SceneDelegate.swift */; };
 		66E6E5D12808112900AC8C13 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E6E5D02808112900AC8C13 /* MainViewController.swift */; };
@@ -51,10 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0E36238611C542174030CC7D /* Pods-Frameworks-My Footprint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-My Footprint.debug.xcconfig"; path = "Target Support Files/Pods-Frameworks-My Footprint/Pods-Frameworks-My Footprint.debug.xcconfig"; sourceTree = "<group>"; };
-		1D06EC787FCD90FADF0F4425 /* libPods-Shared-MyFootprint.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shared-MyFootprint.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BE9FAB9CAA39E9749933998 /* Pods-Frameworks-My Footprint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-My Footprint.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-My Footprint/Pods-Frameworks-My Footprint.release.xcconfig"; sourceTree = "<group>"; };
-		4922BC77D6AB0DAD2DDC758B /* Pods-My Footprint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Footprint.debug.xcconfig"; path = "Target Support Files/Pods-My Footprint/Pods-My Footprint.debug.xcconfig"; sourceTree = "<group>"; };
+		4FE335E128181FF600DFD8D2 /* LoadingAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LoadingAnimation.json; sourceTree = "<group>"; };
 		661580DE28097736006C2170 /* MFExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		661580F028099E06006C2170 /* MFVehicul.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFVehicul.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		661581002809A7B9006C2170 /* MFShipping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFShipping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +61,6 @@
 		6645E83F28103DD0002387BB /* MFElectricity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFElectricity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A732F5280950DA004CF245 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		66A732F82809513E004CF245 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
-		66A732FB280955EE004CF245 /* LoadingAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LoadingAnimation.json; sourceTree = "<group>"; };
 		66E6E5C92808112900AC8C13 /* MyFootprint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFootprint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66E6E5CC2808112900AC8C13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66E6E5CE2808112900AC8C13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,13 +69,9 @@
 		66E6E5D82808112E00AC8C13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66E6E5DB2808112E00AC8C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66E6E5DD2808112E00AC8C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		712DC4ADD7822772F40229F9 /* Pods-MyFootprint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFootprint.release.xcconfig"; path = "Target Support Files/Pods-MyFootprint/Pods-MyFootprint.release.xcconfig"; sourceTree = "<group>"; };
-		75ED0E7325ABCFA554D8ADE1 /* Pods-My Footprint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Footprint.release.xcconfig"; path = "Target Support Files/Pods-My Footprint/Pods-My Footprint.release.xcconfig"; sourceTree = "<group>"; };
+		9C4BE83B37C19017AD1BCF55 /* Pods_Shared_MyFootprint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MyFootprint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A96A4EC250747B4A623FCD /* Pods-Shared-MyFootprint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MyFootprint.release.xcconfig"; path = "Target Support Files/Pods-Shared-MyFootprint/Pods-Shared-MyFootprint.release.xcconfig"; sourceTree = "<group>"; };
 		AE3CEA44CBE562A19572EFCB /* Pods-Shared-MyFootprint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MyFootprint.debug.xcconfig"; path = "Target Support Files/Pods-Shared-MyFootprint/Pods-Shared-MyFootprint.debug.xcconfig"; sourceTree = "<group>"; };
-		BF538A48314D6C1906826F1C /* Pods-MyFootprint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFootprint.debug.xcconfig"; path = "Target Support Files/Pods-MyFootprint/Pods-MyFootprint.debug.xcconfig"; sourceTree = "<group>"; };
-		CF7C724B2737824510692425 /* Pods-Frameworks-MyFootprint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MyFootprint.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-MyFootprint/Pods-Frameworks-MyFootprint.release.xcconfig"; sourceTree = "<group>"; };
-		D15C682E09B63C716AA8A180 /* Pods-Frameworks-MyFootprint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MyFootprint.debug.xcconfig"; path = "Target Support Files/Pods-Frameworks-MyFootprint/Pods-Frameworks-MyFootprint.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +85,7 @@
 				66194FD5280FF1F000CD7A0D /* MFVehicle.framework in Frameworks */,
 				661580DF28097736006C2170 /* MFExtensions.framework in Frameworks */,
 				6645E84028103DD0002387BB /* MFElectricity.framework in Frameworks */,
-				05481E083A90E4D511FF1722 /* libPods-Shared-MyFootprint.a in Frameworks */,
+				35481E15864B47FD4CAB6DDA /* Pods_Shared_MyFootprint.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +130,7 @@
 		66A732FA28095586004CF245 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
-				66A732FB280955EE004CF245 /* LoadingAnimation.json */,
+				4FE335E128181FF600DFD8D2 /* LoadingAnimation.json */,
 				66E6E5D82808112E00AC8C13 /* Assets.xcassets */,
 			);
 			path = Ressources;
@@ -178,14 +170,6 @@
 		68B0CFACFDF78370BF8FCAD6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4922BC77D6AB0DAD2DDC758B /* Pods-My Footprint.debug.xcconfig */,
-				75ED0E7325ABCFA554D8ADE1 /* Pods-My Footprint.release.xcconfig */,
-				0E36238611C542174030CC7D /* Pods-Frameworks-My Footprint.debug.xcconfig */,
-				3BE9FAB9CAA39E9749933998 /* Pods-Frameworks-My Footprint.release.xcconfig */,
-				D15C682E09B63C716AA8A180 /* Pods-Frameworks-MyFootprint.debug.xcconfig */,
-				CF7C724B2737824510692425 /* Pods-Frameworks-MyFootprint.release.xcconfig */,
-				BF538A48314D6C1906826F1C /* Pods-MyFootprint.debug.xcconfig */,
-				712DC4ADD7822772F40229F9 /* Pods-MyFootprint.release.xcconfig */,
 				AE3CEA44CBE562A19572EFCB /* Pods-Shared-MyFootprint.debug.xcconfig */,
 				A3A96A4EC250747B4A623FCD /* Pods-Shared-MyFootprint.release.xcconfig */,
 			);
@@ -203,7 +187,7 @@
 				661581002809A7B9006C2170 /* MFShipping.framework */,
 				661580F028099E06006C2170 /* MFVehicul.framework */,
 				661580DE28097736006C2170 /* MFExtensions.framework */,
-				1D06EC787FCD90FADF0F4425 /* libPods-Shared-MyFootprint.a */,
+				9C4BE83B37C19017AD1BCF55 /* Pods_Shared_MyFootprint.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -221,6 +205,7 @@
 				66E6E5C72808112900AC8C13 /* Resources */,
 				66A7330028095E06004CF245 /* SwiftLint */,
 				661580E128097736006C2170 /* Embed Frameworks */,
+				A700BC2C53F85E2183A9282D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -270,8 +255,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				66A732F6280950DA004CF245 /* Splash.storyboard in Resources */,
+				4FE335E228181FF600DFD8D2 /* LoadingAnimation.json in Resources */,
 				66E6E5DC2808112E00AC8C13 /* LaunchScreen.storyboard in Resources */,
-				66A732FC280955EE004CF245 /* LoadingAnimation.json in Resources */,
 				66E6E5D92808112E00AC8C13 /* Assets.xcassets in Resources */,
 				66E6E5D42808112900AC8C13 /* Main.storyboard in Resources */,
 			);
@@ -319,6 +304,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		A700BC2C53F85E2183A9282D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shared-MyFootprint/Pods-Shared-MyFootprint-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shared-MyFootprint/Pods-Shared-MyFootprint-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shared-MyFootprint/Pods-Shared-MyFootprint-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 

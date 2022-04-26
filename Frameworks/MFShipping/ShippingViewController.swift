@@ -7,8 +7,11 @@
 
 import UIKit
 import MFExtensions
+import Lottie
 
 class ShippingViewController: UIViewController {
+
+    @IBOutlet weak var animationView: AnimationView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,5 +22,14 @@ class ShippingViewController: UIViewController {
         if let topColor = R.color.backgroundGradientTop(), let bottomColor = R.color.backgroundGradientBottom() {
             view.setGradientBackground(colorTop: topColor, colorBottom: bottomColor)
         }
+
+        // Setting up animation
+
+        let anim = Animation.named("ShippingAnimation", bundle: Bundle(for: Self.self))
+        animationView.animation = anim
+        animationView.contentMode = .scaleAspectFit
+        animationView.loopMode = .loop
+        animationView.animationSpeed = 2
+        animationView.play()
     }
 }

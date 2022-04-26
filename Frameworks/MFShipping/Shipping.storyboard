@@ -34,10 +34,30 @@
                     <view key="view" contentMode="scaleToFill" id="qHI-aa-09f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LM4-ek-rNo" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="7" y="248" width="400" height="400"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LM4-ek-rNo" secondAttribute="height" multiplier="1:1" id="Fre-Oy-iPn"/>
+                                    <constraint firstAttribute="width" constant="400" id="WLK-nn-kf1"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="ShippingAnimation"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="7E0-ge-u9c"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LM4-ek-rNo" firstAttribute="centerX" secondItem="qHI-aa-09f" secondAttribute="centerX" id="7X0-4d-P49"/>
+                            <constraint firstItem="LM4-ek-rNo" firstAttribute="centerY" secondItem="qHI-aa-09f" secondAttribute="centerY" id="JrI-6Z-Y2T"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kzr-jZ-nul"/>
+                    <connections>
+                        <outlet property="animationView" destination="LM4-ek-rNo" id="FwV-uv-4yF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MwN-fp-XQP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

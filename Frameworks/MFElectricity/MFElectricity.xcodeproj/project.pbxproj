@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		51CF19AC444370919B8DD287 /* libPods-Shared-MFElectricity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 271E09EEAE1DA0E92D1DEF7B /* libPods-Shared-MFElectricity.a */; };
 		6645E82528103700002387BB /* ElectricityNavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6645E82428103700002387BB /* ElectricityNavigationManager.swift */; };
 		6645E8282810376E002387BB /* Electricity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6645E8272810376E002387BB /* Electricity.storyboard */; };
 		6645E82A281037EA002387BB /* ElectricityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6645E829281037EA002387BB /* ElectricityViewController.swift */; };
@@ -18,6 +17,7 @@
 		66A29D5F28129A5B0057A787 /* Estimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A29D5E28129A5B0057A787 /* Estimate.swift */; };
 		66A29D752812DB6A0057A787 /* MFExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A29D742812DB6A0057A787 /* MFExtensions.framework */; };
 		66A29D762812DB6A0057A787 /* MFExtensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66A29D742812DB6A0057A787 /* MFExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A15AB72AEB2AF03076FB0E70 /* Pods_Shared_MFElectricity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F724E4C2E76C63455FA69D2C /* Pods_Shared_MFElectricity.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,6 @@
 /* Begin PBXFileReference section */
 		03BDC5FEDBD313E30D79A4AF /* Pods-Shared-MFElectricity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFElectricity.release.xcconfig"; path = "Target Support Files/Pods-Shared-MFElectricity/Pods-Shared-MFElectricity.release.xcconfig"; sourceTree = "<group>"; };
 		269606CCA6A9D5BF266E6F56 /* Pods-Frameworks-MFElectricity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFElectricity.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFElectricity/Pods-Frameworks-MFElectricity.release.xcconfig"; sourceTree = "<group>"; };
-		271E09EEAE1DA0E92D1DEF7B /* libPods-Shared-MFElectricity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shared-MFElectricity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6645E82428103700002387BB /* ElectricityNavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricityNavigationManager.swift; sourceTree = "<group>"; };
 		6645E8272810376E002387BB /* Electricity.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Electricity.storyboard; sourceTree = "<group>"; };
 		6645E829281037EA002387BB /* ElectricityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricityViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +61,7 @@
 		95907B872F7112A7E188E389 /* Pods-Shared-MFElectricity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFElectricity.debug.xcconfig"; path = "Target Support Files/Pods-Shared-MFElectricity/Pods-Shared-MFElectricity.debug.xcconfig"; sourceTree = "<group>"; };
 		9CEC07378BB9FE6D52F9071A /* Pods-Frameworks-MFElectricity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFElectricity.debug.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFElectricity/Pods-Frameworks-MFElectricity.debug.xcconfig"; sourceTree = "<group>"; };
 		B1FEE8012DB80E454515A279 /* Pods-MFElectricity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFElectricity.debug.xcconfig"; path = "Target Support Files/Pods-MFElectricity/Pods-MFElectricity.debug.xcconfig"; sourceTree = "<group>"; };
+		F724E4C2E76C63455FA69D2C /* Pods_Shared_MFElectricity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MFElectricity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66A29D752812DB6A0057A787 /* MFExtensions.framework in Frameworks */,
-				51CF19AC444370919B8DD287 /* libPods-Shared-MFElectricity.a in Frameworks */,
+				A15AB72AEB2AF03076FB0E70 /* Pods_Shared_MFElectricity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				66A29D742812DB6A0057A787 /* MFExtensions.framework */,
-				271E09EEAE1DA0E92D1DEF7B /* libPods-Shared-MFElectricity.a */,
+				F724E4C2E76C63455FA69D2C /* Pods_Shared_MFElectricity.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
