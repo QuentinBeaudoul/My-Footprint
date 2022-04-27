@@ -15,14 +15,12 @@ public final class FuelCombustionNavigationManager {
 
     public func getFuelCombustionViewController() -> UIViewController {
 
-        let navController = UINavigationController.makeFromStoryboard("FuelCombustion",
-                                                                      withIdentifier: "FuelCombustionNavViewController",
-                                                                      in: Bundle(for: Self.self))
+        let viewController = FuelCombustionViewController.makeFromStoryboard(in: Bundle(for: Self.self))
 
-        navController.tabBarItem = UITabBarItem(title: nil,
+        viewController.tabBarItem = UITabBarItem(title: nil,
                                                 image: R.image.ic_25_fuel(),
                                                 selectedImage: R.image.ic_35_fuel())
 
-        return navController
+        return viewController
     }
 }

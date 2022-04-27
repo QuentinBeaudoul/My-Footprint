@@ -10,23 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="GtN-Jb-zzS">
-            <objects>
-                <navigationController storyboardIdentifier="FuelCombustionNavViewController" id="ezm-km-vSy" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rDR-Ya-tZd">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" name="backgroundGradientTop"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="6u1-Yy-zB8" kind="relationship" relationship="rootViewController" id="53f-gg-Etw"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Yqx-BQ-dlY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-281" y="106"/>
-        </scene>
         <!--Fuel Combustion View Controller-->
         <scene sceneID="PF7-ui-Jmn">
             <objects>
@@ -35,35 +18,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7eV-fw-vwh" customClass="AnimationView" customModule="Lottie">
-                                <rect key="frame" x="107" y="348" width="200" height="200"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="JaB-2g-YMX"/>
-                                    <constraint firstAttribute="width" secondItem="7eV-fw-vwh" secondAttribute="height" multiplier="1:1" id="t8b-fQ-V9I"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="EcoFuelAnimation"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fuel Combustion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ei-vE-tjx">
+                                <rect key="frame" x="16" y="60" width="229.5" height="38.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
+                                <color key="textColor" name="onPrimaryColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QEv-3k-05y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="7eV-fw-vwh" firstAttribute="centerX" secondItem="M3c-Yi-8MB" secondAttribute="centerX" id="4p5-CY-oEG"/>
-                            <constraint firstItem="7eV-fw-vwh" firstAttribute="centerY" secondItem="M3c-Yi-8MB" secondAttribute="centerY" id="p0T-5h-6sr"/>
+                            <constraint firstItem="9ei-vE-tjx" firstAttribute="leading" secondItem="QEv-3k-05y" secondAttribute="leading" constant="16" id="JNd-gX-hBf"/>
+                            <constraint firstItem="9ei-vE-tjx" firstAttribute="top" secondItem="QEv-3k-05y" secondAttribute="top" constant="16" id="Qn9-Yp-DgG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bsp-rj-j1q"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WzW-EK-C7h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="557" y="106"/>
+            <point key="canvasLocation" x="222" y="110"/>
         </scene>
     </scenes>
     <resources>
-        <namedColor name="backgroundGradientTop">
-            <color red="0.70399999618530273" green="0.88599997758865356" blue="0.86799997091293335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="onPrimaryColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

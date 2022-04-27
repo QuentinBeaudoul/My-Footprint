@@ -10,6 +10,7 @@
 		661580E3280978AA006C2170 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661580E2280978AA006C2170 /* UIViewController+.swift */; };
 		664A03AA28081973006C40F8 /* MFExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A03A928081973006C40F8 /* MFExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66A732FF28095D88004CF245 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A732FE28095D88004CF245 /* UIView+.swift */; };
+		F466702BCE6BF3E3520D83F7 /* Pods_Shared_MFExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5B6CDCC1A804182655BE83 /* Pods_Shared_MFExtensions.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		664A03A928081973006C40F8 /* MFExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFExtensions.h; sourceTree = "<group>"; };
 		66A732FE28095D88004CF245 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		A1335B1C2A5B0A515F3F22C8 /* Pods-Shared-MFExtensions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFExtensions.release.xcconfig"; path = "Target Support Files/Pods-Shared-MFExtensions/Pods-Shared-MFExtensions.release.xcconfig"; sourceTree = "<group>"; };
+		FA5B6CDCC1A804182655BE83 /* Pods_Shared_MFExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MFExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F466702BCE6BF3E3520D83F7 /* Pods_Shared_MFExtensions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		EAF22F684C1A722C7FFB0D39 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA5B6CDCC1A804182655BE83 /* Pods_Shared_MFExtensions.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

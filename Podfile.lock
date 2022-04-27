@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.6.1)
+  - LoadableViews (3.6.1)
   - lottie-ios (3.3.0)
   - R.swift (6.1.0):
     - R.swift.Library (~> 5.3.0)
@@ -8,6 +9,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - LoadableViews
   - lottie-ios
   - R.swift
   - SwiftLint
@@ -15,6 +17,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - LoadableViews
     - lottie-ios
     - R.swift
     - R.swift.Library
@@ -22,11 +25,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  LoadableViews: 9af367c30a6fd96cf62275db64b7b1568e3bd0ac
   lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
   R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
   SwiftLint: d41cc46a2ae58ac6d9f26954bc89f1d72e71fdef
 
-PODFILE CHECKSUM: 1c8cf991be719bcf273f83dd72678179bc654f55
+PODFILE CHECKSUM: e7ccf0ac5d8becbc30355ac6f2da5ea31b09f452
 
 COCOAPODS: 1.11.3
