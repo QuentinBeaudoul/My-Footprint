@@ -19,6 +19,9 @@
 		66A29D5C281295860057A787 /* Legs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A29D5B281295860057A787 /* Legs.swift */; };
 		66A29D792812DB720057A787 /* MFExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A29D782812DB720057A787 /* MFExtensions.framework */; };
 		66A29D7A2812DB720057A787 /* MFExtensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66A29D782812DB720057A787 /* MFExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		66D2A87628197EB80026F85E /* AirplainAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 66D2A87528197EB80026F85E /* AirplainAnimation.json */; };
+		66D2A87828197ED10026F85E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D2A87728197ED10026F85E /* Assets.xcassets */; };
+		66D2A87C2819801D0026F85E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2A87B2819801D0026F85E /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		66A29D59281292FF0057A787 /* Estimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estimate.swift; sourceTree = "<group>"; };
 		66A29D5B281295860057A787 /* Legs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legs.swift; sourceTree = "<group>"; };
 		66A29D782812DB720057A787 /* MFExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66D2A87528197EB80026F85E /* AirplainAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AirplainAnimation.json; sourceTree = "<group>"; };
+		66D2A87728197ED10026F85E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66D2A87B2819801D0026F85E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		9E547CDC1F0139F4EC94D1BB /* Pods_Shared_MFFlight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MFFlight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B68670F53FA9C634D9D7F5 /* Pods-Frameworks-MFFlight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFFlight.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFFlight/Pods-Frameworks-MFFlight.release.xcconfig"; sourceTree = "<group>"; };
 		E8AB3F7FC63D61F6C3219DD3 /* Pods-MFFlight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFFlight.release.xcconfig"; path = "Target Support Files/Pods-MFFlight/Pods-MFFlight.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +105,7 @@
 		6645E7F128103058002387BB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				66D2A87928197F6B0026F85E /* Ressources */,
 				6645E845281058CD002387BB /* Models */,
 				6645E7F228103065002387BB /* Managers */,
 				6645E7F32810306D002387BB /* Interfaces */,
@@ -143,6 +150,7 @@
 		664A03E62808606B006C40F8 = {
 			isa = PBXGroup;
 			children = (
+				66D2A87428197EA90026F85E /* Ressources */,
 				6645E7F128103058002387BB /* Classes */,
 				664A03F22808606B006C40F8 /* MFFlight */,
 				664A03FC2808606B006C40F8 /* MFFlightTests */,
@@ -186,6 +194,23 @@
 			name = Response;
 			sourceTree = "<group>";
 		};
+		66D2A87428197EA90026F85E /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				66D2A87528197EB80026F85E /* AirplainAnimation.json */,
+				66D2A87728197ED10026F85E /* Assets.xcassets */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
+		66D2A87928197F6B0026F85E /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				66D2A87B2819801D0026F85E /* R.generated.swift */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
 		C523B8DB25FF5DE306DAB4CE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +245,7 @@
 			buildPhases = (
 				E4C2ADC492AA8F80A8B396DA /* [CP] Check Pods Manifest.lock */,
 				664A03EB2808606B006C40F8 /* Headers */,
+				66D2A87A28197F7E0026F85E /* R.Swift */,
 				664A03EC2808606B006C40F8 /* Sources */,
 				664A03ED2808606B006C40F8 /* Frameworks */,
 				664A03EE2808606B006C40F8 /* Resources */,
@@ -296,6 +322,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66D2A87628197EB80026F85E /* AirplainAnimation.json in Resources */,
+				66D2A87828197ED10026F85E /* Assets.xcassets in Resources */,
 				6645E7F828103117002387BB /* Flight.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +355,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		66D2A87A28197F7E0026F85E /* R.Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.Swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
 		};
 		E4C2ADC492AA8F80A8B396DA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -362,6 +410,7 @@
 				66A29D5A281292FF0057A787 /* Estimate.swift in Sources */,
 				6645E7FA28103125002387BB /* FlightViewController.swift in Sources */,
 				6645E7F52810308D002387BB /* FlightNavigationManager.swift in Sources */,
+				66D2A87C2819801D0026F85E /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,6 +17,9 @@
 		6645E83828103B47002387BB /* FuelCombustionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6645E83728103B47002387BB /* FuelCombustionViewModel.swift */; };
 		66A29D702812B3240057A787 /* MFExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A29D6F2812B3240057A787 /* MFExtensions.framework */; };
 		66A29D712812B3240057A787 /* MFExtensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66A29D6F2812B3240057A787 /* MFExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		66ECF2142819433D00814686 /* EcoFuelAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 66ECF2132819433D00814686 /* EcoFuelAnimation.json */; };
+		66ECF2182819504600814686 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ECF2172819504500814686 /* R.generated.swift */; };
+		66ECF21A2819508700814686 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66ECF2192819508700814686 /* Assets.xcassets */; };
 		67CA5667B05B6E6B5EB8A58C /* Pods_Shared_MFFuelCombustion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B9E696DA572B7FEEE96C9AD /* Pods_Shared_MFFuelCombustion.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +60,9 @@
 		6645E83528103B27002387BB /* FuelCombustionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelCombustionViewController.swift; sourceTree = "<group>"; };
 		6645E83728103B47002387BB /* FuelCombustionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelCombustionViewModel.swift; sourceTree = "<group>"; };
 		66A29D6F2812B3240057A787 /* MFExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66ECF2132819433D00814686 /* EcoFuelAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EcoFuelAnimation.json; sourceTree = "<group>"; };
+		66ECF2172819504500814686 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		66ECF2192819508700814686 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AAA841A977ED1BAB24E7B37 /* Pods-Shared-MFFuelCombustion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFFuelCombustion.release.xcconfig"; path = "Target Support Files/Pods-Shared-MFFuelCombustion/Pods-Shared-MFFuelCombustion.release.xcconfig"; sourceTree = "<group>"; };
 		6B9E696DA572B7FEEE96C9AD /* Pods_Shared_MFFuelCombustion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MFFuelCombustion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		786DBC2B0E2AB1ABB830163C /* Pods-MFFuelCombustion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFFuelCombustion.release.xcconfig"; path = "Target Support Files/Pods-MFFuelCombustion/Pods-MFFuelCombustion.release.xcconfig"; sourceTree = "<group>"; };
@@ -148,6 +154,7 @@
 		6645E81F2810356D002387BB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				66ECF2152819441500814686 /* Ressources */,
 				6645E84228105667002387BB /* Models */,
 				6645E82E2810396B002387BB /* Managers */,
 				6645E82F28103971002387BB /* Interfaces */,
@@ -192,6 +199,16 @@
 		66A29D622812AA160057A787 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				66ECF2132819433D00814686 /* EcoFuelAnimation.json */,
+				66ECF2192819508700814686 /* Assets.xcassets */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
+		66ECF2152819441500814686 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				66ECF2172819504500814686 /* R.generated.swift */,
 			);
 			name = Ressources;
 			sourceTree = "<group>";
@@ -225,6 +242,7 @@
 			buildPhases = (
 				C620967DD73550C03155E446 /* [CP] Check Pods Manifest.lock */,
 				6645E80228103564002387BB /* Headers */,
+				66ECF2162819444A00814686 /* R.Swift */,
 				6645E80328103564002387BB /* Sources */,
 				6645E80428103564002387BB /* Frameworks */,
 				6645E80528103564002387BB /* Resources */,
@@ -301,6 +319,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66ECF2142819433D00814686 /* EcoFuelAnimation.json in Resources */,
+				66ECF21A2819508700814686 /* Assets.xcassets in Resources */,
 				6645E83428103A50002387BB /* FuelCombustion.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +353,26 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
+		66ECF2162819444A00814686 /* R.Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.Swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		C620967DD73550C03155E446 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,6 +404,7 @@
 			files = (
 				6645E831281039C5002387BB /* FuelCombustionNavigationManager.swift in Sources */,
 				6605CD6628114D3E00B226A5 /* Estimate.swift in Sources */,
+				66ECF2182819504600814686 /* R.generated.swift in Sources */,
 				6645E83628103B27002387BB /* FuelCombustionViewController.swift in Sources */,
 				6645E83828103B47002387BB /* FuelCombustionViewModel.swift in Sources */,
 			);

@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import MFExtensions
 
 public final class FuelCombustionNavigationManager {
 

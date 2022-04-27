@@ -17,6 +17,9 @@
 		661581052809C622006C2170 /* MFExtensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 661581032809C622006C2170 /* MFExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		664A043D280861AF006C40F8 /* MFVehicle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664A0434280861AF006C40F8 /* MFVehicle.framework */; };
 		664A0442280861AF006C40F8 /* MFVehicleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A0441280861AF006C40F8 /* MFVehicleTests.swift */; };
+		66D2A867281976690026F85E /* CarAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 66D2A866281976690026F85E /* CarAnimation.json */; };
+		66D2A869281976810026F85E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D2A868281976810026F85E /* Assets.xcassets */; };
+		66D2A86D28197A520026F85E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2A86C28197A520026F85E /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		664A0434280861AF006C40F8 /* MFVehicle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MFVehicle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		664A043C280861AF006C40F8 /* MFVehicleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFVehicleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		664A0441280861AF006C40F8 /* MFVehicleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFVehicleTests.swift; sourceTree = "<group>"; };
+		66D2A866281976690026F85E /* CarAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CarAnimation.json; sourceTree = "<group>"; };
+		66D2A868281976810026F85E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66D2A86C28197A520026F85E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		7596E8823B91D1997D6CE38A /* Pods-Shared-MFVehicle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFVehicle.release.xcconfig"; path = "Target Support Files/Pods-Shared-MFVehicle/Pods-Shared-MFVehicle.release.xcconfig"; sourceTree = "<group>"; };
 		780B2C3A1FA8E66874336062 /* Pods-Shared-MFVehicle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFVehicle.debug.xcconfig"; path = "Target Support Files/Pods-Shared-MFVehicle/Pods-Shared-MFVehicle.debug.xcconfig"; sourceTree = "<group>"; };
 		88CFDE81C4DE10A0D76C6625 /* Pods-MFVehicle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFVehicle.release.xcconfig"; path = "Target Support Files/Pods-MFVehicle/Pods-MFVehicle.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,6 +127,7 @@
 		661580E428097A25006C2170 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				66D2A86B28197A3F0026F85E /* Ressources */,
 				6645E843281058AE002387BB /* Models */,
 				661580ED28099B94006C2170 /* Managers */,
 				661580E528097AD0006C2170 /* Interfaces */,
@@ -194,6 +201,16 @@
 		66A29D632812AA400057A787 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				66D2A866281976690026F85E /* CarAnimation.json */,
+				66D2A868281976810026F85E /* Assets.xcassets */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
+		66D2A86B28197A3F0026F85E /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				66D2A86C28197A520026F85E /* R.generated.swift */,
 			);
 			name = Ressources;
 			sourceTree = "<group>";
@@ -217,6 +234,7 @@
 			buildPhases = (
 				F9304D1CD6C81C8092A9358D /* [CP] Check Pods Manifest.lock */,
 				664A042F280861AF006C40F8 /* Headers */,
+				66D2A86A281979D20026F85E /* R.Swift */,
 				664A0430280861AF006C40F8 /* Sources */,
 				664A0431280861AF006C40F8 /* Frameworks */,
 				664A0432280861AF006C40F8 /* Resources */,
@@ -294,6 +312,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				661580E828099A92006C2170 /* Vehicle.storyboard in Resources */,
+				66D2A869281976810026F85E /* Assets.xcassets in Resources */,
+				66D2A867281976690026F85E /* CarAnimation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +344,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		66D2A86A281979D20026F85E /* R.Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.Swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
 		};
 		F9304D1CD6C81C8092A9358D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -356,6 +396,7 @@
 			files = (
 				661580EA28099AD1006C2170 /* VehicleViewController.swift in Sources */,
 				6605CD69281189D200B226A5 /* Estimate.swift in Sources */,
+				66D2A86D28197A520026F85E /* R.generated.swift in Sources */,
 				661580EC28099AE3006C2170 /* VehicleViewModel.swift in Sources */,
 				661580EF28099BAF006C2170 /* VehicleNavigationManager.swift in Sources */,
 			);

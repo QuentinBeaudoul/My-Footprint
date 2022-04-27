@@ -7,7 +7,6 @@ abstract_target 'Shared' do
 	pod 'R.swift'
 	pod 'SwiftLint'
 	
-
 	target 'MFExtensions' do
 		project 'Frameworks/MFExtensions/MFExtensions.xcodeproj'
 	end

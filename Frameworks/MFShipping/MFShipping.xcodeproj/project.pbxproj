@@ -18,6 +18,8 @@
 		664A041B280860BE006C40F8 /* MFShipping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664A0412280860BE006C40F8 /* MFShipping.framework */; };
 		664A0420280860BE006C40F8 /* MFShippingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A041F280860BE006C40F8 /* MFShippingTests.swift */; };
 		664A0421280860BE006C40F8 /* MFShipping.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A0415280860BE006C40F8 /* MFShipping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66D2A87128197C110026F85E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2A87028197C110026F85E /* R.generated.swift */; };
+		66D2A87328197C760026F85E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D2A87228197C760026F85E /* Assets.xcassets */; };
 		6A71B6884FE7E6310E062C83 /* Pods_Shared_MFShipping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8479E1F972487C2D26B20848 /* Pods_Shared_MFShipping.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,8 @@
 		664A0415280860BE006C40F8 /* MFShipping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFShipping.h; sourceTree = "<group>"; };
 		664A041A280860BE006C40F8 /* MFShippingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFShippingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		664A041F280860BE006C40F8 /* MFShippingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFShippingTests.swift; sourceTree = "<group>"; };
+		66D2A87028197C110026F85E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		66D2A87228197C760026F85E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8479E1F972487C2D26B20848 /* Pods_Shared_MFShipping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MFShipping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		944BD4F852AC860A0DD4952D /* Pods-MFShipping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFShipping.release.xcconfig"; path = "Target Support Files/Pods-MFShipping/Pods-MFShipping.release.xcconfig"; sourceTree = "<group>"; };
 		A9DCBF8448815B32A873DFEB /* Pods-Shared-MFShipping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFShipping.debug.xcconfig"; path = "Target Support Files/Pods-Shared-MFShipping/Pods-Shared-MFShipping.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +102,7 @@
 		661580F32809A5A7006C2170 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				66D2A86F28197B300026F85E /* Ressources */,
 				6645E844281058C0002387BB /* Models */,
 				661580F62809A628006C2170 /* Managers */,
 				661580F42809A608006C2170 /* Interfaces */,
@@ -181,6 +186,15 @@
 			isa = PBXGroup;
 			children = (
 				4FE335DE28181E0100DFD8D2 /* ShippingAnimation.json */,
+				66D2A87228197C760026F85E /* Assets.xcassets */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
+		66D2A86F28197B300026F85E /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				66D2A87028197C110026F85E /* R.generated.swift */,
 			);
 			name = Ressources;
 			sourceTree = "<group>";
@@ -228,6 +242,7 @@
 			buildPhases = (
 				7405D62A4251C6691971F153 /* [CP] Check Pods Manifest.lock */,
 				664A040D280860BE006C40F8 /* Headers */,
+				66D2A86E28197AFC0026F85E /* R.Swift */,
 				664A040E280860BE006C40F8 /* Sources */,
 				664A040F280860BE006C40F8 /* Frameworks */,
 				664A0410280860BE006C40F8 /* Resources */,
@@ -305,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FE335DF28181E0100DFD8D2 /* ShippingAnimation.json in Resources */,
+				66D2A87328197C760026F85E /* Assets.xcassets in Resources */,
 				661580F92809A64C006C2170 /* Shipping.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +353,26 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
+		66D2A86E28197AFC0026F85E /* R.Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.Swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		7405D62A4251C6691971F153 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -368,6 +404,7 @@
 			files = (
 				661580FD2809A6AB006C2170 /* ShippingViewModel.swift in Sources */,
 				6605CD6C281191CE00B226A5 /* Estimate.swift in Sources */,
+				66D2A87128197C110026F85E /* R.generated.swift in Sources */,
 				661580FB2809A698006C2170 /* ShippingViewController.swift in Sources */,
 				661580FF2809A6EC006C2170 /* ShippingNavigationManager.swift in Sources */,
 			);

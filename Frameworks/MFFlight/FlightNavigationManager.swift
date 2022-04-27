@@ -20,8 +20,8 @@ public final class FlightNavigationManager {
                                                                       in: Bundle(for: Self.self))
 
         navController.tabBarItem = UITabBarItem(title: nil,
-                                                image: R.image.ic_25_flight(),
-                                                selectedImage: R.image.ic_35_flight())
+                                                image: R.image.ic_25_airplane(),
+                                                selectedImage: R.image.ic_35_airplane())
 
         return navController
     }

@@ -7,7 +7,6 @@
 
 import UIKit
 import Lottie
-import MFExtensions
 
 class SplashViewController: UIViewController {
 
@@ -19,7 +18,8 @@ class SplashViewController: UIViewController {
         // Do any additional setup after loading the view.
 
         // Setting up gradient background color
-        if let topColor = R.color.backgroundGradientTop(), let bottomColor = R.color.backgroundGradientBottom() {
+        if let topColor = UIColor(named: "backgroundGradientTop"),
+           let bottomColor = UIColor(named: "backgroundGradientBottom") {
             view.setGradientBackground(colorTop: topColor, colorBottom: bottomColor)
         }
 

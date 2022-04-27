@@ -17,6 +17,9 @@
 		66A29D5F28129A5B0057A787 /* Estimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A29D5E28129A5B0057A787 /* Estimate.swift */; };
 		66A29D752812DB6A0057A787 /* MFExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A29D742812DB6A0057A787 /* MFExtensions.framework */; };
 		66A29D762812DB6A0057A787 /* MFExtensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66A29D742812DB6A0057A787 /* MFExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		66D2A87F281980910026F85E /* LightBulbAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 66D2A87E281980910026F85E /* LightBulbAnimation.json */; };
+		66D2A881281980A90026F85E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D2A880281980A90026F85E /* Assets.xcassets */; };
+		66D2A8852819815F0026F85E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2A8842819815F0026F85E /* R.generated.swift */; };
 		A15AB72AEB2AF03076FB0E70 /* Pods_Shared_MFElectricity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F724E4C2E76C63455FA69D2C /* Pods_Shared_MFElectricity.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +60,9 @@
 		664A03DB28085FA9006C40F8 /* MFElectricityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFElectricityTests.swift; sourceTree = "<group>"; };
 		66A29D5E28129A5B0057A787 /* Estimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estimate.swift; sourceTree = "<group>"; };
 		66A29D742812DB6A0057A787 /* MFExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66D2A87E281980910026F85E /* LightBulbAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LightBulbAnimation.json; sourceTree = "<group>"; };
+		66D2A880281980A90026F85E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66D2A8842819815F0026F85E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		79378DA5798EE88F10D03B51 /* Pods-MFElectricity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFElectricity.release.xcconfig"; path = "Target Support Files/Pods-MFElectricity/Pods-MFElectricity.release.xcconfig"; sourceTree = "<group>"; };
 		95907B872F7112A7E188E389 /* Pods-Shared-MFElectricity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFElectricity.debug.xcconfig"; path = "Target Support Files/Pods-Shared-MFElectricity/Pods-Shared-MFElectricity.debug.xcconfig"; sourceTree = "<group>"; };
 		9CEC07378BB9FE6D52F9071A /* Pods-Frameworks-MFElectricity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFElectricity.debug.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFElectricity/Pods-Frameworks-MFElectricity.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +117,7 @@
 		6645E821281036D1002387BB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				66D2A882281980E20026F85E /* Ressources */,
 				6645E846281058D5002387BB /* Models */,
 				6645E822281036DB002387BB /* Managers */,
 				6645E823281036E1002387BB /* Interfaces */,
@@ -155,6 +162,7 @@
 		664A03C428085FA8006C40F8 = {
 			isa = PBXGroup;
 			children = (
+				66D2A87D281980870026F85E /* Ressources */,
 				6645E821281036D1002387BB /* Classes */,
 				664A03D028085FA8006C40F8 /* MFElectricity */,
 				664A03DA28085FA9006C40F8 /* MFElectricityTests */,
@@ -197,6 +205,23 @@
 			name = Response;
 			sourceTree = "<group>";
 		};
+		66D2A87D281980870026F85E /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				66D2A87E281980910026F85E /* LightBulbAnimation.json */,
+				66D2A880281980A90026F85E /* Assets.xcassets */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
+		66D2A882281980E20026F85E /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				66D2A8842819815F0026F85E /* R.generated.swift */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -217,6 +242,7 @@
 			buildPhases = (
 				33E9A5DEBBB8B8F1EE06C9FD /* [CP] Check Pods Manifest.lock */,
 				664A03C928085FA8006C40F8 /* Headers */,
+				66D2A883281980FA0026F85E /* R.Swift */,
 				664A03CA28085FA8006C40F8 /* Sources */,
 				664A03CB28085FA8006C40F8 /* Frameworks */,
 				664A03CC28085FA8006C40F8 /* Resources */,
@@ -293,6 +319,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66D2A87F281980910026F85E /* LightBulbAnimation.json in Resources */,
+				66D2A881281980A90026F85E /* Assets.xcassets in Resources */,
 				6645E8282810376E002387BB /* Electricity.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +375,26 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
+		66D2A883281980FA0026F85E /* R.Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.Swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -356,6 +404,7 @@
 			files = (
 				6645E82A281037EA002387BB /* ElectricityViewController.swift in Sources */,
 				66A29D5F28129A5B0057A787 /* Estimate.swift in Sources */,
+				66D2A8852819815F0026F85E /* R.generated.swift in Sources */,
 				6645E82C281037FA002387BB /* ElectricityViewModel.swift in Sources */,
 				6645E82528103700002387BB /* ElectricityNavigationManager.swift in Sources */,
 			);
