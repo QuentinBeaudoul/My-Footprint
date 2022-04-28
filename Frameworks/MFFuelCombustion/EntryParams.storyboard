@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,6 +17,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ywB-rO-WEy">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="backgroundGradientTop"/>
                     </navigationBar>
                     <connections>
                         <segue destination="n8Q-Q4-U49" kind="relationship" relationship="rootViewController" id="2E2-D4-V6X"/>
@@ -25,10 +27,10 @@
             </objects>
             <point key="canvasLocation" x="-429" y="80"/>
         </scene>
-        <!--View Controller-->
+        <!--Fuel Source Type View Controller-->
         <scene sceneID="akB-bi-kMg">
             <objects>
-                <viewController id="n8Q-Q4-U49" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FuelSourceTypeViewController" id="n8Q-Q4-U49" customClass="FuelSourceTypeViewController" customModule="MFFuelCombustion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8vo-bI-pZd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,12 +41,42 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7V-cy-EaS">
+                                <rect key="frame" x="16" y="798" width="382" height="48"/>
+                                <color key="backgroundColor" name="primaryColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="5Pa-GY-Eaq"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" name="onPrimaryColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="darkPrimaryColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onNextButtonTapped" destination="n8Q-Q4-U49" eventType="touchUpInside" id="c2Y-Lp-7Je"/>
+                                    <segue destination="xvd-PZ-xBW" kind="show" identifier="AmountEntrySegue" id="k7g-aF-TGn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1p6-V6-5tW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="l7V-cy-EaS" firstAttribute="leading" secondItem="1p6-V6-5tW" secondAttribute="leading" constant="16" id="45N-Bc-DdI"/>
+                            <constraint firstItem="1p6-V6-5tW" firstAttribute="trailing" secondItem="l7V-cy-EaS" secondAttribute="trailing" constant="16" id="EFG-WB-b2u"/>
                             <constraint firstItem="snB-PO-QVZ" firstAttribute="centerY" secondItem="8vo-bI-pZd" secondAttribute="centerY" id="PCP-nv-Ilc"/>
                             <constraint firstItem="snB-PO-QVZ" firstAttribute="centerX" secondItem="8vo-bI-pZd" secondAttribute="centerX" id="TSw-R2-OCa"/>
+                            <constraint firstItem="1p6-V6-5tW" firstAttribute="bottom" secondItem="l7V-cy-EaS" secondAttribute="bottom" constant="16" id="mA3-QJ-v16"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VhL-hr-XEN"/>
@@ -53,8 +85,153 @@
             </objects>
             <point key="canvasLocation" x="383" y="80"/>
         </scene>
+        <!--Amount Entry View Controller-->
+        <scene sceneID="OX0-0S-6B4">
+            <objects>
+                <viewController id="xvd-PZ-xBW" customClass="AmountEntryViewController" customModule="MFFuelCombustion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GsW-MG-shz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZS-bA-h5f">
+                                <rect key="frame" x="16" y="798" width="382" height="48"/>
+                                <color key="backgroundColor" name="primaryColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="xeg-9M-gt2"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Process...">
+                                    <color key="titleColor" name="onPrimaryColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="darkPrimaryColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onProcessButtonTapped" destination="xvd-PZ-xBW" eventType="touchUpInside" id="08E-c3-0WQ"/>
+                                    <segue destination="0M9-hc-N4v" kind="show" identifier="ProcessSegue" animates="NO" id="L4X-gI-zkh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QZl-u2-qKO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QZl-u2-qKO" firstAttribute="trailing" secondItem="BZS-bA-h5f" secondAttribute="trailing" constant="16" id="Bcb-ix-sJe"/>
+                            <constraint firstItem="QZl-u2-qKO" firstAttribute="bottom" secondItem="BZS-bA-h5f" secondAttribute="bottom" constant="16" id="HjR-1N-Oor"/>
+                            <constraint firstItem="BZS-bA-h5f" firstAttribute="leading" secondItem="GsW-MG-shz" secondAttribute="leading" constant="16" id="MxQ-mR-24O"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="y7i-6K-xH0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gw1-AM-5rq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1120" y="80"/>
+        </scene>
+        <!--Process View Controller-->
+        <scene sceneID="gcU-J7-cck">
+            <objects>
+                <viewController id="0M9-hc-N4v" customClass="ProcessViewController" customModule="MFFuelCombustion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nS4-T5-yrB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TCb-tB-me5" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Ab8-6x-aag"/>
+                                    <constraint firstAttribute="width" secondItem="TCb-tB-me5" secondAttribute="height" multiplier="1:1" id="x42-pn-fcV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mlu-Ix-n0l"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TCb-tB-me5" firstAttribute="centerY" secondItem="nS4-T5-yrB" secondAttribute="centerY" id="iyS-ki-l88"/>
+                            <constraint firstItem="TCb-tB-me5" firstAttribute="centerX" secondItem="nS4-T5-yrB" secondAttribute="centerX" id="rrf-G6-GQz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Oux-db-BQJ"/>
+                    <connections>
+                        <outlet property="animationView" destination="TCb-tB-me5" id="M2a-7v-6xD"/>
+                        <segue destination="NqA-YY-whp" kind="show" identifier="ResultSegue" id="mlh-j8-onR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r3a-vh-AbZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1910" y="80"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="gDU-Td-O3Y">
+            <objects>
+                <viewController id="NqA-YY-whp" customClass="ResultViewController" customModule="MFFuelCombustion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5WD-0R-r07">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOq-C7-H1p">
+                                <rect key="frame" x="16" y="798" width="382" height="48"/>
+                                <color key="backgroundColor" name="primaryColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="GaR-5B-NOv"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" name="onPrimaryColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="darkPrimaryColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onDoneButtonTapped" destination="NqA-YY-whp" eventType="touchUpInside" id="jSk-A7-qdO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IVr-jw-pfn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IVr-jw-pfn" firstAttribute="trailing" secondItem="tOq-C7-H1p" secondAttribute="trailing" constant="16" id="49A-GC-9As"/>
+                            <constraint firstItem="tOq-C7-H1p" firstAttribute="leading" secondItem="IVr-jw-pfn" secondAttribute="leading" constant="16" id="ht2-Zm-YlR"/>
+                            <constraint firstItem="IVr-jw-pfn" firstAttribute="bottom" secondItem="tOq-C7-H1p" secondAttribute="bottom" constant="16" id="lUv-8B-brb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fn0-mB-kPe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3HN-tv-sCF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2723" y="80"/>
+        </scene>
     </scenes>
     <resources>
+        <namedColor name="backgroundGradientTop">
+            <color red="0.70399999618530273" green="0.88599997758865356" blue="0.86799997091293335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkPrimaryColor">
+            <color red="0.88200002908706665" green="0.49900001287460327" blue="0.008999999612569809" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="onPrimaryColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryColor">
+            <color red="1" green="0.56300002336502075" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -13,8 +13,6 @@ class FuelCombustionViewController: UIViewController {
 
     @IBOutlet weak var buttonViewHeightContrainte: NSLayoutConstraint!
 
-    private var entryParamsViewController: UIViewController?
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,15 +30,7 @@ class FuelCombustionViewController: UIViewController {
         buttonViewHeightContrainte.constant = UIScreen.main.bounds.maxY - 71.5 - CGFloat(tabbarHeight) - statusBarHeight
     }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "EntryParamsSegue" {
-            entryParamsViewController = segue.destination
-        }
-    }
-
     @IBAction func onGetStartedTapped() {
-        if let entryParamsViewController = entryParamsViewController {
-            present(entryParamsViewController, animated: true)
-        }
+        performSegue(withIdentifier: "EntryParamsSegue", sender: nil)
     }
 }
