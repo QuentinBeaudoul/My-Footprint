@@ -34,7 +34,7 @@ class SplashViewController: UIViewController {
     // TODO: Load history here (or in viewWillLoad)
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() /*+ 2*/) {
             let mainVC = MainViewController.makeFromStoryboard()
             mainVC.modalPresentationStyle = .overFullScreen
             self.present(mainVC, animated: true)

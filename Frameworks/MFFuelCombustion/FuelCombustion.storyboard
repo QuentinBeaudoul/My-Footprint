@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,36 +14,123 @@
             <objects>
                 <viewController storyboardIdentifier="FuelCombustionViewController" id="6u1-Yy-zB8" customClass="FuelCombustionViewController" customModule="MFFuelCombustion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M3c-Yi-8MB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fuel Combustion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ei-vE-tjx">
-                                <rect key="frame" x="16" y="60" width="229.5" height="38.5"/>
+                                <rect key="frame" x="15.999999999999986" y="60" width="231.66666666666663" height="39.666666666666657"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
                                 <color key="textColor" name="onPrimaryColor"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="2" height="1"/>
                             </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agr-rE-dZd">
+                                <rect key="frame" x="0.0" y="107.66666666666669" width="390" height="702.33333333333326"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2rs-GI-rEQ" userLabel="Content Scroll View">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="1500"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RPN-tj-zhO">
+                                                <rect key="frame" x="0.0" y="0.0" width="390" height="500"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJ3-jr-dxO">
+                                                        <rect key="frame" x="132" y="226" width="126" height="48"/>
+                                                        <color key="backgroundColor" name="primaryColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="48" id="nPE-Di-gcB"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                                        <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Get started !">
+                                                            <color key="titleColor" name="onPrimaryColor"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="12"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="darkPrimaryColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="onGetStartedTapped" destination="6u1-Yy-zB8" eventType="touchUpInside" id="pKb-TO-PYe"/>
+                                                            <segue destination="8ss-fh-gdI" kind="presentation" identifier="EntryParamsSegue" id="hDR-iD-bAn"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="500" id="n5b-71-eOb"/>
+                                                    <constraint firstItem="BJ3-jr-dxO" firstAttribute="centerY" secondItem="RPN-tj-zhO" secondAttribute="centerY" id="s0y-9l-QHI"/>
+                                                    <constraint firstItem="BJ3-jr-dxO" firstAttribute="centerX" secondItem="RPN-tj-zhO" secondAttribute="centerX" id="x9H-PA-sNW"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="RPN-tj-zhO" firstAttribute="leading" secondItem="2rs-GI-rEQ" secondAttribute="leading" id="6aX-cw-2Jn"/>
+                                            <constraint firstItem="RPN-tj-zhO" firstAttribute="top" secondItem="2rs-GI-rEQ" secondAttribute="top" id="JBF-0Q-5Nn"/>
+                                            <constraint firstAttribute="height" constant="1500" id="e9L-4H-KSH"/>
+                                            <constraint firstAttribute="trailing" secondItem="RPN-tj-zhO" secondAttribute="trailing" id="u3y-3p-hgn"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2rs-GI-rEQ" firstAttribute="width" secondItem="2bl-ES-fvX" secondAttribute="width" id="iC1-Gb-dOj"/>
+                                    <constraint firstItem="2rs-GI-rEQ" firstAttribute="leading" secondItem="XgZ-xw-YSN" secondAttribute="leading" id="mOs-9L-Jrt"/>
+                                    <constraint firstItem="2rs-GI-rEQ" firstAttribute="bottom" secondItem="XgZ-xw-YSN" secondAttribute="bottom" id="nxU-2m-xYJ"/>
+                                    <constraint firstItem="2rs-GI-rEQ" firstAttribute="trailing" secondItem="XgZ-xw-YSN" secondAttribute="trailing" id="rVv-9l-U2V"/>
+                                    <constraint firstItem="2rs-GI-rEQ" firstAttribute="top" secondItem="XgZ-xw-YSN" secondAttribute="top" id="yOW-gE-Kk4"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="XgZ-xw-YSN"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="2bl-ES-fvX"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QEv-3k-05y"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="backgroundGradientTop"/>
                         <constraints>
+                            <constraint firstItem="QEv-3k-05y" firstAttribute="bottom" secondItem="agr-rE-dZd" secondAttribute="bottom" id="3eT-Dl-abG"/>
+                            <constraint firstItem="QEv-3k-05y" firstAttribute="trailing" secondItem="agr-rE-dZd" secondAttribute="trailing" id="AqS-ab-l0q"/>
                             <constraint firstItem="9ei-vE-tjx" firstAttribute="leading" secondItem="QEv-3k-05y" secondAttribute="leading" constant="16" id="JNd-gX-hBf"/>
                             <constraint firstItem="9ei-vE-tjx" firstAttribute="top" secondItem="QEv-3k-05y" secondAttribute="top" constant="16" id="Qn9-Yp-DgG"/>
+                            <constraint firstItem="agr-rE-dZd" firstAttribute="top" secondItem="9ei-vE-tjx" secondAttribute="bottom" constant="8" id="WyN-b2-PLX"/>
+                            <constraint firstItem="agr-rE-dZd" firstAttribute="leading" secondItem="QEv-3k-05y" secondAttribute="leading" id="ktr-WK-79T"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Bsp-rj-j1q"/>
+                    <connections>
+                        <outlet property="buttonViewHeightContrainte" destination="n5b-71-eOb" id="duP-9t-eKQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WzW-EK-C7h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="222" y="110"/>
         </scene>
+        <!--EntryParamsViewController-->
+        <scene sceneID="ItX-Vx-pKO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EntryParams" referencedIdentifier="EntryParamsViewController" id="8ss-fh-gdI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OMy-81-uj8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="-155"/>
+        </scene>
     </scenes>
     <resources>
+        <namedColor name="backgroundGradientTop">
+            <color red="0.70399999618530273" green="0.88599997758865356" blue="0.86799997091293335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkPrimaryColor">
+            <color red="0.88201802248049244" green="0.49921489431522126" blue="0.0090325933998118522" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="onPrimaryColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="primaryColor">
+            <color red="1" green="0.56599171625913391" blue="0.010240826343218656" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

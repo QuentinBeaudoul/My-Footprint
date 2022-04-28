@@ -20,6 +20,7 @@
 		66ECF2142819433D00814686 /* EcoFuelAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 66ECF2132819433D00814686 /* EcoFuelAnimation.json */; };
 		66ECF2182819504600814686 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ECF2172819504500814686 /* R.generated.swift */; };
 		66ECF21A2819508700814686 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66ECF2192819508700814686 /* Assets.xcassets */; };
+		66F200EA281AA14E00422AE9 /* EntryParams.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F200E9281AA14E00422AE9 /* EntryParams.storyboard */; };
 		67CA5667B05B6E6B5EB8A58C /* Pods_Shared_MFFuelCombustion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B9E696DA572B7FEEE96C9AD /* Pods_Shared_MFFuelCombustion.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		66ECF2132819433D00814686 /* EcoFuelAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EcoFuelAnimation.json; sourceTree = "<group>"; };
 		66ECF2172819504500814686 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		66ECF2192819508700814686 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66F200E9281AA14E00422AE9 /* EntryParams.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EntryParams.storyboard; sourceTree = "<group>"; };
 		6AAA841A977ED1BAB24E7B37 /* Pods-Shared-MFFuelCombustion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFFuelCombustion.release.xcconfig"; path = "Target Support Files/Pods-Shared-MFFuelCombustion/Pods-Shared-MFFuelCombustion.release.xcconfig"; sourceTree = "<group>"; };
 		6B9E696DA572B7FEEE96C9AD /* Pods_Shared_MFFuelCombustion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MFFuelCombustion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		786DBC2B0E2AB1ABB830163C /* Pods-MFFuelCombustion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFFuelCombustion.release.xcconfig"; path = "Target Support Files/Pods-MFFuelCombustion/Pods-MFFuelCombustion.release.xcconfig"; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 		6645E82F28103971002387BB /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				66F200E8281AA09100422AE9 /* EntryParams */,
 				6645E83228103A32002387BB /* Main */,
 			);
 			name = Interfaces;
@@ -211,6 +214,14 @@
 				66ECF2172819504500814686 /* R.generated.swift */,
 			);
 			name = Ressources;
+			sourceTree = "<group>";
+		};
+		66F200E8281AA09100422AE9 /* EntryParams */ = {
+			isa = PBXGroup;
+			children = (
+				66F200E9281AA14E00422AE9 /* EntryParams.storyboard */,
+			);
+			name = EntryParams;
 			sourceTree = "<group>";
 		};
 		D5315088DB34A6FBBF1C2383 /* Frameworks */ = {
@@ -322,6 +333,7 @@
 				66ECF2142819433D00814686 /* EcoFuelAnimation.json in Resources */,
 				66ECF21A2819508700814686 /* Assets.xcassets in Resources */,
 				6645E83428103A50002387BB /* FuelCombustion.storyboard in Resources */,
+				66F200EA281AA14E00422AE9 /* EntryParams.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
