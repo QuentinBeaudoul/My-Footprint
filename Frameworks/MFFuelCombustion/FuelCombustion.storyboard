@@ -35,40 +35,35 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RPN-tj-zhO">
                                                 <rect key="frame" x="0.0" y="0.0" width="390" height="500"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJ3-jr-dxO">
-                                                        <rect key="frame" x="132" y="226" width="126" height="48"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUr-n4-fvf" userLabel="Get Started Button" customClass="MFButton" customModule="MFFuelCombustion" customModuleProvider="target">
+                                                        <rect key="frame" x="133" y="227.66666666666663" width="124" height="45"/>
                                                         <color key="backgroundColor" name="primaryColor"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="48" id="nPE-Di-gcB"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
-                                                        <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                                        <color key="tintColor" name="onPrimaryColor"/>
+                                                        <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="Get started !">
-                                                            <color key="titleColor" name="onPrimaryColor"/>
-                                                        </state>
+                                                        <state key="normal" title="Get started !"/>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="12"/>
-                                                            </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                <real key="value" value="1"/>
+                                                                <real key="value" value="2"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                <color key="value" name="darkPrimaryColor"/>
+                                                                <color key="value" name="secondaryColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="4"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="onGetStartedTapped" destination="6u1-Yy-zB8" eventType="touchUpInside" id="pKb-TO-PYe"/>
-                                                            <segue destination="8ss-fh-gdI" kind="presentation" identifier="EntryParamsSegue" id="hDR-iD-bAn"/>
+                                                            <segue destination="8ss-fh-gdI" kind="presentation" identifier="EntryParamsSegue" id="MIU-Hs-CaW"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstItem="gUr-n4-fvf" firstAttribute="centerY" secondItem="RPN-tj-zhO" secondAttribute="centerY" id="GYW-eI-7Hi"/>
+                                                    <constraint firstItem="gUr-n4-fvf" firstAttribute="centerX" secondItem="RPN-tj-zhO" secondAttribute="centerX" id="eKY-PX-Ehd"/>
                                                     <constraint firstAttribute="height" constant="500" id="n5b-71-eOb"/>
-                                                    <constraint firstItem="BJ3-jr-dxO" firstAttribute="centerY" secondItem="RPN-tj-zhO" secondAttribute="centerY" id="s0y-9l-QHI"/>
-                                                    <constraint firstItem="BJ3-jr-dxO" firstAttribute="centerX" secondItem="RPN-tj-zhO" secondAttribute="centerX" id="x9H-PA-sNW"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zvS-kB-UOe">
@@ -130,18 +125,23 @@
             <point key="canvasLocation" x="1048" y="-155"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="gUr-n4-fvf">
+            <size key="intrinsicContentSize" width="124" height="45"/>
+        </designable>
+    </designables>
     <resources>
         <namedColor name="backgroundGradientTop">
             <color red="0.70399999618530273" green="0.88599997758865356" blue="0.86799997091293335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="darkPrimaryColor">
-            <color red="0.88200002908706665" green="0.49900001287460327" blue="0.008999999612569809" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="onPrimaryColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="primaryColor">
-            <color red="1" green="0.56599998474121094" blue="0.0099999997764825821" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.56300002336502075" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondaryColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

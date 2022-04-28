@@ -11,6 +11,7 @@
 		660D49E6281AC4CA00A795E6 /* AmountEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660D49E5281AC4CA00A795E6 /* AmountEntryViewController.swift */; };
 		660D49E8281AC99800A795E6 /* ProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660D49E7281AC99800A795E6 /* ProcessViewController.swift */; };
 		660D49EA281ACB8300A795E6 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660D49E9281ACB8300A795E6 /* ResultViewController.swift */; };
+		660D49F1281ADC4900A795E6 /* MFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660D49F0281ADC4900A795E6 /* MFButton.swift */; };
 		6645E81028103565002387BB /* MFFuelCombustion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6645E80728103564002387BB /* MFFuelCombustion.framework */; };
 		6645E81528103565002387BB /* MFFuelCombustionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6645E81428103565002387BB /* MFFuelCombustionTests.swift */; };
 		6645E81628103565002387BB /* MFFuelCombustion.h in Headers */ = {isa = PBXBuildFile; fileRef = 6645E80A28103564002387BB /* MFFuelCombustion.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -59,6 +60,7 @@
 		660D49E5281AC4CA00A795E6 /* AmountEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountEntryViewController.swift; sourceTree = "<group>"; };
 		660D49E7281AC99800A795E6 /* ProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessViewController.swift; sourceTree = "<group>"; };
 		660D49E9281ACB8300A795E6 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		660D49F0281ADC4900A795E6 /* MFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFButton.swift; sourceTree = "<group>"; };
 		6645E80728103564002387BB /* MFFuelCombustion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MFFuelCombustion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6645E80A28103564002387BB /* MFFuelCombustion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFFuelCombustion.h; sourceTree = "<group>"; };
 		6645E80F28103565002387BB /* MFFuelCombustionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFFuelCombustionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +125,22 @@
 			name = Response;
 			sourceTree = "<group>";
 		};
+		660D49EC281ADAB400A795E6 /* UIComponantes */ = {
+			isa = PBXGroup;
+			children = (
+				660D49EF281ADC3600A795E6 /* MFButtonView */,
+			);
+			name = UIComponantes;
+			sourceTree = "<group>";
+		};
+		660D49EF281ADC3600A795E6 /* MFButtonView */ = {
+			isa = PBXGroup;
+			children = (
+				660D49F0281ADC4900A795E6 /* MFButton.swift */,
+			);
+			name = MFButtonView;
+			sourceTree = "<group>";
+		};
 		6645E7FD28103564002387BB = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +182,7 @@
 		6645E81F2810356D002387BB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				660D49EC281ADAB400A795E6 /* UIComponantes */,
 				66ECF2152819441500814686 /* Ressources */,
 				6645E84228105667002387BB /* Models */,
 				6645E82E2810396B002387BB /* Managers */,
@@ -439,6 +458,7 @@
 				66ECF2182819504600814686 /* R.generated.swift in Sources */,
 				6645E83628103B27002387BB /* FuelCombustionViewController.swift in Sources */,
 				660D49E8281AC99800A795E6 /* ProcessViewController.swift in Sources */,
+				660D49F1281ADC4900A795E6 /* MFButton.swift in Sources */,
 				660D49E6281AC4CA00A795E6 /* AmountEntryViewController.swift in Sources */,
 				6645E83828103B47002387BB /* FuelCombustionViewModel.swift in Sources */,
 				66F200ED281AC1AA00422AE9 /* FuelSourceTypeViewController.swift in Sources */,

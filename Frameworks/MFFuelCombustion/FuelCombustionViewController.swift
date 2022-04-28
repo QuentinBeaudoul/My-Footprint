@@ -28,9 +28,6 @@ class FuelCombustionViewController: UIViewController {
         let tabbarHeight = UIDevice.current.hasNotch ? 75 : 52
         let statusBarHeight = UIApplication.statusBarHeight()!
         buttonViewHeightContrainte.constant = UIScreen.main.bounds.maxY - 71.5 - CGFloat(tabbarHeight) - statusBarHeight
-    }
 
-    @IBAction func onGetStartedTapped() {
-        performSegue(withIdentifier: "EntryParamsSegue", sender: nil)
     }
 }
