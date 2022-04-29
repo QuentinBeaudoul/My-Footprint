@@ -11,7 +11,8 @@ import Lottie
 
 class FuelCombustionViewController: UIViewController {
 
-    @IBOutlet weak var buttonViewHeightContrainte: NSLayoutConstraint!
+    @IBOutlet weak var historyView: UIView!
+    @IBOutlet weak var historyViewHeightConstrainte: NSLayoutConstraint!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,12 +23,24 @@ class FuelCombustionViewController: UIViewController {
             view.setGradientBackground(colorTop: topColor, colorBottom: bottomColor)
         }
 
-        // set the button in the center Y position
-        // Header height = 71.5
-        // Tabbar height = hasNotch ? 75 : 52
-        let tabbarHeight = UIDevice.current.hasNotch ? 75 : 52
-        let statusBarHeight = UIApplication.statusBarHeight()!
-        buttonViewHeightContrainte.constant = UIScreen.main.bounds.maxY - 71.5 - CGFloat(tabbarHeight) - statusBarHeight
+        // Set the historyView in the bottom
+        historyViewHeightConstrainte.constant = UIScreen.main.bounds.maxY * 0.7
 
+        // Set Pan gesture for HistoryView
+
+    }
+    @IBAction func swipeGesture(_ sender: UISwipeGestureRecognizer) {
+        switch sender.direction {
+        case.up:
+            historyViewHeightConstrainte.constant = 8
+        case.down:
+            historyViewHeightConstrainte.constant = UIScreen.main.bounds.maxY * 0.7
+        default:
+            break
+        }
+
+        UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseInOut) {
+            sender.view?.superview?.layoutIfNeeded()
+        }
     }
 }
