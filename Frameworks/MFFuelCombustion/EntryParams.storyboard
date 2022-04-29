@@ -13,9 +13,8 @@
         <!--Navigation Controller-->
         <scene sceneID="9V7-7A-MYM">
             <objects>
-                <navigationController storyboardIdentifier="EntryParamsViewController" id="0hK-YO-ceO" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="EntryParamsViewController" navigationBarHidden="YES" id="0hK-YO-ceO" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ywB-rO-WEy">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" name="backgroundGradientTop"/>
                         <textAttributes key="titleTextAttributes">
@@ -29,6 +28,9 @@
                             <color key="textShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hoc-VF-IGc">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="n8Q-Q4-U49" kind="relationship" relationship="rootViewController" id="2E2-D4-V6X"/>
                     </connections>
@@ -51,7 +53,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7V-cy-EaS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7V-cy-EaS" customClass="MFButton" customModule="MFFuelCombustion" customModuleProvider="target">
                                 <rect key="frame" x="16" y="798" width="382" height="48"/>
                                 <color key="backgroundColor" name="primaryColor"/>
                                 <constraints>
@@ -62,21 +64,16 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" name="onPrimaryColor"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="12"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" name="darkPrimaryColor"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onNextButtonTapped" destination="n8Q-Q4-U49" eventType="touchUpInside" id="c2Y-Lp-7Je"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdU-nU-MS3" customClass="HeaderView" customModule="MFFuelCombustion" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="R29-cu-AhN"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1p6-V6-5tW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -85,11 +82,15 @@
                             <constraint firstItem="1p6-V6-5tW" firstAttribute="trailing" secondItem="l7V-cy-EaS" secondAttribute="trailing" constant="16" id="EFG-WB-b2u"/>
                             <constraint firstItem="snB-PO-QVZ" firstAttribute="centerY" secondItem="8vo-bI-pZd" secondAttribute="centerY" id="PCP-nv-Ilc"/>
                             <constraint firstItem="snB-PO-QVZ" firstAttribute="centerX" secondItem="8vo-bI-pZd" secondAttribute="centerX" id="TSw-R2-OCa"/>
+                            <constraint firstItem="bdU-nU-MS3" firstAttribute="leading" secondItem="1p6-V6-5tW" secondAttribute="leading" id="lhP-mr-S9Z"/>
                             <constraint firstItem="1p6-V6-5tW" firstAttribute="bottom" secondItem="l7V-cy-EaS" secondAttribute="bottom" constant="16" id="mA3-QJ-v16"/>
+                            <constraint firstItem="1p6-V6-5tW" firstAttribute="trailing" secondItem="bdU-nU-MS3" secondAttribute="trailing" id="qTA-gu-IBw"/>
+                            <constraint firstItem="bdU-nU-MS3" firstAttribute="top" secondItem="1p6-V6-5tW" secondAttribute="top" id="zLc-0y-lKa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Source" id="VhL-hr-XEN"/>
                     <connections>
+                        <outlet property="headerView" destination="bdU-nU-MS3" id="764-m1-TMh"/>
                         <segue destination="xvd-PZ-xBW" kind="show" identifier="AmountEntrySegue" id="vgk-16-KcB"/>
                     </connections>
                 </viewController>
@@ -105,7 +106,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZS-bA-h5f">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZS-bA-h5f" customClass="MFButton" customModule="MFFuelCombustion" customModuleProvider="target">
                                 <rect key="frame" x="16" y="798" width="382" height="48"/>
                                 <color key="backgroundColor" name="primaryColor"/>
                                 <constraints>
@@ -131,17 +132,27 @@
                                     <action selector="onProcessButtonTapped" destination="xvd-PZ-xBW" eventType="touchUpInside" id="08E-c3-0WQ"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OrM-Cp-RBY" customClass="HeaderView" customModule="MFFuelCombustion" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="ygp-aJ-X2c"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QZl-u2-qKO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="QZl-u2-qKO" firstAttribute="trailing" secondItem="BZS-bA-h5f" secondAttribute="trailing" constant="16" id="Bcb-ix-sJe"/>
+                            <constraint firstItem="OrM-Cp-RBY" firstAttribute="top" secondItem="QZl-u2-qKO" secondAttribute="top" id="DCN-WC-FUj"/>
                             <constraint firstItem="QZl-u2-qKO" firstAttribute="bottom" secondItem="BZS-bA-h5f" secondAttribute="bottom" constant="16" id="HjR-1N-Oor"/>
                             <constraint firstItem="BZS-bA-h5f" firstAttribute="leading" secondItem="GsW-MG-shz" secondAttribute="leading" constant="16" id="MxQ-mR-24O"/>
+                            <constraint firstItem="QZl-u2-qKO" firstAttribute="trailing" secondItem="OrM-Cp-RBY" secondAttribute="trailing" id="TWl-au-WeD"/>
+                            <constraint firstItem="OrM-Cp-RBY" firstAttribute="leading" secondItem="GsW-MG-shz" secondAttribute="leading" id="fxS-47-5uU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Amount" id="y7i-6K-xH0"/>
                     <connections>
+                        <outlet property="headerView" destination="OrM-Cp-RBY" id="trW-I8-1Lg"/>
                         <segue destination="0M9-hc-N4v" kind="show" identifier="ProcessSegue" animates="NO" id="cZn-Ba-Zvo"/>
                     </connections>
                 </viewController>
@@ -191,7 +202,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOq-C7-H1p">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOq-C7-H1p" customClass="MFButton" customModule="MFFuelCombustion" customModuleProvider="target">
                                 <rect key="frame" x="16" y="798" width="382" height="48"/>
                                 <color key="backgroundColor" name="primaryColor"/>
                                 <constraints>
@@ -217,16 +228,28 @@
                                     <action selector="onDoneButtonTapped" destination="NqA-YY-whp" eventType="touchUpInside" id="jSk-A7-qdO"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tKO-fi-XWB" customClass="HeaderView" customModule="MFFuelCombustion" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="JEM-g7-HU8"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IVr-jw-pfn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="IVr-jw-pfn" firstAttribute="trailing" secondItem="tOq-C7-H1p" secondAttribute="trailing" constant="16" id="49A-GC-9As"/>
+                            <constraint firstItem="tKO-fi-XWB" firstAttribute="leading" secondItem="IVr-jw-pfn" secondAttribute="leading" id="8kO-qH-EWE"/>
                             <constraint firstItem="tOq-C7-H1p" firstAttribute="leading" secondItem="IVr-jw-pfn" secondAttribute="leading" constant="16" id="ht2-Zm-YlR"/>
                             <constraint firstItem="IVr-jw-pfn" firstAttribute="bottom" secondItem="tOq-C7-H1p" secondAttribute="bottom" constant="16" id="lUv-8B-brb"/>
+                            <constraint firstItem="tKO-fi-XWB" firstAttribute="top" secondItem="IVr-jw-pfn" secondAttribute="top" id="qPa-q5-ycZ"/>
+                            <constraint firstAttribute="trailing" secondItem="tKO-fi-XWB" secondAttribute="trailing" id="z00-4H-HIK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Result" id="fn0-mB-kPe"/>
+                    <connections>
+                        <outlet property="headerView" destination="tKO-fi-XWB" id="qhT-dX-nDs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3HN-tv-sCF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -234,7 +257,15 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="TCb-tB-me5"/>
+        <designable name="BZS-bA-h5f">
+            <size key="intrinsicContentSize" width="89" height="22"/>
+        </designable>
+        <designable name="l7V-cy-EaS">
+            <size key="intrinsicContentSize" width="48" height="22"/>
+        </designable>
+        <designable name="tOq-C7-H1p">
+            <size key="intrinsicContentSize" width="53" height="22"/>
+        </designable>
     </designables>
     <resources>
         <namedColor name="backgroundGradientTop">

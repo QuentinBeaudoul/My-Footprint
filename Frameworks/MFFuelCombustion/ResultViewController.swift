@@ -9,6 +9,8 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    @IBOutlet weak var headerView: HeaderView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,9 +19,18 @@ class ResultViewController: UIViewController {
         if let topColor = R.color.backgroundGradientTop(), let bottomColor = R.color.backgroundGradientBottom() {
             view.setGradientBackground(colorTop: topColor, colorBottom: bottomColor)
         }
+
+        headerView.fillView(title: "Your result !", isBackButtonHidden: false)
+        headerView.delegate = self
     }
 
     @IBAction func onDoneButtonTapped() {
         dismiss(animated: true)
+    }
+}
+
+extension ResultViewController: HeaderViewDelegate {
+    func onBackButtonTapped() {
+        navigationController?.popToViewController(ofClass: AmountEntryViewController.self)
     }
 }

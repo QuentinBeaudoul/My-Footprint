@@ -15,8 +15,15 @@ class HeaderView: LoadableView {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var backLabel: UILabel!
-    
+    @IBOutlet weak var backButtonView: UIView!
+
     var delegate: HeaderViewDelegate?
+
+    func fillView(title: String?, back: String? = "back", isBackButtonHidden: Bool = true) {
+        titleLabel.text = title
+        backLabel.text = back
+        backButtonView.isHidden = isBackButtonHidden
+    }
 
     @IBAction func onBackButtonTapped() {
         delegate?.onBackButtonTapped()

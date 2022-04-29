@@ -9,7 +9,7 @@ import UIKit
 
 class FuelSourceTypeViewController: UIViewController {
 
-    private var amountEntryViewController: AmountEntryViewController?
+    @IBOutlet weak var headerView: HeaderView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,15 +18,29 @@ class FuelSourceTypeViewController: UIViewController {
         if let topColor = R.color.backgroundGradientTop(), let bottomColor = R.color.backgroundGradientBottom() {
             view.setGradientBackground(colorTop: topColor, colorBottom: bottomColor)
         }
+
+        headerView.fillView(title: "Which energy ?")
+        headerView.delegate = self
+
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == R.segue.fuelSourceTypeViewController.amountEntrySegue.identifier {
-            amountEntryViewController = segue.destination as? AmountEntryViewController
+            guard let amountEntryViewController = segue.destination as? AmountEntryViewController else {
+
+                return
+            }
         }
     }
 
     @IBAction func onNextButtonTapped() {
         performSegue(withIdentifier: R.segue.fuelSourceTypeViewController.amountEntrySegue, sender: nil)
+    }
+}
+
+extension FuelSourceTypeViewController: HeaderViewDelegate {
+
+    func onBackButtonTapped() {
+        dismiss(animated: true)
     }
 }

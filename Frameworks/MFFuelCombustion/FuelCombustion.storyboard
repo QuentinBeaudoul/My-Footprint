@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fuel Combustion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ei-vE-tjx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fuel Combustion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ei-vE-tjx" customClass="MFLabel" customModule="MFFuelCombustion" customModuleProvider="target">
                                 <rect key="frame" x="15.999999999999986" y="60" width="231.66666666666663" height="39.333333333333343"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
                                 <color key="textColor" name="onPrimaryColor"/>
@@ -115,6 +115,9 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="9ei-vE-tjx">
+            <size key="intrinsicContentSize" width="230.66666666666666" height="39.333333333333336"/>
+        </designable>
         <designable name="gUr-n4-fvf">
             <size key="intrinsicContentSize" width="124" height="45"/>
         </designable>

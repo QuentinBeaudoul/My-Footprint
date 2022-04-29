@@ -9,7 +9,7 @@ import UIKit
 
 class AmountEntryViewController: UIViewController {
 
-    private var processViewController: ProcessViewController?
+    @IBOutlet weak var headerView: HeaderView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,15 +19,26 @@ class AmountEntryViewController: UIViewController {
         if let topColor = R.color.backgroundGradientTop(), let bottomColor = R.color.backgroundGradientBottom() {
             view.setGradientBackground(colorTop: topColor, colorBottom: bottomColor)
         }
+
+        headerView.fillView(title: "How much ?",isBackButtonHidden: false)
+        headerView.delegate = self
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == R.segue.amountEntryViewController.processSegue.identifier {
-            processViewController = segue.destination as? ProcessViewController
+            guard let processViewController = segue.destination as? ProcessViewController else {
+                return
+            }
         }
     }
 
     @IBAction func onProcessButtonTapped() {
         performSegue(withIdentifier: R.segue.amountEntryViewController.processSegue, sender: nil)
+    }
+}
+
+extension AmountEntryViewController: HeaderViewDelegate {
+    func onBackButtonTapped() {
+        navigationController?.popViewController(animated: true)
     }
 }
