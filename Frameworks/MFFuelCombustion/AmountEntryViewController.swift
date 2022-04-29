@@ -20,7 +20,7 @@ class AmountEntryViewController: UIViewController {
             view.setGradientBackground(colorTop: topColor, colorBottom: bottomColor)
         }
 
-        headerView.fillView(title: "How much ?",isBackButtonHidden: false)
+        headerView.fillView(title: "How much ?", isBackButtonHidden: false)
         headerView.delegate = self
     }
 
