@@ -22,14 +22,12 @@ class AmountEntryViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ProcessSegue" {
+        if segue.identifier == R.segue.amountEntryViewController.processSegue.identifier {
             processViewController = segue.destination as? ProcessViewController
         }
     }
 
     @IBAction func onProcessButtonTapped() {
-        if let processViewController = processViewController {
-            present(processViewController, animated: false)
-        }
+        performSegue(withIdentifier: R.segue.amountEntryViewController.processSegue, sender: nil)
     }
 }

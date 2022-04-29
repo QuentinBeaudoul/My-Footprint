@@ -35,12 +35,12 @@ class ProcessViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [self] in
-            performSegue(withIdentifier: "ResultSegue", sender: nil)
+            performSegue(withIdentifier: R.segue.processViewController.resultSegue, sender: nil)
         }
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ResultSegue" {
+        if segue.identifier == R.segue.processViewController.resultSegue.identifier {
             resultViewController = segue.destination as? ResultViewController
         }
     }

@@ -21,14 +21,12 @@ class FuelSourceTypeViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "AmountEntrySegue" {
+        if segue.identifier == R.segue.fuelSourceTypeViewController.amountEntrySegue.identifier {
             amountEntryViewController = segue.destination as? AmountEntryViewController
         }
     }
 
     @IBAction func onNextButtonTapped() {
-        if let amountEntryViewController = amountEntryViewController {
-            present(amountEntryViewController, animated: true)
-        }
+        performSegue(withIdentifier: R.segue.fuelSourceTypeViewController.amountEntrySegue, sender: nil)
     }
 }

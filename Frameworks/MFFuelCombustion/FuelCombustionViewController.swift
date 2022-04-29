@@ -25,9 +25,6 @@ class FuelCombustionViewController: UIViewController {
 
         // Set the historyView in the bottom
         historyViewHeightConstrainte.constant = UIScreen.main.bounds.maxY * 0.7
-
-        // Set Pan gesture for HistoryView
-
     }
     @IBAction func swipeGesture(_ sender: UISwipeGestureRecognizer) {
         switch sender.direction {

@@ -18,6 +18,16 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" name="backgroundGradientTop"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                            <color key="textColor" name="onPrimaryColor"/>
+                            <color key="textShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                            <color key="textColor" name="onPrimaryColor"/>
+                            <color key="textShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="n8Q-Q4-U49" kind="relationship" relationship="rootViewController" id="2E2-D4-V6X"/>
@@ -27,7 +37,7 @@
             </objects>
             <point key="canvasLocation" x="-429" y="80"/>
         </scene>
-        <!--Fuel Source Type View Controller-->
+        <!--Source-->
         <scene sceneID="akB-bi-kMg">
             <objects>
                 <viewController storyboardIdentifier="FuelSourceTypeViewController" id="n8Q-Q4-U49" customClass="FuelSourceTypeViewController" customModule="MFFuelCombustion" customModuleProvider="target" sceneMemberID="viewController">
@@ -65,7 +75,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onNextButtonTapped" destination="n8Q-Q4-U49" eventType="touchUpInside" id="c2Y-Lp-7Je"/>
-                                    <segue destination="xvd-PZ-xBW" kind="show" identifier="AmountEntrySegue" id="k7g-aF-TGn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -79,13 +88,16 @@
                             <constraint firstItem="1p6-V6-5tW" firstAttribute="bottom" secondItem="l7V-cy-EaS" secondAttribute="bottom" constant="16" id="mA3-QJ-v16"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="VhL-hr-XEN"/>
+                    <navigationItem key="navigationItem" title="Source" id="VhL-hr-XEN"/>
+                    <connections>
+                        <segue destination="xvd-PZ-xBW" kind="show" identifier="AmountEntrySegue" id="vgk-16-KcB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7BE-4Z-7Wb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="383" y="80"/>
         </scene>
-        <!--Amount Entry View Controller-->
+        <!--Amount-->
         <scene sceneID="OX0-0S-6B4">
             <objects>
                 <viewController id="xvd-PZ-xBW" customClass="AmountEntryViewController" customModule="MFFuelCombustion" customModuleProvider="target" sceneMemberID="viewController">
@@ -117,7 +129,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onProcessButtonTapped" destination="xvd-PZ-xBW" eventType="touchUpInside" id="08E-c3-0WQ"/>
-                                    <segue destination="0M9-hc-N4v" kind="show" identifier="ProcessSegue" animates="NO" id="L4X-gI-zkh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -129,13 +140,16 @@
                             <constraint firstItem="BZS-bA-h5f" firstAttribute="leading" secondItem="GsW-MG-shz" secondAttribute="leading" constant="16" id="MxQ-mR-24O"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="y7i-6K-xH0"/>
+                    <navigationItem key="navigationItem" title="Amount" id="y7i-6K-xH0"/>
+                    <connections>
+                        <segue destination="0M9-hc-N4v" kind="show" identifier="ProcessSegue" animates="NO" id="cZn-Ba-Zvo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gw1-AM-5rq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1120" y="80"/>
         </scene>
-        <!--Process View Controller-->
+        <!--Processing...-->
         <scene sceneID="gcU-J7-cck">
             <objects>
                 <viewController id="0M9-hc-N4v" customClass="ProcessViewController" customModule="MFFuelCombustion" customModuleProvider="target" sceneMemberID="viewController">
@@ -159,7 +173,7 @@
                             <constraint firstItem="TCb-tB-me5" firstAttribute="centerX" secondItem="nS4-T5-yrB" secondAttribute="centerX" id="rrf-G6-GQz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Oux-db-BQJ"/>
+                    <navigationItem key="navigationItem" title="Processing..." id="Oux-db-BQJ"/>
                     <connections>
                         <outlet property="animationView" destination="TCb-tB-me5" id="M2a-7v-6xD"/>
                         <segue destination="NqA-YY-whp" kind="show" identifier="ResultSegue" id="mlh-j8-onR"/>
@@ -169,7 +183,7 @@
             </objects>
             <point key="canvasLocation" x="1910" y="80"/>
         </scene>
-        <!--Result View Controller-->
+        <!--Result-->
         <scene sceneID="gDU-Td-O3Y">
             <objects>
                 <viewController id="NqA-YY-whp" customClass="ResultViewController" customModule="MFFuelCombustion" customModuleProvider="target" sceneMemberID="viewController">
@@ -212,13 +226,16 @@
                             <constraint firstItem="IVr-jw-pfn" firstAttribute="bottom" secondItem="tOq-C7-H1p" secondAttribute="bottom" constant="16" id="lUv-8B-brb"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="fn0-mB-kPe"/>
+                    <navigationItem key="navigationItem" title="Result" id="fn0-mB-kPe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3HN-tv-sCF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2723" y="80"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="TCb-tB-me5"/>
+    </designables>
     <resources>
         <namedColor name="backgroundGradientTop">
             <color red="0.70399999618530273" green="0.88599997758865356" blue="0.86799997091293335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
