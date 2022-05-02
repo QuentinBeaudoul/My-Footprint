@@ -7,18 +7,20 @@
 
 import Foundation
 
-final class Request {
+public final class Request {
     private init(){}
 
-    final class Builder {
+    public final class Builder {
 
         private var parameters: [String: Any] = [:]
 
-        func addParameter(key: String, value: Any) {
+        public init() {}
+
+        public func addParameter(key: String, value: Any) {
             parameters[key] = value
         }
 
-        func build() -> [String: Any] {
+        public func build() -> [String: Any] {
             return parameters
         }
     }

@@ -47,12 +47,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EntryParams" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snB-PO-QVZ">
-                                <rect key="frame" x="158.5" y="437.5" width="97" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7V-cy-EaS" customClass="MFButton" customModule="MFFuelCombustion" customModuleProvider="target">
                                 <rect key="frame" x="16" y="798" width="382" height="48"/>
                                 <color key="backgroundColor" name="primaryColor"/>
@@ -74,16 +68,39 @@
                                     <constraint firstAttribute="height" constant="56" id="R29-cu-AhN"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jcg-Zq-RkK" customClass="MFView" customModule="MFFuelCombustion" customModuleProvider="target">
+                                <rect key="frame" x="16" y="116" width="382" height="666"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" estimatedRowHeight="50" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vR4-tH-sIv">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="666"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="vR4-tH-sIv" firstAttribute="top" secondItem="jcg-Zq-RkK" secondAttribute="top" id="LyY-2j-ZSH"/>
+                                    <constraint firstItem="vR4-tH-sIv" firstAttribute="leading" secondItem="jcg-Zq-RkK" secondAttribute="leading" id="X0x-Ys-aZH"/>
+                                    <constraint firstAttribute="bottom" secondItem="vR4-tH-sIv" secondAttribute="bottom" id="xDe-fY-cyn"/>
+                                    <constraint firstAttribute="trailing" secondItem="vR4-tH-sIv" secondAttribute="trailing" id="xQV-yl-egB"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1p6-V6-5tW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="1p6-V6-5tW" firstAttribute="trailing" secondItem="jcg-Zq-RkK" secondAttribute="trailing" constant="16" id="1dq-vq-mKu"/>
                             <constraint firstItem="l7V-cy-EaS" firstAttribute="leading" secondItem="1p6-V6-5tW" secondAttribute="leading" constant="16" id="45N-Bc-DdI"/>
                             <constraint firstItem="1p6-V6-5tW" firstAttribute="trailing" secondItem="l7V-cy-EaS" secondAttribute="trailing" constant="16" id="EFG-WB-b2u"/>
-                            <constraint firstItem="snB-PO-QVZ" firstAttribute="centerY" secondItem="8vo-bI-pZd" secondAttribute="centerY" id="PCP-nv-Ilc"/>
-                            <constraint firstItem="snB-PO-QVZ" firstAttribute="centerX" secondItem="8vo-bI-pZd" secondAttribute="centerX" id="TSw-R2-OCa"/>
+                            <constraint firstItem="jcg-Zq-RkK" firstAttribute="top" secondItem="bdU-nU-MS3" secondAttribute="bottom" constant="16" id="U5X-lO-5z6"/>
+                            <constraint firstItem="jcg-Zq-RkK" firstAttribute="leading" secondItem="1p6-V6-5tW" secondAttribute="leading" constant="16" id="a0V-PI-oA9"/>
                             <constraint firstItem="bdU-nU-MS3" firstAttribute="leading" secondItem="1p6-V6-5tW" secondAttribute="leading" id="lhP-mr-S9Z"/>
                             <constraint firstItem="1p6-V6-5tW" firstAttribute="bottom" secondItem="l7V-cy-EaS" secondAttribute="bottom" constant="16" id="mA3-QJ-v16"/>
+                            <constraint firstItem="l7V-cy-EaS" firstAttribute="top" secondItem="jcg-Zq-RkK" secondAttribute="bottom" constant="16" id="qDZ-51-zHQ"/>
                             <constraint firstItem="1p6-V6-5tW" firstAttribute="trailing" secondItem="bdU-nU-MS3" secondAttribute="trailing" id="qTA-gu-IBw"/>
                             <constraint firstItem="bdU-nU-MS3" firstAttribute="top" secondItem="1p6-V6-5tW" secondAttribute="top" id="zLc-0y-lKa"/>
                         </constraints>
@@ -91,6 +108,7 @@
                     <navigationItem key="navigationItem" title="Source" id="VhL-hr-XEN"/>
                     <connections>
                         <outlet property="headerView" destination="bdU-nU-MS3" id="764-m1-TMh"/>
+                        <outlet property="tableView" destination="vR4-tH-sIv" id="JS8-Hu-1b5"/>
                         <segue destination="xvd-PZ-xBW" kind="show" identifier="AmountEntrySegue" id="vgk-16-KcB"/>
                     </connections>
                 </viewController>

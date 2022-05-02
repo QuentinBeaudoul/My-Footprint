@@ -69,6 +69,7 @@
 		66E6E5D82808112E00AC8C13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66E6E5DB2808112E00AC8C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66E6E5DD2808112E00AC8C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66ED2222281FEE0C00B38079 /* MFNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C4BE83B37C19017AD1BCF55 /* Pods_Shared_MyFootprint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MyFootprint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A96A4EC250747B4A623FCD /* Pods-Shared-MyFootprint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MyFootprint.release.xcconfig"; path = "Target Support Files/Pods-Shared-MyFootprint/Pods-Shared-MyFootprint.release.xcconfig"; sourceTree = "<group>"; };
 		AE3CEA44CBE562A19572EFCB /* Pods-Shared-MyFootprint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MyFootprint.debug.xcconfig"; path = "Target Support Files/Pods-Shared-MyFootprint/Pods-Shared-MyFootprint.debug.xcconfig"; sourceTree = "<group>"; };
@@ -180,6 +181,7 @@
 		89E3BAF9AC91922E2D63DF0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				66ED2222281FEE0C00B38079 /* MFNetwork.framework */,
 				6645E83F28103DD0002387BB /* MFElectricity.framework */,
 				6645E83C28103D76002387BB /* MFFlight.framework */,
 				6645E83928103CE7002387BB /* MFFuelCombustion.framework */,

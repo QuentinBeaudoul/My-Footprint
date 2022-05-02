@@ -11,6 +11,8 @@ class AmountEntryViewController: UIViewController {
 
     @IBOutlet weak var headerView: HeaderView!
 
+    let viewModel = AmountEntryViewModel()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
