@@ -34,6 +34,8 @@
 		66ED2216281FD4C900B38079 /* FuelSourceTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ED2215281FD4C900B38079 /* FuelSourceTypeCell.swift */; };
 		66ED221C281FDE2200B38079 /* MFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ED221B281FDE2200B38079 /* MFView.swift */; };
 		66ED2221281FE8FE00B38079 /* AmountEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ED2220281FE8FE00B38079 /* AmountEntryViewModel.swift */; };
+		66ED2227282013C000B38079 /* MFTextfield.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66ED2226282013C000B38079 /* MFTextfield.xib */; };
+		66ED2229282013CE00B38079 /* MFTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ED2228282013CE00B38079 /* MFTextfield.swift */; };
 		66F200EA281AA14E00422AE9 /* EntryParams.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F200E9281AA14E00422AE9 /* EntryParams.storyboard */; };
 		66F200ED281AC1AA00422AE9 /* FuelSourceTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F200EC281AC1AA00422AE9 /* FuelSourceTypeViewController.swift */; };
 		67CA5667B05B6E6B5EB8A58C /* Pods_Shared_MFFuelCombustion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B9E696DA572B7FEEE96C9AD /* Pods_Shared_MFFuelCombustion.framework */; };
@@ -91,6 +93,8 @@
 		66ED2215281FD4C900B38079 /* FuelSourceTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelSourceTypeCell.swift; sourceTree = "<group>"; };
 		66ED221B281FDE2200B38079 /* MFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFView.swift; sourceTree = "<group>"; };
 		66ED2220281FE8FE00B38079 /* AmountEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountEntryViewModel.swift; sourceTree = "<group>"; };
+		66ED2226282013C000B38079 /* MFTextfield.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MFTextfield.xib; sourceTree = "<group>"; };
+		66ED2228282013CE00B38079 /* MFTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFTextfield.swift; sourceTree = "<group>"; };
 		66F200E9281AA14E00422AE9 /* EntryParams.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EntryParams.storyboard; sourceTree = "<group>"; };
 		66F200EC281AC1AA00422AE9 /* FuelSourceTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelSourceTypeViewController.swift; sourceTree = "<group>"; };
 		6AAA841A977ED1BAB24E7B37 /* Pods-Shared-MFFuelCombustion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFFuelCombustion.release.xcconfig"; path = "Target Support Files/Pods-Shared-MFFuelCombustion/Pods-Shared-MFFuelCombustion.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,7 +144,7 @@
 		660D49EC281ADAB400A795E6 /* UIComponantes */ = {
 			isa = PBXGroup;
 			children = (
-				66ED22252820136800B38079 /* New Group */,
+				66ED22252820136800B38079 /* MFTexfield */,
 				66E20FFB281BE0C600193A2E /* HeaderView */,
 				660D49F0281ADC4900A795E6 /* MFButton.swift */,
 				66E21002281C23D600193A2E /* MFLabel.swift */,
@@ -298,11 +302,13 @@
 			name = AmountEntry;
 			sourceTree = "<group>";
 		};
-		66ED22252820136800B38079 /* New Group */ = {
+		66ED22252820136800B38079 /* MFTexfield */ = {
 			isa = PBXGroup;
 			children = (
+				66ED2226282013C000B38079 /* MFTextfield.xib */,
+				66ED2228282013CE00B38079 /* MFTextfield.swift */,
 			);
-			name = "New Group";
+			name = MFTexfield;
 			sourceTree = "<group>";
 		};
 		66F200E8281AA09100422AE9 /* EntryParams */ = {
@@ -431,6 +437,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66ED2227282013C000B38079 /* MFTextfield.xib in Resources */,
 				66ED2214281FD37100B38079 /* FuelSourceTypeCell.xib in Resources */,
 				66ECF2142819433D00814686 /* EcoFuelAnimation.json in Resources */,
 				66E20FFD281BE0E100193A2E /* HeaderView.xib in Resources */,
@@ -535,6 +542,7 @@
 				66F200ED281AC1AA00422AE9 /* FuelSourceTypeViewController.swift in Sources */,
 				66E2100A281C36AA00193A2E /* FuelEnergySource.swift in Sources */,
 				660D49EA281ACB8300A795E6 /* ResultViewController.swift in Sources */,
+				66ED2229282013CE00B38079 /* MFTextfield.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

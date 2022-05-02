@@ -6,10 +6,13 @@
 //
 
 import UIKit
+import MFExtensions
 
 class AmountEntryViewController: UIViewController {
 
     @IBOutlet weak var headerView: HeaderView!
+    @IBOutlet weak var textField: MFTextfield!
+    @IBOutlet weak var unitButton: MFButton!
 
     let viewModel = AmountEntryViewModel()
 
@@ -22,8 +25,18 @@ class AmountEntryViewController: UIViewController {
             view.setGradientBackground(colorTop: topColor, colorBottom: bottomColor)
         }
 
+        hideKeyboardWhenTappedAround()
+
+        // SetUp header
         headerView.fillView(title: "How much ?", isBackButtonHidden: false)
         headerView.delegate = self
+
+        // SetUp textfield
+        textField.delegate = self
+
+        // SetUp button
+        unitButton.setTitle(viewModel.defaultUnit, for: .normal)
+
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -31,16 +44,50 @@ class AmountEntryViewController: UIViewController {
             guard let processViewController = segue.destination as? ProcessViewController else {
                 return
             }
+            guard let request = viewModel.appendToRequest() else {
+                UIAlertController.showAlert(title: "Something went wrong", on: self)
+                return
+            }
+
+            // TODO: Faire le passage de data vers processVC ici
         }
     }
 
     @IBAction func onProcessButtonTapped() {
         performSegue(withIdentifier: R.segue.amountEntryViewController.processSegue, sender: nil)
     }
+    @IBAction func unitButtonTapped(_ sender: MFButton) {
+        let actionSheet = UIAlertController(title: "Choose an unit", message: nil, preferredStyle: .actionSheet)
+
+        viewModel.units?.forEach({ unit in
+            let action = UIAlertAction(title: unit.name, style: .default) { [self] _ in
+                sender.setTitle(unit.name, for: .normal)
+                viewModel.unit = unit.apiUnit
+            }
+            actionSheet.addAction(action)
+        })
+
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { _ in
+            actionSheet.dismiss(animated: true)
+        }
+        actionSheet.addAction(cancelAction)
+
+        present(actionSheet, animated: true)
+    }
 }
 
 extension AmountEntryViewController: HeaderViewDelegate {
     func onBackButtonTapped() {
         navigationController?.popViewController(animated: true)
+    }
+}
+
+extension AmountEntryViewController: MFTextfieldDelegate {
+    func onTextfieldChanged(_ str: String?) {
+        viewModel.value = str
+    }
+
+    func onClearButtonTapped() {
+        print("toto")
     }
 }

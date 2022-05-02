@@ -18,6 +18,8 @@ class MFButton: UIButton {
         borderColor = R.color.secondaryColor()
         tintColor = R.color.onPrimaryColor()
         titleLabel?.font = .demiBoldFont(withSize: 18)
+        titleLabel?.adjustsFontSizeToFitWidth = true
+        titleLabel?.minimumScaleFactor = 0.5
 
         // setUp corners
         cornerRadius = 4

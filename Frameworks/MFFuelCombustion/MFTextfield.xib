@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MFTextfield" customModule="MFFuelCombustion" customModuleProvider="target">
+            <connections>
+                <outlet property="textField" destination="gUN-ah-PDb" id="jNN-Zf-FbJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="262" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WZ5-3B-UG4">
+                    <rect key="frame" x="0.0" y="0.0" width="262" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="42" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gUN-ah-PDb">
+                            <rect key="frame" x="4" y="4" width="254" height="42"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            <connections>
+                                <action selector="textfieldChanged:" destination="-1" eventType="editingDidEnd" id="Tx8-eo-a11"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" name="primaryColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="gUN-ah-PDb" secondAttribute="bottom" constant="4" id="I1k-Qf-x4n"/>
+                        <constraint firstAttribute="trailing" secondItem="gUN-ah-PDb" secondAttribute="trailing" constant="4" id="J4G-wG-wWK"/>
+                        <constraint firstItem="gUN-ah-PDb" firstAttribute="top" secondItem="WZ5-3B-UG4" secondAttribute="top" constant="4" id="ewX-qi-b3R"/>
+                        <constraint firstItem="gUN-ah-PDb" firstAttribute="leading" secondItem="WZ5-3B-UG4" secondAttribute="leading" constant="4" id="lfj-6W-YLx"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WZ5-3B-UG4" secondAttribute="trailing" id="6Fx-O0-6cp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="WZ5-3B-UG4" secondAttribute="bottom" id="CtZ-X6-hYS"/>
+                <constraint firstItem="WZ5-3B-UG4" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="DHy-m9-cDX"/>
+                <constraint firstItem="WZ5-3B-UG4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="EW1-05-ngm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="2"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" name="onPrimaryColor"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="4"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="41.600000000000001" y="-152.02398800599701"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="onPrimaryColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryColor">
+            <color red="1" green="0.56300002336502075" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
