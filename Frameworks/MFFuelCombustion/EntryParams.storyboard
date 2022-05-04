@@ -47,7 +47,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7V-cy-EaS" customClass="MFButton" customModule="MFFuelCombustion" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7V-cy-EaS" customClass="MFButton" customModule="MFFuelCombustion" customModuleProvider="target">
                                 <rect key="frame" x="16" y="798" width="382" height="48"/>
                                 <color key="backgroundColor" name="primaryColor"/>
                                 <constraints>
@@ -109,6 +109,7 @@
                     <navigationItem key="navigationItem" title="Source" id="VhL-hr-XEN"/>
                     <connections>
                         <outlet property="headerView" destination="bdU-nU-MS3" id="764-m1-TMh"/>
+                        <outlet property="nextButton" destination="l7V-cy-EaS" id="gX0-7x-rfO"/>
                         <outlet property="tableView" destination="vR4-tH-sIv" id="JS8-Hu-1b5"/>
                         <segue destination="xvd-PZ-xBW" kind="show" identifier="AmountEntrySegue" id="vgk-16-KcB"/>
                     </connections>
@@ -125,7 +126,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZS-bA-h5f" customClass="MFButton" customModule="MFFuelCombustion" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZS-bA-h5f" customClass="MFButton" customModule="MFFuelCombustion" customModuleProvider="target">
                                 <rect key="frame" x="16" y="798" width="382" height="48"/>
                                 <color key="backgroundColor" name="primaryColor"/>
                                 <constraints>
@@ -164,7 +165,7 @@
                                     <constraint firstAttribute="height" constant="50" id="RmU-MR-gkD"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gf5-s7-1du" customClass="MFButton" customModule="MFFuelCombustion" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gf5-s7-1du" customClass="MFButton" customModule="MFFuelCombustion" customModuleProvider="target">
                                 <rect key="frame" x="308" y="423" width="90" height="50"/>
                                 <color key="backgroundColor" name="primaryColor"/>
                                 <constraints>
@@ -213,6 +214,7 @@
                     <navigationItem key="navigationItem" title="Amount" id="y7i-6K-xH0"/>
                     <connections>
                         <outlet property="headerView" destination="OrM-Cp-RBY" id="trW-I8-1Lg"/>
+                        <outlet property="processButton" destination="BZS-bA-h5f" id="yPl-m7-lNk"/>
                         <outlet property="textField" destination="Oxh-sB-e0c" id="q7b-Ac-MJv"/>
                         <outlet property="unitButton" destination="Gf5-s7-1du" id="3qU-ej-fLs"/>
                         <segue destination="0M9-hc-N4v" kind="show" identifier="ProcessSegue" animates="NO" id="cZn-Ba-Zvo"/>

@@ -11,6 +11,7 @@ class FuelSourceTypeViewController: UIViewController {
 
     @IBOutlet weak var headerView: HeaderView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var nextButton: MFButton!
 
     let viewModel = FuelSourceTypeViewModel()
 
@@ -79,6 +80,8 @@ extension FuelSourceTypeViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         viewModel.selectedFuelSource = viewModel.getItem(at: indexPath)
+        nextButton.isEnabled = true
+        nextButton.alpha = 1.0
     }
 }
 

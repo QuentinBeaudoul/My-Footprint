@@ -13,6 +13,7 @@ class AmountEntryViewController: UIViewController {
     @IBOutlet weak var headerView: HeaderView!
     @IBOutlet weak var textField: MFTextfield!
     @IBOutlet weak var unitButton: MFButton!
+    @IBOutlet weak var processButton: MFButton!
 
     let viewModel = AmountEntryViewModel()
 
@@ -36,6 +37,9 @@ class AmountEntryViewController: UIViewController {
 
         // SetUp button
         unitButton.setTitle(viewModel.defaultUnit, for: .normal)
+
+        // setUp default unit
+        viewModel.unit = viewModel.defaultUnit
 
     }
 
@@ -84,6 +88,14 @@ extension AmountEntryViewController: HeaderViewDelegate {
 
 extension AmountEntryViewController: MFTextfieldDelegate {
     func onTextfieldChanged(_ str: String?) {
+        guard let str = str else {
+            processButton.isEnabled = false
+            return
+        }
+
+        processButton.isEnabled = !str.isEmpty
+        processButton.alpha = !str.isEmpty ? 1.0 : 0.5
+
         viewModel.value = str
     }
 

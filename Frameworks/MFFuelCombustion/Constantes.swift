@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 enum RequestKeys: String {
     case type
     case fuelSourceType = "fuel_source_type"
@@ -17,7 +16,6 @@ enum RequestKeys: String {
 
 final class Constantes {
     private init() {}
-
 
     static let fuelSources = [FuelEnergySource(apiName: "bit",
                                                name: "Bituminous Coal",
