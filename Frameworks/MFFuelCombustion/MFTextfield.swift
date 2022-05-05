@@ -10,6 +10,7 @@ import LoadableViews
 protocol MFTextfieldDelegate: AnyObject {
     func onClearButtonTapped()
     func onTextfieldChanged(_ str: String?)
+    func onToolBarButtonTapped()
 }
 
 class MFTextfield: LoadableView {
@@ -17,6 +18,12 @@ class MFTextfield: LoadableView {
     @IBOutlet weak var textField: UITextField!
 
     var delegate: MFTextfieldDelegate?
+    private var accessoryView: ProcessKeyboardToolbarView? {
+        didSet {
+            textField.inputAccessoryView = accessoryView
+        }
+    }
+
     var textfieldValue: String? {
         textField.text
     }
@@ -33,7 +40,21 @@ class MFTextfield: LoadableView {
 
         textField.delegate = self
     }
-    @IBAction func textfieldChanged(_ sender: UITextField) {
+
+    func setAccessoryView(_ accessoryView: ProcessKeyboardToolbarView) {
+        self.accessoryView = accessoryView
+        self.accessoryView?.delegate = self
+    }
+
+    func disableToolBarButton() {
+        accessoryView?.disable()
+    }
+
+    func enableToolBarButton() {
+        accessoryView?.enable()
+    }
+
+    @IBAction func textfieldValueChanged(_ sender: UITextField) {
         delegate?.onTextfieldChanged(sender.text)
     }
 }
@@ -51,5 +72,11 @@ extension MFTextfield: UITextFieldDelegate {
         delegate?.onClearButtonTapped()
         textField.resignFirstResponder()
         return true
+    }
+}
+
+extension MFTextfield: ProcessKeyboardToobarDelegate {
+    func onToolbarButtonTapped() {
+        delegate?.onToolBarButtonTapped()
     }
 }

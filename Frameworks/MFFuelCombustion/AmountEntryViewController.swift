@@ -14,6 +14,9 @@ class AmountEntryViewController: UIViewController {
     @IBOutlet weak var textField: MFTextfield!
     @IBOutlet weak var unitButton: MFButton!
     @IBOutlet weak var processButton: MFButton!
+    @IBOutlet weak var apiNameLabel: UILabel!
+    @IBOutlet weak var apiFullNameLabel: UILabel!
+    @IBOutlet weak var equalLabel: UILabel!
 
     let viewModel = AmountEntryViewModel()
 
@@ -34,13 +37,16 @@ class AmountEntryViewController: UIViewController {
 
         // SetUp textfield
         textField.delegate = self
+        textField.setAccessoryView(ProcessKeyboardToolbarView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 48)))
 
         // SetUp button
-        unitButton.setTitle(viewModel.defaultUnit, for: .normal)
+        unitButton.setTitle(viewModel.defaultUnit?.name, for: .normal)
 
         // setUp default unit
         viewModel.unit = viewModel.defaultUnit
 
+        // Update interface with data
+        updateUI()
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -57,16 +63,29 @@ class AmountEntryViewController: UIViewController {
         }
     }
 
+    private func updateUI() {
+        let hideHelp = viewModel.isUnitNameAndFullNameSame
+        apiNameLabel.isHidden = hideHelp
+        apiFullNameLabel.isHidden = hideHelp
+        equalLabel.isHidden = hideHelp
+
+        guard let unit = viewModel.unit else { return }
+
+        unitButton.setTitle(unit.name, for: .normal)
+        apiNameLabel.text = unit.name
+        apiFullNameLabel.text = unit.fullName
+    }
+
     @IBAction func onProcessButtonTapped() {
         performSegue(withIdentifier: R.segue.amountEntryViewController.processSegue, sender: nil)
     }
-    @IBAction func unitButtonTapped(_ sender: MFButton) {
+    @IBAction func unitButtonTapped() {
         let actionSheet = UIAlertController(title: "Choose an unit", message: nil, preferredStyle: .actionSheet)
 
         viewModel.units?.forEach({ unit in
             let action = UIAlertAction(title: unit.name, style: .default) { [self] _ in
-                sender.setTitle(unit.name, for: .normal)
-                viewModel.unit = unit.apiUnit
+                viewModel.unit = unit
+                updateUI()
             }
             actionSheet.addAction(action)
         })
@@ -87,6 +106,11 @@ extension AmountEntryViewController: HeaderViewDelegate {
 }
 
 extension AmountEntryViewController: MFTextfieldDelegate {
+
+    func onToolBarButtonTapped() {
+        processButton.sendActions(for: .touchUpInside)
+    }
+
     func onTextfieldChanged(_ str: String?) {
         guard let str = str else {
             processButton.isEnabled = false
@@ -95,6 +119,7 @@ extension AmountEntryViewController: MFTextfieldDelegate {
 
         processButton.isEnabled = !str.isEmpty
         processButton.alpha = !str.isEmpty ? 1.0 : 0.5
+        !str.isEmpty ? textField.enableToolBarButton() : textField.disableToolBarButton()
 
         viewModel.value = str
     }

@@ -28,7 +28,7 @@
                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             <connections>
-                                <action selector="textfieldChanged:" destination="-1" eventType="editingDidEnd" id="Tx8-eo-a11"/>
+                                <action selector="textfieldValueChanged:" destination="-1" eventType="editingChanged" id="PD4-FL-Rmf"/>
                             </connections>
                         </textField>
                     </subviews>

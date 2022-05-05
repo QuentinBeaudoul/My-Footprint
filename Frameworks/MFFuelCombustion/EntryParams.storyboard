@@ -189,30 +189,58 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="unitButtonTapped:" destination="xvd-PZ-xBW" eventType="touchUpInside" id="gJD-tA-0AA"/>
+                                    <action selector="unitButtonTapped" destination="xvd-PZ-xBW" eventType="touchUpInside" id="o6C-c7-YVv"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[BTU]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NhW-eh-R9D">
+                                <rect key="frame" x="16" y="382" width="47" height="25"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" name="informationTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZg-Bp-ugr">
+                                <rect key="frame" x="67" y="384" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="informationTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="[British thermal unit]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="DmG-iA-2m9">
+                                <rect key="frame" x="82" y="382" width="316" height="25"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" name="informationTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QZl-u2-qKO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Gf5-s7-1du" firstAttribute="bottom" secondItem="Oxh-sB-e0c" secondAttribute="bottom" id="3z4-l0-Lja"/>
+                            <constraint firstItem="QZl-u2-qKO" firstAttribute="trailing" secondItem="DmG-iA-2m9" secondAttribute="trailing" constant="16" id="5WN-rU-97f"/>
                             <constraint firstItem="QZl-u2-qKO" firstAttribute="trailing" secondItem="BZS-bA-h5f" secondAttribute="trailing" constant="16" id="Bcb-ix-sJe"/>
                             <constraint firstItem="OrM-Cp-RBY" firstAttribute="top" secondItem="QZl-u2-qKO" secondAttribute="top" id="DCN-WC-FUj"/>
+                            <constraint firstItem="Oxh-sB-e0c" firstAttribute="leading" secondItem="NhW-eh-R9D" secondAttribute="leading" id="ExK-65-noi"/>
                             <constraint firstItem="QZl-u2-qKO" firstAttribute="bottom" secondItem="BZS-bA-h5f" secondAttribute="bottom" constant="16" id="HjR-1N-Oor"/>
+                            <constraint firstItem="DmG-iA-2m9" firstAttribute="leading" secondItem="rZg-Bp-ugr" secondAttribute="trailing" constant="4" id="Ilg-Mn-N3k"/>
                             <constraint firstItem="BZS-bA-h5f" firstAttribute="leading" secondItem="GsW-MG-shz" secondAttribute="leading" constant="16" id="MxQ-mR-24O"/>
+                            <constraint firstItem="Oxh-sB-e0c" firstAttribute="top" secondItem="NhW-eh-R9D" secondAttribute="bottom" constant="16" id="Odz-Tw-Vkq"/>
                             <constraint firstItem="QZl-u2-qKO" firstAttribute="trailing" secondItem="OrM-Cp-RBY" secondAttribute="trailing" id="TWl-au-WeD"/>
                             <constraint firstItem="Oxh-sB-e0c" firstAttribute="leading" secondItem="QZl-u2-qKO" secondAttribute="leading" constant="16" id="WJd-lE-z3N"/>
                             <constraint firstItem="Gf5-s7-1du" firstAttribute="centerY" secondItem="Oxh-sB-e0c" secondAttribute="centerY" id="bNw-Tz-Jnc"/>
+                            <constraint firstItem="DmG-iA-2m9" firstAttribute="centerY" secondItem="NhW-eh-R9D" secondAttribute="centerY" id="ebp-LV-cz5"/>
                             <constraint firstItem="Gf5-s7-1du" firstAttribute="top" secondItem="Oxh-sB-e0c" secondAttribute="top" id="fR6-Jd-jM4"/>
                             <constraint firstItem="OrM-Cp-RBY" firstAttribute="leading" secondItem="GsW-MG-shz" secondAttribute="leading" id="fxS-47-5uU"/>
                             <constraint firstItem="Gf5-s7-1du" firstAttribute="leading" secondItem="Oxh-sB-e0c" secondAttribute="trailing" constant="4" id="fyo-BG-JL6"/>
+                            <constraint firstItem="rZg-Bp-ugr" firstAttribute="leading" secondItem="NhW-eh-R9D" secondAttribute="trailing" constant="4" id="p0m-ZT-EGZ"/>
                             <constraint firstItem="QZl-u2-qKO" firstAttribute="trailing" secondItem="Gf5-s7-1du" secondAttribute="trailing" constant="16" id="ryL-30-Ice"/>
+                            <constraint firstItem="rZg-Bp-ugr" firstAttribute="centerY" secondItem="NhW-eh-R9D" secondAttribute="centerY" id="vVI-fZ-MBg"/>
                             <constraint firstItem="Oxh-sB-e0c" firstAttribute="centerY" secondItem="GsW-MG-shz" secondAttribute="centerY" id="xWg-52-ptw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Amount" id="y7i-6K-xH0"/>
                     <connections>
+                        <outlet property="apiFullNameLabel" destination="DmG-iA-2m9" id="0ub-My-9A6"/>
+                        <outlet property="apiNameLabel" destination="NhW-eh-R9D" id="tez-gI-hkZ"/>
+                        <outlet property="equalLabel" destination="rZg-Bp-ugr" id="NPq-lw-hR7"/>
                         <outlet property="headerView" destination="OrM-Cp-RBY" id="trW-I8-1Lg"/>
                         <outlet property="processButton" destination="BZS-bA-h5f" id="yPl-m7-lNk"/>
                         <outlet property="textField" destination="Oxh-sB-e0c" id="q7b-Ac-MJv"/>
@@ -341,6 +369,9 @@
         </namedColor>
         <namedColor name="darkPrimaryColor">
             <color red="0.88200002908706665" green="0.49900001287460327" blue="0.008999999612569809" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="informationTextColor">
+            <color red="0.82784063165838062" green="0.82784063165838062" blue="0.82784063165838062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="onPrimaryColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

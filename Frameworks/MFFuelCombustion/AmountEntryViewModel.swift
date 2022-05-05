@@ -14,13 +14,17 @@ class AmountEntryViewModel {
     private(set) var fuelSource: FuelEnergySource?
 
     var value: String?
-    var unit: String?
+    var unit: FuelEnergySource.Unit?
 
     var units: [FuelEnergySource.Unit]? {
         fuelSource?.units
     }
-    var defaultUnit: String? {
-        units?.first?.name
+    var defaultUnit: FuelEnergySource.Unit? {
+        units?.first
+    }
+
+    var isUnitNameAndFullNameSame: Bool {
+        unit?.name == unit?.fullName
     }
 
     func load(fuelSource: FuelEnergySource, _ request: Request.Builder) {
@@ -34,7 +38,7 @@ class AmountEntryViewModel {
         }
 
         request?.addParameter(key: RequestKeys.fuelSourceValue.rawValue, value: value)
-        request?.addParameter(key: RequestKeys.fuelSourceUnit.rawValue, value: unit)
+        request?.addParameter(key: RequestKeys.fuelSourceUnit.rawValue, value: unit.apiUnit)
 
         return request
     }

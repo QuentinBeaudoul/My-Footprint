@@ -21,6 +21,8 @@
 		6645E83828103B47002387BB /* FuelCombustionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6645E83728103B47002387BB /* FuelCombustionViewModel.swift */; };
 		66A29D702812B3240057A787 /* MFExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A29D6F2812B3240057A787 /* MFExtensions.framework */; };
 		66A29D712812B3240057A787 /* MFExtensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66A29D6F2812B3240057A787 /* MFExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		66C7A7D12823D74400143AEE /* ProcessKeyboardToolbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66C7A7D02823D74400143AEE /* ProcessKeyboardToolbarView.xib */; };
+		66C7A7D32823D75C00143AEE /* ProcessKeyboardToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C7A7D22823D75C00143AEE /* ProcessKeyboardToolbarView.swift */; };
 		66E20FFD281BE0E100193A2E /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66E20FFC281BE0E100193A2E /* HeaderView.xib */; };
 		66E20FFF281BE0ED00193A2E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E20FFE281BE0ED00193A2E /* HeaderView.swift */; };
 		66E21003281C23D600193A2E /* MFLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E21002281C23D600193A2E /* MFLabel.swift */; };
@@ -80,6 +82,8 @@
 		6645E83528103B27002387BB /* FuelCombustionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelCombustionViewController.swift; sourceTree = "<group>"; };
 		6645E83728103B47002387BB /* FuelCombustionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelCombustionViewModel.swift; sourceTree = "<group>"; };
 		66A29D6F2812B3240057A787 /* MFExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66C7A7D02823D74400143AEE /* ProcessKeyboardToolbarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProcessKeyboardToolbarView.xib; sourceTree = "<group>"; };
+		66C7A7D22823D75C00143AEE /* ProcessKeyboardToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessKeyboardToolbarView.swift; sourceTree = "<group>"; };
 		66E20FFC281BE0E100193A2E /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		66E20FFE281BE0ED00193A2E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		66E21002281C23D600193A2E /* MFLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFLabel.swift; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 		660D49EC281ADAB400A795E6 /* UIComponantes */ = {
 			isa = PBXGroup;
 			children = (
+				66C7A7CE2823D6A100143AEE /* KeyboardToolbarViews */,
 				66ED22252820136800B38079 /* MFTexfield */,
 				66E20FFB281BE0C600193A2E /* HeaderView */,
 				660D49F0281ADC4900A795E6 /* MFButton.swift */,
@@ -247,6 +252,23 @@
 				66ECF2192819508700814686 /* Assets.xcassets */,
 			);
 			name = Ressources;
+			sourceTree = "<group>";
+		};
+		66C7A7CE2823D6A100143AEE /* KeyboardToolbarViews */ = {
+			isa = PBXGroup;
+			children = (
+				66C7A7CF2823D6BB00143AEE /* Process */,
+			);
+			name = KeyboardToolbarViews;
+			sourceTree = "<group>";
+		};
+		66C7A7CF2823D6BB00143AEE /* Process */ = {
+			isa = PBXGroup;
+			children = (
+				66C7A7D02823D74400143AEE /* ProcessKeyboardToolbarView.xib */,
+				66C7A7D22823D75C00143AEE /* ProcessKeyboardToolbarView.swift */,
+			);
+			name = Process;
 			sourceTree = "<group>";
 		};
 		66E20FFB281BE0C600193A2E /* HeaderView */ = {
@@ -442,6 +464,7 @@
 				66ECF2142819433D00814686 /* EcoFuelAnimation.json in Resources */,
 				66E20FFD281BE0E100193A2E /* HeaderView.xib in Resources */,
 				66ECF21A2819508700814686 /* Assets.xcassets in Resources */,
+				66C7A7D12823D74400143AEE /* ProcessKeyboardToolbarView.xib in Resources */,
 				6645E83428103A50002387BB /* FuelCombustion.storyboard in Resources */,
 				66F200EA281AA14E00422AE9 /* EntryParams.storyboard in Resources */,
 			);
@@ -526,6 +549,7 @@
 			files = (
 				6645E831281039C5002387BB /* FuelCombustionNavigationManager.swift in Sources */,
 				6605CD6628114D3E00B226A5 /* Estimate.swift in Sources */,
+				66C7A7D32823D75C00143AEE /* ProcessKeyboardToolbarView.swift in Sources */,
 				66ED2216281FD4C900B38079 /* FuelSourceTypeCell.swift in Sources */,
 				66ECF2182819504600814686 /* R.generated.swift in Sources */,
 				66ED221C281FDE2200B38079 /* MFView.swift in Sources */,
