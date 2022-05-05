@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.6.1)
+  - IQKeyboardManagerSwift (6.5.10)
   - LoadableViews (3.6.1)
   - lottie-ios (3.3.0)
   - R.swift (6.1.0):
@@ -9,6 +10,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - IQKeyboardManagerSwift
   - LoadableViews
   - lottie-ios
   - R.swift
@@ -17,6 +19,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - IQKeyboardManagerSwift
     - LoadableViews
     - lottie-ios
     - R.swift
@@ -25,12 +28,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
   LoadableViews: 9af367c30a6fd96cf62275db64b7b1568e3bd0ac
   lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
   R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
   SwiftLint: d41cc46a2ae58ac6d9f26954bc89f1d72e71fdef
 
-PODFILE CHECKSUM: eb720ce2908c6df502c59687bb2be8d316458a32
+PODFILE CHECKSUM: 4f94e6efe161167b116f95fa0cfadeaaaa79f548
 
 COCOAPODS: 1.11.3

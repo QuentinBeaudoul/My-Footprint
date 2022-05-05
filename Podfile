@@ -55,6 +55,7 @@ abstract_target 'Shared' do
 		project 'MyFootprint/MyFootprint.xcodeproj'
 		pod 'lottie-ios'
 		pod 'LoadableViews'
-    pod 'Alamofire'
+		pod 'IQKeyboardManagerSwift'
+    		pod 'Alamofire'
 	end
 end
