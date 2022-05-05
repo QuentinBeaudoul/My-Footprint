@@ -37,7 +37,10 @@ class AmountEntryViewController: UIViewController {
 
         // SetUp textfield
         textField.delegate = self
-        textField.setAccessoryView(ProcessKeyboardToolbarView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 48)))
+        textField.setAccessoryView(ProcessKeyboardToolbarView(frame: CGRect(x: 0,
+                                                                            y: 0,
+                                                                            width: UIScreen.main.bounds.width,
+                                                                            height: 48)))
 
         // SetUp button
         unitButton.setTitle(viewModel.defaultUnit?.name, for: .normal)
@@ -59,7 +62,7 @@ class AmountEntryViewController: UIViewController {
                 return
             }
 
-            // TODO: Faire le passage de data vers processVC ici
+            processViewController.viewModel.loadRequest(request: request)
         }
     }
 
@@ -108,7 +111,7 @@ extension AmountEntryViewController: HeaderViewDelegate {
 extension AmountEntryViewController: MFTextfieldDelegate {
 
     func onToolBarButtonTapped() {
-        processButton.sendActions(for: .touchUpInside)
+        onProcessButtonTapped()
     }
 
     func onTextfieldChanged(_ str: String?) {

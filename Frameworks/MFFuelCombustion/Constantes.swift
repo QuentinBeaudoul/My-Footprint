@@ -17,6 +17,9 @@ enum RequestKeys: String {
 final class Constantes {
     private init() {}
 
+    static let url = "https://www.carboninterface.com/api/v1/estimates"
+    static let type = "fuel_combustion"
+
     static let fuelSources = [FuelEnergySource(apiName: "bit",
                                                name: "Bituminous Coal",
                                                units: [FuelEnergySource.Unit(apiUnit: "btu",

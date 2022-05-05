@@ -16,8 +16,9 @@ class Service<T : Decodable> {
         request.responseDecodable(of: parser, completionHandler: completion)
     }
 
-    class func post(url: String, header: [String: Any]? = nil, parameters: [String: Any], parser: T.Type, completion: @escaping (DataResponse<T, AFError>) -> Void) {
-        let request = AF.request(url, method: .post, parameters: parameters)
+    class func post(url: String, headers: HTTPHeaders? = nil, parameters: [String: Any]? = nil, parser: T.Type, completion: @escaping (DataResponse<T, AFError>) -> Void) {
+
+        let request = AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
         request.responseDecodable(of: parser, completionHandler: completion)
     }
 }

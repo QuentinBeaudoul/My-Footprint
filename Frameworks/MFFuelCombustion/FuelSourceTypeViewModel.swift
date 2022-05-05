@@ -30,7 +30,9 @@ class FuelSourceTypeViewModel {
         }
 
         let request = Request.Builder()
+        request.addParameter(key: RequestKeys.type.rawValue, value: Constantes.type)
         request.addParameter(key: RequestKeys.fuelSourceType.rawValue, value: selectedFuelSource.apiName)
+
         return request
     }
 

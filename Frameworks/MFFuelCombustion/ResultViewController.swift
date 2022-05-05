@@ -11,6 +11,8 @@ class ResultViewController: UIViewController {
 
     @IBOutlet weak var headerView: HeaderView!
 
+    let viewModel = ResultViewModel()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
