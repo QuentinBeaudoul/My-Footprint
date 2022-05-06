@@ -12,7 +12,6 @@
 		660D49E8281AC99800A795E6 /* ProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660D49E7281AC99800A795E6 /* ProcessViewController.swift */; };
 		660D49EA281ACB8300A795E6 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660D49E9281ACB8300A795E6 /* ResultViewController.swift */; };
 		660D49F1281ADC4900A795E6 /* MFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660D49F0281ADC4900A795E6 /* MFButton.swift */; };
-		663DBFFF2825559300211D21 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663DBFFE2825559300211D21 /* StorageManager.swift */; };
 		6645E81028103565002387BB /* MFFuelCombustion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6645E80728103564002387BB /* MFFuelCombustion.framework */; };
 		6645E81528103565002387BB /* MFFuelCombustionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6645E81428103565002387BB /* MFFuelCombustionTests.swift */; };
 		6645E81628103565002387BB /* MFFuelCombustion.h in Headers */ = {isa = PBXBuildFile; fileRef = 6645E80A28103564002387BB /* MFFuelCombustion.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -76,7 +75,6 @@
 		660D49E7281AC99800A795E6 /* ProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessViewController.swift; sourceTree = "<group>"; };
 		660D49E9281ACB8300A795E6 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		660D49F0281ADC4900A795E6 /* MFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFButton.swift; sourceTree = "<group>"; };
-		663DBFFE2825559300211D21 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		6645E80728103564002387BB /* MFFuelCombustion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MFFuelCombustion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6645E80A28103564002387BB /* MFFuelCombustion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFFuelCombustion.h; sourceTree = "<group>"; };
 		6645E80F28103565002387BB /* MFFuelCombustionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFFuelCombustionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -219,7 +217,6 @@
 			isa = PBXGroup;
 			children = (
 				6645E830281039C5002387BB /* FuelCombustionNavigationManager.swift */,
-				663DBFFE2825559300211D21 /* StorageManager.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -594,7 +591,6 @@
 				66E2100A281C36AA00193A2E /* FuelEnergySource.swift in Sources */,
 				660D49EA281ACB8300A795E6 /* ResultViewController.swift in Sources */,
 				66ED2229282013CE00B38079 /* MFTextfield.swift in Sources */,
-				663DBFFF2825559300211D21 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
