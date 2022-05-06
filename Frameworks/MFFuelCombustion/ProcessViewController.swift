@@ -27,7 +27,7 @@ class ProcessViewController: UIViewController {
         let anim = Animation.named("EcoFuelAnimation", bundle: Bundle(for: Self.self))
         animationView.animation = anim
         animationView.contentMode = .scaleAspectFit
-        animationView.loopMode = .playOnce
+        animationView.loopMode = .loop
         animationView.animationSpeed = 2
         animationView.play()
     }
@@ -54,7 +54,6 @@ class ProcessViewController: UIViewController {
                 segue()
             case .failure(let error):
                 viewModel.retryCount += 1
-
                 if viewModel.noMoreTries {
                     navigationController?.popViewController(animated: true)
                 } else {
