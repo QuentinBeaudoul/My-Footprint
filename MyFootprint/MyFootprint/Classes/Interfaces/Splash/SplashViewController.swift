@@ -7,6 +7,7 @@
 
 import UIKit
 import Lottie
+import MFFuelCombustion
 
 class SplashViewController: UIViewController {
 
@@ -25,19 +26,32 @@ class SplashViewController: UIViewController {
 
         // Setting up animation
         animationView.contentMode = .scaleAspectFit
-        animationView.loopMode = .playOnce
+        animationView.loopMode = .loop
         animationView.animationSpeed = 2
         animationView.play()
     }
 
-    // Display the main viewController once history is loaded
-    // TODO: Load history here (or in viewWillLoad)
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    private func segue() {
         DispatchQueue.main.asyncAfter(deadline: .now() /*+ 2*/) {
             let mainVC = MainViewController.makeFromStoryboard()
             mainVC.modalPresentationStyle = .overFullScreen
             self.present(mainVC, animated: true)
         }
+    }
+
+    private func loadHistories() {
+        StoreManager.shared.loadHistory { [self] _ in
+            segue()
+        }
+    }
+
+    // Display the main viewController once history is loaded
+    // TODO: Load history here (or in viewWillLoad)
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        // Load histories
+        loadHistories()
     }
 }

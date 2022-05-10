@@ -14,4 +14,8 @@ public extension String {
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
         return dateFormatter.date(from: self)
     }
+
+    func toDouble() -> Double? {
+        return Double(self)
+    }
 }

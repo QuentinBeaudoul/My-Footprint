@@ -34,7 +34,9 @@ class ProcessViewModel {
             case .success(let estimate):
                 if let estimate = estimate {
                     self.estimate = estimate
-                    StoreManager.shared.add(estimate: estimate)
+
+                    StoreManager.shared.addToHistory(estimate: estimate)
+
                     completion(.success(estimate))
                 }
             case .failure(let error):

@@ -23,14 +23,14 @@
         <relationship name="legs" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="CDLeg" inverseName="cdFlight" inverseEntity="CDLeg"/>
     </entity>
     <entity name="CDFuelCombustion" representedClassName=".CDFuelCombustion" syncable="YES" codeGenerationType="class">
-        <attribute name="carbonG" optional="YES" attributeType="String"/>
-        <attribute name="carbonKg" optional="YES" attributeType="String"/>
-        <attribute name="carbonLb" optional="YES" attributeType="String"/>
-        <attribute name="carbonMt" optional="YES" attributeType="String"/>
-        <attribute name="estimatedAt" optional="YES" attributeType="String"/>
-        <attribute name="fuelSourceType" optional="YES" attributeType="String"/>
-        <attribute name="fuelSourceUnit" optional="YES" attributeType="String"/>
-        <attribute name="fuelSourceValue" optional="YES" attributeType="String"/>
+        <attribute name="carbonG" attributeType="String"/>
+        <attribute name="carbonKg" attributeType="String"/>
+        <attribute name="carbonLb" attributeType="String"/>
+        <attribute name="carbonMt" attributeType="String"/>
+        <attribute name="estimatedAt" attributeType="String"/>
+        <attribute name="fuelSourceType" attributeType="String"/>
+        <attribute name="fuelSourceUnit" attributeType="String"/>
+        <attribute name="fuelSourceValue" attributeType="String"/>
     </entity>
     <entity name="CDLeg" representedClassName="CDLeg" syncable="YES" codeGenerationType="class">
         <attribute name="departureAirport" optional="YES" attributeType="String"/>

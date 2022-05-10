@@ -6,11 +6,11 @@
 //
 
 import Foundation
+import MFStorage
 
 class Estimate: Decodable {
 
     // parsing
-    let id: String
     let fuelSourceType: String
     let fuelSourceUnit: String
     let fuelSourceValue: Double
@@ -25,7 +25,6 @@ class Estimate: Decodable {
     }
 
     enum MetadataContainer: String, CodingKey {
-        case id
         case attributes
     }
 
@@ -40,11 +39,21 @@ class Estimate: Decodable {
         case carbonMt = "carbon_mt"
     }
 
+    init(from entity: CDFuelCombustion) {
+        fuelSourceType = entity.fuelSourceType ?? ""
+        fuelSourceUnit = entity.fuelSourceUnit ?? ""
+        fuelSourceValue = entity.fuelSourceValue?.toDouble() ?? 0
+        estimatedAt = entity.estimatedAt ?? ""
+        carbonG = entity.carbonG?.toDouble() ?? 0
+        carbonLb = entity.carbonLb?.toDouble() ?? 0
+        carbonKg = entity.carbonKg?.toDouble() ?? 0
+        carbonMt = entity.carbonMt?.toDouble() ?? 0
+    }
+
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: ContainerKeys.self)
         let metadataContainer = try container.nestedContainer(keyedBy: MetadataContainer.self, forKey: .data)
 
-        id = try metadataContainer.decode(String.self, forKey: .id)
         let attributesContainer = try metadataContainer.nestedContainer(keyedBy: AttributesContainer.self,
                                                                         forKey: .attributes)
 

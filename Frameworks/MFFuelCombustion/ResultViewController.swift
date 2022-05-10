@@ -72,7 +72,9 @@ class ResultViewController: UIViewController {
 }
 
 extension ResultViewController: HeaderViewDelegate {
+
+    // pop view controller if it come from nav. If not, then dismiss (history)
     func onBackButtonTapped() {
-        navigationController?.popToViewController(ofClass: AmountEntryViewController.self)
+        navigationController?.popToViewController(ofClass: AmountEntryViewController.self) ?? dismiss(animated: true)
     }
 }

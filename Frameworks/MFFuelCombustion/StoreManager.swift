@@ -14,7 +14,9 @@ public final class StoreManager {
 
     public static let shared = StoreManager()
 
-    func add(estimate: Estimate) {
+    private(set) var history: [Estimate]?
+
+    func addToHistory(estimate: Estimate) {
         guard let entity = GlobalStoreManager.shared.fuelCombustionEntity else { return }
         let context = GlobalStoreManager.shared.context
 
@@ -35,20 +37,25 @@ public final class StoreManager {
         }
     }
 
-    func loadHistory(completion: (Result<[CDFuelCombustion], Error>) -> Void) {
+    public func loadHistory(completion: ((Result<Void, Error>) -> Void)? = nil) {
         let request = CDFuelCombustion.fetchRequest()
         let context = GlobalStoreManager.shared.context
 
         do {
-            let history = try context.fetch(request)
-            completion(.success(history))
+            let result = try context.fetch(request)
+
+            history = result.compactMap({ cdFuelCombustion in
+                Estimate(from: cdFuelCombustion)
+            })
+
+            completion?(.success())
         } catch let error {
             print(error)
-            completion(.failure(error))
+            completion?(.failure(error))
         }
     }
 
-    func remove(estimate: Estimate?) -> Bool {
+    func removeFromHistory(estimate: Estimate?) -> Bool {
         guard let estimate = estimate else { return false }
         let context = GlobalStoreManager.shared.context
 
