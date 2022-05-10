@@ -20,7 +20,7 @@
         <attribute name="distanceValue" optional="YES" attributeType="String"/>
         <attribute name="estimatedAt" optional="YES" attributeType="String"/>
         <attribute name="passengers" optional="YES" attributeType="String"/>
-        <relationship name="legs" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="CDLeg"/>
+        <relationship name="legs" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="CDLeg" inverseName="cdFlight" inverseEntity="CDLeg"/>
     </entity>
     <entity name="CDFuelCombustion" representedClassName=".CDFuelCombustion" syncable="YES" codeGenerationType="class">
         <attribute name="carbonG" optional="YES" attributeType="String"/>
@@ -35,6 +35,7 @@
     <entity name="CDLeg" representedClassName="CDLeg" syncable="YES" codeGenerationType="class">
         <attribute name="departureAirport" optional="YES" attributeType="String"/>
         <attribute name="destinationAirport" optional="YES" attributeType="String"/>
+        <relationship name="cdFlight" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDFlight" inverseName="legs" inverseEntity="CDFlight"/>
     </entity>
     <entity name="CDShipping" representedClassName=".CDShipping" syncable="YES" codeGenerationType="class">
         <attribute name="carbonG" optional="YES" attributeType="String"/>
@@ -63,11 +64,11 @@
         <attribute name="vehicleYear" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="CDFuelCombustion" positionX="-9" positionY="36" width="128" height="149"/>
-        <element name="CDVehicle" positionX="-9" positionY="99" width="128" height="209"/>
-        <element name="CDShipping" positionX="0" positionY="108" width="128" height="179"/>
-        <element name="CDFlight" positionX="18" positionY="117" width="128" height="164"/>
         <element name="CDElectricity" positionX="36" positionY="126" width="128" height="164"/>
-        <element name="CDLeg" positionX="54" positionY="189" width="128" height="59"/>
+        <element name="CDFlight" positionX="18" positionY="117" width="128" height="164"/>
+        <element name="CDFuelCombustion" positionX="-9" positionY="36" width="128" height="149"/>
+        <element name="CDLeg" positionX="54" positionY="189" width="128" height="74"/>
+        <element name="CDShipping" positionX="0" positionY="108" width="128" height="179"/>
+        <element name="CDVehicle" positionX="-9" positionY="99" width="128" height="209"/>
     </elements>
 </model>

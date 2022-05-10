@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F730CD7282A677900468D64 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F730CD6282A677900468D64 /* StoreManager.swift */; };
 		6605CD6628114D3E00B226A5 /* Estimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6605CD6528114D3E00B226A5 /* Estimate.swift */; };
 		660D49E6281AC4CA00A795E6 /* AmountEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660D49E5281AC4CA00A795E6 /* AmountEntryViewController.swift */; };
 		660D49E8281AC99800A795E6 /* ProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660D49E7281AC99800A795E6 /* ProcessViewController.swift */; };
@@ -70,6 +71,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4F730CD6282A677900468D64 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		6605CD6528114D3E00B226A5 /* Estimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estimate.swift; sourceTree = "<group>"; };
 		660D49E5281AC4CA00A795E6 /* AmountEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountEntryViewController.swift; sourceTree = "<group>"; };
 		660D49E7281AC99800A795E6 /* ProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessViewController.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				6645E830281039C5002387BB /* FuelCombustionNavigationManager.swift */,
+				4F730CD6282A677900468D64 /* StoreManager.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -570,6 +573,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6645E831281039C5002387BB /* FuelCombustionNavigationManager.swift in Sources */,
+				4F730CD7282A677900468D64 /* StoreManager.swift in Sources */,
 				6605CD6628114D3E00B226A5 /* Estimate.swift in Sources */,
 				66C7A7D32823D75C00143AEE /* ProcessKeyboardToolbarView.swift in Sources */,
 				66C7A7D92824155D00143AEE /* ResultViewModel.swift in Sources */,

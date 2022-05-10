@@ -16,7 +16,7 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var megatonsLabel: UILabel!
     @IBOutlet weak var estimateLabel: UILabel!
     @IBOutlet weak var estimatedAtLabel: UILabel!
-    
+
     let viewModel = ResultViewModel()
 
     override func viewDidLoad() {

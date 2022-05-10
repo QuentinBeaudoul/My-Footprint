@@ -59,7 +59,7 @@
                                     <constraint firstItem="gUr-n4-fvf" firstAttribute="centerX" secondItem="RPN-tj-zhO" secondAttribute="centerX" id="eKY-PX-Ehd"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zvS-kB-UOe">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zvS-kB-UOe" customClass="MFView" customModule="MFFuelCombustion" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="599.33333333333337" width="390" height="500.00000000000011"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <gestureRecognizers/>

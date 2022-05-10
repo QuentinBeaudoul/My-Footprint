@@ -8,6 +8,8 @@
 import Foundation
 
 class Estimate: Decodable {
+
+    // parsing
     let id: String
     let fuelSourceType: String
     let fuelSourceUnit: String

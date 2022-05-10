@@ -11,7 +11,7 @@
 		664A038428081891006C40F8 /* MFStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A037828081890006C40F8 /* MFStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		664A03BA280825FA006C40F8 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A03B9280825FA006C40F8 /* CoreDataService.swift */; };
 		664A03BE28082638006C40F8 /* MyFootprint.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 664A03BC28082638006C40F8 /* MyFootprint.xcdatamodeld */; };
-		664A03C128082688006C40F8 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A03C028082688006C40F8 /* StoreManager.swift */; };
+		664A03C128082688006C40F8 /* GlobalStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A03C028082688006C40F8 /* GlobalStoreManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +22,7 @@
 		664A037828081890006C40F8 /* MFStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFStorage.h; sourceTree = "<group>"; };
 		664A03B9280825FA006C40F8 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		664A03BD28082638006C40F8 /* MyFootprint.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyFootprint.xcdatamodel; sourceTree = "<group>"; };
-		664A03C028082688006C40F8 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		664A03C028082688006C40F8 /* GlobalStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalStoreManager.swift; sourceTree = "<group>"; };
 		7BF5C1E6D598E8DE41ED613F /* Pods-MFStorage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFStorage.release.xcconfig"; path = "Target Support Files/Pods-MFStorage/Pods-MFStorage.release.xcconfig"; sourceTree = "<group>"; };
 		9A323FC74F2E5889E90C825B /* Pods_Shared_MFStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MFStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67491191C5C32A351B9F6FF /* Pods-Frameworks-MFStorage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFStorage.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFStorage/Pods-Frameworks-MFStorage.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 		664A03BF28082671006C40F8 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				664A03C028082688006C40F8 /* StoreManager.swift */,
+				664A03C028082688006C40F8 /* GlobalStoreManager.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -231,7 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				664A03C128082688006C40F8 /* StoreManager.swift in Sources */,
+				664A03C128082688006C40F8 /* GlobalStoreManager.swift in Sources */,
 				664A03BA280825FA006C40F8 /* CoreDataService.swift in Sources */,
 				664A03BE28082638006C40F8 /* MyFootprint.xcdatamodeld in Sources */,
 			);

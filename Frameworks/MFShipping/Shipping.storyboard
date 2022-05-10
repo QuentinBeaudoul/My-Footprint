@@ -64,6 +64,9 @@
             <point key="canvasLocation" x="220" y="110"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="LM4-ek-rNo"/>
+    </designables>
     <resources>
         <namedColor name="backgroundGradientTop">
             <color red="0.70399999618530273" green="0.88599997758865356" blue="0.86799997091293335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
