@@ -18,6 +18,7 @@
 		66E21005281C2D4C00193A2E /* UINavigationController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E21004281C2D4C00193A2E /* UINavigationController+.swift */; };
 		66ED2218281FD6EB00B38079 /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ED2217281FD6EB00B38079 /* UITableViewCell+.swift */; };
 		66ED221E281FE38300B38079 /* UIAlertController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ED221D281FE38300B38079 /* UIAlertController+.swift */; };
+		66F01EF0282C10CA00144CD8 /* Notification.Name+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F01EEF282C10CA00144CD8 /* Notification.Name+.swift */; };
 		66F200E5281A97B000422AE9 /* UIDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F200E4281A97B000422AE9 /* UIDevice+.swift */; };
 		66F200E7281A9C5300422AE9 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F200E6281A9C5300422AE9 /* UIApplication+.swift */; };
 		F466702BCE6BF3E3520D83F7 /* Pods_Shared_MFExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5B6CDCC1A804182655BE83 /* Pods_Shared_MFExtensions.framework */; };
@@ -37,6 +38,7 @@
 		66E21004281C2D4C00193A2E /* UINavigationController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+.swift"; sourceTree = "<group>"; };
 		66ED2217281FD6EB00B38079 /* UITableViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+.swift"; sourceTree = "<group>"; };
 		66ED221D281FE38300B38079 /* UIAlertController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+.swift"; sourceTree = "<group>"; };
+		66F01EEF282C10CA00144CD8 /* Notification.Name+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification.Name+.swift"; sourceTree = "<group>"; };
 		66F200E4281A97B000422AE9 /* UIDevice+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+.swift"; sourceTree = "<group>"; };
 		66F200E6281A9C5300422AE9 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
 		A1335B1C2A5B0A515F3F22C8 /* Pods-Shared-MFExtensions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFExtensions.release.xcconfig"; path = "Target Support Files/Pods-Shared-MFExtensions/Pods-Shared-MFExtensions.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				663DBFFC2825538C00211D21 /* String+.swift */,
 				4F730CD8282A6B7C00468D64 /* Double+.swift */,
 				4F730CE0282AA48B00468D64 /* Result+.swift */,
+				66F01EEF282C10CA00144CD8 /* Notification.Name+.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				663DBFFB28254BDE00211D21 /* Date+.swift in Sources */,
+				66F01EF0282C10CA00144CD8 /* Notification.Name+.swift in Sources */,
 				66ED221E281FE38300B38079 /* UIAlertController+.swift in Sources */,
 				663DBFFD2825538C00211D21 /* String+.swift in Sources */,
 				66F200E7281A9C5300422AE9 /* UIApplication+.swift in Sources */,

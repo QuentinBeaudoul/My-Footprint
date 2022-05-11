@@ -9,7 +9,14 @@ import Foundation
 
 class FuelCombustionViewModel {
 
-    let history = StoreManager.shared.history
+    let manager: StoreManager
+
+    var history: [Estimate]?
+
+    init() {
+        manager = StoreManager.shared
+        history = manager.history
+    }
 
     var chosenEstimate: Estimate?
 
@@ -23,5 +30,21 @@ class FuelCombustionViewModel {
 
     func getItem(at indexPath: IndexPath) -> Estimate? {
         history?[indexPath.row]
+    }
+
+    func delete(at indexPath: IndexPath) {
+        manager.removeFromHistory(estimate: history?.remove(at: indexPath.row))
+    }
+
+    func reloadHistory(completion: @escaping (Result<Void, Error>) -> Void) {
+        manager.loadHistory { [self] result in
+            switch result {
+            case .success(let estimates):
+                history = estimates
+                completion(.success())
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
     }
 }

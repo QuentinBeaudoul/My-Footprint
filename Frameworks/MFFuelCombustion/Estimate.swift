@@ -8,7 +8,7 @@
 import Foundation
 import MFStorage
 
-class Estimate: Decodable {
+public class Estimate: Decodable {
 
     // parsing
     let fuelSourceType: String
@@ -50,7 +50,7 @@ class Estimate: Decodable {
         carbonMt = entity.carbonMt?.toDouble() ?? 0
     }
 
-    required init(from decoder: Decoder) throws {
+    required public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: ContainerKeys.self)
         let metadataContainer = try container.nestedContainer(keyedBy: MetadataContainer.self, forKey: .data)
 

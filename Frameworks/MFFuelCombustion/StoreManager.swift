@@ -37,7 +37,7 @@ public final class StoreManager {
         }
     }
 
-    public func loadHistory(completion: ((Result<Void, Error>) -> Void)? = nil) {
+    public func loadHistory(completion: ((Result<[Estimate]?, Error>) -> Void)? = nil) {
         let request = CDFuelCombustion.fetchRequest()
         let context = GlobalStoreManager.shared.context
 
@@ -48,15 +48,15 @@ public final class StoreManager {
                 Estimate(from: cdFuelCombustion)
             })
 
-            completion?(.success())
+            completion?(.success(history))
         } catch let error {
             print(error)
             completion?(.failure(error))
         }
     }
 
-    func removeFromHistory(estimate: Estimate?) -> Bool {
-        guard let estimate = estimate else { return false }
+    func removeFromHistory(estimate: Estimate?) {
+        guard let estimate = estimate else { return }
         let context = GlobalStoreManager.shared.context
 
         let request = CDFuelCombustion.fetchRequest()
@@ -66,13 +66,9 @@ public final class StoreManager {
             if let historyRowToDelete = try context.fetch(request).first {
                 context.delete(historyRowToDelete)
                 try context.save()
-                return true
             }
         } catch let error {
             print(error)
-            return false
         }
-
-        return false
     }
 }
