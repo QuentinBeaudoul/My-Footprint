@@ -46,8 +46,6 @@ class SplashViewController: UIViewController {
     }
 
     // Display the main viewController once history is loaded
-    // TODO: Load history here (or in viewWillLoad)
-
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
