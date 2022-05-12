@@ -13,14 +13,16 @@ import Combine
 class FuelCombustionViewController: UIViewController {
 
     @IBOutlet weak var historyView: UIView!
-    @IBOutlet weak var historyViewHeightConstrainte: NSLayoutConstraint!
+    @IBOutlet weak var historyViewTopConstrainte: NSLayoutConstraint!
+    @IBOutlet weak var historyViewHeightContrainte: NSLayoutConstraint!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var historyImageView: UIImageView!
     @IBOutlet weak var noHistorySubView: UIView!
 
     let viewModel = FuelCombustionViewModel()
 
-    let historyUpdatePublisher = NotificationCenter.Publisher(center: .default, name: .fuelCombustionHistoryTask)
+    let publisher = NotificationCenter.default.publisher(for: .fuelCombustionHistoryTask)
+    var cancellables = Set<AnyCancellable>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +34,17 @@ class FuelCombustionViewController: UIViewController {
         }
 
         // Set the historyView in the bottom
-        historyViewHeightConstrainte.constant = UIScreen.main.bounds.maxY * 0.7
+        historyViewTopConstrainte.constant =
+        UIScreen.main.bounds.height -
+        UIScreen.headerHeight -
+        UIScreen.tabbarHeight -
+        60
+
+        // Set the historyView height contrainte
+        historyViewHeightContrainte.constant =
+        UIScreen.main.bounds.height -
+        UIScreen.tabbarHeight -
+        UIScreen.headerHeight
 
         // Setup history tableView
         tableView.delegate = self
@@ -45,11 +57,21 @@ class FuelCombustionViewController: UIViewController {
         historyImageView.image = R.image.ic_100_history()
         noHistorySubView.isHidden = viewModel.hasHistory
 
+        publisher.sink { [self] _ in
+            print("notification")
+            updateHistory()
+        }.store(in: &cancellables)
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        print("viewWillAppear")
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        cancellables.forEach { cancellable in
+            cancellable.cancel()
+        }
+    }
+
+    private func updateHistory() {
+        noHistorySubView.isHidden = viewModel.hasHistory
         viewModel.reloadHistory { [self] result in
             switch result {
             case .success():
@@ -58,10 +80,6 @@ class FuelCombustionViewController: UIViewController {
                 UIAlertController.showAlert(title: "Error", message: error.localizedDescription, on: self)
             }
         }
-    }
-
-    private func updateHistoryUpdate() {
-        noHistorySubView.isHidden = viewModel.hasHistory
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -76,9 +94,12 @@ class FuelCombustionViewController: UIViewController {
     @IBAction func swipeGesture(_ sender: UISwipeGestureRecognizer) {
         switch sender.direction {
         case.up:
-            historyViewHeightConstrainte.constant = 8
+            historyViewTopConstrainte.constant = 8
         case.down:
-            historyViewHeightConstrainte.constant = UIScreen.main.bounds.maxY * 0.7
+            historyViewTopConstrainte.constant = UIScreen.main.bounds.height -
+            UIScreen.headerHeight -
+            UIScreen.tabbarHeight -
+            60
         default:
             break
         }
@@ -121,7 +142,7 @@ extension FuelCombustionViewController: UITableViewDelegate {
         let deleteAction = UIContextualAction(style: .destructive, title: nil) { [self] _, _, completion in
             viewModel.delete(at: indexPath)
             tableView.deleteRows(at: [indexPath], with: .right)
-            updateHistoryUpdate()
+            updateHistory()
             completion(true)
         }
         deleteAction.image = UIImage(systemName: "trash.fill")?

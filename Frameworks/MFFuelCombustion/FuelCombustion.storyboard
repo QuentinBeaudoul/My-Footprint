@@ -62,8 +62,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zvS-kB-UOe" customClass="MFView" customModule="MFFuelCombustion" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="124.66666666666669" width="390" height="500.00000000000006"/>
                                 <subviews>
-                                    <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="P2q-r6-Pdn">
-                                        <rect key="frame" x="16" y="57" width="358" height="427"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="P2q-r6-Pdn">
+                                        <rect key="frame" x="0.0" y="81" width="390" height="403"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                         <userDefinedRuntimeAttributes>
@@ -79,16 +79,16 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sir-Lj-pp3">
-                                        <rect key="frame" x="16" y="57" width="358" height="427"/>
+                                        <rect key="frame" x="0.0" y="81" width="390" height="403"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No history yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zu-WF-Ss6">
-                                                <rect key="frame" x="114.66666666666666" y="100.00000000000003" width="129" height="27.333333333333329"/>
+                                                <rect key="frame" x="130.66666666666666" y="88.000000000000028" width="128.99999999999997" height="27.333333333333329"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                                 <color key="textColor" name="informationTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fhX-Oh-Pr3">
-                                                <rect key="frame" x="129" y="159.33333333333334" width="100" height="100.00000000000003"/>
+                                                <rect key="frame" x="145" y="147.33333333333334" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="AHl-R6-HfK"/>
                                                     <constraint firstAttribute="width" secondItem="fhX-Oh-Pr3" secondAttribute="height" multiplier="1:1" id="LG4-km-boE"/>
@@ -107,15 +107,15 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="P2q-r6-Pdn" secondAttribute="trailing" constant="16" id="8PZ-QR-Cji"/>
-                                    <constraint firstItem="Sir-Lj-pp3" firstAttribute="top" secondItem="e1U-hp-Tgy" secondAttribute="bottom" constant="8" id="Ank-A7-E8e"/>
+                                    <constraint firstAttribute="trailing" secondItem="P2q-r6-Pdn" secondAttribute="trailing" id="8PZ-QR-Cji"/>
+                                    <constraint firstItem="Sir-Lj-pp3" firstAttribute="top" secondItem="e1U-hp-Tgy" secondAttribute="bottom" constant="32" id="Ank-A7-E8e"/>
                                     <constraint firstAttribute="bottom" secondItem="Sir-Lj-pp3" secondAttribute="bottom" constant="16" id="Fei-ba-IpX"/>
-                                    <constraint firstItem="P2q-r6-Pdn" firstAttribute="leading" secondItem="zvS-kB-UOe" secondAttribute="leading" constant="16" id="IOQ-oy-Q0z"/>
+                                    <constraint firstItem="P2q-r6-Pdn" firstAttribute="leading" secondItem="zvS-kB-UOe" secondAttribute="leading" id="IOQ-oy-Q0z"/>
                                     <constraint firstAttribute="bottom" secondItem="P2q-r6-Pdn" secondAttribute="bottom" constant="16" id="J1X-Hx-zSs"/>
-                                    <constraint firstAttribute="trailing" secondItem="Sir-Lj-pp3" secondAttribute="trailing" constant="16" id="NHv-gc-dZL"/>
+                                    <constraint firstAttribute="trailing" secondItem="Sir-Lj-pp3" secondAttribute="trailing" id="NHv-gc-dZL"/>
                                     <constraint firstItem="e1U-hp-Tgy" firstAttribute="top" secondItem="zvS-kB-UOe" secondAttribute="top" constant="16" id="QoQ-8f-C1R"/>
-                                    <constraint firstItem="P2q-r6-Pdn" firstAttribute="top" secondItem="e1U-hp-Tgy" secondAttribute="bottom" constant="8" id="Ryu-fO-Wfu"/>
-                                    <constraint firstItem="Sir-Lj-pp3" firstAttribute="leading" secondItem="zvS-kB-UOe" secondAttribute="leading" constant="16" id="TfE-aH-MQR"/>
+                                    <constraint firstItem="P2q-r6-Pdn" firstAttribute="top" secondItem="e1U-hp-Tgy" secondAttribute="bottom" constant="32" id="Ryu-fO-Wfu"/>
+                                    <constraint firstItem="Sir-Lj-pp3" firstAttribute="leading" secondItem="zvS-kB-UOe" secondAttribute="leading" id="TfE-aH-MQR"/>
                                     <constraint firstItem="e1U-hp-Tgy" firstAttribute="leading" secondItem="zvS-kB-UOe" secondAttribute="leading" constant="16" id="UwV-RD-nm1"/>
                                     <constraint firstAttribute="height" constant="500" id="cTu-aV-PtW"/>
                                 </constraints>
@@ -142,7 +142,8 @@
                     <connections>
                         <outlet property="historyImageView" destination="fhX-Oh-Pr3" id="M8t-zE-d2A"/>
                         <outlet property="historyView" destination="zvS-kB-UOe" id="x2o-cp-qr5"/>
-                        <outlet property="historyViewHeightConstrainte" destination="wE4-7y-KW6" id="52k-oq-mxX"/>
+                        <outlet property="historyViewHeightContrainte" destination="cTu-aV-PtW" id="oB7-Qn-Xbi"/>
+                        <outlet property="historyViewTopConstrainte" destination="wE4-7y-KW6" id="52k-oq-mxX"/>
                         <outlet property="noHistorySubView" destination="Sir-Lj-pp3" id="vKI-Wp-cyU"/>
                         <outlet property="tableView" destination="P2q-r6-Pdn" id="fqu-dt-ynF"/>
                         <segue destination="4D1-Mr-LCS" kind="presentation" identifier="ResultSegue" id="re8-hL-FcN"/>

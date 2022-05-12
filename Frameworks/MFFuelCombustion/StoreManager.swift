@@ -32,6 +32,10 @@ public final class StoreManager {
 
         do {
             try context.save()
+
+            // notify publisher
+            NotificationCenter.default.post(name: .fuelCombustionHistoryTask, object: nil, userInfo: nil)
+
         } catch let error {
             print(error)
         }
