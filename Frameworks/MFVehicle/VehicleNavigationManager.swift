@@ -16,14 +16,12 @@ public final class VehicleNavigationManager {
 
     public func getVehicleViewController() -> UIViewController {
 
-        let navController = UINavigationController.makeFromStoryboard("Vehicle",
-                                                                      withIdentifier: "VehicleNavViewController",
-                                                                      in: Bundle(for: Self.self))
+        let viewController = VehicleViewController.makeFromStoryboard(in: Bundle(for: Self.self))
 
-        navController.tabBarItem = UITabBarItem(title: nil,
+        viewController.tabBarItem = UITabBarItem(title: nil,
                                                 image: R.image.ic_25_car(),
                                                 selectedImage: R.image.ic_35_car())
 
-        return navController
+        return viewController
     }
 }

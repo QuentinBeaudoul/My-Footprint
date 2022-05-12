@@ -26,39 +26,29 @@
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RPN-tj-zhO">
-                                <rect key="frame" x="0.0" y="107.66666666666669" width="390" height="702.33333333333326"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUr-n4-fvf" userLabel="Get Started Button" customClass="MFButton" customModule="MFFuelCombustion" customModuleProvider="target">
-                                        <rect key="frame" x="133" y="328.66666666666663" width="124" height="45"/>
-                                        <color key="backgroundColor" name="primaryColor"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
-                                        <color key="tintColor" name="onPrimaryColor"/>
-                                        <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Get started !"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" name="secondaryColor"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="4"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <segue destination="8ss-fh-gdI" kind="presentation" identifier="EntryParamsSegue" id="MIU-Hs-CaW"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="gUr-n4-fvf" firstAttribute="centerY" secondItem="RPN-tj-zhO" secondAttribute="centerY" id="GYW-eI-7Hi"/>
-                                    <constraint firstItem="gUr-n4-fvf" firstAttribute="centerX" secondItem="RPN-tj-zhO" secondAttribute="centerX" id="eKY-PX-Ehd"/>
-                                </constraints>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUr-n4-fvf" userLabel="Get Started Button" customClass="MFButton" customModule="MFFuelCombustion" customModuleProvider="target">
+                                <rect key="frame" x="133" y="399.66666666666669" width="124" height="45"/>
+                                <color key="backgroundColor" name="primaryColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                <color key="tintColor" name="onPrimaryColor"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Get started !"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="secondaryColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="8ss-fh-gdI" kind="presentation" identifier="EntryParamsSegue" id="MIU-Hs-CaW"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zvS-kB-UOe" customClass="MFView" customModule="MFFuelCombustion" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="124.66666666666669" width="390" height="500.00000000000006"/>
                                 <subviews>
@@ -128,13 +118,11 @@
                         <viewLayoutGuide key="safeArea" id="QEv-3k-05y"/>
                         <color key="backgroundColor" name="backgroundGradientTop"/>
                         <constraints>
-                            <constraint firstItem="RPN-tj-zhO" firstAttribute="top" secondItem="9ei-vE-tjx" secondAttribute="bottom" constant="8" id="1y9-4k-Ter"/>
-                            <constraint firstItem="RPN-tj-zhO" firstAttribute="leading" secondItem="QEv-3k-05y" secondAttribute="leading" id="8ei-cW-4TW"/>
                             <constraint firstItem="zvS-kB-UOe" firstAttribute="trailing" secondItem="QEv-3k-05y" secondAttribute="trailing" id="EHM-M6-K2i"/>
+                            <constraint firstItem="gUr-n4-fvf" firstAttribute="centerX" secondItem="M3c-Yi-8MB" secondAttribute="centerX" id="EQB-4m-Klx"/>
                             <constraint firstItem="9ei-vE-tjx" firstAttribute="leading" secondItem="QEv-3k-05y" secondAttribute="leading" constant="16" id="JNd-gX-hBf"/>
+                            <constraint firstItem="gUr-n4-fvf" firstAttribute="centerY" secondItem="M3c-Yi-8MB" secondAttribute="centerY" id="MlD-LF-HCJ"/>
                             <constraint firstItem="9ei-vE-tjx" firstAttribute="top" secondItem="QEv-3k-05y" secondAttribute="top" constant="16" id="Qn9-Yp-DgG"/>
-                            <constraint firstItem="QEv-3k-05y" firstAttribute="bottom" secondItem="RPN-tj-zhO" secondAttribute="bottom" id="mdE-FC-5fl"/>
-                            <constraint firstItem="RPN-tj-zhO" firstAttribute="trailing" secondItem="QEv-3k-05y" secondAttribute="trailing" id="smF-vp-ny4"/>
                             <constraint firstItem="zvS-kB-UOe" firstAttribute="top" secondItem="9ei-vE-tjx" secondAttribute="bottom" constant="25" id="wE4-7y-KW6"/>
                             <constraint firstItem="zvS-kB-UOe" firstAttribute="leading" secondItem="QEv-3k-05y" secondAttribute="leading" id="ymD-6E-DiA"/>
                         </constraints>

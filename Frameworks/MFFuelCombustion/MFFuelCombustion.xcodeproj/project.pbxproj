@@ -172,7 +172,7 @@
 			name = Response;
 			sourceTree = "<group>";
 		};
-		660D49EC281ADAB400A795E6 /* UIComponantes */ = {
+		660D49EC281ADAB400A795E6 /* UIComponants */ = {
 			isa = PBXGroup;
 			children = (
 				66C7A7CE2823D6A100143AEE /* KeyboardToolbarViews */,
@@ -182,7 +182,7 @@
 				66E21002281C23D600193A2E /* MFLabel.swift */,
 				66ED221B281FDE2200B38079 /* MFView.swift */,
 			);
-			name = UIComponantes;
+			name = UIComponants;
 			sourceTree = "<group>";
 		};
 		6645E7FD28103564002387BB = {
@@ -227,7 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				66E21006281C329F00193A2E /* Constantes */,
-				660D49EC281ADAB400A795E6 /* UIComponantes */,
+				660D49EC281ADAB400A795E6 /* UIComponants */,
 				66ECF2152819441500814686 /* Ressources */,
 				6645E84228105667002387BB /* Models */,
 				6645E82E2810396B002387BB /* Managers */,
