@@ -33,14 +33,14 @@ class FuelCombustionViewController: UIViewController {
             view.setGradientBackground(colorTop: topColor, colorBottom: bottomColor)
         }
 
-        // Set the historyView in the bottom
+        // Set the historyView top constrainte
         historyViewTopConstrainte.constant =
         UIScreen.main.bounds.height -
         UIScreen.headerHeight -
         UIScreen.tabbarHeight -
         60
 
-        // Set the historyView height contrainte
+        // Set the historyView height constrainte
         historyViewHeightContrainte.constant =
         UIScreen.main.bounds.height -
         UIScreen.tabbarHeight -
