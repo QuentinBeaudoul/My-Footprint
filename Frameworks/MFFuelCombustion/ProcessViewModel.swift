@@ -29,7 +29,9 @@ class ProcessViewModel {
         let url = Constantes.url
         let body = request.build()
 
-        NetworkManager.shared.fetchData(url: url, parameters: body, parser: Estimate.self) { response in
+        NetworkManager.shared.fetchData(httpType: .POST,
+                                        url: url, parameters: body,
+                                        parser: Estimate.self) { response in
             switch response {
             case .success(let estimate):
                 if let estimate = estimate {

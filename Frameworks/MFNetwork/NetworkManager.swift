@@ -9,14 +9,18 @@ import Foundation
 import Alamofire
 
 public protocol NetworkManagerProtocol {
-    func fetchData<T: Decodable>(url: String, headers: [String: String]?, parameters: [String: Any]?, parser: T.Type, completion: @escaping (Result<T?, Error>) -> Void)
+    func fetchData<T: Decodable>(httpType: HttpType, url: String, headers: [String: String]?, parameters: [String: Any]?, parser: T.Type, completion: @escaping (Result<T?, Error>) -> Void)
+}
+
+public enum HttpType {
+    case GET, POST
 }
 
 public class NetworkManager: NetworkManagerProtocol {
 
     public static let shared = NetworkManager()
 
-    public func fetchData<T: Decodable>(url: String, headers: [String: String]? = nil, parameters: [String: Any]? = nil, parser: T.Type, completion: @escaping (Result<T?, Error>) -> Void) {
+    public func fetchData<T: Decodable>(httpType: HttpType, url: String, headers: [String: String]? = nil, parameters: [String: Any]? = nil, parser: T.Type, completion: @escaping (Result<T?, Error>) -> Void) {
 
         // Initiate headers and adding defaults values like apiKey
         var afHeaders = HTTPHeaders()
@@ -29,13 +33,25 @@ public class NetworkManager: NetworkManagerProtocol {
             }
         }
 
-        Service.post(url: url, headers: afHeaders, parameters: parameters, parser: parser) { response in
-            if let error = response.error {
-                print("‼️\(error)‼️")
-                completion(.failure(error))
-            } else {
-                completion(.success(response.value))
+        // Excute request depending of httpType
+        switch httpType {
+        case .GET:
+            Service.get(url: url, headers: afHeaders, parameters: parameters, parser: parser) { [self] response in
+                handleResponse(response: response, completion: completion)
             }
+        case .POST:
+            Service.post(url: url, headers: afHeaders, parameters: parameters, parser: parser) { [self] response in
+                handleResponse(response: response, completion: completion)
+            }
+        }
+    }
+
+    private func handleResponse<T: Decodable>(response: DataResponse<T, AFError>, completion: @escaping (Result<T?, Error>) -> Void) {
+        if let error = response.error {
+            print("‼️\(error)‼️")
+            completion(.failure(error))
+        } else {
+            completion(.success(response.value))
         }
     }
 }

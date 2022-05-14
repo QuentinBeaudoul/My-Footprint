@@ -8,6 +8,7 @@
 import UIKit
 import Lottie
 import MFFuelCombustion
+import MFVehicle
 
 class SplashViewController: UIViewController {
 
@@ -41,7 +42,9 @@ class SplashViewController: UIViewController {
 
     private func loadHistories() {
         StoreManager.shared.loadHistory { [self] _ in
-            segue()
+            VehicleManager.shared.getVehicleMakes { [self] _ in
+                segue()
+            }
         }
     }
 

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class VehicleMakes: Decodable {
+class VehicleMake: Decodable {
     let id: String
     let name: String
     let numberOfModels: Int
