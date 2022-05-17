@@ -7,7 +7,7 @@
 
 import Foundation
 
-class VehicleModels: Decodable {
+class VehicleModel: Decodable {
     let id: String
     let name: String
     let year: Int
@@ -34,7 +34,8 @@ class VehicleModels: Decodable {
         let dataContainer = try container.nestedContainer(keyedBy: DataCodingKeys.self, forKey: .data)
         id = try dataContainer.decode(String.self, forKey: .id)
 
-        let attributesContainer = try dataContainer.nestedContainer(keyedBy: AttributesCodingKeys.self, forKey: .attributes)
+        let attributesContainer = try dataContainer.nestedContainer(keyedBy: AttributesCodingKeys.self,
+                                                                    forKey: .attributes)
         name = try attributesContainer.decode(String.self, forKey: .name)
         year = try attributesContainer.decode(Int.self, forKey: .year)
         vehicleMake = try attributesContainer.decode(String.self, forKey: .vehicleMake)

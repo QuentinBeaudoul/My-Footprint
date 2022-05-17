@@ -13,7 +13,7 @@ class VehicleMakesViewController: UIViewController {
     @IBOutlet weak var headerView: HeaderView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var nextButton: MFButton!
-    
+
     let viewModel = VehicleMakesViewModel()
 
     override func viewDidLoad() {
@@ -41,7 +41,10 @@ class VehicleMakesViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == R.segue.vehicleMakesViewController.vehicleModelSegue.identifier {
-            print("load vehicle maker")
+            guard let nextVC = segue.destination as? ProcessVehicleModelsViewController,
+                  let vehicleMake = viewModel.selectedVehicleMake else { return }
+
+            nextVC.viewModel.load(vehicleMake)
         }
     }
 

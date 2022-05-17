@@ -14,5 +14,5 @@ final class Constants {
     static let vehicleMakesUrl = "\(baseUrl)/vehicle_makes"
 
     // %@ = vehicleMakeId
-    static let VehicleModelsUrl = "\(baseUrl)/vehicle_make/%@/vehicle_models"
+    static let VehicleModelsUrl = "\(baseUrl)/vehicle_makes/%@/vehicle_models"
 }
