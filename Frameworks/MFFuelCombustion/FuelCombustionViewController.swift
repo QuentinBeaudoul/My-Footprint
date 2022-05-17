@@ -71,8 +71,8 @@ class FuelCombustionViewController: UIViewController {
     }
 
     private func updateHistory() {
-        noHistorySubView.isHidden = viewModel.hasHistory
         viewModel.reloadHistory { [self] result in
+            noHistorySubView.isHidden = viewModel.hasHistory
             switch result {
             case .success():
                 tableView.reloadData()

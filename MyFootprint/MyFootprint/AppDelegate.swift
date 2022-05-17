@@ -8,6 +8,7 @@
 import UIKit
 import CoreData
 import IQKeyboardManagerSwift
+import MFStorage
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
