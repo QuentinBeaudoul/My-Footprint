@@ -147,7 +147,7 @@ extension FuelCombustionViewController: UITableViewDelegate {
         }
         deleteAction.image = UIImage(systemName: "trash.fill")?
             .withTintColor(R.color.onPrimaryColor() ?? .white)
-        deleteAction.backgroundColor = R.color.backgroundGradientTop() ?? .blue
+        deleteAction.backgroundColor = R.color.deleteColor() ?? .red
 
         let configuration = UISwipeActionsConfiguration(actions: [deleteAction])
         return configuration

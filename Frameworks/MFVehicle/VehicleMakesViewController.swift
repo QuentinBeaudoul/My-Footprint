@@ -28,7 +28,7 @@ class VehicleMakesViewController: UIViewController {
 
         // Set up header
         headerView.delegate = self
-        headerView.fillView(title: "Which vehicle maker ?")
+        headerView.fillView(title: "Which maker ?")
 
         // Set up tableView
         tableView.delegate = self

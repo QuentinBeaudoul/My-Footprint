@@ -19,6 +19,12 @@
 		4F932A332833970A00F4F12A /* ProcessVehicleModelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F932A322833970A00F4F12A /* ProcessVehicleModelsViewController.swift */; };
 		4F932A362833A20500F4F12A /* VehicleModelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F932A352833A20500F4F12A /* VehicleModelsViewController.swift */; };
 		4F932A382833A21800F4F12A /* VehicleModelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F932A372833A21800F4F12A /* VehicleModelsViewModel.swift */; };
+		4F932A3C2833DAA200F4F12A /* VehicleModelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F932A3B2833DAA200F4F12A /* VehicleModelCell.xib */; };
+		4F932A3E2833DAE300F4F12A /* VehicleModelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F932A3D2833DAE300F4F12A /* VehicleModelCell.swift */; };
+		4F932A422833DE1300F4F12A /* ProcessResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F932A412833DE1300F4F12A /* ProcessResultViewController.swift */; };
+		4F932A442833DE2600F4F12A /* ProcessResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F932A432833DE2600F4F12A /* ProcessResultViewModel.swift */; };
+		4F932A472833E08300F4F12A /* DistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F932A462833E08300F4F12A /* DistanceViewController.swift */; };
+		4F932A492833E09400F4F12A /* DistanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F932A482833E09400F4F12A /* DistanceViewModel.swift */; };
 		6605CD69281189D200B226A5 /* Estimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6605CD68281189D200B226A5 /* Estimate.swift */; };
 		661580E828099A92006C2170 /* Vehicle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 661580E728099A92006C2170 /* Vehicle.storyboard */; };
 		661580EA28099AD1006C2170 /* VehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661580E928099AD1006C2170 /* VehicleViewController.swift */; };
@@ -84,6 +90,12 @@
 		4F932A322833970A00F4F12A /* ProcessVehicleModelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessVehicleModelsViewController.swift; sourceTree = "<group>"; };
 		4F932A352833A20500F4F12A /* VehicleModelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleModelsViewController.swift; sourceTree = "<group>"; };
 		4F932A372833A21800F4F12A /* VehicleModelsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleModelsViewModel.swift; sourceTree = "<group>"; };
+		4F932A3B2833DAA200F4F12A /* VehicleModelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleModelCell.xib; sourceTree = "<group>"; };
+		4F932A3D2833DAE300F4F12A /* VehicleModelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleModelCell.swift; sourceTree = "<group>"; };
+		4F932A412833DE1300F4F12A /* ProcessResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessResultViewController.swift; sourceTree = "<group>"; };
+		4F932A432833DE2600F4F12A /* ProcessResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessResultViewModel.swift; sourceTree = "<group>"; };
+		4F932A462833E08300F4F12A /* DistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceViewController.swift; sourceTree = "<group>"; };
+		4F932A482833E09400F4F12A /* DistanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceViewModel.swift; sourceTree = "<group>"; };
 		63170CE261388F59CC9D6446 /* Pods_Shared_MFVehicle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MFVehicle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6605CD68281189D200B226A5 /* Estimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estimate.swift; sourceTree = "<group>"; };
 		661580E728099A92006C2170 /* Vehicle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vehicle.storyboard; sourceTree = "<group>"; };
@@ -172,6 +184,9 @@
 		4F730CE7282FB54B00468D64 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4F932A402833DDF600F4F12A /* Result */,
+				4F932A3F2833DDE100F4F12A /* ProcessResult */,
+				4F932A452833E06400F4F12A /* Distance */,
 				4F932A342833A1EC00F4F12A /* VehicleModels */,
 				4F932A2F283396DE00F4F12A /* ProcessVehicleModels */,
 				4F730CF6282FC88000468D64 /* VehicleMakes */,
@@ -218,10 +233,53 @@
 		4F932A342833A1EC00F4F12A /* VehicleModels */ = {
 			isa = PBXGroup;
 			children = (
+				4F932A392833DA4400F4F12A /* Cell */,
 				4F932A352833A20500F4F12A /* VehicleModelsViewController.swift */,
 				4F932A372833A21800F4F12A /* VehicleModelsViewModel.swift */,
 			);
 			name = VehicleModels;
+			sourceTree = "<group>";
+		};
+		4F932A392833DA4400F4F12A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4F932A3A2833DA8000F4F12A /* VehicleModelCell */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		4F932A3A2833DA8000F4F12A /* VehicleModelCell */ = {
+			isa = PBXGroup;
+			children = (
+				4F932A3B2833DAA200F4F12A /* VehicleModelCell.xib */,
+				4F932A3D2833DAE300F4F12A /* VehicleModelCell.swift */,
+			);
+			name = VehicleModelCell;
+			sourceTree = "<group>";
+		};
+		4F932A3F2833DDE100F4F12A /* ProcessResult */ = {
+			isa = PBXGroup;
+			children = (
+				4F932A412833DE1300F4F12A /* ProcessResultViewController.swift */,
+				4F932A432833DE2600F4F12A /* ProcessResultViewModel.swift */,
+			);
+			name = ProcessResult;
+			sourceTree = "<group>";
+		};
+		4F932A402833DDF600F4F12A /* Result */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Result;
+			sourceTree = "<group>";
+		};
+		4F932A452833E06400F4F12A /* Distance */ = {
+			isa = PBXGroup;
+			children = (
+				4F932A462833E08300F4F12A /* DistanceViewController.swift */,
+				4F932A482833E09400F4F12A /* DistanceViewModel.swift */,
+			);
+			name = Distance;
 			sourceTree = "<group>";
 		};
 		6605CD67281189BF00B226A5 /* Response */ = {
@@ -470,6 +528,7 @@
 				4F730CF9282FCC4200468D64 /* VehicleMakeCell.xib in Resources */,
 				66D2A869281976810026F85E /* Assets.xcassets in Resources */,
 				661AAEB0282D5BDD00E8D306 /* HeaderView.xib in Resources */,
+				4F932A3C2833DAA200F4F12A /* VehicleModelCell.xib in Resources */,
 				661AAEAC282D5BAF00E8D306 /* ProcessKeyboardToolbarView.xib in Resources */,
 				66D2A867281976690026F85E /* CarAnimation.json in Resources */,
 				4F730CE4282FB11500468D64 /* EntryParams.storyboard in Resources */,
@@ -556,6 +615,7 @@
 				4F730CF1282FC58700468D64 /* VehicleManager.swift in Sources */,
 				661AAEA9282D5BAF00E8D306 /* MFButton.swift in Sources */,
 				4F730CFB282FCD9700468D64 /* VehicleMakeCell.swift in Sources */,
+				4F932A422833DE1300F4F12A /* ProcessResultViewController.swift in Sources */,
 				4F730CF5282FC87C00468D64 /* VehicleMakesViewModel.swift in Sources */,
 				661580EA28099AD1006C2170 /* VehicleViewController.swift in Sources */,
 				4F932A332833970A00F4F12A /* ProcessVehicleModelsViewController.swift in Sources */,
@@ -565,6 +625,7 @@
 				66D2A86D28197A520026F85E /* R.generated.swift in Sources */,
 				4F730CF3282FC69800468D64 /* VehicleMakesViewController.swift in Sources */,
 				4F932A382833A21800F4F12A /* VehicleModelsViewModel.swift in Sources */,
+				4F932A3E2833DAE300F4F12A /* VehicleModelCell.swift in Sources */,
 				4F932A31283396F800F4F12A /* ProcessVehicleModelsViewModel.swift in Sources */,
 				4F730CEE282FB6D100468D64 /* Constants.swift in Sources */,
 				661580EC28099AE3006C2170 /* VehicleViewModel.swift in Sources */,
@@ -574,6 +635,9 @@
 				661580EF28099BAF006C2170 /* VehicleNavigationManager.swift in Sources */,
 				661AAEA6282D5BAF00E8D306 /* MFView.swift in Sources */,
 				66A30C4F282E4FD20061EB8F /* VehicleModel.swift in Sources */,
+				4F932A472833E08300F4F12A /* DistanceViewController.swift in Sources */,
+				4F932A492833E09400F4F12A /* DistanceViewModel.swift in Sources */,
+				4F932A442833DE2600F4F12A /* ProcessResultViewModel.swift in Sources */,
 				661AAEAA282D5BAF00E8D306 /* MFTextfield.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
