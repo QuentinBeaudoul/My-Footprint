@@ -12,6 +12,8 @@ class ProcessResultViewController: UIViewController {
 
     @IBOutlet weak var animationView: AnimationView!
 
+    let viewModel = ProcessResultViewModel()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,5 +31,50 @@ class ProcessResultViewController: UIViewController {
         animationView.loopMode = .loop
         animationView.animationSpeed = 2
         animationView.play()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        performRequest()
+    }
+
+    private func performRequest() {
+        viewModel.performRequest { [self] response in
+            switch response {
+            case .success(_):
+                segue()
+            case .failure(let error):
+                viewModel.retryCount += 1
+
+                if viewModel.noMoreTries {
+                    navigationController?.popViewController(animated: true)
+                } else {
+                    handleError(error)
+                }
+            }
+        }
+    }
+
+    private func handleError(_ error: Error) {
+        let action = UIAlertAction(title: "Retry", style: .default) { [self] _ in
+            performRequest()
+        }
+
+        UIAlertController.showAlert(title: "Error", message: error.localizedDescription, action: action, on: self)
+    }
+
+    private func segue() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [self] in
+            performSegue(withIdentifier: R.segue.processResultViewController.resultSegue, sender: nil)
+        }
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == R.segue.processResultViewController.resultSegue.identifier {
+            guard let resultVC = segue.destination as? ResultViewController,
+                  let estimate = viewModel.estimate else { return }
+
+            resultVC.viewModel.load(estimate)
+        }
     }
 }

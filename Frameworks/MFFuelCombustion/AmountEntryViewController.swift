@@ -86,13 +86,13 @@ class AmountEntryViewController: UIViewController {
     @IBAction func unitButtonTapped() {
         let actionSheet = UIAlertController(title: "Choose an unit", message: nil, preferredStyle: .actionSheet)
 
-        viewModel.units?.forEach({ unit in
+        viewModel.units?.forEach { unit in
             let action = UIAlertAction(title: unit.name, style: .default) { [self] _ in
                 viewModel.unit = unit
                 updateUI()
             }
             actionSheet.addAction(action)
-        })
+        }
 
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { _ in
             actionSheet.dismiss(animated: true)

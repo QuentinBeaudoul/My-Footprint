@@ -6,12 +6,36 @@
 //
 
 import Foundation
+import MFNetwork
 
 class ProcessResultViewModel {
 
-    private(set) var vehicleModel: VehicleModel?
+    private(set) var request: Request.Builder?
+    private(set) var estimate: Estimate?
 
-    func load(_ vehicleModel: VehicleModel) {
-        self.vehicleModel = vehicleModel
+    var retryCount = 0
+    var noMoreTries: Bool {
+        retryCount >= 3
+    }
+
+    func load(_ request: Request.Builder) {
+        self.request = request
+    }
+
+    func performRequest(completion: @escaping (Result<Estimate?, Error>) -> Void) {
+        guard let request = request else { return }
+        let url = Constants.estimateUrl
+        let params: [String: Any] = request.build()
+
+        NetworkManager.shared.fetchData(httpType: .POST, url: url, parameters: params, parser: Estimate.self) { res in
+
+            switch res {
+            case .success(let estimate):
+                self.estimate = estimate
+                completion(.success(estimate))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
     }
 }
