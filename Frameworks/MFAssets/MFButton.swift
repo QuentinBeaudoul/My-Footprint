@@ -7,10 +7,11 @@
 
 import Foundation
 import LoadableViews
+import MFExtensions
 
-class MFButton: UIButton {
+public class MFButton: UIButton {
 
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
 
         // setUp style

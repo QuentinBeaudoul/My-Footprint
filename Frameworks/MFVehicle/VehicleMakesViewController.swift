@@ -7,6 +7,7 @@
 
 import UIKit
 import MFExtensions
+import MFAssets
 
 class VehicleMakesViewController: UIViewController {
 

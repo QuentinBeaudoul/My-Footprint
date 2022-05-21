@@ -27,6 +27,7 @@ class VehicleModelsViewModel {
 
     func initRequest() -> Request.Builder {
         let request = Request.Builder()
+        request.addParameter(key: "type", value: "vehicle")
         request.addParameter(key: "vehicle_model_id", value: selectedVehicleModel?.id ?? "")
         return request
     }

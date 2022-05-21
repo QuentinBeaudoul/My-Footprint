@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MFAssets
 
 class VehicleModelsViewController: UIViewController {
 

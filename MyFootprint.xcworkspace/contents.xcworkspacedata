@@ -8,6 +8,9 @@
          location = "container:"
          name = "Interfaces">
          <FileRef
+            location = "group:Frameworks/MFAssets/MFAssets.xcodeproj">
+         </FileRef>
+         <FileRef
             location = "group:Frameworks/MFFuelCombustion/MFFuelCombustion.xcodeproj">
          </FileRef>
          <FileRef

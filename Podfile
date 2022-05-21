@@ -7,6 +7,11 @@ abstract_target 'Shared' do
 	pod 'R.swift'
 	pod 'SwiftLint'
 
+	target 'MFAssets' do
+		project 'Frameworks/MFAssets/MFAssets.xcodeproj'
+		pod 'LoadableViews'
+	end
+
 	target 'MFExtensions' do
 		project 'Frameworks/MFExtensions/MFExtensions.xcodeproj'
 	end

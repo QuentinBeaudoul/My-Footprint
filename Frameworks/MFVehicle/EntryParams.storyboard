@@ -17,14 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZF-Do-uU7" customClass="HeaderView" customModule="MFVehicle" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZF-Do-uU7" customClass="HeaderView" customModule="MFAssets">
                                 <rect key="frame" x="0.0" y="44" width="414" height="56"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="Pcr-CJ-Yf3"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rJu-rZ-rkU" customClass="MFView" customModule="MFVehicle" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rJu-rZ-rkU" customClass="MFView" customModule="MFAssets">
                                 <rect key="frame" x="16" y="108" width="382" height="674"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" estimatedRowHeight="64" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="N84-UB-Bmj">
@@ -41,7 +41,7 @@
                                     <constraint firstItem="N84-UB-Bmj" firstAttribute="leading" secondItem="rJu-rZ-rkU" secondAttribute="leading" id="i15-Pt-qlx"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glL-Kc-htw" customClass="MFButton" customModule="MFVehicle" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glL-Kc-htw" customClass="MFButton" customModule="MFAssets">
                                 <rect key="frame" x="16" y="798" width="382" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="tMo-LD-3E4"/>
@@ -121,14 +121,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i8J-5p-MCN" customClass="HeaderView" customModule="MFVehicle" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i8J-5p-MCN" customClass="HeaderView" customModule="MFAssets">
                                 <rect key="frame" x="0.0" y="44" width="414" height="56"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="Rn4-xd-wMH"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MsQ-26-rL9" customClass="MFView" customModule="MFVehicle" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MsQ-26-rL9" customClass="MFView" customModule="MFAssets">
                                 <rect key="frame" x="16" y="108" width="382" height="674"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" estimatedRowHeight="64" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8ZS-xp-8lh">
@@ -145,7 +145,7 @@
                                     <constraint firstItem="8ZS-xp-8lh" firstAttribute="leading" secondItem="MsQ-26-rL9" secondAttribute="leading" id="xey-p6-1Jg"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ova-Ct-V0J" customClass="MFButton" customModule="MFVehicle" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ova-Ct-V0J" customClass="MFButton" customModule="MFAssets">
                                 <rect key="frame" x="16" y="798" width="382" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="HKR-TF-Ppb"/>

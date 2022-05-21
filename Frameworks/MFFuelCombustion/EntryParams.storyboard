@@ -47,7 +47,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7V-cy-EaS" customClass="MFButton" customModule="MFFuelCombustion" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7V-cy-EaS" customClass="MFButton" customModule="MFAssets">
                                 <rect key="frame" x="16" y="798" width="382" height="48"/>
                                 <color key="backgroundColor" name="primaryColor"/>
                                 <constraints>
@@ -62,13 +62,13 @@
                                     <action selector="onNextButtonTapped" destination="n8Q-Q4-U49" eventType="touchUpInside" id="c2Y-Lp-7Je"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdU-nU-MS3" customClass="HeaderView" customModule="MFFuelCombustion" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdU-nU-MS3" customClass="HeaderView" customModule="MFAssets">
                                 <rect key="frame" x="0.0" y="44" width="414" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="R29-cu-AhN"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jcg-Zq-RkK" customClass="MFView" customModule="MFFuelCombustion" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jcg-Zq-RkK" customClass="MFView" customModule="MFAssets">
                                 <rect key="frame" x="16" y="116" width="382" height="666"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" estimatedRowHeight="50" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vR4-tH-sIv">
@@ -132,14 +132,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xEM-Fm-pBE" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="221.5"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oxh-sB-e0c" customClass="MFTextfield" customModule="MFFuelCombustion" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oxh-sB-e0c" customClass="MFTextfield" customModule="MFAssets">
                                                 <rect key="frame" x="16" y="120" width="276" height="50"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="RmU-MR-gkD"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gf5-s7-1du" customClass="MFButton" customModule="MFFuelCombustion" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gf5-s7-1du" customClass="MFButton" customModule="MFAssets">
                                                 <rect key="frame" x="308" y="120" width="90" height="50"/>
                                                 <color key="backgroundColor" name="primaryColor"/>
                                                 <constraints>
@@ -215,7 +215,7 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="6np-Yd-c6C"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="uWX-C6-jSW"/>
                             </scrollView>
-                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZS-bA-h5f" customClass="MFButton" customModule="MFFuelCombustion" customModuleProvider="target">
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZS-bA-h5f" customClass="MFButton" customModule="MFAssets">
                                 <rect key="frame" x="16" y="798" width="382" height="48"/>
                                 <color key="backgroundColor" name="primaryColor"/>
                                 <constraints>
@@ -241,7 +241,7 @@
                                     <action selector="onProcessButtonTapped" destination="xvd-PZ-xBW" eventType="touchUpInside" id="08E-c3-0WQ"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OrM-Cp-RBY" customClass="HeaderView" customModule="MFFuelCombustion" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OrM-Cp-RBY" customClass="HeaderView" customModule="MFAssets">
                                 <rect key="frame" x="0.0" y="44" width="414" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="ygp-aJ-X2c"/>
@@ -321,7 +321,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tKO-fi-XWB" customClass="HeaderView" customModule="MFFuelCombustion" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tKO-fi-XWB" customClass="HeaderView" customModule="MFAssets">
                                 <rect key="frame" x="0.0" y="44" width="414" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="JEM-g7-HU8"/>
@@ -333,7 +333,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AJa-81-dPH" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="461.5"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jte-ZX-FUG" userLabel="Result View" customClass="MFView" customModule="MFFuelCombustion" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jte-ZX-FUG" userLabel="Result View" customClass="MFView" customModule="MFAssets">
                                                 <rect key="frame" x="16" y="16" width="382" height="365.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For %@ %@ burned. You generated:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOx-DX-pYN">
@@ -438,7 +438,7 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="wCI-7z-lqs"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="UMr-dE-pU2"/>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOq-C7-H1p" customClass="MFButton" customModule="MFFuelCombustion" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOq-C7-H1p" customClass="MFButton" customModule="MFAssets">
                                 <rect key="frame" x="16" y="798" width="382" height="48"/>
                                 <color key="backgroundColor" name="primaryColor"/>
                                 <constraints>
@@ -503,7 +503,6 @@
         <designable name="Gf5-s7-1du">
             <size key="intrinsicContentSize" width="49" height="20"/>
         </designable>
-        <designable name="TCb-tB-me5"/>
         <designable name="l7V-cy-EaS">
             <size key="intrinsicContentSize" width="48" height="22"/>
         </designable>

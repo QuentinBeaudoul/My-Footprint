@@ -7,26 +7,26 @@
 
 import LoadableViews
 
-protocol ProcessKeyboardToobarDelegate: AnyObject {
+public protocol ProcessKeyboardToobarDelegate: AnyObject {
     func onToolbarButtonTapped()
 }
 
-class ProcessKeyboardToolbarView: LoadableView {
+public class ProcessKeyboardToolbarView: LoadableView {
 
     @IBOutlet weak var button: MFButton!
 
-    var delegate: ProcessKeyboardToobarDelegate?
+    public var delegate: ProcessKeyboardToobarDelegate?
 
     @IBAction func didToolBarButtonTapped() {
         delegate?.onToolbarButtonTapped()
     }
 
-    func disable() {
+    public func disable() {
         button.isEnabled = false
         button.alpha = 0.5
     }
 
-    func enable() {
+    public func enable() {
         button.isEnabled = true
         button.alpha = 1
     }

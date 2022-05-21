@@ -7,9 +7,9 @@
 
 import UIKit
 
-class MFLabel: UILabel {
+public class MFLabel: UILabel {
 
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
 
         // setUp Shadow

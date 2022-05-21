@@ -7,9 +7,9 @@
 
 import UIKit
 
-class MFView: UIView {
+public class MFView: UIView {
 
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
 
         // setUp style

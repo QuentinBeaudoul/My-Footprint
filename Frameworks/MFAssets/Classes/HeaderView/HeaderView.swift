@@ -7,19 +7,19 @@
 
 import LoadableViews
 
-protocol HeaderViewDelegate: AnyObject {
+public protocol HeaderViewDelegate: AnyObject {
     func onBackButtonTapped()
 }
 
-class HeaderView: LoadableView {
+public class HeaderView: LoadableView {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var backLabel: UILabel!
     @IBOutlet weak var backButtonView: UIView!
 
-    var delegate: HeaderViewDelegate?
+    public var delegate: HeaderViewDelegate?
 
-    func fillView(title: String?, back: String? = "back", isBackButtonHidden: Bool = true) {
+    public func fillView(title: String?, back: String? = "back", isBackButtonHidden: Bool = true) {
         titleLabel.text = title
         backLabel.text = back
         backButtonView.isHidden = isBackButtonHidden

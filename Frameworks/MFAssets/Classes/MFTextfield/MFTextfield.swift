@@ -7,17 +7,17 @@
 
 import LoadableViews
 
-protocol MFTextfieldDelegate: AnyObject {
+public protocol MFTextfieldDelegate: AnyObject {
     func onClearButtonTapped()
     func onTextfieldChanged(_ str: String?)
     func onToolBarButtonTapped()
 }
 
-class MFTextfield: LoadableView {
+public class MFTextfield: LoadableView {
 
     @IBOutlet weak var textField: UITextField!
 
-    var delegate: MFTextfieldDelegate?
+    public var delegate: MFTextfieldDelegate?
     private var accessoryView: ProcessKeyboardToolbarView? {
         didSet {
             textField.inputAccessoryView = accessoryView
@@ -28,7 +28,7 @@ class MFTextfield: LoadableView {
         textField.text
     }
 
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
 
         // setUp shadow
@@ -41,16 +41,16 @@ class MFTextfield: LoadableView {
         textField.delegate = self
     }
 
-    func setAccessoryView(_ accessoryView: ProcessKeyboardToolbarView) {
+    public func setAccessoryView(_ accessoryView: ProcessKeyboardToolbarView) {
         self.accessoryView = accessoryView
         self.accessoryView?.delegate = self
     }
 
-    func disableToolBarButton() {
+    public func disableToolBarButton() {
         accessoryView?.disable()
     }
 
-    func enableToolBarButton() {
+    public func enableToolBarButton() {
         accessoryView?.enable()
     }
 
@@ -60,7 +60,7 @@ class MFTextfield: LoadableView {
 }
 
 extension MFTextfield: UITextFieldDelegate {
-    func textField(_ textField: UITextField,
+    public func textField(_ textField: UITextField,
                    shouldChangeCharactersIn range: NSRange,
                    replacementString string: String) -> Bool {
         let allowedCharacters = CharacterSet.decimalDigits
@@ -68,7 +68,7 @@ extension MFTextfield: UITextFieldDelegate {
         return allowedCharacters.isSuperset(of: characterSet)
     }
 
-    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+    public func textFieldShouldClear(_ textField: UITextField) -> Bool {
         delegate?.onClearButtonTapped()
         textField.resignFirstResponder()
         return true
@@ -76,7 +76,7 @@ extension MFTextfield: UITextFieldDelegate {
 }
 
 extension MFTextfield: ProcessKeyboardToobarDelegate {
-    func onToolbarButtonTapped() {
+    public func onToolbarButtonTapped() {
         delegate?.onToolBarButtonTapped()
     }
 }
