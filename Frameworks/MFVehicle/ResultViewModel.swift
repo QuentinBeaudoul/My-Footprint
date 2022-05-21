@@ -22,6 +22,10 @@ class ResultViewModel {
         estimate?.distanceUnit ?? ""
     }
 
+    func getLiteralDistanceUnit() -> String {
+        Constants.distanceUnits[getDistanceUnit()] ?? ""
+    }
+
     func getVehicleMake() -> String {
         estimate?.vehicleMake ?? ""
     }

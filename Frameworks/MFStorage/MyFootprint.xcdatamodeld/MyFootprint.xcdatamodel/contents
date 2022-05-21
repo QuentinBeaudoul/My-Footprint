@@ -50,14 +50,13 @@
         <attribute name="weightValue" optional="YES" attributeType="String"/>
     </entity>
     <entity name="CDVehicle" representedClassName=".CDVehicle" syncable="YES" codeGenerationType="class">
-        <attribute name="attribute10" optional="YES" attributeType="String"/>
         <attribute name="carbonG" optional="YES" attributeType="String"/>
         <attribute name="carbonKg" optional="YES" attributeType="String"/>
         <attribute name="carbonLb" optional="YES" attributeType="String"/>
         <attribute name="carbonMt" optional="YES" attributeType="String"/>
         <attribute name="distanceUnit" optional="YES" attributeType="String"/>
         <attribute name="distanceValue" optional="YES" attributeType="String"/>
-        <attribute name="estimateAt" optional="YES" attributeType="String"/>
+        <attribute name="estimatedAt" optional="YES" attributeType="String"/>
         <attribute name="vehicleMake" optional="YES" attributeType="String"/>
         <attribute name="vehicleModel" optional="YES" attributeType="String"/>
         <attribute name="vehicleModelId" optional="YES" attributeType="String"/>
@@ -69,6 +68,6 @@
         <element name="CDFuelCombustion" positionX="-9" positionY="36" width="128" height="149"/>
         <element name="CDLeg" positionX="54" positionY="189" width="128" height="74"/>
         <element name="CDShipping" positionX="0" positionY="108" width="128" height="179"/>
-        <element name="CDVehicle" positionX="-9" positionY="99" width="128" height="209"/>
+        <element name="CDVehicle" positionX="-9" positionY="99" width="128" height="194"/>
     </elements>
 </model>

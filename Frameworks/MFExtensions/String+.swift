@@ -18,4 +18,8 @@ public extension String {
     func toDouble() -> Double? {
         return Double(self)
     }
+
+    func toInt() -> Int? {
+        return Int(self)
+    }
 }

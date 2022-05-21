@@ -29,7 +29,7 @@ class DistanceViewController: UIViewController {
         hideKeyboardWhenTappedAround()
 
         // Set up header
-        headerView.fillView(title: "How much ?")
+        headerView.fillView(title: "How much ?", isBackButtonHidden: false)
         headerView.delegate = self
 
         // Set up textfield

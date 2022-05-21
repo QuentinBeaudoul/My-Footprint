@@ -6,9 +6,9 @@
 //
 
 import Foundation
+import MFStorage
 
-class Estimate: Decodable {
-    let id: String
+public class Estimate: Decodable {
     let distanceValue: Double
     let vehicleMake, vehicleModel: String
     let vehicleYear: Int
@@ -38,11 +38,24 @@ class Estimate: Decodable {
         case carbonMt = "carbon_mt"
     }
 
-    required init(from decoder: Decoder) throws {
+    init(from entity: CDVehicle) {
+        distanceValue = entity.distanceValue?.toDouble() ?? 0
+        vehicleMake = entity.vehicleMake ?? ""
+        vehicleModel = entity.vehicleModel ?? ""
+        vehicleYear = entity.vehicleYear?.toInt() ?? 0
+        vehicleModelId = entity.vehicleModelId ?? ""
+        distanceUnit = entity.distanceUnit ?? ""
+        estimatedAt = entity.estimatedAt ?? ""
+        carbonG = entity.carbonG?.toDouble() ?? 0
+        carbonLb = entity.carbonLb?.toDouble() ?? 0
+        carbonKg = entity.carbonKg?.toDouble() ?? 0
+        carbonMt = entity.carbonMt?.toDouble() ?? 0
+    }
+
+    required public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: ContainerCodingKeys.self)
 
         let metadataContainer = try container.nestedContainer(keyedBy: MetadataCodingKeys.self, forKey: .data)
-        id = try metadataContainer.decode(String.self, forKey: .id)
 
         let attributesContainer = try metadataContainer.nestedContainer(keyedBy: AttributesCodingKeys.self,
                                                                         forKey: .attributes)

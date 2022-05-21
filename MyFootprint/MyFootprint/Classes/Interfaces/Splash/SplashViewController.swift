@@ -41,9 +41,11 @@ class SplashViewController: UIViewController {
     }
 
     private func loadHistories() {
-        StoreManager.shared.loadHistory { [self] _ in
-            VehicleManager.shared.getVehicleMakes { [self] _ in
-                segue()
+        MFFuelCombustion.StoreManager.shared.loadHistory { [self] _ in
+            MFVehicle.StoreManager.shared.loadHistory { [self] _ in
+                VehicleManager.shared.getVehicleMakes { [self] _ in
+                    segue()
+                }
             }
         }
     }

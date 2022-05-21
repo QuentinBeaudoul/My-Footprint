@@ -52,7 +52,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oCr-Wu-rnx" customClass="MFView" customModule="MFAssets">
                                 <rect key="frame" x="0.0" y="499.5" width="414" height="500"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="642-8J-OxY">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" estimatedRowHeight="64" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="642-8J-OxY">
                                         <rect key="frame" x="0.0" y="81" width="414" height="403"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
@@ -132,7 +132,9 @@
                         <outlet property="historyImageView" destination="DhO-3K-9Ql" id="3jm-J3-enb"/>
                         <outlet property="historyViewHeightConstrainte" destination="dDY-ZO-7q4" id="gn8-Ik-Thn"/>
                         <outlet property="historyViewTopConstrainte" destination="OgP-bC-bg3" id="2Hw-Zg-BfQ"/>
+                        <outlet property="noHistoryView" destination="n3e-FQ-WZD" id="ppR-c5-Sgt"/>
                         <outlet property="tableView" destination="642-8J-OxY" id="Y2e-wo-5tV"/>
+                        <segue destination="833-9x-ZMM" kind="presentation" identifier="resultSegue" id="qgd-dg-Req"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w5S-F0-Xgw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -157,7 +159,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E11-Ke-7f6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1164" y="-85"/>
+            <point key="canvasLocation" x="1164" y="82"/>
+        </scene>
+        <!--ResultViewController-->
+        <scene sceneID="2dc-lM-FGM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EntryParams" referencedIdentifier="ResultViewController" id="833-9x-ZMM" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="RNc-Uh-nPj"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hcu-Ba-pq7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1136" y="-31"/>
         </scene>
     </scenes>
     <designables>

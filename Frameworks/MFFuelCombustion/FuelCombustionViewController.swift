@@ -63,13 +63,6 @@ class FuelCombustionViewController: UIViewController {
         }.store(in: &cancellables)
     }
 
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        cancellables.forEach { cancellable in
-            cancellable.cancel()
-        }
-    }
-
     private func updateHistory() {
         viewModel.reloadHistory { [self] result in
             noHistorySubView.isHidden = viewModel.hasHistory

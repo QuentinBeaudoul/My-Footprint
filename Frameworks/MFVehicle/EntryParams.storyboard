@@ -448,22 +448,52 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="tMA-h5-hxO"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="MmE-MX-iw8"/>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKF-G4-qis" customClass="MFButton" customModule="MFAssets">
+                                <rect key="frame" x="16" y="798" width="382" height="48"/>
+                                <color key="backgroundColor" name="primaryColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="q9z-wo-DyU"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" name="onPrimaryColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="darkPrimaryColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onDoneButtonTapped" destination="mq2-6J-gNN" eventType="touchUpInside" id="luq-KG-XVw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8Nt-Mv-SYv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Car-M8-7dI" firstAttribute="top" secondItem="8Nt-Mv-SYv" secondAttribute="top" id="CsR-ya-gL1"/>
                             <constraint firstItem="Car-M8-7dI" firstAttribute="leading" secondItem="g9Q-42-4VW" secondAttribute="leading" id="Gdp-NP-er1"/>
+                            <constraint firstItem="8Nt-Mv-SYv" firstAttribute="bottom" secondItem="GKF-G4-qis" secondAttribute="bottom" constant="16" id="K9G-kc-33y"/>
                             <constraint firstItem="8Nt-Mv-SYv" firstAttribute="trailing" secondItem="psJ-bx-kZz" secondAttribute="trailing" id="T2y-mK-t0A"/>
                             <constraint firstItem="8Nt-Mv-SYv" firstAttribute="trailing" secondItem="Car-M8-7dI" secondAttribute="trailing" id="X4N-K7-Pbp"/>
                             <constraint firstItem="psJ-bx-kZz" firstAttribute="leading" secondItem="8Nt-Mv-SYv" secondAttribute="leading" id="bS7-4s-LvL"/>
                             <constraint firstItem="8Nt-Mv-SYv" firstAttribute="bottom" secondItem="psJ-bx-kZz" secondAttribute="bottom" id="h4p-CZ-VSf"/>
+                            <constraint firstItem="8Nt-Mv-SYv" firstAttribute="trailing" secondItem="GKF-G4-qis" secondAttribute="trailing" constant="16" id="jtF-d3-6gi"/>
                             <constraint firstItem="psJ-bx-kZz" firstAttribute="top" secondItem="Car-M8-7dI" secondAttribute="bottom" id="sOc-1k-ziW"/>
+                            <constraint firstItem="GKF-G4-qis" firstAttribute="leading" secondItem="8Nt-Mv-SYv" secondAttribute="leading" constant="16" id="znm-IK-uKX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="efq-Ne-fg0"/>
                     <connections>
                         <outlet property="contextLabel" destination="rBT-9i-FzX" id="PB5-7p-vlM"/>
+                        <outlet property="estimatedAtLabel" destination="cov-MI-GQQ" id="vHy-z7-hRa"/>
                         <outlet property="gramsLabel" destination="slc-Sl-bsn" id="5sm-N5-iId"/>
                         <outlet property="headerView" destination="Car-M8-7dI" id="OgV-EH-9pl"/>
                         <outlet property="kilogramsLabel" destination="61v-eA-gHB" id="DNu-qK-Geq"/>
@@ -498,6 +528,9 @@
         </designable>
         <designable name="GHf-NY-MHQ">
             <size key="intrinsicContentSize" width="89" height="22"/>
+        </designable>
+        <designable name="GKF-G4-qis">
+            <size key="intrinsicContentSize" width="53" height="22"/>
         </designable>
         <designable name="Ova-Ct-V0J">
             <size key="intrinsicContentSize" width="32" height="30"/>

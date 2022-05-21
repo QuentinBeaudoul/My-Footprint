@@ -28,11 +28,13 @@ class ProcessResultViewModel {
         let params: [String: Any] = request.build()
 
         NetworkManager.shared.fetchData(httpType: .POST, url: url, parameters: params, parser: Estimate.self) { res in
-
             switch res {
             case .success(let estimate):
-                self.estimate = estimate
-                completion(.success(estimate))
+                if let estimate = estimate {
+                    self.estimate = estimate
+                    StoreManager.shared.addToHistory(estimate: estimate)
+                    completion(.success(estimate))
+                }
             case .failure(let error):
                 completion(.failure(error))
             }

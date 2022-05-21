@@ -27,6 +27,9 @@
 		4F932A492833E09400F4F12A /* DistanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F932A482833E09400F4F12A /* DistanceViewModel.swift */; };
 		4F932C3D2838ECDB00F4F12A /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F932C3C2838ECDB00F4F12A /* ResultViewModel.swift */; };
 		4F932C3F2838ED7E00F4F12A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F932C3E2838ED7E00F4F12A /* ResultViewController.swift */; };
+		4F932C4228391E6B00F4F12A /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F932C4128391E6B00F4F12A /* HistoryCell.xib */; };
+		4F932C4428391E7E00F4F12A /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F932C4328391E7E00F4F12A /* HistoryCell.swift */; };
+		4F932C462839375900F4F12A /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F932C452839375900F4F12A /* StoreManager.swift */; };
 		6605CD69281189D200B226A5 /* Estimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6605CD68281189D200B226A5 /* Estimate.swift */; };
 		661580E828099A92006C2170 /* Vehicle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 661580E728099A92006C2170 /* Vehicle.storyboard */; };
 		661580EA28099AD1006C2170 /* VehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661580E928099AD1006C2170 /* VehicleViewController.swift */; };
@@ -91,6 +94,9 @@
 		4F932A482833E09400F4F12A /* DistanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceViewModel.swift; sourceTree = "<group>"; };
 		4F932C3C2838ECDB00F4F12A /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
 		4F932C3E2838ED7E00F4F12A /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		4F932C4128391E6B00F4F12A /* HistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
+		4F932C4328391E7E00F4F12A /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		4F932C452839375900F4F12A /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		63170CE261388F59CC9D6446 /* Pods_Shared_MFVehicle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MFVehicle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6605CD68281189D200B226A5 /* Estimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estimate.swift; sourceTree = "<group>"; };
 		661580E728099A92006C2170 /* Vehicle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vehicle.storyboard; sourceTree = "<group>"; };
@@ -270,6 +276,15 @@
 			name = Distance;
 			sourceTree = "<group>";
 		};
+		4F932C4028391E5700F4F12A /* History */ = {
+			isa = PBXGroup;
+			children = (
+				4F932C4128391E6B00F4F12A /* HistoryCell.xib */,
+				4F932C4328391E7E00F4F12A /* HistoryCell.swift */,
+			);
+			name = History;
+			sourceTree = "<group>";
+		};
 		6605CD67281189BF00B226A5 /* Response */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,6 +319,7 @@
 		661580E628099A6E006C2170 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				4F932C4028391E5700F4F12A /* History */,
 				661580E728099A92006C2170 /* Vehicle.storyboard */,
 				661580E928099AD1006C2170 /* VehicleViewController.swift */,
 				661580EB28099AE3006C2170 /* VehicleViewModel.swift */,
@@ -316,6 +332,7 @@
 			children = (
 				661580EE28099BAF006C2170 /* VehicleNavigationManager.swift */,
 				4F730CF0282FC58700468D64 /* VehicleManager.swift */,
+				4F932C452839375900F4F12A /* StoreManager.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -471,6 +488,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				661580E828099A92006C2170 /* Vehicle.storyboard in Resources */,
+				4F932C4228391E6B00F4F12A /* HistoryCell.xib in Resources */,
 				4F730CF9282FCC4200468D64 /* VehicleMakeCell.xib in Resources */,
 				66D2A869281976810026F85E /* Assets.xcassets in Resources */,
 				4F932A3C2833DAA200F4F12A /* VehicleModelCell.xib in Resources */,
@@ -558,10 +576,12 @@
 			files = (
 				4F730CF1282FC58700468D64 /* VehicleManager.swift in Sources */,
 				4F730CFB282FCD9700468D64 /* VehicleMakeCell.swift in Sources */,
+				4F932C462839375900F4F12A /* StoreManager.swift in Sources */,
 				4F932A422833DE1300F4F12A /* ProcessResultViewController.swift in Sources */,
 				4F932C3D2838ECDB00F4F12A /* ResultViewModel.swift in Sources */,
 				4F730CF5282FC87C00468D64 /* VehicleMakesViewModel.swift in Sources */,
 				661580EA28099AD1006C2170 /* VehicleViewController.swift in Sources */,
+				4F932C4428391E7E00F4F12A /* HistoryCell.swift in Sources */,
 				4F932A332833970A00F4F12A /* ProcessVehicleModelsViewController.swift in Sources */,
 				4F932A362833A20500F4F12A /* VehicleModelsViewController.swift in Sources */,
 				6605CD69281189D200B226A5 /* Estimate.swift in Sources */,
