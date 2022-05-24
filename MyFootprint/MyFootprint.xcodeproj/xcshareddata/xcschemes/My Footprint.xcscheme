@@ -130,13 +130,6 @@
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "664A0433280861AF006C40F8"
-            BuildableName = "MFVehicul.framework"
-            BlueprintName = "MFVehicle"
-            ReferencedContainer = "container:../Frameworks/MFVehicul/MFVehicle.xcodeproj">
-         </BuildableReference>
-         <BuildableReference
-            BuildableIdentifier = "primary"
             BlueprintIdentifier = "664A0411280860BE006C40F8"
             BuildableName = "MFShipping.framework"
             BlueprintName = "MFShipping"
@@ -155,6 +148,20 @@
             BuildableName = "MFFlight.framework"
             BlueprintName = "MFFlight"
             ReferencedContainer = "container:../Frameworks/MFFlight/MFFlight.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "6645E80628103564002387BB"
+            BuildableName = "MFFuelCombustion.framework"
+            BlueprintName = "MFFuelCombustion"
+            ReferencedContainer = "container:../Frameworks/MFFuelCombustion/MFFuelCombustion.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "664A0433280861AF006C40F8"
+            BuildableName = "MFVehicle.framework"
+            BlueprintName = "MFVehicle"
+            ReferencedContainer = "container:../Frameworks/MFVehicle/MFVehicle.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
