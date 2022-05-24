@@ -14,6 +14,7 @@ class VehicleMakesViewController: UIViewController {
     @IBOutlet weak var headerView: HeaderView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var nextButton: MFButton!
+    @IBOutlet weak var headerHeightConstrainte: NSLayoutConstraint!
 
     let viewModel = VehicleMakesViewModel()
 
@@ -30,6 +31,7 @@ class VehicleMakesViewController: UIViewController {
         // Set up header
         headerView.delegate = self
         headerView.fillView(title: "Which maker ?")
+        headerHeightConstrainte.constant = headerView.isBackButtonVisible() ? 100 : 56
 
         // Set up tableView
         tableView.delegate = self

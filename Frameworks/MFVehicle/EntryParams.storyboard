@@ -19,17 +19,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZF-Do-uU7" customClass="HeaderView" customModule="MFAssets">
-                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="Pcr-CJ-Yf3"/>
+                                    <constraint firstAttribute="height" constant="100" id="Pcr-CJ-Yf3"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rJu-rZ-rkU" customClass="MFView" customModule="MFAssets">
-                                <rect key="frame" x="16" y="108" width="382" height="674"/>
+                                <rect key="frame" x="16" y="152" width="382" height="630"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" estimatedRowHeight="64" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="N84-UB-Bmj">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="674"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="630"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                     </tableView>
@@ -71,6 +71,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="xpN-W6-dGf"/>
                     <connections>
+                        <outlet property="headerHeightConstrainte" destination="Pcr-CJ-Yf3" id="2eg-8a-CTq"/>
                         <outlet property="headerView" destination="gZF-Do-uU7" id="aO1-iK-eza"/>
                         <outlet property="nextButton" destination="glL-Kc-htw" id="4uo-ac-Ebg"/>
                         <outlet property="tableView" destination="N84-UB-Bmj" id="Tse-kG-YON"/>
@@ -123,17 +124,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i8J-5p-MCN" customClass="HeaderView" customModule="MFAssets">
-                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="Rn4-xd-wMH"/>
+                                    <constraint firstAttribute="height" constant="100" id="Rn4-xd-wMH"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MsQ-26-rL9" customClass="MFView" customModule="MFAssets">
-                                <rect key="frame" x="16" y="108" width="382" height="674"/>
+                                <rect key="frame" x="16" y="152" width="382" height="630"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" estimatedRowHeight="64" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8ZS-xp-8lh">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="674"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="630"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                     </tableView>
@@ -175,6 +176,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Nac-Ab-7G7"/>
                     <connections>
+                        <outlet property="headerHeightConstrainte" destination="Rn4-xd-wMH" id="fqp-M4-Leg"/>
                         <outlet property="headerView" destination="i8J-5p-MCN" id="Ofe-XM-8gJ"/>
                         <outlet property="processButton" destination="Ova-Ct-V0J" id="NO0-IC-3cl"/>
                         <outlet property="tableView" destination="8ZS-xp-8lh" id="cbr-MH-ie5"/>
@@ -193,7 +195,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nO-5c-oMN" customClass="MFButton" customModule="MFAssets">
-                                <rect key="frame" x="308" y="220" width="90" height="50"/>
+                                <rect key="frame" x="308" y="264" width="90" height="50"/>
                                 <color key="backgroundColor" name="primaryColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="XWK-dN-I8r"/>
@@ -246,13 +248,13 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d0c-rG-ba0" customClass="HeaderView" customModule="MFAssets">
-                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="fj9-t8-ncF"/>
+                                    <constraint firstAttribute="height" constant="100" id="fj9-t8-ncF"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u9z-qe-xXJ" customClass="MFTextfield" customModule="MFAssets">
-                                <rect key="frame" x="16" y="220" width="276" height="50"/>
+                                <rect key="frame" x="16" y="264" width="276" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="jf3-bU-b9I"/>
@@ -279,6 +281,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Ut5-nK-x6n"/>
                     <connections>
+                        <outlet property="headerHeightConstrainte" destination="fj9-t8-ncF" id="WYt-JP-Zif"/>
                         <outlet property="headerView" destination="d0c-rG-ba0" id="wdO-Pr-fHK"/>
                         <outlet property="processButton" destination="GHf-NY-MHQ" id="RWR-64-agU"/>
                         <outlet property="textField" destination="u9z-qe-xXJ" id="e9Q-l8-5hZ"/>
@@ -332,13 +335,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Car-M8-7dI" customClass="HeaderView" customModule="MFAssets">
-                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="EeZ-j7-IyX"/>
+                                    <constraint firstAttribute="height" constant="100" id="EeZ-j7-IyX"/>
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="psJ-bx-kZz">
-                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z78-Y3-F1e" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="397.5"/>
@@ -495,6 +498,7 @@
                         <outlet property="contextLabel" destination="rBT-9i-FzX" id="PB5-7p-vlM"/>
                         <outlet property="estimatedAtLabel" destination="cov-MI-GQQ" id="vHy-z7-hRa"/>
                         <outlet property="gramsLabel" destination="slc-Sl-bsn" id="5sm-N5-iId"/>
+                        <outlet property="headerHeightConstrainte" destination="EeZ-j7-IyX" id="9vT-FQ-XQ5"/>
                         <outlet property="headerView" destination="Car-M8-7dI" id="OgV-EH-9pl"/>
                         <outlet property="kilogramsLabel" destination="61v-eA-gHB" id="DNu-qK-Geq"/>
                         <outlet property="megatonsLabel" destination="odf-Iq-CLc" id="5vw-Bi-X2A"/>

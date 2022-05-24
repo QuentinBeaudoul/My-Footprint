@@ -13,6 +13,7 @@ class VehicleModelsViewController: UIViewController {
     @IBOutlet weak var headerView: HeaderView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var processButton: MFButton!
+    @IBOutlet weak var headerHeightConstrainte: NSLayoutConstraint!
 
     let viewModel = VehicleModelsViewModel()
 
@@ -29,6 +30,7 @@ class VehicleModelsViewController: UIViewController {
         // Set up header
         headerView.delegate = self
         headerView.fillView(title: "Which model ?", isBackButtonHidden: false)
+        headerHeightConstrainte.constant = headerView.isBackButtonVisible() ? 100 : 56
 
         // Set up tableView
         tableView.delegate = self

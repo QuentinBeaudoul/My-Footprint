@@ -17,6 +17,7 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var kilogramsLabel: UILabel!
     @IBOutlet weak var megatonsLabel: UILabel!
     @IBOutlet weak var estimatedAtLabel: UILabel!
+    @IBOutlet weak var headerHeightConstrainte: NSLayoutConstraint!
 
     let viewModel = ResultViewModel()
 
@@ -32,6 +33,7 @@ class ResultViewController: UIViewController {
         // Set up headerView
         headerView.fillView(title: "Your result !", isBackButtonHidden: false)
         headerView.delegate = self
+        headerHeightConstrainte.constant = headerView.isBackButtonVisible() ? 100 : 56
 
         //  Set up context text view
         contextLabel.text = String(format: contextLabel.text ?? "",

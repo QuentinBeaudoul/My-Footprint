@@ -13,6 +13,7 @@ class FuelSourceTypeViewController: UIViewController {
     @IBOutlet weak var headerView: HeaderView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var nextButton: MFButton!
+    @IBOutlet weak var headerHeightConstrainte: NSLayoutConstraint!
 
     let viewModel = FuelSourceTypeViewModel()
 
@@ -26,6 +27,7 @@ class FuelSourceTypeViewController: UIViewController {
 
         headerView.fillView(title: "Which energy ?")
         headerView.delegate = self
+        headerHeightConstrainte.constant = headerView.isBackButtonVisible() ? 100 : 56
 
         tableView.dataSource = self
         tableView.delegate = self

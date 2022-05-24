@@ -63,16 +63,16 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdU-nU-MS3" customClass="HeaderView" customModule="MFAssets">
-                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="R29-cu-AhN"/>
+                                    <constraint firstAttribute="height" constant="100" id="R29-cu-AhN"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jcg-Zq-RkK" customClass="MFView" customModule="MFAssets">
-                                <rect key="frame" x="16" y="116" width="382" height="666"/>
+                                <rect key="frame" x="16" y="160" width="382" height="622"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" estimatedRowHeight="50" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vR4-tH-sIv">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="666"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="622"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                         <userDefinedRuntimeAttributes>
@@ -108,6 +108,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Source" id="VhL-hr-XEN"/>
                     <connections>
+                        <outlet property="headerHeightConstrainte" destination="R29-cu-AhN" id="2rK-Ha-3hQ"/>
                         <outlet property="headerView" destination="bdU-nU-MS3" id="764-m1-TMh"/>
                         <outlet property="nextButton" destination="l7V-cy-EaS" id="gX0-7x-rfO"/>
                         <outlet property="tableView" destination="vR4-tH-sIv" id="JS8-Hu-1b5"/>
@@ -127,7 +128,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LNn-KL-nbH">
-                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xEM-Fm-pBE" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="221.5"/>
@@ -242,9 +243,9 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OrM-Cp-RBY" customClass="HeaderView" customModule="MFAssets">
-                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="ygp-aJ-X2c"/>
+                                    <constraint firstAttribute="height" constant="100" id="ygp-aJ-X2c"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -268,6 +269,7 @@
                         <outlet property="apiFullNameLabel" destination="DmG-iA-2m9" id="0ub-My-9A6"/>
                         <outlet property="apiNameLabel" destination="NhW-eh-R9D" id="tez-gI-hkZ"/>
                         <outlet property="equalLabel" destination="rZg-Bp-ugr" id="NPq-lw-hR7"/>
+                        <outlet property="headerHeightConstrainte" destination="ygp-aJ-X2c" id="lvU-Ik-x9R"/>
                         <outlet property="headerView" destination="OrM-Cp-RBY" id="trW-I8-1Lg"/>
                         <outlet property="processButton" destination="BZS-bA-h5f" id="yPl-m7-lNk"/>
                         <outlet property="textField" destination="Oxh-sB-e0c" id="q7b-Ac-MJv"/>
@@ -322,13 +324,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tKO-fi-XWB" customClass="HeaderView" customModule="MFAssets">
-                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="JEM-g7-HU8"/>
+                                    <constraint firstAttribute="height" constant="100" id="JEM-g7-HU8"/>
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CFY-9X-Lzf">
-                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AJa-81-dPH" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="461.5"/>
@@ -483,8 +485,9 @@
                     <navigationItem key="navigationItem" title="Result" id="fn0-mB-kPe"/>
                     <connections>
                         <outlet property="estimateLabel" destination="gOx-DX-pYN" id="AyT-Xa-EQ9"/>
-                        <outlet property="estimatedAtLabel" destination="tbV-Uy-6bL" id="LPV-ju-oQc"/>
+                        <outlet property="estimatedAtLabel" destination="tbV-Uy-6bL" id="N0h-Na-gIM"/>
                         <outlet property="gramsLabel" destination="itW-bl-Ehm" id="I5B-wS-Eia"/>
+                        <outlet property="headerHeightConstrainte" destination="JEM-g7-HU8" id="e0K-Uo-aiZ"/>
                         <outlet property="headerView" destination="tKO-fi-XWB" id="qhT-dX-nDs"/>
                         <outlet property="kilogramsLabel" destination="c7J-FO-FtV" id="OZZ-RX-U8c"/>
                         <outlet property="megatonsLabel" destination="Ygh-zY-Fll" id="mrc-fB-aCM"/>

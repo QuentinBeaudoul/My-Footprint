@@ -8,20 +8,21 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderView" customModule="MFFuelCombustion" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderView" customModule="MFAssets" customModuleProvider="target">
             <connections>
                 <outlet property="backButtonView" destination="3Gp-sF-VOQ" id="zlO-Nw-T8v"/>
                 <outlet property="backLabel" destination="01B-tD-z5D" id="2fQ-O9-v8B"/>
                 <outlet property="titleLabel" destination="erD-rL-BnR" id="Liu-fL-Akl"/>
+                <outlet property="verticalTitleConstrainte" destination="kFQ-p1-8GM" id="U0n-xo-NST"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Title]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="erD-rL-BnR" customClass="MFLabel" customModule="MFFuelCombustion" customModuleProvider="target">
-                    <rect key="frame" x="16" y="11" width="343" height="34"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Title]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="erD-rL-BnR" customClass="MFLabel" customModule="MFAssets" customModuleProvider="target">
+                    <rect key="frame" x="16" y="51" width="343" height="34"/>
                     <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="24"/>
                     <color key="textColor" name="onPrimaryColor"/>
                     <nil key="highlightedColor"/>
@@ -31,7 +32,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Gp-sF-VOQ">
                     <rect key="frame" x="0.0" y="0.0" width="101.5" height="56"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[back]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="01B-tD-z5D" customClass="MFLabel" customModule="MFFuelCombustion" customModuleProvider="target">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[back]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="01B-tD-z5D" customClass="MFLabel" customModule="MFAssets" customModuleProvider="target">
                             <rect key="frame" x="44" y="16" width="41.5" height="24"/>
                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
                             <color key="textColor" name="onPrimaryColor"/>
@@ -69,6 +70,7 @@
                         <constraint firstItem="lVI-sx-VSz" firstAttribute="leading" secondItem="3Gp-sF-VOQ" secondAttribute="leading" constant="16" id="2r9-Py-N8T"/>
                         <constraint firstItem="Cfx-8Q-7BL" firstAttribute="top" secondItem="3Gp-sF-VOQ" secondAttribute="top" constant="17" id="9kO-wG-beX"/>
                         <constraint firstItem="AHT-QL-PeD" firstAttribute="top" secondItem="3Gp-sF-VOQ" secondAttribute="top" id="BDc-1f-W0b"/>
+                        <constraint firstAttribute="height" constant="56" id="Hch-dB-f34"/>
                         <constraint firstAttribute="trailing" secondItem="AHT-QL-PeD" secondAttribute="trailing" id="PnA-Fp-ynQ"/>
                         <constraint firstAttribute="bottom" secondItem="AHT-QL-PeD" secondAttribute="bottom" id="Rbu-vq-Tqc"/>
                         <constraint firstItem="Cfx-8Q-7BL" firstAttribute="leading" secondItem="3Gp-sF-VOQ" secondAttribute="leading" constant="17" id="SaB-C6-cPP"/>
@@ -86,15 +88,14 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="3Gp-sF-VOQ" secondAttribute="bottom" id="Esy-58-9bU"/>
                 <constraint firstAttribute="trailing" secondItem="erD-rL-BnR" secondAttribute="trailing" constant="16" id="ISS-eC-H2I"/>
                 <constraint firstItem="3Gp-sF-VOQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Lq8-5f-8ez"/>
                 <constraint firstItem="3Gp-sF-VOQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bR5-1k-2Vf"/>
-                <constraint firstItem="erD-rL-BnR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="kFQ-p1-8GM"/>
+                <constraint firstItem="erD-rL-BnR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="18" id="kFQ-p1-8GM"/>
                 <constraint firstItem="erD-rL-BnR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="leC-I4-dTH"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="132" y="-210.94452773613196"/>
+            <point key="canvasLocation" x="132" y="-191.6041979010495"/>
         </view>
     </objects>
     <designables>

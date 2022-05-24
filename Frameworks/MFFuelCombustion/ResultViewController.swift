@@ -18,6 +18,7 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var megatonsLabel: UILabel!
     @IBOutlet weak var estimateLabel: UILabel!
     @IBOutlet weak var estimatedAtLabel: UILabel!
+    @IBOutlet weak var headerHeightConstrainte: NSLayoutConstraint!
 
     let viewModel = ResultViewModel()
 
@@ -33,6 +34,7 @@ class ResultViewController: UIViewController {
         // Setup header
         headerView.fillView(title: "Your result !", isBackButtonHidden: false)
         headerView.delegate = self
+        headerHeightConstrainte.constant = headerView.isBackButtonVisible() ? 100 : 56
 
         // Setup estimate with a custom label
         initEstimateLabel()

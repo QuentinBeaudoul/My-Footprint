@@ -75,9 +75,6 @@
 			children = (
 				4F932C362838D75700F4F12A /* Ressources */,
 				4F932C272838D32300F4F12A /* Classes */,
-				4F932C1B2838D30700F4F12A /* MFButton.swift */,
-				4F932C1D2838D30700F4F12A /* MFLabel.swift */,
-				4F932C1C2838D30700F4F12A /* MFView.swift */,
 				4F932A552838D1CB00F4F12A /* Products */,
 				A1F13FE2922CF5CC63D25885 /* Pods */,
 				AFD0BC43D3206233E7BD44B6 /* Frameworks */,
@@ -95,6 +92,9 @@
 		4F932C272838D32300F4F12A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4F932C1B2838D30700F4F12A /* MFButton.swift */,
+				4F932C1D2838D30700F4F12A /* MFLabel.swift */,
+				4F932C1C2838D30700F4F12A /* MFView.swift */,
 				4F932C2B2838D37300F4F12A /* HeaderView */,
 				4F932C2A2838D35D00F4F12A /* MFTextfield */,
 				4F932C282838D33700F4F12A /* KeyboardToolbarView */,

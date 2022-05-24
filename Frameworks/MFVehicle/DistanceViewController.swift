@@ -14,6 +14,7 @@ class DistanceViewController: UIViewController {
     @IBOutlet weak var textField: MFTextfield!
     @IBOutlet weak var unitButton: MFButton!
     @IBOutlet weak var processButton: MFButton!
+    @IBOutlet weak var headerHeightConstrainte: NSLayoutConstraint!
 
     let viewModel = DistanceViewModel()
 
@@ -31,6 +32,7 @@ class DistanceViewController: UIViewController {
         // Set up header
         headerView.fillView(title: "How much ?", isBackButtonHidden: false)
         headerView.delegate = self
+        headerHeightConstrainte.constant = headerView.isBackButtonVisible() ? 100 : 56
 
         // Set up textfield
         textField.delegate = self

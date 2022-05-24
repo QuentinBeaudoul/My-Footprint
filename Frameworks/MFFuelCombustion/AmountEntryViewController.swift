@@ -18,6 +18,7 @@ class AmountEntryViewController: UIViewController {
     @IBOutlet weak var apiNameLabel: UILabel!
     @IBOutlet weak var apiFullNameLabel: UILabel!
     @IBOutlet weak var equalLabel: UILabel!
+    @IBOutlet weak var headerHeightConstrainte: NSLayoutConstraint!
 
     let viewModel = AmountEntryViewModel()
 
@@ -35,6 +36,7 @@ class AmountEntryViewController: UIViewController {
         // SetUp header
         headerView.fillView(title: "How much ?", isBackButtonHidden: false)
         headerView.delegate = self
+        headerHeightConstrainte.constant = headerView.isBackButtonVisible() ? 100 : 56
 
         // SetUp textfield
         textField.delegate = self
