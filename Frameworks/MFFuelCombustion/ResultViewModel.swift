@@ -25,13 +25,11 @@ class ResultViewModel {
             fuelSource.apiName == estimate?.fuelSourceType
         }?.units
 
-        guard let matchs = matchs else { return "" }
+        guard let matchs = matchs, let res = matchs.first(where: { unit in
+            unit.apiUnit == estimate?.fuelSourceUnit
+        })?.fullName else { return "" }
 
-        return matchs.first { unit in
-            unit.apiUnit == estimate?.fuelSourceUnit
-        }?.fullName ?? matchs.first { unit in
-            unit.apiUnit == estimate?.fuelSourceUnit
-        }?.name ?? ""
+        return res
     }
 
     func getEstimatedAt() -> String {
