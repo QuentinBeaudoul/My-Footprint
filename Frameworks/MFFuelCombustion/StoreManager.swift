@@ -8,17 +8,32 @@
 import Foundation
 import MFStorage
 import MFExtensions
+import CoreData
 
-public final class StoreManager {
-    private init() {}
+protocol StoreManagerProtocol {
+    var context: NSManagedObjectContext { get }
+    func addToHistory(estimate: Estimate)
+    func loadHistory(completion: ((Result<[Estimate]?, Error>) -> Void)?)
+    func removeFromHistory(estimate: Estimate?)
+}
+
+public final class StoreManager: StoreManagerProtocol {
+    public var context: NSManagedObjectContext
+
+    public var fuelCombustionEntity: NSEntityDescription? {
+        NSEntityDescription.entity(forEntityName: "CDFuelCombustion", in: context)
+    }
+
+    init(coreDataService: CoreDataServiceProtocol = CoreDataService.shared) {
+        self.context = coreDataService.context
+    }
 
     public static let shared = StoreManager()
 
     private(set) var history: [Estimate]?
 
     func addToHistory(estimate: Estimate) {
-        guard let entity = GlobalStoreManager.shared.fuelCombustionEntity else { return }
-        let context = GlobalStoreManager.shared.context
+        guard let entity = fuelCombustionEntity else { return }
 
         let storedEstimate = CDFuelCombustion(entity: entity, insertInto: context)
         storedEstimate.fuelSourceType = estimate.fuelSourceType
@@ -43,7 +58,6 @@ public final class StoreManager {
 
     public func loadHistory(completion: ((Result<[Estimate]?, Error>) -> Void)? = nil) {
         let request = CDFuelCombustion.fetchRequest()
-        let context = GlobalStoreManager.shared.context
 
         do {
             let result = try context.fetch(request)
@@ -61,7 +75,6 @@ public final class StoreManager {
 
     func removeFromHistory(estimate: Estimate?) {
         guard let estimate = estimate else { return }
-        let context = GlobalStoreManager.shared.context
 
         let request = CDFuelCombustion.fetchRequest()
         request.predicate = NSPredicate(format: "estimatedAt LIKE %@", estimate.estimatedAt)

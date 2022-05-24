@@ -7,14 +7,24 @@
 
 import Foundation
 import MFNetwork
+import MFStorage
 
 class ProcessViewModel {
     private(set) var request: Request.Builder?
     private(set) var estimate: Estimate?
 
+    private let networkManager: NetworkManagerProtocol
+    private let storeManager: StoreManagerProtocol
+
     var retryCount = 0
     var noMoreTries: Bool {
         retryCount >= 3
+    }
+
+    init(networkManager: NetworkManagerProtocol = NetworkManager.shared,
+         storeManager: StoreManagerProtocol = StoreManager.shared) {
+        self.networkManager = networkManager
+        self.storeManager = storeManager
     }
 
     func loadRequest(request: Request.Builder?) {
@@ -29,15 +39,15 @@ class ProcessViewModel {
         let url = Constantes.url
         let body = request.build()
 
-        NetworkManager.shared.fetchData(httpType: .POST,
-                                        url: url, parameters: body,
+        networkManager.fetchData(httpType: .POST,
+                                 url: url, headers: nil, parameters: body,
                                         parser: Estimate.self) { response in
             switch response {
             case .success(let estimate):
                 if let estimate = estimate {
                     self.estimate = estimate
 
-                    StoreManager.shared.addToHistory(estimate: estimate)
+                    self.storeManager.addToHistory(estimate: estimate)
 
                     completion(.success(estimate))
                 }
