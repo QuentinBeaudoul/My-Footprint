@@ -21,6 +21,7 @@
 		66D2A87128197C110026F85E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2A87028197C110026F85E /* R.generated.swift */; };
 		66D2A87328197C760026F85E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D2A87228197C760026F85E /* Assets.xcassets */; };
 		6A71B6884FE7E6310E062C83 /* Pods_Shared_MFShipping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8479E1F972487C2D26B20848 /* Pods_Shared_MFShipping.framework */; };
+		DC41CB83EA68B98F44A051ED /* Pods_Shared_MFShipping_MFShippingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6000D85FCEEC61BC38F56F88 /* Pods_Shared_MFShipping_MFShippingTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +49,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0F8A04F50FD466BFEAB5460E /* Pods-Shared-MFShipping-MFShippingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFShipping-MFShippingTests.debug.xcconfig"; path = "Target Support Files/Pods-Shared-MFShipping-MFShippingTests/Pods-Shared-MFShipping-MFShippingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		21A85369E85FD5C0C47660D2 /* Pods-Shared-MFShipping-MFShippingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFShipping-MFShippingTests.release.xcconfig"; path = "Target Support Files/Pods-Shared-MFShipping-MFShippingTests/Pods-Shared-MFShipping-MFShippingTests.release.xcconfig"; sourceTree = "<group>"; };
 		21D5DD6855B0A5595F3E3E71 /* Pods-MFShipping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFShipping.debug.xcconfig"; path = "Target Support Files/Pods-MFShipping/Pods-MFShipping.debug.xcconfig"; sourceTree = "<group>"; };
 		4FE335DE28181E0100DFD8D2 /* ShippingAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ShippingAnimation.json; sourceTree = "<group>"; };
 		553D39860F39F1293AE76311 /* Pods-Shared-MFShipping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFShipping.release.xcconfig"; path = "Target Support Files/Pods-Shared-MFShipping/Pods-Shared-MFShipping.release.xcconfig"; sourceTree = "<group>"; };
+		6000D85FCEEC61BC38F56F88 /* Pods_Shared_MFShipping_MFShippingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MFShipping_MFShippingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6605CD6B281191CE00B226A5 /* Estimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estimate.swift; sourceTree = "<group>"; };
 		661580F82809A64C006C2170 /* Shipping.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shipping.storyboard; sourceTree = "<group>"; };
 		661580FA2809A698006C2170 /* ShippingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				664A041B280860BE006C40F8 /* MFShipping.framework in Frameworks */,
+				DC41CB83EA68B98F44A051ED /* Pods_Shared_MFShipping_MFShippingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +213,8 @@
 				944BD4F852AC860A0DD4952D /* Pods-MFShipping.release.xcconfig */,
 				A9DCBF8448815B32A873DFEB /* Pods-Shared-MFShipping.debug.xcconfig */,
 				553D39860F39F1293AE76311 /* Pods-Shared-MFShipping.release.xcconfig */,
+				0F8A04F50FD466BFEAB5460E /* Pods-Shared-MFShipping-MFShippingTests.debug.xcconfig */,
+				21A85369E85FD5C0C47660D2 /* Pods-Shared-MFShipping-MFShippingTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../../Pods;
@@ -218,6 +225,7 @@
 			children = (
 				661581072809C633006C2170 /* MFExtensions.framework */,
 				8479E1F972487C2D26B20848 /* Pods_Shared_MFShipping.framework */,
+				6000D85FCEEC61BC38F56F88 /* Pods_Shared_MFShipping_MFShippingTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -262,9 +270,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 664A0427280860BE006C40F8 /* Build configuration list for PBXNativeTarget "MFShippingTests" */;
 			buildPhases = (
+				179EC0D2F99842781B906DDD /* [CP] Check Pods Manifest.lock */,
 				664A0416280860BE006C40F8 /* Sources */,
 				664A0417280860BE006C40F8 /* Frameworks */,
 				664A0418280860BE006C40F8 /* Resources */,
+				26C270A1DE85D42EF27E6FBB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -335,6 +345,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		179EC0D2F99842781B906DDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shared-MFShipping-MFShippingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26C270A1DE85D42EF27E6FBB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shared-MFShipping-MFShippingTests/Pods-Shared-MFShipping-MFShippingTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shared-MFShipping-MFShippingTests/Pods-Shared-MFShipping-MFShippingTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shared-MFShipping-MFShippingTests/Pods-Shared-MFShipping-MFShippingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6657DC44280964CB0031BA7C /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -616,8 +665,8 @@
 		};
 		664A0428280860BE006C40F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F8A04F50FD466BFEAB5460E /* Pods-Shared-MFShipping-MFShippingTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52H82A67C3;
@@ -633,8 +682,8 @@
 		};
 		664A0429280860BE006C40F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21A85369E85FD5C0C47660D2 /* Pods-Shared-MFShipping-MFShippingTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52H82A67C3;

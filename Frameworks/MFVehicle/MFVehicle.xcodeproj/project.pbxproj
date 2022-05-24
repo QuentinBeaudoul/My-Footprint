@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1456840673E946449D7C1286 /* Pods_Shared_MFVehicle_MFVehicleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47C754EF0F8A4C0759D21B7 /* Pods_Shared_MFVehicle_MFVehicleTests.framework */; };
 		267FAF1F8222C17889A60A43 /* Pods_Shared_MFVehicle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63170CE261388F59CC9D6446 /* Pods_Shared_MFVehicle.framework */; };
 		4F730CE4282FB11500468D64 /* EntryParams.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F730CE3282FB11500468D64 /* EntryParams.storyboard */; };
 		4F730CEE282FB6D100468D64 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F730CED282FB6D100468D64 /* Constants.swift */; };
@@ -30,6 +31,10 @@
 		4F932C4228391E6B00F4F12A /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F932C4128391E6B00F4F12A /* HistoryCell.xib */; };
 		4F932C4428391E7E00F4F12A /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F932C4328391E7E00F4F12A /* HistoryCell.swift */; };
 		4F932C462839375900F4F12A /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F932C452839375900F4F12A /* StoreManager.swift */; };
+		4F932C59283CDB1F00F4F12A /* MFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F932C58283CDB1F00F4F12A /* MFNetwork.framework */; };
+		4F932C5A283CDB1F00F4F12A /* MFNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F932C58283CDB1F00F4F12A /* MFNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4F932C5C283CDB4400F4F12A /* MFStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F932C5B283CDB4400F4F12A /* MFStorage.framework */; };
+		4F932C5D283CDB4400F4F12A /* MFStorage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F932C5B283CDB4400F4F12A /* MFStorage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6605CD69281189D200B226A5 /* Estimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6605CD68281189D200B226A5 /* Estimate.swift */; };
 		661580E828099A92006C2170 /* Vehicle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 661580E728099A92006C2170 /* Vehicle.storyboard */; };
 		661580EA28099AD1006C2170 /* VehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661580E928099AD1006C2170 /* VehicleViewController.swift */; };
@@ -63,7 +68,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4F932C5A283CDB1F00F4F12A /* MFNetwork.framework in Embed Frameworks */,
 				661581052809C622006C2170 /* MFExtensions.framework in Embed Frameworks */,
+				4F932C5D283CDB4400F4F12A /* MFStorage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,7 +104,10 @@
 		4F932C4128391E6B00F4F12A /* HistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
 		4F932C4328391E7E00F4F12A /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
 		4F932C452839375900F4F12A /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		4F932C58283CDB1F00F4F12A /* MFNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F932C5B283CDB4400F4F12A /* MFStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63170CE261388F59CC9D6446 /* Pods_Shared_MFVehicle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MFVehicle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65AF2376524B737693D03E09 /* Pods-Shared-MFVehicle-MFVehicleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFVehicle-MFVehicleTests.release.xcconfig"; path = "Target Support Files/Pods-Shared-MFVehicle-MFVehicleTests/Pods-Shared-MFVehicle-MFVehicleTests.release.xcconfig"; sourceTree = "<group>"; };
 		6605CD68281189D200B226A5 /* Estimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estimate.swift; sourceTree = "<group>"; };
 		661580E728099A92006C2170 /* Vehicle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vehicle.storyboard; sourceTree = "<group>"; };
 		661580E928099AD1006C2170 /* VehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewController.swift; sourceTree = "<group>"; };
@@ -114,8 +124,10 @@
 		66D2A86C28197A520026F85E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		7596E8823B91D1997D6CE38A /* Pods-Shared-MFVehicle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFVehicle.release.xcconfig"; path = "Target Support Files/Pods-Shared-MFVehicle/Pods-Shared-MFVehicle.release.xcconfig"; sourceTree = "<group>"; };
 		780B2C3A1FA8E66874336062 /* Pods-Shared-MFVehicle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFVehicle.debug.xcconfig"; path = "Target Support Files/Pods-Shared-MFVehicle/Pods-Shared-MFVehicle.debug.xcconfig"; sourceTree = "<group>"; };
+		86B14878592F21079D3392B1 /* Pods-Shared-MFVehicle-MFVehicleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFVehicle-MFVehicleTests.debug.xcconfig"; path = "Target Support Files/Pods-Shared-MFVehicle-MFVehicleTests/Pods-Shared-MFVehicle-MFVehicleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		88CFDE81C4DE10A0D76C6625 /* Pods-MFVehicle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFVehicle.release.xcconfig"; path = "Target Support Files/Pods-MFVehicle/Pods-MFVehicle.release.xcconfig"; sourceTree = "<group>"; };
 		A8166A81A8DE8F9378EC874E /* Pods-Frameworks-MFVehicle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFVehicle.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFVehicle/Pods-Frameworks-MFVehicle.release.xcconfig"; sourceTree = "<group>"; };
+		D47C754EF0F8A4C0759D21B7 /* Pods_Shared_MFVehicle_MFVehicleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MFVehicle_MFVehicleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +136,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				661581042809C622006C2170 /* MFExtensions.framework in Frameworks */,
+				4F932C59283CDB1F00F4F12A /* MFNetwork.framework in Frameworks */,
 				267FAF1F8222C17889A60A43 /* Pods_Shared_MFVehicle.framework in Frameworks */,
+				4F932C5C283CDB4400F4F12A /* MFStorage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				664A043D280861AF006C40F8 /* MFVehicle.framework in Frameworks */,
+				1456840673E946449D7C1286 /* Pods_Shared_MFVehicle_MFVehicleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +165,8 @@
 				88CFDE81C4DE10A0D76C6625 /* Pods-MFVehicle.release.xcconfig */,
 				780B2C3A1FA8E66874336062 /* Pods-Shared-MFVehicle.debug.xcconfig */,
 				7596E8823B91D1997D6CE38A /* Pods-Shared-MFVehicle.release.xcconfig */,
+				86B14878592F21079D3392B1 /* Pods-Shared-MFVehicle-MFVehicleTests.debug.xcconfig */,
+				65AF2376524B737693D03E09 /* Pods-Shared-MFVehicle-MFVehicleTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../../Pods;
@@ -158,8 +175,11 @@
 		40D68E9B6C5CDF3CC3EDCD2E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4F932C5B283CDB4400F4F12A /* MFStorage.framework */,
+				4F932C58283CDB1F00F4F12A /* MFNetwork.framework */,
 				661581032809C622006C2170 /* MFExtensions.framework */,
 				63170CE261388F59CC9D6446 /* Pods_Shared_MFVehicle.framework */,
+				D47C754EF0F8A4C0759D21B7 /* Pods_Shared_MFVehicle_MFVehicleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -430,9 +450,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 664A0449280861AF006C40F8 /* Build configuration list for PBXNativeTarget "MFVehicleTests" */;
 			buildPhases = (
+				E99E7F7729438933CA095FD5 /* [CP] Check Pods Manifest.lock */,
 				664A0438280861AF006C40F8 /* Sources */,
 				664A0439280861AF006C40F8 /* Frameworks */,
 				664A043A280861AF006C40F8 /* Resources */,
+				B839B0230312D317DCE79C0A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -544,6 +566,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		B839B0230312D317DCE79C0A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shared-MFVehicle-MFVehicleTests/Pods-Shared-MFVehicle-MFVehicleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shared-MFVehicle-MFVehicleTests/Pods-Shared-MFVehicle-MFVehicleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shared-MFVehicle-MFVehicleTests/Pods-Shared-MFVehicle-MFVehicleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E99E7F7729438933CA095FD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shared-MFVehicle-MFVehicleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 		F9304D1CD6C81C8092A9358D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -808,8 +869,8 @@
 		};
 		664A044A280861AF006C40F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86B14878592F21079D3392B1 /* Pods-Shared-MFVehicle-MFVehicleTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52H82A67C3;
@@ -825,8 +886,8 @@
 		};
 		664A044B280861AF006C40F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65AF2376524B737693D03E09 /* Pods-Shared-MFVehicle-MFVehicleTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52H82A67C3;

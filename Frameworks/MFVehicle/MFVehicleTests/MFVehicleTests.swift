@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import MFVehicul
+@testable import MFVehicle
 
 class MFVehicleTests: XCTestCase {
 

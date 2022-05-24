@@ -21,6 +21,7 @@
 		66D2A881281980A90026F85E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D2A880281980A90026F85E /* Assets.xcassets */; };
 		66D2A8852819815F0026F85E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2A8842819815F0026F85E /* R.generated.swift */; };
 		A15AB72AEB2AF03076FB0E70 /* Pods_Shared_MFElectricity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F724E4C2E76C63455FA69D2C /* Pods_Shared_MFElectricity.framework */; };
+		B713935203B9DF53C3CA8289 /* Pods_Shared_MFElectricity_MFElectricityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E234030132A863D55D1A57 /* Pods_Shared_MFElectricity_MFElectricityTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,9 +65,12 @@
 		66D2A880281980A90026F85E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66D2A8842819815F0026F85E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		79378DA5798EE88F10D03B51 /* Pods-MFElectricity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFElectricity.release.xcconfig"; path = "Target Support Files/Pods-MFElectricity/Pods-MFElectricity.release.xcconfig"; sourceTree = "<group>"; };
+		83535DF00CD43EBBFCC5A380 /* Pods-Shared-MFElectricity-MFElectricityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFElectricity-MFElectricityTests.release.xcconfig"; path = "Target Support Files/Pods-Shared-MFElectricity-MFElectricityTests/Pods-Shared-MFElectricity-MFElectricityTests.release.xcconfig"; sourceTree = "<group>"; };
 		95907B872F7112A7E188E389 /* Pods-Shared-MFElectricity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFElectricity.debug.xcconfig"; path = "Target Support Files/Pods-Shared-MFElectricity/Pods-Shared-MFElectricity.debug.xcconfig"; sourceTree = "<group>"; };
 		9CEC07378BB9FE6D52F9071A /* Pods-Frameworks-MFElectricity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFElectricity.debug.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFElectricity/Pods-Frameworks-MFElectricity.debug.xcconfig"; sourceTree = "<group>"; };
+		A0E234030132A863D55D1A57 /* Pods_Shared_MFElectricity_MFElectricityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MFElectricity_MFElectricityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1FEE8012DB80E454515A279 /* Pods-MFElectricity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFElectricity.debug.xcconfig"; path = "Target Support Files/Pods-MFElectricity/Pods-MFElectricity.debug.xcconfig"; sourceTree = "<group>"; };
+		E9CA8F51C3C2FA81B2E0945B /* Pods-Shared-MFElectricity-MFElectricityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFElectricity-MFElectricityTests.debug.xcconfig"; path = "Target Support Files/Pods-Shared-MFElectricity-MFElectricityTests/Pods-Shared-MFElectricity-MFElectricityTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F724E4C2E76C63455FA69D2C /* Pods_Shared_MFElectricity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MFElectricity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -85,6 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				664A03D728085FA9006C40F8 /* MFElectricity.framework in Frameworks */,
+				B713935203B9DF53C3CA8289 /* Pods_Shared_MFElectricity_MFElectricityTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +105,8 @@
 				79378DA5798EE88F10D03B51 /* Pods-MFElectricity.release.xcconfig */,
 				95907B872F7112A7E188E389 /* Pods-Shared-MFElectricity.debug.xcconfig */,
 				03BDC5FEDBD313E30D79A4AF /* Pods-Shared-MFElectricity.release.xcconfig */,
+				E9CA8F51C3C2FA81B2E0945B /* Pods-Shared-MFElectricity-MFElectricityTests.debug.xcconfig */,
+				83535DF00CD43EBBFCC5A380 /* Pods-Shared-MFElectricity-MFElectricityTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../../Pods;
@@ -110,6 +117,7 @@
 			children = (
 				66A29D742812DB6A0057A787 /* MFExtensions.framework */,
 				F724E4C2E76C63455FA69D2C /* Pods_Shared_MFElectricity.framework */,
+				A0E234030132A863D55D1A57 /* Pods_Shared_MFElectricity_MFElectricityTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -262,9 +270,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 664A03E328085FA9006C40F8 /* Build configuration list for PBXNativeTarget "MFElectricityTests" */;
 			buildPhases = (
+				F230F6F742F493D7C6B9D0C2 /* [CP] Check Pods Manifest.lock */,
 				664A03D228085FA9006C40F8 /* Sources */,
 				664A03D328085FA9006C40F8 /* Frameworks */,
 				664A03D428085FA9006C40F8 /* Resources */,
+				4CA1ED919B21AB589912E03C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -357,6 +367,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4CA1ED919B21AB589912E03C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shared-MFElectricity-MFElectricityTests/Pods-Shared-MFElectricity-MFElectricityTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shared-MFElectricity-MFElectricityTests/Pods-Shared-MFElectricity-MFElectricityTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shared-MFElectricity-MFElectricityTests/Pods-Shared-MFElectricity-MFElectricityTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6657DC462809652F0031BA7C /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -394,6 +421,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		F230F6F742F493D7C6B9D0C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shared-MFElectricity-MFElectricityTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -616,8 +665,8 @@
 		};
 		664A03E428085FA9006C40F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9CA8F51C3C2FA81B2E0945B /* Pods-Shared-MFElectricity-MFElectricityTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52H82A67C3;
@@ -633,8 +682,8 @@
 		};
 		664A03E528085FA9006C40F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83535DF00CD43EBBFCC5A380 /* Pods-Shared-MFElectricity-MFElectricityTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52H82A67C3;

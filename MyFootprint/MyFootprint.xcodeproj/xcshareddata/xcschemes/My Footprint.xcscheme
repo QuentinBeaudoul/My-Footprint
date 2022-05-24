@@ -193,9 +193,19 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "664A043B280861AF006C40F8"
-               BuildableName = "MFVehiculTests.xctest"
+               BuildableName = "MFVehicleTests.xctest"
                BlueprintName = "MFVehicleTests"
-               ReferencedContainer = "container:../Frameworks/MFVehicul/MFVehicle.xcodeproj">
+               ReferencedContainer = "container:../Frameworks/MFVehicle/MFVehicle.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6645E80E28103565002387BB"
+               BuildableName = "MFFuelCombustionTests.xctest"
+               BlueprintName = "MFFuelCombustionTests"
+               ReferencedContainer = "container:../Frameworks/MFFuelCombustion/MFFuelCombustion.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

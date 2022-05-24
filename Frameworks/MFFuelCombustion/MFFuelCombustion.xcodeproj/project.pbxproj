@@ -12,6 +12,16 @@
 		4F730CDF282A8FBE00468D64 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F730CDE282A8FBE00468D64 /* HistoryCell.swift */; };
 		4F932C2D2838D56100F4F12A /* MFAssets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F932C2C2838D56100F4F12A /* MFAssets.framework */; };
 		4F932C2E2838D56100F4F12A /* MFAssets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F932C2C2838D56100F4F12A /* MFAssets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4F932C49283CCA8500F4F12A /* StubCoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F932C48283CCA8500F4F12A /* StubCoreDataService.swift */; };
+		4F932C4C283CCB9000F4F12A /* EstimateResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F932C4B283CCB9000F4F12A /* EstimateResponse.json */; };
+		4F932C4F283CD02000F4F12A /* ResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F932C4E283CD02000F4F12A /* ResultTests.swift */; };
+		4F932C51283CD03A00F4F12A /* ProcessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F932C50283CD03A00F4F12A /* ProcessTests.swift */; };
+		4F932C53283CD05800F4F12A /* AmountEntryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F932C52283CD05800F4F12A /* AmountEntryTests.swift */; };
+		4F932C55283CD08600F4F12A /* FuelSourceTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F932C54283CD08600F4F12A /* FuelSourceTypeTests.swift */; };
+		4F932C5F283CDB6700F4F12A /* MFStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F932C5E283CDB6700F4F12A /* MFStorage.framework */; };
+		4F932C60283CDB6700F4F12A /* MFStorage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F932C5E283CDB6700F4F12A /* MFStorage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4F932C62283CDB6E00F4F12A /* MFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F932C61283CDB6E00F4F12A /* MFNetwork.framework */; };
+		4F932C63283CDB6E00F4F12A /* MFNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F932C61283CDB6E00F4F12A /* MFNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6605CD6628114D3E00B226A5 /* Estimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6605CD6528114D3E00B226A5 /* Estimate.swift */; };
 		660D49E6281AC4CA00A795E6 /* AmountEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660D49E5281AC4CA00A795E6 /* AmountEntryViewController.swift */; };
 		660D49E8281AC99800A795E6 /* ProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660D49E7281AC99800A795E6 /* ProcessViewController.swift */; };
@@ -39,6 +49,7 @@
 		66F200EA281AA14E00422AE9 /* EntryParams.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F200E9281AA14E00422AE9 /* EntryParams.storyboard */; };
 		66F200ED281AC1AA00422AE9 /* FuelSourceTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F200EC281AC1AA00422AE9 /* FuelSourceTypeViewController.swift */; };
 		67CA5667B05B6E6B5EB8A58C /* Pods_Shared_MFFuelCombustion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B9E696DA572B7FEEE96C9AD /* Pods_Shared_MFFuelCombustion.framework */; };
+		BA3467A1EEBD09079603C7A4 /* Pods_Shared_MFFuelCombustion_MFFuelCombustionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAE055EEE9612C05084FD43 /* Pods_Shared_MFFuelCombustion_MFFuelCombustionTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +69,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4F932C63283CDB6E00F4F12A /* MFNetwork.framework in Embed Frameworks */,
 				4F932C2E2838D56100F4F12A /* MFAssets.framework in Embed Frameworks */,
 				66A29D712812B3240057A787 /* MFExtensions.framework in Embed Frameworks */,
+				4F932C60283CDB6700F4F12A /* MFStorage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,10 +80,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3D3DA70F0FD0711247462667 /* Pods-Shared-MFFuelCombustion-MFFuelCombustionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFFuelCombustion-MFFuelCombustionTests.release.xcconfig"; path = "Target Support Files/Pods-Shared-MFFuelCombustion-MFFuelCombustionTests/Pods-Shared-MFFuelCombustion-MFFuelCombustionTests.release.xcconfig"; sourceTree = "<group>"; };
 		4F730CD6282A677900468D64 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		4F730CDC282A8FB100468D64 /* HistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
 		4F730CDE282A8FBE00468D64 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
 		4F932C2C2838D56100F4F12A /* MFAssets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFAssets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F932C48283CCA8500F4F12A /* StubCoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubCoreDataService.swift; sourceTree = "<group>"; };
+		4F932C4B283CCB9000F4F12A /* EstimateResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EstimateResponse.json; sourceTree = "<group>"; };
+		4F932C4E283CD02000F4F12A /* ResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTests.swift; sourceTree = "<group>"; };
+		4F932C50283CD03A00F4F12A /* ProcessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessTests.swift; sourceTree = "<group>"; };
+		4F932C52283CD05800F4F12A /* AmountEntryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountEntryTests.swift; sourceTree = "<group>"; };
+		4F932C54283CD08600F4F12A /* FuelSourceTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelSourceTypeTests.swift; sourceTree = "<group>"; };
+		4F932C5E283CDB6700F4F12A /* MFStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F932C61283CDB6E00F4F12A /* MFNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6605CD6528114D3E00B226A5 /* Estimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estimate.swift; sourceTree = "<group>"; };
 		660D49E5281AC4CA00A795E6 /* AmountEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountEntryViewController.swift; sourceTree = "<group>"; };
 		660D49E7281AC99800A795E6 /* ProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessViewController.swift; sourceTree = "<group>"; };
@@ -99,7 +121,9 @@
 		66F200EC281AC1AA00422AE9 /* FuelSourceTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelSourceTypeViewController.swift; sourceTree = "<group>"; };
 		6AAA841A977ED1BAB24E7B37 /* Pods-Shared-MFFuelCombustion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFFuelCombustion.release.xcconfig"; path = "Target Support Files/Pods-Shared-MFFuelCombustion/Pods-Shared-MFFuelCombustion.release.xcconfig"; sourceTree = "<group>"; };
 		6B9E696DA572B7FEEE96C9AD /* Pods_Shared_MFFuelCombustion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MFFuelCombustion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFF47162D5038BFC0A0B2E14 /* Pods-Shared-MFFuelCombustion-MFFuelCombustionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFFuelCombustion-MFFuelCombustionTests.debug.xcconfig"; path = "Target Support Files/Pods-Shared-MFFuelCombustion-MFFuelCombustionTests/Pods-Shared-MFFuelCombustion-MFFuelCombustionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C475E9E1606917E255394E82 /* Pods-Shared-MFFuelCombustion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFFuelCombustion.debug.xcconfig"; path = "Target Support Files/Pods-Shared-MFFuelCombustion/Pods-Shared-MFFuelCombustion.debug.xcconfig"; sourceTree = "<group>"; };
+		CAAE055EEE9612C05084FD43 /* Pods_Shared_MFFuelCombustion_MFFuelCombustionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MFFuelCombustion_MFFuelCombustionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +133,9 @@
 			files = (
 				66A29D702812B3240057A787 /* MFExtensions.framework in Frameworks */,
 				4F932C2D2838D56100F4F12A /* MFAssets.framework in Frameworks */,
+				4F932C62283CDB6E00F4F12A /* MFNetwork.framework in Frameworks */,
 				67CA5667B05B6E6B5EB8A58C /* Pods_Shared_MFFuelCombustion.framework in Frameworks */,
+				4F932C5F283CDB6700F4F12A /* MFStorage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6645E81028103565002387BB /* MFFuelCombustion.framework in Frameworks */,
+				BA3467A1EEBD09079603C7A4 /* Pods_Shared_MFFuelCombustion_MFFuelCombustionTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +156,8 @@
 			children = (
 				C475E9E1606917E255394E82 /* Pods-Shared-MFFuelCombustion.debug.xcconfig */,
 				6AAA841A977ED1BAB24E7B37 /* Pods-Shared-MFFuelCombustion.release.xcconfig */,
+				AFF47162D5038BFC0A0B2E14 /* Pods-Shared-MFFuelCombustion-MFFuelCombustionTests.debug.xcconfig */,
+				3D3DA70F0FD0711247462667 /* Pods-Shared-MFFuelCombustion-MFFuelCombustionTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../../Pods;
@@ -149,6 +178,33 @@
 				4F730CDE282A8FBE00468D64 /* HistoryCell.swift */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		4F932C47283CCA6200F4F12A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4F932C48283CCA8500F4F12A /* StubCoreDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4F932C4A283CCAE000F4F12A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F932C4B283CCB9000F4F12A /* EstimateResponse.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4F932C4D283CCFDF00F4F12A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4F932C4E283CD02000F4F12A /* ResultTests.swift */,
+				4F932C50283CD03A00F4F12A /* ProcessTests.swift */,
+				4F932C52283CD05800F4F12A /* AmountEntryTests.swift */,
+				4F932C54283CD08600F4F12A /* FuelSourceTypeTests.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		6605CD5E28113E4900B226A5 /* Response */ = {
@@ -192,6 +248,9 @@
 		6645E81328103565002387BB /* MFFuelCombustionTests */ = {
 			isa = PBXGroup;
 			children = (
+				4F932C4D283CCFDF00F4F12A /* Tests */,
+				4F932C4A283CCAE000F4F12A /* Resources */,
+				4F932C47283CCA6200F4F12A /* Services */,
 				6645E81428103565002387BB /* MFFuelCombustionTests.swift */,
 			);
 			path = MFFuelCombustionTests;
@@ -341,9 +400,12 @@
 		D5315088DB34A6FBBF1C2383 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4F932C61283CDB6E00F4F12A /* MFNetwork.framework */,
+				4F932C5E283CDB6700F4F12A /* MFStorage.framework */,
 				4F932C2C2838D56100F4F12A /* MFAssets.framework */,
 				66A29D6F2812B3240057A787 /* MFExtensions.framework */,
 				6B9E696DA572B7FEEE96C9AD /* Pods_Shared_MFFuelCombustion.framework */,
+				CAAE055EEE9612C05084FD43 /* Pods_Shared_MFFuelCombustion_MFFuelCombustionTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -388,9 +450,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6645E81C28103565002387BB /* Build configuration list for PBXNativeTarget "MFFuelCombustionTests" */;
 			buildPhases = (
+				D7D7A5F037B7387D7479340A /* [CP] Check Pods Manifest.lock */,
 				6645E80B28103565002387BB /* Sources */,
 				6645E80C28103565002387BB /* Frameworks */,
 				6645E80D28103565002387BB /* Resources */,
+				99661C7FE6D6E5AFD3D7749F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -458,6 +522,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F932C4C283CCB9000F4F12A /* EstimateResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +567,23 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
 		};
+		99661C7FE6D6E5AFD3D7749F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shared-MFFuelCombustion-MFFuelCombustionTests/Pods-Shared-MFFuelCombustion-MFFuelCombustionTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shared-MFFuelCombustion-MFFuelCombustionTests/Pods-Shared-MFFuelCombustion-MFFuelCombustionTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shared-MFFuelCombustion-MFFuelCombustionTests/Pods-Shared-MFFuelCombustion-MFFuelCombustionTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C620967DD73550C03155E446 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -518,6 +600,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Shared-MFFuelCombustion-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7D7A5F037B7387D7479340A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shared-MFFuelCombustion-MFFuelCombustionTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -556,7 +660,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F932C55283CD08600F4F12A /* FuelSourceTypeTests.swift in Sources */,
+				4F932C4F283CD02000F4F12A /* ResultTests.swift in Sources */,
+				4F932C49283CCA8500F4F12A /* StubCoreDataService.swift in Sources */,
+				4F932C53283CD05800F4F12A /* AmountEntryTests.swift in Sources */,
 				6645E81528103565002387BB /* MFFuelCombustionTests.swift in Sources */,
+				4F932C51283CD03A00F4F12A /* ProcessTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -758,8 +867,8 @@
 		};
 		6645E81D28103565002387BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFF47162D5038BFC0A0B2E14 /* Pods-Shared-MFFuelCombustion-MFFuelCombustionTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52H82A67C3;
@@ -775,8 +884,8 @@
 		};
 		6645E81E28103565002387BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D3DA70F0FD0711247462667 /* Pods-Shared-MFFuelCombustion-MFFuelCombustionTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52H82A67C3;
