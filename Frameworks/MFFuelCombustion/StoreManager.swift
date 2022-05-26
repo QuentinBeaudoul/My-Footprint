@@ -11,6 +11,7 @@ import MFExtensions
 import CoreData
 
 protocol StoreManagerProtocol {
+    var history: [Estimate]? { get }
     var context: NSManagedObjectContext { get }
     func addToHistory(estimate: Estimate)
     func loadHistory(completion: ((Result<[Estimate]?, Error>) -> Void)?)

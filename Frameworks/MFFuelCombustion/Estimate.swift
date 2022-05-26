@@ -8,7 +8,17 @@
 import Foundation
 import MFStorage
 
-public class Estimate: Decodable {
+public class Estimate: Decodable, Equatable {
+    public static func == (lhs: Estimate, rhs: Estimate) -> Bool {
+        return lhs.fuelSourceType == rhs.fuelSourceType &&
+        lhs.fuelSourceUnit == rhs.fuelSourceUnit &&
+        lhs.fuelSourceValue == rhs.fuelSourceValue &&
+        lhs.estimatedAt == rhs.estimatedAt &&
+        lhs.carbonG == rhs.carbonG &&
+        lhs.carbonLb == rhs.carbonLb &&
+        lhs.carbonKg == rhs.carbonKg &&
+        lhs.carbonMt == rhs.carbonMt
+    }
 
     // parsing
     let fuelSourceType: String

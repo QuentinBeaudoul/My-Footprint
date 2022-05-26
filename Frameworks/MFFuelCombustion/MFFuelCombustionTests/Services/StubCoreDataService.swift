@@ -21,7 +21,8 @@ class StubCoreDataService: CoreDataServiceProtocol {
         let container = NSPersistentContainer(name: modelName, managedObjectModel: managedObject!)
 
         let description = NSPersistentStoreDescription()
-        description.url = URL(fileURLWithPath: "/dev/null")
+        description.type = NSInMemoryStoreType
+        description.shouldAddStoreAsynchronously = false
 
         container.persistentStoreDescriptions = [description]
 

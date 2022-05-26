@@ -10,12 +10,12 @@ import MFExtensions
 
 class FuelCombustionViewModel {
 
-    let manager: StoreManager
+    private(set) var manager: StoreManager
 
     var history: [Estimate]?
 
-    init() {
-        manager = StoreManager.shared
+    init(manager: StoreManagerProtocol = StoreManager.shared) {
+        self.manager = StoreManager.shared
         history = manager.history
     }
 
@@ -37,14 +37,14 @@ class FuelCombustionViewModel {
         manager.removeFromHistory(estimate: history?.remove(at: indexPath.row))
     }
 
-    func reloadHistory(completion: @escaping (Result<Void, Error>) -> Void) {
+    func reloadHistory(completion: ((Result<Void, Error>) -> Void)?) {
         manager.loadHistory { [self] result in
             switch result {
             case .success(let estimates):
                 history = estimates
-                completion(.success())
+                completion?(.success())
             case .failure(let error):
-                completion(.failure(error))
+                completion?(.failure(error))
             }
         }
     }
