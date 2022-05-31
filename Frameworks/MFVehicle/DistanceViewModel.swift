@@ -22,10 +22,10 @@ class DistanceViewModel {
 
     func appendToRequest() -> Request.Builder? {
         guard let value = value,
-              let unit = unit else { return nil }
+              let unit = unit, let request = request else { return nil }
 
-        request?.addParameter(key: "distance_unit", value: unit)
-        request?.addParameter(key: "distance_value", value: value)
+        request.addParameter(key: "distance_unit", value: unit)
+        request.addParameter(key: "distance_value", value: value)
 
         return request
     }

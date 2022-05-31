@@ -9,20 +9,29 @@ import Foundation
 import MFNetwork
 
 public final class VehicleManager {
-    private init() {}
+
+    let networkManager: NetworkManagerProtocol
+
+    init(networkManager: NetworkManagerProtocol = NetworkManager.shared) {
+        self.networkManager = networkManager
+    }
 
     public static let shared = VehicleManager()
 
     private(set) var vehicleMakes: [VehicleMake]?
 
-    public func getVehicleMakes(completion: @escaping (Result<Void, Error>) -> Void) {
+    public func getVehicleMakes(completion: ((Result<Void, Error>) -> Void)? = nil ) {
         let url = Constants.vehicleMakesUrl
 
-        NetworkManager.shared.fetchData(httpType: .GET, url: url, parser: [VehicleMake].self) { result in
+        networkManager.fetchData(httpType: .GET,
+                                 url: url,
+                                 headers: nil,
+                                 parameters: nil,
+                                 parser: [VehicleMake].self) { result in
             switch result {
             case .success(let vehicleMakes):
                 self.vehicleMakes = vehicleMakes?.sorted { $0.name.lowercased() < $1.name.lowercased() }
-                completion(.success())
+                completion?(.success())
             case .failure(let error):
                 print(error)
             }

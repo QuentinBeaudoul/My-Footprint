@@ -14,8 +14,8 @@ class FuelCombustionViewModel {
 
     var history: [Estimate]?
 
-    init(manager: StoreManagerProtocol = StoreManager.shared) {
-        self.manager = StoreManager.shared
+    init(manager: StoreManager = StoreManager.shared) {
+        self.manager = manager
         history = manager.history
     }
 

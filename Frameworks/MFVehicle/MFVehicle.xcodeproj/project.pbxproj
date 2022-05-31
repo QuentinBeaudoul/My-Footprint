@@ -18,6 +18,13 @@
 		4F3C16F6283FBFD800B48132 /* VehicleModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3C16F5283FBFD800B48132 /* VehicleModelsTests.swift */; };
 		4F3C16F8283FBFF500B48132 /* ProcessResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3C16F7283FBFF500B48132 /* ProcessResultTests.swift */; };
 		4F3C16FA283FC00A00B48132 /* ResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3C16F9283FC00A00B48132 /* ResultTests.swift */; };
+		4F3C16FF284601CF00B48132 /* StubCoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3C16FD284601CF00B48132 /* StubCoreDataService.swift */; };
+		4F3C1700284601CF00B48132 /* StubNetworkVehicleMakesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3C16FE284601CF00B48132 /* StubNetworkVehicleMakesManager.swift */; };
+		4F3C1702284607A100B48132 /* VehicleMakes.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F3C1701284607A100B48132 /* VehicleMakes.json */; };
+		4F3C170428460AE000B48132 /* StubNetworkVehicleModelsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3C170328460AE000B48132 /* StubNetworkVehicleModelsManager.swift */; };
+		4F3C170628460B1600B48132 /* VehicleModels.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F3C170528460B1600B48132 /* VehicleModels.json */; };
+		4F3C170828461B5C00B48132 /* StubNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3C170728461B5C00B48132 /* StubNetworkManager.swift */; };
+		4F3C170A28461BB000B48132 /* EstimateResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F3C170928461BB000B48132 /* EstimateResponse.json */; };
 		4F730CE4282FB11500468D64 /* EntryParams.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F730CE3282FB11500468D64 /* EntryParams.storyboard */; };
 		4F730CEE282FB6D100468D64 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F730CED282FB6D100468D64 /* Constants.swift */; };
 		4F730CF1282FC58700468D64 /* VehicleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F730CF0282FC58700468D64 /* VehicleManager.swift */; };
@@ -99,6 +106,13 @@
 		4F3C16F5283FBFD800B48132 /* VehicleModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleModelsTests.swift; sourceTree = "<group>"; };
 		4F3C16F7283FBFF500B48132 /* ProcessResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessResultTests.swift; sourceTree = "<group>"; };
 		4F3C16F9283FC00A00B48132 /* ResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTests.swift; sourceTree = "<group>"; };
+		4F3C16FD284601CF00B48132 /* StubCoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubCoreDataService.swift; sourceTree = "<group>"; };
+		4F3C16FE284601CF00B48132 /* StubNetworkVehicleMakesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubNetworkVehicleMakesManager.swift; sourceTree = "<group>"; };
+		4F3C1701284607A100B48132 /* VehicleMakes.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = VehicleMakes.json; sourceTree = "<group>"; };
+		4F3C170328460AE000B48132 /* StubNetworkVehicleModelsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubNetworkVehicleModelsManager.swift; sourceTree = "<group>"; };
+		4F3C170528460B1600B48132 /* VehicleModels.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = VehicleModels.json; sourceTree = "<group>"; };
+		4F3C170728461B5C00B48132 /* StubNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubNetworkManager.swift; sourceTree = "<group>"; };
+		4F3C170928461BB000B48132 /* EstimateResponse.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = EstimateResponse.json; sourceTree = "<group>"; };
 		4F730CE3282FB11500468D64 /* EntryParams.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EntryParams.storyboard; sourceTree = "<group>"; };
 		4F730CED282FB6D100468D64 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4F730CF0282FC58700468D64 /* VehicleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleManager.swift; sourceTree = "<group>"; };
@@ -200,6 +214,27 @@
 				D47C754EF0F8A4C0759D21B7 /* Pods_Shared_MFVehicle_MFVehicleTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F3C16FB2846016400B48132 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F3C1701284607A100B48132 /* VehicleMakes.json */,
+				4F3C170528460B1600B48132 /* VehicleModels.json */,
+				4F3C170928461BB000B48132 /* EstimateResponse.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4F3C16FC2846016D00B48132 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4F3C16FD284601CF00B48132 /* StubCoreDataService.swift */,
+				4F3C170728461B5C00B48132 /* StubNetworkManager.swift */,
+				4F3C170328460AE000B48132 /* StubNetworkVehicleModelsManager.swift */,
+				4F3C16FE284601CF00B48132 /* StubNetworkVehicleMakesManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		4F730CE2282FB10200468D64 /* EntryParams */ = {
@@ -407,6 +442,8 @@
 		664A0440280861AF006C40F8 /* MFVehicleTests */ = {
 			isa = PBXGroup;
 			children = (
+				4F3C16FC2846016D00B48132 /* Services */,
+				4F3C16FB2846016400B48132 /* Resources */,
 				4F3C16ED283FBF4F00B48132 /* VehicleMakesTests.swift */,
 				4F3C16EF283FBF7400B48132 /* ProcessVehicleModelsTests.swift */,
 				4F3C16F1283FBF8700B48132 /* VehicleTests.swift */,
@@ -547,6 +584,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F3C1702284607A100B48132 /* VehicleMakes.json in Resources */,
+				4F3C170A28461BB000B48132 /* EstimateResponse.json in Resources */,
+				4F3C170628460B1600B48132 /* VehicleModels.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,11 +732,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F3C16F4283FBFAD00B48132 /* DistanceTests.swift in Sources */,
+				4F3C170828461B5C00B48132 /* StubNetworkManager.swift in Sources */,
 				4F3C16F0283FBF7400B48132 /* ProcessVehicleModelsTests.swift in Sources */,
 				4F3C16F6283FBFD800B48132 /* VehicleModelsTests.swift in Sources */,
 				4F3C16EE283FBF4F00B48132 /* VehicleMakesTests.swift in Sources */,
 				4F3C16F8283FBFF500B48132 /* ProcessResultTests.swift in Sources */,
+				4F3C170428460AE000B48132 /* StubNetworkVehicleModelsManager.swift in Sources */,
 				4F3C16F2283FBF8700B48132 /* VehicleTests.swift in Sources */,
+				4F3C1700284601CF00B48132 /* StubNetworkVehicleMakesManager.swift in Sources */,
+				4F3C16FF284601CF00B48132 /* StubCoreDataService.swift in Sources */,
 				4F3C16FA283FC00A00B48132 /* ResultTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

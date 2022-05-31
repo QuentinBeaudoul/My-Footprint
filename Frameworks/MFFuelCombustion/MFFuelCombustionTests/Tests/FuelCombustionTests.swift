@@ -90,13 +90,14 @@ class FuelComubstionTests: XCTestCase {
         // Given
         loadEstimate()
         loadHistory()
+        let indexToDelete = IndexPath(row: 0, section: 0)
+        let testEstimate = viewModel?.getItem(at: indexToDelete)
 
         // When
-        viewModel?.delete(at: IndexPath(row: 0, section: 0))
+        viewModel?.delete(at: indexToDelete)
         loadHistory()
 
         // Then
-        //XCTAssertFalse(viewModel?.hasHistory ?? true)
-        XCTFail("Not yet implemented")
+        XCTAssertFalse(viewModel?.history?.contains(testEstimate!) ?? true)
     }
 }

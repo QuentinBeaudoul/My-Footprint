@@ -19,6 +19,7 @@ protocol StoreManagerProtocol {
 }
 
 public final class StoreManager: StoreManagerProtocol {
+
     public var context: NSManagedObjectContext
 
     public var fuelCombustionEntity: NSEntityDescription? {

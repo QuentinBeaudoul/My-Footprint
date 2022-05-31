@@ -13,8 +13,8 @@ class VehicleViewModel {
 
     var history: [Estimate]?
 
-    init() {
-        manager = StoreManager.shared
+    init(manager: StoreManager = StoreManager.shared) {
+        self.manager = manager
         history = manager.history
     }
 
@@ -36,14 +36,14 @@ class VehicleViewModel {
         manager.removeFromHistory(estimate: history?.remove(at: indexPath.row))
     }
 
-    func reloadHistory(completion: @escaping (Result<Void, Error>) -> Void) {
+    func reloadHistory(completion: ((Result<Void, Error>) -> Void)?) {
         manager.loadHistory { [self] result in
             switch result {
             case .success(let estimates):
                 history = estimates
-                completion(.success())
+                completion?(.success())
             case .failure(let error):
-                completion(.failure(error))
+                completion?(.failure(error))
             }
         }
     }

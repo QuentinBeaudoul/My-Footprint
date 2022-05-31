@@ -7,7 +7,7 @@
 
 import Foundation
 
-class VehicleMake: Decodable {
+class VehicleMake: Decodable, Equatable {
     let id: String
     let name: String
     let numberOfModels: Int
@@ -36,5 +36,9 @@ class VehicleMake: Decodable {
                                                                     forKey: .attributes)
         name = try attributesContainer.decode(String.self, forKey: .name)
         numberOfModels = try attributesContainer.decode(Int.self, forKey: .numberOfModels)
+    }
+
+    static func == (lhs: VehicleMake, rhs: VehicleMake) -> Bool {
+        return lhs.id == rhs.id && lhs.numberOfModels == rhs.numberOfModels && lhs.name == rhs.name
     }
 }

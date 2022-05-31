@@ -9,14 +9,22 @@ import Foundation
 
 class VehicleMakesViewModel {
 
-    let vehicleMakes = VehicleManager.shared.vehicleMakes
+    let manager: VehicleManager
     var selectedVehicleMake: VehicleMake?
 
+    init(manager: VehicleManager = VehicleManager.shared) {
+        self.manager = manager
+    }
+
+    func getVehicleMakes() -> [VehicleMake]? {
+        manager.vehicleMakes
+    }
+
     var numberOfItems: Int {
-        vehicleMakes?.count ?? 0
+        getVehicleMakes()?.count ?? 0
     }
 
     func getItem(at indexPath: IndexPath) -> VehicleMake? {
-        vehicleMakes?[indexPath.row]
+        getVehicleMakes()?[indexPath.row]
     }
 }

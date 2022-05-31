@@ -8,7 +8,21 @@
 import Foundation
 import MFStorage
 
-public class Estimate: Decodable {
+public class Estimate: Decodable, Equatable {
+    public static func == (lhs: Estimate, rhs: Estimate) -> Bool {
+        return lhs.distanceValue == rhs.distanceValue &&
+        lhs.distanceUnit == rhs.distanceUnit &&
+        lhs.vehicleMake == rhs.vehicleMake &&
+        lhs.vehicleModel == rhs.vehicleModel &&
+        lhs.vehicleYear == rhs.vehicleYear &&
+        lhs.vehicleModelId == rhs.vehicleModelId &&
+        lhs.estimatedAt == rhs.estimatedAt &&
+        lhs.carbonG == rhs.carbonG &&
+        lhs.carbonKg == rhs.carbonKg &&
+        lhs.carbonLb == rhs.carbonLb &&
+        lhs.carbonMt == rhs.carbonMt
+    }
+
     let distanceValue: Double
     let vehicleMake, vehicleModel: String
     let vehicleYear: Int

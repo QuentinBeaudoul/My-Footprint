@@ -7,17 +7,32 @@
 
 import Foundation
 import MFStorage
+import CoreData
 
-public final class StoreManager {
-    private init() {}
+protocol StoreManagerProtocol {
+    var history: [Estimate]? { get }
+    var context: NSManagedObjectContext { get }
+    func addToHistory(estimate: Estimate)
+    func loadHistory(completion: ((Result<[Estimate]?, Error>) -> Void)?)
+    func removeFromHistory(estimate: Estimate?)
+}
+
+public final class StoreManager: StoreManagerProtocol {
+    var context: NSManagedObjectContext
+    var vehicleEntity: NSEntityDescription? {
+        NSEntityDescription.entity(forEntityName: "CDVehicle", in: context)
+    }
+
+    init(coreDataService: CoreDataServiceProtocol = CoreDataService.shared) {
+        self.context = coreDataService.context
+    }
 
     public static let shared = StoreManager()
 
     private(set) var history: [Estimate]?
 
     func addToHistory(estimate: Estimate) {
-        guard let entity = GlobalStoreManager.shared.vehicleEntity else { return }
-        let context = GlobalStoreManager.shared.context
+        guard let entity = vehicleEntity else { return }
 
         let storedEstimate = CDVehicle(entity: entity, insertInto: context)
         storedEstimate.distanceUnit = estimate.distanceUnit
@@ -45,7 +60,6 @@ public final class StoreManager {
 
     public func loadHistory(completion: ((Result<[Estimate]?, Error>) -> Void)? = nil) {
         let request = CDVehicle.fetchRequest()
-        let context = GlobalStoreManager.shared.context
 
         do {
             let result = try context.fetch(request)
@@ -63,7 +77,6 @@ public final class StoreManager {
 
     func removeFromHistory(estimate: Estimate?) {
         guard let estimate = estimate else { return }
-        let context = GlobalStoreManager.shared.context
 
         let request = CDVehicle.fetchRequest()
         request.predicate = NSPredicate(format: "estimatedAt LIKE %@", estimate.estimatedAt)

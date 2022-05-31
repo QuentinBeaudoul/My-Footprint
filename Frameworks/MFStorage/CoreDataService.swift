@@ -39,4 +39,22 @@ public final class CoreDataService: CoreDataServiceProtocol {
 
     private init() {}
 
+    public func clearDatabase() {
+        guard let url = persistentContainer.persistentStoreDescriptions.first?.url else { return }
+
+        let persistentStoreCoordinator = persistentContainer.persistentStoreCoordinator
+
+         do {
+             try persistentStoreCoordinator.destroyPersistentStore(at: url,
+                                                                   ofType: NSSQLiteStoreType,
+                                                                   options: nil)
+             try persistentStoreCoordinator.addPersistentStore(ofType: NSSQLiteStoreType,
+                                                               configurationName: nil,
+                                                               at: url,
+                                                               options: nil)
+         } catch {
+             print("Attempted to clear persistent store: " + error.localizedDescription)
+         }
+    }
+
 }

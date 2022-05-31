@@ -10,12 +10,18 @@ import MFNetwork
 
 class ProcessResultViewModel {
 
+    let networkManager: NetworkManagerProtocol
+
     private(set) var request: Request.Builder?
     private(set) var estimate: Estimate?
 
     var retryCount = 0
     var noMoreTries: Bool {
         retryCount >= 3
+    }
+
+    init(networkManager: NetworkManagerProtocol = NetworkManager.shared) {
+        self.networkManager = networkManager
     }
 
     func load(_ request: Request.Builder) {
@@ -27,7 +33,11 @@ class ProcessResultViewModel {
         let url = Constants.estimateUrl
         let params: [String: Any] = request.build()
 
-        NetworkManager.shared.fetchData(httpType: .POST, url: url, parameters: params, parser: Estimate.self) { res in
+        networkManager.fetchData(httpType: .POST,
+                                 url: url,
+                                 headers: nil,
+                                 parameters: params,
+                                 parser: Estimate.self) { res in
             switch res {
             case .success(let estimate):
                 if let estimate = estimate {
