@@ -15,14 +15,12 @@ public final class FlightNavigationManager {
 
     public func getFlightViewController() -> UIViewController {
 
-        let navController = UINavigationController.makeFromStoryboard("Flight",
-                                                                      withIdentifier: "FlightNavViewController",
-                                                                      in: Bundle(for: Self.self))
+        let controller = FlightViewController.makeFromStoryboard(in: Bundle(for: Self.self))
 
-        navController.tabBarItem = UITabBarItem(title: nil,
+        controller.tabBarItem = UITabBarItem(title: nil,
                                                 image: R.image.ic_25_airplane(),
                                                 selectedImage: R.image.ic_35_airplane())
 
-        return navController
+        return controller
     }
 }

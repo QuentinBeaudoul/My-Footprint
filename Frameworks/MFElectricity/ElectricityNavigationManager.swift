@@ -15,14 +15,12 @@ public final class ElectricityNavigationManager {
 
     public func getElectricityViewController() -> UIViewController {
 
-        let navController = UINavigationController.makeFromStoryboard("Electricity",
-                                                                      withIdentifier: "ElectricityNavViewController",
-                                                                      in: Bundle(for: Self.self))
+        let controller = ElectricityViewController.makeFromStoryboard(in: Bundle(for: Self.self))
 
-        navController.tabBarItem = UITabBarItem(title: nil,
+        controller.tabBarItem = UITabBarItem(title: nil,
                                                 image: R.image.ic_25_electricity(),
                                                 selectedImage: R.image.ic_35_electricity())
 
-        return navController
+        return controller
     }
 }

@@ -20,7 +20,7 @@
 		4F932C342838D71100F4F12A /* MFExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F932C332838D71100F4F12A /* MFExtensions.framework */; };
 		4F932C352838D71100F4F12A /* MFExtensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F932C332838D71100F4F12A /* MFExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4F932C382838D76D00F4F12A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F932C372838D76D00F4F12A /* Assets.xcassets */; };
-		4F932C3B2838D88B00F4F12A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F932C3A2838D88B00F4F12A /* R.generated.swift */; };
+		66E72BD42847A8870004DC67 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E72BD32847A8870004DC67 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,7 +52,7 @@
 		4F932C2F2838D64C00F4F12A /* LoadableViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LoadableViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F932C332838D71100F4F12A /* MFExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F932C372838D76D00F4F12A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4F932C3A2838D88B00F4F12A /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		66E72BD32847A8870004DC67 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		94BD1D375BCC630724ED9F64 /* Pods-Shared-MFAssets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFAssets.debug.xcconfig"; path = "Target Support Files/Pods-Shared-MFAssets/Pods-Shared-MFAssets.debug.xcconfig"; sourceTree = "<group>"; };
 		BF14BD5064B6BF312397AD81 /* Pods_Shared_MFAssets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MFAssets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -140,7 +140,7 @@
 		4F932C362838D75700F4F12A /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
-				4F932C3A2838D88B00F4F12A /* R.generated.swift */,
+				66E72BD32847A8870004DC67 /* R.generated.swift */,
 				4F932C372838D76D00F4F12A /* Assets.xcassets */,
 			);
 			path = Ressources;
@@ -296,8 +296,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F932C242838D30700F4F12A /* MFButton.swift in Sources */,
-				4F932C3B2838D88B00F4F12A /* R.generated.swift in Sources */,
 				4F932C262838D30700F4F12A /* MFLabel.swift in Sources */,
+				66E72BD42847A8870004DC67 /* R.generated.swift in Sources */,
 				4F932C202838D30700F4F12A /* MFTextfield.swift in Sources */,
 				4F932C252838D30700F4F12A /* MFView.swift in Sources */,
 				4F932C232838D30700F4F12A /* HeaderView.swift in Sources */,
@@ -435,7 +435,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3JWQB2GF6V;
+				DEVELOPMENT_TEAM = 52H82A67C3;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -466,7 +466,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3JWQB2GF6V;
+				DEVELOPMENT_TEAM = 52H82A67C3;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

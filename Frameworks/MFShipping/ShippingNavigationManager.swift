@@ -16,14 +16,12 @@ public final class ShippingNavigationManager {
 
     public func getShippingViewController() -> UIViewController {
 
-        let navController = UINavigationController.makeFromStoryboard("Shipping",
-                                                                      withIdentifier: "ShippingNavViewController",
-                                                                      in: Bundle(for: Self.self))
+        let viewController = ShippingViewController.makeFromStoryboard(in: Bundle(for: Self.self))
 
-        navController.tabBarItem = UITabBarItem(title: nil,
+        viewController.tabBarItem = UITabBarItem(title: nil,
                                                 image: R.image.ic_25_shipping(),
                                                 selectedImage: R.image.ic_35_shipping())
 
-        return navController
+        return viewController
     }
 }

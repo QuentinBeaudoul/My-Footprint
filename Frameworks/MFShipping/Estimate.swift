@@ -7,7 +7,21 @@
 
 import Foundation
 
-class Estimate: Decodable {
+class Estimate: Decodable, Equatable {
+    static func == (lhs: Estimate, rhs: Estimate) -> Bool {
+        return lhs.id == rhs.id &&
+        lhs.distanceValue == rhs.distanceValue &&
+        lhs.weightUnit == rhs.weightUnit &&
+        lhs.transportMethod == rhs.transportMethod &&
+        lhs.weightValue == rhs.weightValue &&
+        lhs.distanceUnit == rhs.distanceUnit &&
+        lhs.estimatedAt == rhs.estimatedAt &&
+        lhs.carbonG == rhs.carbonG &&
+        lhs.carbonLb == rhs.carbonLb &&
+        lhs.carbonKg == rhs.carbonKg &&
+        lhs.carbonMt == rhs.carbonMt
+    }
+
     let id: String
     let distanceValue: Int
     let weightUnit, transportMethod: String

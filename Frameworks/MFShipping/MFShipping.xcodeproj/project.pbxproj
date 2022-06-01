@@ -20,6 +20,8 @@
 		664A0421280860BE006C40F8 /* MFShipping.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A0415280860BE006C40F8 /* MFShipping.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66D2A87128197C110026F85E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2A87028197C110026F85E /* R.generated.swift */; };
 		66D2A87328197C760026F85E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D2A87228197C760026F85E /* Assets.xcassets */; };
+		66E37E9A2847AECA001BAD79 /* MFAssets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E37E992847AECA001BAD79 /* MFAssets.framework */; };
+		66E37E9B2847AECA001BAD79 /* MFAssets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66E37E992847AECA001BAD79 /* MFAssets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6A71B6884FE7E6310E062C83 /* Pods_Shared_MFShipping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8479E1F972487C2D26B20848 /* Pods_Shared_MFShipping.framework */; };
 		DC41CB83EA68B98F44A051ED /* Pods_Shared_MFShipping_MFShippingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6000D85FCEEC61BC38F56F88 /* Pods_Shared_MFShipping_MFShippingTests.framework */; };
 /* End PBXBuildFile section */
@@ -41,6 +43,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				66E37E9B2847AECA001BAD79 /* MFAssets.framework in Embed Frameworks */,
 				661581092809C633006C2170 /* MFExtensions.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -67,6 +70,7 @@
 		664A041F280860BE006C40F8 /* MFShippingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFShippingTests.swift; sourceTree = "<group>"; };
 		66D2A87028197C110026F85E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		66D2A87228197C760026F85E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66E37E992847AECA001BAD79 /* MFAssets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFAssets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8479E1F972487C2D26B20848 /* Pods_Shared_MFShipping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MFShipping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		944BD4F852AC860A0DD4952D /* Pods-MFShipping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFShipping.release.xcconfig"; path = "Target Support Files/Pods-MFShipping/Pods-MFShipping.release.xcconfig"; sourceTree = "<group>"; };
 		A9DCBF8448815B32A873DFEB /* Pods-Shared-MFShipping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFShipping.debug.xcconfig"; path = "Target Support Files/Pods-Shared-MFShipping/Pods-Shared-MFShipping.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				661581082809C633006C2170 /* MFExtensions.framework in Frameworks */,
+				66E37E9A2847AECA001BAD79 /* MFAssets.framework in Frameworks */,
 				6A71B6884FE7E6310E062C83 /* Pods_Shared_MFShipping.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,6 +228,7 @@
 		F56BBD0CA825E37CDFAD73FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				66E37E992847AECA001BAD79 /* MFAssets.framework */,
 				661581072809C633006C2170 /* MFExtensions.framework */,
 				8479E1F972487C2D26B20848 /* Pods_Shared_MFShipping.framework */,
 				6000D85FCEEC61BC38F56F88 /* Pods_Shared_MFShipping_MFShippingTests.framework */,
