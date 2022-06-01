@@ -45,6 +45,9 @@
                                         <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="ZyB-sG-tpu" kind="presentation" id="CBk-AJ-kDd"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7bI-GZ-bGS" customClass="MFView" customModule="MFAssets">
                                 <rect key="frame" x="0.0" y="499.5" width="414" height="500"/>
@@ -106,6 +109,10 @@
                                     <constraint firstItem="nGZ-cz-DZs" firstAttribute="leading" secondItem="7bI-GZ-bGS" secondAttribute="leading" constant="16" id="pEv-77-60F"/>
                                     <constraint firstItem="FH1-ey-CXO" firstAttribute="top" secondItem="nGZ-cz-DZs" secondAttribute="bottom" constant="32" id="wL6-4r-Fjl"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="25q-7Y-UeI" appends="YES" id="liB-rO-rUU"/>
+                                    <outletCollection property="gestureRecognizers" destination="tcF-qw-xnq" appends="YES" id="Tfk-vy-CMC"/>
+                                </connections>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zFh-Hz-j8G"/>
@@ -121,10 +128,35 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kzr-jZ-nul"/>
+                    <connections>
+                        <outlet property="historyImageView" destination="TFp-aA-q1Q" id="uof-r1-WQ9"/>
+                        <outlet property="historyViewHeightConstrainte" destination="I4V-cj-drm" id="IWp-Gu-IlX"/>
+                        <outlet property="historyViewTopConstrainte" destination="nz6-Yf-BuL" id="EaW-mi-3OO"/>
+                        <outlet property="noHistoryView" destination="FH1-ey-CXO" id="gzi-Cp-fcW"/>
+                        <outlet property="tableView" destination="Sds-f3-a8M" id="9OH-Ud-bEH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MwN-fp-XQP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="25q-7Y-UeI">
+                    <connections>
+                        <action selector="swipeGesture:" destination="LZz-lF-qld" id="NfB-ji-l3F"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="tcF-qw-xnq">
+                    <connections>
+                        <action selector="swipeGesture:" destination="LZz-lF-qld" id="gzO-k9-EJ7"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-220" y="25"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="idn-45-CCw">
+            <objects>
+                <viewControllerPlaceholder id="ZyB-sG-tpu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UQw-RV-IqR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="586" y="-135"/>
         </scene>
     </scenes>
     <designables>
