@@ -11,6 +11,7 @@ import MFNetwork
 class ProcessResultViewModel {
 
     let networkManager: NetworkManagerProtocol
+    let storeManager: StoreManager
 
     private(set) var request: Request.Builder?
     private(set) var estimate: Estimate?
@@ -20,8 +21,9 @@ class ProcessResultViewModel {
         retryCount >= 3
     }
 
-    init(networkManager: NetworkManagerProtocol = NetworkManager.shared) {
+    init(networkManager: NetworkManagerProtocol = NetworkManager.shared, storeManager: StoreManager = StoreManager.shared) {
         self.networkManager = networkManager
+        self.storeManager = storeManager
     }
 
     func load(_ request: Request.Builder) {
@@ -42,7 +44,7 @@ class ProcessResultViewModel {
             case .success(let estimate):
                 if let estimate = estimate {
                     self.estimate = estimate
-                    StoreManager.shared.addToHistory(estimate: estimate)
+                    self.storeManager.addToHistory(estimate: estimate)
                     completion(.success(estimate))
                 }
             case .failure(let error):
