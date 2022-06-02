@@ -6,11 +6,11 @@
 //
 
 import Foundation
+import MFStorage
 
-class Estimate: Decodable, Equatable {
-    static func == (lhs: Estimate, rhs: Estimate) -> Bool {
-        return lhs.id == rhs.id &&
-        lhs.distanceValue == rhs.distanceValue &&
+public class Estimate: Decodable, Equatable {
+    public static func == (lhs: Estimate, rhs: Estimate) -> Bool {
+        return lhs.distanceValue == rhs.distanceValue &&
         lhs.weightUnit == rhs.weightUnit &&
         lhs.transportMethod == rhs.transportMethod &&
         lhs.weightValue == rhs.weightValue &&
@@ -22,8 +22,7 @@ class Estimate: Decodable, Equatable {
         lhs.carbonMt == rhs.carbonMt
     }
 
-    let id: String
-    let distanceValue: Int
+    let distanceValue: Double
     let weightUnit, transportMethod: String
     let weightValue: Double
     let distanceUnit: String
@@ -55,17 +54,28 @@ class Estimate: Decodable, Equatable {
         case carbonMt = "carbon_mt"
     }
 
-    required init(from decoder: Decoder) throws {
+    init(from entity: CDShipping) {
+        distanceValue = entity.distanceValue?.toDouble() ?? 0
+        distanceUnit = entity.distanceUnit ?? ""
+        weightValue = entity.weightValue?.toDouble() ?? 0
+        weightUnit = entity.weightUnit ?? ""
+        transportMethod = entity.transportMethod ?? ""
+        estimatedAt = entity.estimatedAt ?? ""
+        carbonG = entity.carbonG?.toDouble() ?? 0
+        carbonLb = entity.carbonLb?.toDouble() ?? 0
+        carbonKg = entity.carbonKg?.toDouble() ?? 0
+        carbonMt = entity.carbonMt?.toDouble() ?? 0
+    }
+
+    public required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: ContainerKeys.self)
         let metadataContainer = try container.nestedContainer(keyedBy: MetadataContainer.self, forKey: .data)
-
-        id = try metadataContainer.decode(String.self, forKey: .id)
 
         let attributesContainer = try metadataContainer.nestedContainer(keyedBy: AttributesContainer.self,
                                                                         forKey: .attributes)
 
-        distanceValue = try attributesContainer.decode(Int.self, forKey: .distanceValue)
-        distanceUnit = try attributesContainer.decode(String.self, forKey: .distanceValue)
+        distanceValue = try attributesContainer.decode(Double.self, forKey: .distanceValue)
+        distanceUnit = try attributesContainer.decode(String.self, forKey: .distanceUnit)
         transportMethod = try attributesContainer.decode(String.self, forKey: .transportMethod)
         weightValue = try attributesContainer.decode(Double.self, forKey: .weightValue)
         weightUnit = try attributesContainer.decode(String.self, forKey: .weightUnit)

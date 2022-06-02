@@ -21,7 +21,8 @@ class ProcessResultViewModel {
         retryCount >= 3
     }
 
-    init(networkManager: NetworkManagerProtocol = NetworkManager.shared, storeManager: StoreManager = StoreManager.shared) {
+    init(networkManager: NetworkManagerProtocol = NetworkManager.shared,
+         storeManager: StoreManager = StoreManager.shared) {
         self.networkManager = networkManager
         self.storeManager = storeManager
     }

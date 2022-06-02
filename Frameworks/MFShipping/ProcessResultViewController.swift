@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import Lottie
 
 class ProcessResultViewController: UIViewController {
+
+    @IBOutlet weak var animationView: AnimationView!
 
     let viewModel = ProcessResultViewModel()
 
@@ -15,17 +18,64 @@ class ProcessResultViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+
+        // Setting up gradient background color
+        if let topColor = R.color.backgroundGradientTop(), let bottomColor = R.color.backgroundGradientBottom() {
+            view.setGradientBackground(colorTop: topColor, colorBottom: bottomColor)
+        }
+
+        // Set up annimation
+        let anim = Animation.named("ShippingAnimation", bundle: Bundle(for: Self.self))
+        animationView.animation = anim
+        animationView.contentMode = .scaleAspectFit
+        animationView.loopMode = .loop
+        animationView.animationSpeed = 2
+        animationView.play()
     }
-    
 
-    /*
-    // MARK: - Navigation
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        performRequest()
+    }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    private func performRequest() {
+        viewModel.performRequest { [self] response in
+            switch response {
+            case .success(_):
+                segue()
+            case .failure(let error):
+                viewModel.retryCount += 1
+
+                if viewModel.noMoreTries {
+                    navigationController?.popViewController(animated: true)
+                } else {
+                    handleError(error)
+                }
+            }
+        }
+    }
+
+    private func handleError(_ error: Error) {
+        let action = UIAlertAction(title: "Retry", style: .default) { [self] _ in
+            performRequest()
+        }
+
+        UIAlertController.showAlert(title: "Error", message: error.localizedDescription, action: action, on: self)
+    }
+
+    private func segue() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { [self] in
+            performSegue(withIdentifier: R.segue.processResultViewController.resultSegue, sender: nil)
+        }
+    }
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == R.segue.processResultViewController.resultSegue.identifier {
+            guard let resultVC = segue.destination as? ResultViewController,
+                  let estimate = viewModel.estimate else { return }
+
+            resultVC.viewModel.load(estimate)
+        }
     }
-    */
 
 }

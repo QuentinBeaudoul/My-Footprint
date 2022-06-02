@@ -20,6 +20,12 @@
 		664A0421280860BE006C40F8 /* MFShipping.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A0415280860BE006C40F8 /* MFShipping.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66D2A87128197C110026F85E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2A87028197C110026F85E /* R.generated.swift */; };
 		66D2A87328197C760026F85E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D2A87228197C760026F85E /* Assets.xcassets */; };
+		66D95C4A28489E0800768FC0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D95C4928489E0800768FC0 /* Constants.swift */; };
+		66D95C4E2848B1EB00768FC0 /* TransportCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66D95C4D2848B1EB00768FC0 /* TransportCell.xib */; };
+		66D95C502848B1F800768FC0 /* TransportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D95C4F2848B1F800768FC0 /* TransportCell.swift */; };
+		66D95C522848C0AA00768FC0 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D95C512848C0AA00768FC0 /* StoreManager.swift */; };
+		66D95C562848E4DA00768FC0 /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66D95C552848E4DA00768FC0 /* HistoryCell.xib */; };
+		66D95C582848E4ED00768FC0 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D95C572848E4ED00768FC0 /* HistoryCell.swift */; };
 		66E37E9A2847AECA001BAD79 /* MFAssets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E37E992847AECA001BAD79 /* MFAssets.framework */; };
 		66E37E9B2847AECA001BAD79 /* MFAssets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66E37E992847AECA001BAD79 /* MFAssets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		66E37E9F2847BA80001BAD79 /* EntryParams.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E37E9E2847BA80001BAD79 /* EntryParams.storyboard */; };
@@ -81,6 +87,12 @@
 		664A041F280860BE006C40F8 /* MFShippingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFShippingTests.swift; sourceTree = "<group>"; };
 		66D2A87028197C110026F85E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		66D2A87228197C760026F85E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66D95C4928489E0800768FC0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		66D95C4D2848B1EB00768FC0 /* TransportCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransportCell.xib; sourceTree = "<group>"; };
+		66D95C4F2848B1F800768FC0 /* TransportCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportCell.swift; sourceTree = "<group>"; };
+		66D95C512848C0AA00768FC0 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		66D95C552848E4DA00768FC0 /* HistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
+		66D95C572848E4ED00768FC0 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
 		66E37E992847AECA001BAD79 /* MFAssets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFAssets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66E37E9E2847BA80001BAD79 /* EntryParams.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EntryParams.storyboard; sourceTree = "<group>"; };
 		66E37EA62847BBA5001BAD79 /* WeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +146,7 @@
 		661580F32809A5A7006C2170 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				66D95C4828489DF200768FC0 /* Constants */,
 				66D2A86F28197B300026F85E /* Ressources */,
 				6645E844281058C0002387BB /* Models */,
 				661580F62809A628006C2170 /* Managers */,
@@ -155,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				661580FE2809A6EC006C2170 /* ShippingNavigationManager.swift */,
+				66D95C512848C0AA00768FC0 /* StoreManager.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -162,6 +176,7 @@
 		661580F72809A634006C2170 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				66D95C532848E4BF00768FC0 /* Cells */,
 				661580F82809A64C006C2170 /* Shipping.storyboard */,
 				661580FA2809A698006C2170 /* ShippingViewController.swift */,
 				661580FC2809A6AB006C2170 /* ShippingViewModel.swift */,
@@ -232,6 +247,48 @@
 			name = Ressources;
 			sourceTree = "<group>";
 		};
+		66D95C4828489DF200768FC0 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				66D95C4928489E0800768FC0 /* Constants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		66D95C4B2848B1C200768FC0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				66D95C4C2848B1D200768FC0 /* TransportCell */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		66D95C4C2848B1D200768FC0 /* TransportCell */ = {
+			isa = PBXGroup;
+			children = (
+				66D95C4D2848B1EB00768FC0 /* TransportCell.xib */,
+				66D95C4F2848B1F800768FC0 /* TransportCell.swift */,
+			);
+			name = TransportCell;
+			sourceTree = "<group>";
+		};
+		66D95C532848E4BF00768FC0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				66D95C542848E4C700768FC0 /* HistoryCell */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		66D95C542848E4C700768FC0 /* HistoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				66D95C552848E4DA00768FC0 /* HistoryCell.xib */,
+				66D95C572848E4ED00768FC0 /* HistoryCell.swift */,
+			);
+			name = HistoryCell;
+			sourceTree = "<group>";
+		};
 		66E37E9C2847BA4B001BAD79 /* EntryParams */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +331,7 @@
 		66E37EA32847BB6E001BAD79 /* Transport */ = {
 			isa = PBXGroup;
 			children = (
+				66D95C4B2848B1C200768FC0 /* Cells */,
 				66E37EAE2847BC47001BAD79 /* TransportViewController.swift */,
 				66E37EB02847BC56001BAD79 /* TransportViewModel.swift */,
 			);
@@ -428,6 +486,8 @@
 				66D2A87328197C760026F85E /* Assets.xcassets in Resources */,
 				661580F92809A64C006C2170 /* Shipping.storyboard in Resources */,
 				66E37E9F2847BA80001BAD79 /* EntryParams.storyboard in Resources */,
+				66D95C562848E4DA00768FC0 /* HistoryCell.xib in Resources */,
+				66D95C4E2848B1EB00768FC0 /* TransportCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,12 +614,16 @@
 				66E37EB32847BC7E001BAD79 /* ProcessResultViewController.swift in Sources */,
 				661580FD2809A6AB006C2170 /* ShippingViewModel.swift in Sources */,
 				6605CD6C281191CE00B226A5 /* Estimate.swift in Sources */,
+				66D95C4A28489E0800768FC0 /* Constants.swift in Sources */,
 				66D2A87128197C110026F85E /* R.generated.swift in Sources */,
 				66E37EAF2847BC47001BAD79 /* TransportViewController.swift in Sources */,
 				66E37EAD2847BBFE001BAD79 /* DistanceViewModel.swift in Sources */,
+				66D95C582848E4ED00768FC0 /* HistoryCell.swift in Sources */,
 				66E37EB72847BCA1001BAD79 /* ResultViewController.swift in Sources */,
 				661580FB2809A698006C2170 /* ShippingViewController.swift in Sources */,
 				66E37EB52847BC8E001BAD79 /* ProcessResultViewModel.swift in Sources */,
+				66D95C502848B1F800768FC0 /* TransportCell.swift in Sources */,
+				66D95C522848C0AA00768FC0 /* StoreManager.swift in Sources */,
 				661580FF2809A6EC006C2170 /* ShippingNavigationManager.swift in Sources */,
 				66E37EB12847BC56001BAD79 /* TransportViewModel.swift in Sources */,
 			);

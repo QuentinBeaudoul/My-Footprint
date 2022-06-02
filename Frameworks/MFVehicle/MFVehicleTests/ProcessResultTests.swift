@@ -17,7 +17,8 @@ class ProcessResultTests: XCTestCase {
     override func setUp() {
         super.setUp()
 
-        viewModel = ProcessResultViewModel(networkManager: StubNetworkManager(), storeManager: StoreManager(coreDataService: StubCoreDataService()))
+        viewModel = ProcessResultViewModel(networkManager: StubNetworkManager(),
+                                           storeManager: StoreManager(coreDataService: StubCoreDataService()))
     }
 
     func testGivenTries_WhenNoMoreTry_ThenCannotTryAgain() {

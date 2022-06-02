@@ -52,7 +52,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7bI-GZ-bGS" customClass="MFView" customModule="MFAssets">
                                 <rect key="frame" x="0.0" y="499.5" width="414" height="500"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" estimatedRowHeight="64" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Sds-f3-a8M">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="100" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Sds-f3-a8M">
                                         <rect key="frame" x="0.0" y="81" width="414" height="403"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
@@ -134,6 +134,7 @@
                         <outlet property="historyViewTopConstrainte" destination="nz6-Yf-BuL" id="EaW-mi-3OO"/>
                         <outlet property="noHistoryView" destination="FH1-ey-CXO" id="gzi-Cp-fcW"/>
                         <outlet property="tableView" destination="Sds-f3-a8M" id="9OH-Ud-bEH"/>
+                        <segue destination="QUs-xf-WH0" kind="presentation" identifier="resultSegue" id="umG-MV-bqy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MwN-fp-XQP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -150,13 +151,21 @@
             </objects>
             <point key="canvasLocation" x="-220" y="25"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--EntryParamsViewController-->
         <scene sceneID="idn-45-CCw">
             <objects>
-                <viewControllerPlaceholder id="ZyB-sG-tpu" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="EntryParams" storyboardName="EntryParams" referencedIdentifier="EntryParamsViewController" id="ZyB-sG-tpu" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UQw-RV-IqR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="586" y="-135"/>
+            <point key="canvasLocation" x="393" y="119"/>
+        </scene>
+        <!--ResultViewController-->
+        <scene sceneID="tiz-pY-E3Q">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EntryParams" referencedIdentifier="ResultViewController" id="QUs-xf-WH0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4pL-3w-zCJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="364" y="-55"/>
         </scene>
     </scenes>
     <designables>

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_100_train.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
