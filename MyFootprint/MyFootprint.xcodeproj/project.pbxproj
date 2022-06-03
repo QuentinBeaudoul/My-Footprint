@@ -21,6 +21,12 @@
 		6645E83E28103D76002387BB /* MFFlight.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6645E83C28103D76002387BB /* MFFlight.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6645E84028103DD0002387BB /* MFElectricity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6645E83F28103DD0002387BB /* MFElectricity.framework */; };
 		6645E84128103DD0002387BB /* MFElectricity.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6645E83F28103DD0002387BB /* MFElectricity.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6658950D284A65EB0090FA7F /* MFAssets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6658950C284A65EB0090FA7F /* MFAssets.framework */; };
+		6658950E284A65EB0090FA7F /* MFAssets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6658950C284A65EB0090FA7F /* MFAssets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6658950F284A66170090FA7F /* MFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66ED2222281FEE0C00B38079 /* MFNetwork.framework */; };
+		66589510284A66170090FA7F /* MFNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66ED2222281FEE0C00B38079 /* MFNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		66589512284A66410090FA7F /* MFStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66589511284A66410090FA7F /* MFStorage.framework */; };
+		66589513284A66410090FA7F /* MFStorage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66589511284A66410090FA7F /* MFStorage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		66A732F6280950DA004CF245 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66A732F5280950DA004CF245 /* Splash.storyboard */; };
 		66A732F92809513E004CF245 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A732F82809513E004CF245 /* SplashViewController.swift */; };
 		66E6E5CD2808112900AC8C13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E6E5CC2808112900AC8C13 /* AppDelegate.swift */; };
@@ -42,8 +48,11 @@
 				6645E83B28103CE7002387BB /* MFFuelCombustion.framework in Embed Frameworks */,
 				66194FD6280FF1F000CD7A0D /* MFVehicle.framework in Embed Frameworks */,
 				661581022809A7B9006C2170 /* MFShipping.framework in Embed Frameworks */,
+				66589510284A66170090FA7F /* MFNetwork.framework in Embed Frameworks */,
+				6658950E284A65EB0090FA7F /* MFAssets.framework in Embed Frameworks */,
 				661580E028097736006C2170 /* MFExtensions.framework in Embed Frameworks */,
 				6645E84128103DD0002387BB /* MFElectricity.framework in Embed Frameworks */,
+				66589513284A66410090FA7F /* MFStorage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +68,8 @@
 		6645E83928103CE7002387BB /* MFFuelCombustion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFFuelCombustion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6645E83C28103D76002387BB /* MFFlight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFFlight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6645E83F28103DD0002387BB /* MFElectricity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFElectricity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6658950C284A65EB0090FA7F /* MFAssets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFAssets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66589511284A66410090FA7F /* MFStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A732F5280950DA004CF245 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		66A732F82809513E004CF245 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		66E6E5C92808112900AC8C13 /* MyFootprint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFootprint.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,8 +95,11 @@
 				661581012809A7B9006C2170 /* MFShipping.framework in Frameworks */,
 				6645E83D28103D76002387BB /* MFFlight.framework in Frameworks */,
 				66194FD5280FF1F000CD7A0D /* MFVehicle.framework in Frameworks */,
+				6658950D284A65EB0090FA7F /* MFAssets.framework in Frameworks */,
 				661580DF28097736006C2170 /* MFExtensions.framework in Frameworks */,
 				6645E84028103DD0002387BB /* MFElectricity.framework in Frameworks */,
+				66589512284A66410090FA7F /* MFStorage.framework in Frameworks */,
+				6658950F284A66170090FA7F /* MFNetwork.framework in Frameworks */,
 				35481E15864B47FD4CAB6DDA /* Pods_Shared_MyFootprint.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,6 +195,8 @@
 		89E3BAF9AC91922E2D63DF0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				66589511284A66410090FA7F /* MFStorage.framework */,
+				6658950C284A65EB0090FA7F /* MFAssets.framework */,
 				66ED2222281FEE0C00B38079 /* MFNetwork.framework */,
 				6645E83F28103DD0002387BB /* MFElectricity.framework */,
 				6645E83C28103D76002387BB /* MFFlight.framework */,
