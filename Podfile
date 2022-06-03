@@ -62,7 +62,8 @@ abstract_target 'Shared' do
 		project 'Frameworks/MFElectricity/MFElectricity.xcodeproj'
 		pod 'lottie-ios'
 		pod 'LoadableViews'
-
+		pod 'Kingfisher'		
+	
 		target 'MFElectricityTests' do
 			inherit! :complete
 		end
@@ -84,5 +85,6 @@ abstract_target 'Shared' do
 		pod 'LoadableViews'
 		pod 'IQKeyboardManagerSwift'
     		pod 'Alamofire'
+		pod 'Kingfisher'
 	end
 end

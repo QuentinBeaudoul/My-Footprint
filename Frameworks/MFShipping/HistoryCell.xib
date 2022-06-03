@@ -11,27 +11,27 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="2d0-Nx-6Ap" customClass="HistoryCell" customModule="MFShipping" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2d0-Nx-6Ap" id="5CL-ep-7z1">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j7e-Hu-q7Y">
-                        <rect key="frame" x="16" y="16" width="48" height="48"/>
+                        <rect key="frame" x="16" y="26" width="48" height="48"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="48" id="Kz1-BN-w3r"/>
                             <constraint firstAttribute="height" constant="48" id="LEJ-Qv-KPy"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%@ %@ over %@ %@" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="EPE-eD-u1n">
-                        <rect key="frame" x="72" y="27.5" width="326" height="25"/>
+                        <rect key="frame" x="72" y="37.5" width="326" height="25"/>
                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="[estimatedAt]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hY2-0M-Jfr">
-                        <rect key="frame" x="320" y="52.5" width="86" height="19.5"/>
+                        <rect key="frame" x="320" y="72.5" width="86" height="19.5"/>
                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
                         <color key="textColor" name="informationTextColor"/>
                         <nil key="highlightedColor"/>
@@ -44,7 +44,6 @@
                     <constraint firstAttribute="trailing" secondItem="hY2-0M-Jfr" secondAttribute="trailing" constant="8" id="LRk-Jx-ARy"/>
                     <constraint firstItem="EPE-eD-u1n" firstAttribute="leading" secondItem="j7e-Hu-q7Y" secondAttribute="trailing" constant="8" id="fG7-bw-JHx"/>
                     <constraint firstAttribute="bottom" secondItem="hY2-0M-Jfr" secondAttribute="bottom" constant="8" id="jd2-Of-SCn"/>
-                    <constraint firstItem="j7e-Hu-q7Y" firstAttribute="centerY" secondItem="5CL-ep-7z1" secondAttribute="centerY" id="jqR-hO-cbH"/>
                     <constraint firstAttribute="trailing" secondItem="EPE-eD-u1n" secondAttribute="trailing" constant="16" id="mOM-rd-keN"/>
                 </constraints>
             </tableViewCellContentView>

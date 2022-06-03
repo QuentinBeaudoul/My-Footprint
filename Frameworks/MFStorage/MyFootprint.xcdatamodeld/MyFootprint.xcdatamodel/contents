@@ -9,7 +9,6 @@
         <attribute name="electricityUnit" optional="YES" attributeType="String"/>
         <attribute name="electricityValue" optional="YES" attributeType="String"/>
         <attribute name="estimatedAt" optional="YES" attributeType="String"/>
-        <attribute name="state" optional="YES" attributeType="String"/>
     </entity>
     <entity name="CDFlight" representedClassName=".CDFlight" syncable="YES" codeGenerationType="class">
         <attribute name="carbonG" optional="YES" attributeType="String"/>
@@ -63,7 +62,7 @@
         <attribute name="vehicleYear" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="CDElectricity" positionX="36" positionY="126" width="128" height="164"/>
+        <element name="CDElectricity" positionX="36" positionY="126" width="128" height="149"/>
         <element name="CDFlight" positionX="18" positionY="117" width="128" height="164"/>
         <element name="CDFuelCombustion" positionX="-9" positionY="36" width="128" height="149"/>
         <element name="CDLeg" positionX="54" positionY="189" width="128" height="74"/>
