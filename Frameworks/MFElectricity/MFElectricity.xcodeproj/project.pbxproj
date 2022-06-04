@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F1C2E80284B40490083C2FA /* AmountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C2E7F284B40490083C2FA /* AmountTests.swift */; };
+		4F1C2E82284B40560083C2FA /* CountryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C2E81284B40560083C2FA /* CountryTests.swift */; };
+		4F1C2E84284B40670083C2FA /* ProcessResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C2E83284B40670083C2FA /* ProcessResultTests.swift */; };
+		4F1C2E86284B40770083C2FA /* ResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C2E85284B40770083C2FA /* ResultTests.swift */; };
+		4F1C2E8B284B413A0083C2FA /* EstimateResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F1C2E8A284B413A0083C2FA /* EstimateResponse.json */; };
+		4F1C2E92284B42250083C2FA /* StubCoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C2E90284B42250083C2FA /* StubCoreDataService.swift */; };
+		4F1C2E93284B42250083C2FA /* StubNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C2E91284B42250083C2FA /* StubNetworkManager.swift */; };
 		6645E82528103700002387BB /* ElectricityNavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6645E82428103700002387BB /* ElectricityNavigationManager.swift */; };
 		6645E8282810376E002387BB /* Electricity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6645E8272810376E002387BB /* Electricity.storyboard */; };
 		6645E82A281037EA002387BB /* ElectricityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6645E829281037EA002387BB /* ElectricityViewController.swift */; };
 		6645E82C281037FA002387BB /* ElectricityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6645E82B281037FA002387BB /* ElectricityViewModel.swift */; };
 		664A03D728085FA9006C40F8 /* MFElectricity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664A03CE28085FA8006C40F8 /* MFElectricity.framework */; };
-		664A03DC28085FA9006C40F8 /* MFElectricityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A03DB28085FA9006C40F8 /* MFElectricityTests.swift */; };
+		664A03DC28085FA9006C40F8 /* ElectricityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A03DB28085FA9006C40F8 /* ElectricityTests.swift */; };
 		664A03DD28085FA9006C40F8 /* MFElectricity.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A03D128085FA8006C40F8 /* MFElectricity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66A29D5F28129A5B0057A787 /* Estimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A29D5E28129A5B0057A787 /* Estimate.swift */; };
 		66A29D752812DB6A0057A787 /* MFExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A29D742812DB6A0057A787 /* MFExtensions.framework */; };
@@ -76,6 +83,13 @@
 /* Begin PBXFileReference section */
 		03BDC5FEDBD313E30D79A4AF /* Pods-Shared-MFElectricity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFElectricity.release.xcconfig"; path = "Target Support Files/Pods-Shared-MFElectricity/Pods-Shared-MFElectricity.release.xcconfig"; sourceTree = "<group>"; };
 		269606CCA6A9D5BF266E6F56 /* Pods-Frameworks-MFElectricity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFElectricity.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFElectricity/Pods-Frameworks-MFElectricity.release.xcconfig"; sourceTree = "<group>"; };
+		4F1C2E7F284B40490083C2FA /* AmountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountTests.swift; sourceTree = "<group>"; };
+		4F1C2E81284B40560083C2FA /* CountryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTests.swift; sourceTree = "<group>"; };
+		4F1C2E83284B40670083C2FA /* ProcessResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessResultTests.swift; sourceTree = "<group>"; };
+		4F1C2E85284B40770083C2FA /* ResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTests.swift; sourceTree = "<group>"; };
+		4F1C2E8A284B413A0083C2FA /* EstimateResponse.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = EstimateResponse.json; sourceTree = "<group>"; };
+		4F1C2E90284B42250083C2FA /* StubCoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StubCoreDataService.swift; path = MFElectricityTests/StubCoreDataService.swift; sourceTree = SOURCE_ROOT; };
+		4F1C2E91284B42250083C2FA /* StubNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StubNetworkManager.swift; path = MFElectricityTests/StubNetworkManager.swift; sourceTree = SOURCE_ROOT; };
 		6645E82428103700002387BB /* ElectricityNavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricityNavigationManager.swift; sourceTree = "<group>"; };
 		6645E8272810376E002387BB /* Electricity.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Electricity.storyboard; sourceTree = "<group>"; };
 		6645E829281037EA002387BB /* ElectricityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricityViewController.swift; sourceTree = "<group>"; };
@@ -83,7 +97,7 @@
 		664A03CE28085FA8006C40F8 /* MFElectricity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MFElectricity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		664A03D128085FA8006C40F8 /* MFElectricity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFElectricity.h; sourceTree = "<group>"; };
 		664A03D628085FA9006C40F8 /* MFElectricityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFElectricityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		664A03DB28085FA9006C40F8 /* MFElectricityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFElectricityTests.swift; sourceTree = "<group>"; };
+		664A03DB28085FA9006C40F8 /* ElectricityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricityTests.swift; sourceTree = "<group>"; };
 		66A29D5E28129A5B0057A787 /* Estimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estimate.swift; sourceTree = "<group>"; };
 		66A29D742812DB6A0057A787 /* MFExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66D2A87E281980910026F85E /* LightBulbAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LightBulbAnimation.json; sourceTree = "<group>"; };
@@ -157,6 +171,35 @@
 			);
 			name = Pods;
 			path = ../../Pods;
+			sourceTree = "<group>";
+		};
+		4F1C2E87284B41030083C2FA /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				664A03DB28085FA9006C40F8 /* ElectricityTests.swift */,
+				4F1C2E7F284B40490083C2FA /* AmountTests.swift */,
+				4F1C2E81284B40560083C2FA /* CountryTests.swift */,
+				4F1C2E83284B40670083C2FA /* ProcessResultTests.swift */,
+				4F1C2E85284B40770083C2FA /* ResultTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		4F1C2E88284B410F0083C2FA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4F1C2E90284B42250083C2FA /* StubCoreDataService.swift */,
+				4F1C2E91284B42250083C2FA /* StubNetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4F1C2E89284B411B0083C2FA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F1C2E8A284B413A0083C2FA /* EstimateResponse.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		513FE4DD81CDA14159F80F33 /* Frameworks */ = {
@@ -255,7 +298,9 @@
 		664A03DA28085FA9006C40F8 /* MFElectricityTests */ = {
 			isa = PBXGroup;
 			children = (
-				664A03DB28085FA9006C40F8 /* MFElectricityTests.swift */,
+				4F1C2E89284B411B0083C2FA /* Resources */,
+				4F1C2E88284B410F0083C2FA /* Services */,
+				4F1C2E87284B41030083C2FA /* Tests */,
 			);
 			path = MFElectricityTests;
 			sourceTree = "<group>";
@@ -496,6 +541,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F1C2E8B284B413A0083C2FA /* EstimateResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,7 +679,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				664A03DC28085FA9006C40F8 /* MFElectricityTests.swift in Sources */,
+				4F1C2E84284B40670083C2FA /* ProcessResultTests.swift in Sources */,
+				4F1C2E82284B40560083C2FA /* CountryTests.swift in Sources */,
+				664A03DC28085FA9006C40F8 /* ElectricityTests.swift in Sources */,
+				4F1C2E86284B40770083C2FA /* ResultTests.swift in Sources */,
+				4F1C2E92284B42250083C2FA /* StubCoreDataService.swift in Sources */,
+				4F1C2E93284B42250083C2FA /* StubNetworkManager.swift in Sources */,
+				4F1C2E80284B40490083C2FA /* AmountTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
