@@ -6,14 +6,25 @@
 //
 
 import Foundation
+import MFStorage
 
-class Legs: Decodable {
+class Legs: Decodable, Equatable {
+    static func == (lhs: Legs, rhs: Legs) -> Bool {
+        return lhs.departureAirport == rhs.departureAirport &&
+        lhs.destinationAirport == rhs.destinationAirport
+    }
+
     let departureAirport: String
     let destinationAirport: String
 
     enum CodingKeys: String, CodingKey {
         case departureAirport = "departure_airport"
         case destinationAirport = "destination_airport"
+    }
+
+    init(from entity: CDLeg) {
+        departureAirport = entity.departureAirport ?? ""
+        destinationAirport = entity.destinationAirport ?? ""
     }
 
     required init(from decoder: Decoder) throws {

@@ -6,9 +6,21 @@
 //
 
 import Foundation
+import MFStorage
 
-class Estimate: Decodable {
-    let id: String
+public class Estimate: Decodable, Equatable {
+    public static func == (lhs: Estimate, rhs: Estimate) -> Bool {
+        return lhs.passengers == rhs.passengers &&
+        lhs.legs == rhs.legs &&
+        lhs.distanceValue == rhs.distanceValue &&
+        lhs.distanceUnit == rhs.distanceUnit &&
+        lhs.estimatedAt == rhs.estimatedAt &&
+        lhs.carbonG == rhs.carbonG &&
+        lhs.carbonLb == rhs.carbonLb &&
+        lhs.carbonKg == rhs.carbonKg &&
+        lhs.carbonMt == rhs.carbonMt
+    }
+
     let passengers: Int
     let legs: [Legs]
     let distanceValue: Double
@@ -20,7 +32,6 @@ class Estimate: Decodable {
     }
 
     enum MetadataCodingKeys: String, CodingKey {
-        case id
         case attributes
     }
 
@@ -36,12 +47,22 @@ class Estimate: Decodable {
         case carbonMt = "carbon_mt"
     }
 
-    required init(from decoder: Decoder) throws {
+    public init(from entity: CDFlight) {
+        passengers = entity.passengers?.toInt() ?? 0
+        legs = entity.legs?.array as? [Legs] ?? [Legs]()
+        distanceValue = entity.distanceValue?.toDouble() ?? 0
+        distanceUnit = entity.distanceUnit ?? ""
+        estimatedAt = entity.estimatedAt ?? ""
+        carbonG = entity.carbonG?.toDouble() ?? 0
+        carbonLb = entity.carbonLb?.toDouble() ?? 0
+        carbonKg = entity.carbonKg?.toDouble() ?? 0
+        carbonMt = entity.carbonMt?.toDouble() ?? 0
+    }
+
+    public required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: ContainerCodingKeys.self)
         let metadataContainer = try container.nestedContainer(keyedBy: MetadataCodingKeys.self,
                                                               forKey: .data)
-
-        id = try metadataContainer.decode(String.self, forKey: .id)
 
         let attributesContainer = try metadataContainer.nestedContainer(keyedBy: AttributesCodingKeys.self,
                                                                         forKey: .attributes)

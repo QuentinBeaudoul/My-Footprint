@@ -106,6 +106,10 @@
                                     <constraint firstItem="Nyt-lV-obf" firstAttribute="leading" secondItem="PeW-3U-ETb" secondAttribute="leading" id="rrN-Nv-915"/>
                                     <constraint firstItem="Izq-xx-k8b" firstAttribute="top" secondItem="17b-Ed-97p" secondAttribute="bottom" constant="32" id="zDc-9F-CQe"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="aP5-6g-bqV" appends="YES" id="ATb-TX-o7c"/>
+                                    <outletCollection property="gestureRecognizers" destination="dPc-WK-orf" appends="YES" id="8TI-G5-uSk"/>
+                                </connections>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4Xh-IV-zDJ"/>
@@ -121,8 +125,25 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="11P-BD-gr2"/>
+                    <connections>
+                        <outlet property="historyImageView" destination="Apc-pF-Fe7" id="fou-pB-VBg"/>
+                        <outlet property="historyViewHeightConstrainte" destination="JiV-80-1rc" id="ehV-Ov-Tlq"/>
+                        <outlet property="historyViewTopConstrainte" destination="Xf9-Lq-45p" id="kVb-uw-1W8"/>
+                        <outlet property="noHistoryView" destination="Izq-xx-k8b" id="NTE-8P-KAn"/>
+                        <outlet property="tableView" destination="Nyt-lV-obf" id="ENV-8o-dBp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gKg-Vj-QXk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="aP5-6g-bqV">
+                    <connections>
+                        <action selector="swipeGesture:" destination="tDq-DN-Ser" id="YKY-E5-GEl"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="dPc-WK-orf">
+                    <connections>
+                        <action selector="swipeGesture:" destination="tDq-DN-Ser" id="No7-Sn-9wd"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="484" y="65"/>
         </scene>

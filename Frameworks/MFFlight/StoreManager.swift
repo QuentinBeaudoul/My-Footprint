@@ -1,8 +1,8 @@
 //
 //  StoreManager.swift
-//  MFElectricity
+//  MFFlight
 //
-//  Created by Quentin on 03/06/2022.
+//  Created by Quentin Beaudoul on 07/06/2022.
 //
 
 import Foundation
@@ -19,8 +19,8 @@ protocol StoreManagerProtocol {
 
 public final class StoreManager: StoreManagerProtocol {
     var context: NSManagedObjectContext
-    var electricityEntity: NSEntityDescription? {
-        NSEntityDescription.entity(forEntityName: "CDElectricity", in: context)
+    var flightEntity: NSEntityDescription? {
+        NSEntityDescription.entity(forEntityName: "CDFlight", in: context)
     }
 
     init(coreDataService: CoreDataServiceProtocol = CoreDataService.shared) {
@@ -32,12 +32,13 @@ public final class StoreManager: StoreManagerProtocol {
     private(set) var history: [Estimate]?
 
     func addToHistory(estimate: Estimate) {
-        guard let entity = electricityEntity else { return }
+        guard let entity = flightEntity else { return }
 
-        let storedEstimate = CDElectricity(entity: entity, insertInto: context)
-        storedEstimate.country = estimate.country
-        storedEstimate.electricityValue = estimate.electricityValue.toString()
-        storedEstimate.electricityUnit = estimate.electricityUnit
+        let storedEstimate = CDFlight(entity: entity, insertInto: context)
+        storedEstimate.passengers = "\(estimate.passengers)"
+        storedEstimate.legs = NSOrderedSet(array: estimate.legs)
+        storedEstimate.distanceValue = estimate.distanceValue.toString()
+        storedEstimate.distanceUnit = estimate.distanceUnit
         storedEstimate.estimatedAt = estimate.estimatedAt
         storedEstimate.carbonG = estimate.carbonG.toString()
         storedEstimate.carbonLb = estimate.carbonLb.toString()
@@ -56,13 +57,13 @@ public final class StoreManager: StoreManagerProtocol {
     }
 
     public func loadHistory(completion: ((Result<[Estimate]?, Error>) -> Void)? = nil) {
-        let request = CDElectricity.fetchRequest()
+        let request = CDFlight.fetchRequest()
 
         do {
             let result = try context.fetch(request)
 
-            history = result.compactMap({ cdElectricity in
-                Estimate(from: cdElectricity)
+            history = result.compactMap({ cdFlight in
+                Estimate(from: cdFlight)
             })
 
             completion?(.success(history))
@@ -75,7 +76,7 @@ public final class StoreManager: StoreManagerProtocol {
     func removeFromHistory(estimate: Estimate?) {
         guard let estimate = estimate else { return }
 
-        let request = CDElectricity.fetchRequest()
+        let request = CDFlight.fetchRequest()
         request.predicate = NSPredicate(format: "estimatedAt LIKE %@", estimate.estimatedAt)
 
         do {
