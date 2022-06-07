@@ -1,3 +1,6 @@
 excluded:
     - Pods
     - R.generated.swift
+disabled_rules:
+    - empty_enum_arguments
+    - function_parameter_count

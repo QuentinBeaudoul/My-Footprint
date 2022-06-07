@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		30D322B626724E026D37741E /* Pods_Shared_MFFlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E547CDC1F0139F4EC94D1BB /* Pods_Shared_MFFlight.framework */; };
 		4F1C2E95284F4F860083C2FA /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C2E94284F4F860083C2FA /* StoreManager.swift */; };
+		4F1C2E99284F925F0083C2FA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C2E98284F925F0083C2FA /* Constants.swift */; };
+		4F1C2E9B284F92DE0083C2FA /* EntryParams.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1C2E9A284F92DE0083C2FA /* EntryParams.storyboard */; };
+		4F1C2E9E284F932B0083C2FA /* SelectAirportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C2E9D284F932B0083C2FA /* SelectAirportViewController.swift */; };
+		4F1C2EA0284F937C0083C2FA /* ProcessResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C2E9F284F937C0083C2FA /* ProcessResultViewController.swift */; };
+		4F1C2EA2284F938D0083C2FA /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C2EA1284F938D0083C2FA /* ResultViewController.swift */; };
 		6645E7F52810308D002387BB /* FlightNavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6645E7F42810308D002387BB /* FlightNavigationManager.swift */; };
 		6645E7F828103117002387BB /* Flight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6645E7F728103117002387BB /* Flight.storyboard */; };
 		6645E7FA28103125002387BB /* FlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6645E7F928103125002387BB /* FlightViewController.swift */; };
@@ -58,6 +63,11 @@
 		1CFC86255C611213E5E55CC7 /* Pods-Shared-MFFlight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFFlight.debug.xcconfig"; path = "Target Support Files/Pods-Shared-MFFlight/Pods-Shared-MFFlight.debug.xcconfig"; sourceTree = "<group>"; };
 		295BB260B75A2D7441F73803 /* Pods-MFFlight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFFlight.debug.xcconfig"; path = "Target Support Files/Pods-MFFlight/Pods-MFFlight.debug.xcconfig"; sourceTree = "<group>"; };
 		4F1C2E94284F4F860083C2FA /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		4F1C2E98284F925F0083C2FA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4F1C2E9A284F92DE0083C2FA /* EntryParams.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EntryParams.storyboard; sourceTree = "<group>"; };
+		4F1C2E9D284F932B0083C2FA /* SelectAirportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAirportViewController.swift; sourceTree = "<group>"; };
+		4F1C2E9F284F937C0083C2FA /* ProcessResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessResultViewController.swift; sourceTree = "<group>"; };
+		4F1C2EA1284F938D0083C2FA /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		6645E7F42810308D002387BB /* FlightNavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightNavigationManager.swift; sourceTree = "<group>"; };
 		6645E7F728103117002387BB /* Flight.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Flight.storyboard; sourceTree = "<group>"; };
 		6645E7F928103125002387BB /* FlightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightViewController.swift; sourceTree = "<group>"; };
@@ -110,9 +120,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4F1C2E96284F92350083C2FA /* EntryParams */ = {
+			isa = PBXGroup;
+			children = (
+				4F1C2E9C284F92E30083C2FA /* ViewControllers */,
+				4F1C2E9A284F92DE0083C2FA /* EntryParams.storyboard */,
+			);
+			name = EntryParams;
+			sourceTree = "<group>";
+		};
+		4F1C2E97284F924E0083C2FA /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4F1C2E98284F925F0083C2FA /* Constants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		4F1C2E9C284F92E30083C2FA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4F1C2E9D284F932B0083C2FA /* SelectAirportViewController.swift */,
+				4F1C2E9F284F937C0083C2FA /* ProcessResultViewController.swift */,
+				4F1C2EA1284F938D0083C2FA /* ResultViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		6645E7F128103058002387BB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4F1C2E97284F924E0083C2FA /* Constants */,
 				66D2A87928197F6B0026F85E /* Ressources */,
 				6645E845281058CD002387BB /* Models */,
 				6645E7F228103065002387BB /* Managers */,
@@ -133,6 +171,7 @@
 		6645E7F32810306D002387BB /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				4F1C2E96284F92350083C2FA /* EntryParams */,
 				6645E7F628103104002387BB /* Main */,
 			);
 			name = Interfaces;
@@ -338,6 +377,7 @@
 				66D2A87628197EB80026F85E /* AirplainAnimation.json in Resources */,
 				66D2A87828197ED10026F85E /* Assets.xcassets in Resources */,
 				6645E7F828103117002387BB /* Flight.storyboard in Resources */,
+				4F1C2E9B284F92DE0083C2FA /* EntryParams.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,12 +498,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				66A29D5C281295860057A787 /* Legs.swift in Sources */,
+				4F1C2EA0284F937C0083C2FA /* ProcessResultViewController.swift in Sources */,
+				4F1C2E9E284F932B0083C2FA /* SelectAirportViewController.swift in Sources */,
 				4F1C2E95284F4F860083C2FA /* StoreManager.swift in Sources */,
 				6645E7FC2810313C002387BB /* FlightViewModel.swift in Sources */,
 				66A29D5A281292FF0057A787 /* Estimate.swift in Sources */,
 				6645E7FA28103125002387BB /* FlightViewController.swift in Sources */,
 				6645E7F52810308D002387BB /* FlightNavigationManager.swift in Sources */,
 				66D2A87C2819801D0026F85E /* R.generated.swift in Sources */,
+				4F1C2E99284F925F0083C2FA /* Constants.swift in Sources */,
+				4F1C2EA2284F938D0083C2FA /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -45,6 +45,9 @@
                                         <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="wRq-bP-K4y" kind="presentation" id="adW-8X-19m"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PeW-3U-ETb" customClass="MFView" customModule="MFAssets">
                                 <rect key="frame" x="0.0" y="499.5" width="414" height="500"/>
@@ -146,6 +149,14 @@
                 </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="484" y="65"/>
+        </scene>
+        <!--EntryParamsViewController-->
+        <scene sceneID="jyU-hQ-5V4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EntryParams" referencedIdentifier="EntryParamsViewController" id="wRq-bP-K4y" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5TZ-N7-mHj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1219" y="0.0"/>
         </scene>
     </scenes>
     <designables>
