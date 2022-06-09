@@ -18,17 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qfh-ec-p5i" customClass="HeaderView" customModule="MFAssets">
-                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="ljI-OU-61S"/>
-                                </constraints>
-                            </view>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sCR-Ih-wPu">
-                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jM0-rr-y9o" customClass="MFView" customModule="MFAssets">
-                                <rect key="frame" x="0.0" y="500" width="414" height="500"/>
+                                <rect key="frame" x="0.0" y="548" width="414" height="500"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="100" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QSp-Cb-8V3">
                                         <rect key="frame" x="0.0" y="81" width="414" height="403"/>
@@ -71,7 +65,7 @@
                                             <constraint firstItem="Bih-zJ-xZf" firstAttribute="centerY" secondItem="ULq-rf-E54" secondAttribute="centerY" constant="-100" id="N7y-Np-JvS"/>
                                         </constraints>
                                     </view>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FEJ-p1-J9g">
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FEJ-p1-J9g" customClass="MFSegmentedControl" customModule="MFAssets">
                                         <rect key="frame" x="219" y="17" width="179" height="32"/>
                                         <segments>
                                             <segment title="Departure"/>
@@ -102,20 +96,33 @@
                                     <outletCollection property="gestureRecognizers" destination="ob7-Bq-L3Z" appends="YES" id="vLU-b7-o93"/>
                                 </connections>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yow-15-U0P" customClass="MFButton" customModule="MFAssets">
+                                <rect key="frame" x="350" y="60" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="fEv-nl-WWq"/>
+                                    <constraint firstAttribute="width" constant="48" id="s3r-tV-v13"/>
+                                </constraints>
+                                <color key="tintColor" name="onPrimaryColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" image="xmark" catalog="system"/>
+                                <connections>
+                                    <action selector="onCloseButtonTapped" destination="Y6W-OH-hqX" eventType="touchUpInside" id="YnF-KI-SHi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nWb-Jg-ai2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="jM0-rr-y9o" firstAttribute="leading" secondItem="nWb-Jg-ai2" secondAttribute="leading" id="01i-KD-Qxv"/>
+                            <constraint firstItem="nWb-Jg-ai2" firstAttribute="trailing" secondItem="Yow-15-U0P" secondAttribute="trailing" constant="16" id="1g7-ST-oNz"/>
                             <constraint firstItem="nWb-Jg-ai2" firstAttribute="bottom" secondItem="sCR-Ih-wPu" secondAttribute="bottom" id="8LT-gC-hXT"/>
-                            <constraint firstItem="nWb-Jg-ai2" firstAttribute="trailing" secondItem="Qfh-ec-p5i" secondAttribute="trailing" id="R89-4E-3s9"/>
+                            <constraint firstItem="sCR-Ih-wPu" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="ZOs-NG-KOb"/>
                             <constraint firstItem="sCR-Ih-wPu" firstAttribute="leading" secondItem="nWb-Jg-ai2" secondAttribute="leading" id="cQX-EN-zNL"/>
-                            <constraint firstItem="Qfh-ec-p5i" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="caO-KR-djD"/>
-                            <constraint firstItem="Qfh-ec-p5i" firstAttribute="top" secondItem="nWb-Jg-ai2" secondAttribute="top" id="h91-eU-755"/>
+                            <constraint firstItem="Yow-15-U0P" firstAttribute="top" secondItem="nWb-Jg-ai2" secondAttribute="top" constant="16" id="iFc-Sn-kDE"/>
                             <constraint firstItem="jM0-rr-y9o" firstAttribute="trailing" secondItem="nWb-Jg-ai2" secondAttribute="trailing" id="kAB-hW-4XA"/>
                             <constraint firstItem="nWb-Jg-ai2" firstAttribute="trailing" secondItem="sCR-Ih-wPu" secondAttribute="trailing" id="uqx-fW-7jq"/>
-                            <constraint firstItem="sCR-Ih-wPu" firstAttribute="top" secondItem="Qfh-ec-p5i" secondAttribute="bottom" id="uvv-7r-bsv"/>
-                            <constraint firstItem="jM0-rr-y9o" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="500" id="zy1-x2-wEQ"/>
+                            <constraint firstItem="jM0-rr-y9o" firstAttribute="top" secondItem="Yow-15-U0P" secondAttribute="bottom" constant="440" id="zy1-x2-wEQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZKq-dV-lwl"/>
@@ -191,12 +198,24 @@
             <point key="canvasLocation" x="-839" y="100"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="FEJ-p1-J9g">
+            <size key="intrinsicContentSize" width="179" height="31"/>
+        </designable>
+        <designable name="Yow-15-U0P">
+            <size key="intrinsicContentSize" width="18" height="18"/>
+        </designable>
+    </designables>
     <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="AccentColor">
             <color red="0.99900001287460327" green="0.56699997186660767" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="informationTextColor">
             <color red="0.72699999809265137" green="0.72699999809265137" blue="0.72699999809265137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="onPrimaryColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

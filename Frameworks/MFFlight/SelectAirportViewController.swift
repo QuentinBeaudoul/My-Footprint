@@ -7,9 +7,11 @@
 
 import UIKit
 import MFExtensions
+import MFAssets
 
 class SelectAirportViewController: UIViewController {
 
+    @IBOutlet weak var headerView: HeaderView!
     @IBOutlet weak var airportListTopConstrainte: NSLayoutConstraint!
     @IBOutlet weak var airportListHeightConstrainte: NSLayoutConstraint!
 
@@ -27,12 +29,11 @@ class SelectAirportViewController: UIViewController {
         UIScreen.main.bounds.height -
         UIScreen.headerHeight -
         UIScreen.tabbarHeight -
-        100
+        60
 
         // Set the historyView height contrainte
-        airportListTopConstrainte.constant =
+        airportListHeightConstrainte.constant =
         UIScreen.main.bounds.height -
-        UIScreen.tabbarHeight -
         UIScreen.headerHeight
     }
 
@@ -49,12 +50,12 @@ class SelectAirportViewController: UIViewController {
     @IBAction func swipeGesture(_ sender: UISwipeGestureRecognizer) {
         switch sender.direction {
         case.up:
-            airportListTopConstrainte.constant = 8
+            airportListTopConstrainte.constant = 16
         case.down:
             airportListTopConstrainte.constant = UIScreen.main.bounds.height -
             UIScreen.headerHeight -
             UIScreen.tabbarHeight -
-            100
+            60
         default:
             break
         }
@@ -62,6 +63,9 @@ class SelectAirportViewController: UIViewController {
         UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseInOut) {
             sender.view?.superview?.layoutIfNeeded()
         }
+    }
+    @IBAction func onCloseButtonTapped() {
+        dismiss(animated: true)
     }
 
 }
