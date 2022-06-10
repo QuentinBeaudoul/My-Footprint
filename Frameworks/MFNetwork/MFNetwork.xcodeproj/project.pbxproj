@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2917FD30DFA7A8304B005580 /* Pods_Shared_MFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183AC04D9C6B8815C101EFE4 /* Pods_Shared_MFNetwork.framework */; };
-		6605CD5D28113B5E00B226A5 /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6605CD5C28113B5E00B226A5 /* Constantes.swift */; };
+		6605CD5D28113B5E00B226A5 /* ApiKeyTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6605CD5C28113B5E00B226A5 /* ApiKeyTypes.swift */; };
 		6605CD6428114CC100B226A5 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6605CD6328114CC100B226A5 /* Request.swift */; };
 		664A036528081846006C40F8 /* MFNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A036428081846006C40F8 /* MFNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		664A03B3280824D7006C40F8 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A03B2280824D7006C40F8 /* Service.swift */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		183AC04D9C6B8815C101EFE4 /* Pods_Shared_MFNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MFNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3675CF6C54EECF06497F3FC9 /* Pods-MFNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFNetwork.release.xcconfig"; path = "Target Support Files/Pods-MFNetwork/Pods-MFNetwork.release.xcconfig"; sourceTree = "<group>"; };
-		6605CD5C28113B5E00B226A5 /* Constantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
+		6605CD5C28113B5E00B226A5 /* ApiKeyTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeyTypes.swift; sourceTree = "<group>"; };
 		6605CD6328114CC100B226A5 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		664A036128081846006C40F8 /* MFNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MFNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		664A036428081846006C40F8 /* MFNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFNetwork.h; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		6605CD5B28113B4600B226A5 /* Constantes */ = {
 			isa = PBXGroup;
 			children = (
-				6605CD5C28113B5E00B226A5 /* Constantes.swift */,
+				6605CD5C28113B5E00B226A5 /* ApiKeyTypes.swift */,
 			);
 			name = Constantes;
 			sourceTree = "<group>";
@@ -245,7 +245,7 @@
 				664A03B628082522006C40F8 /* NetworkManager.swift in Sources */,
 				6605CD6428114CC100B226A5 /* Request.swift in Sources */,
 				664A03B3280824D7006C40F8 /* Service.swift in Sources */,
-				6605CD5D28113B5E00B226A5 /* Constantes.swift in Sources */,
+				6605CD5D28113B5E00B226A5 /* ApiKeyTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

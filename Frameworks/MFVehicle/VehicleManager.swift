@@ -24,6 +24,7 @@ public final class VehicleManager {
         let url = Constants.vehicleMakesUrl
 
         networkManager.fetchData(httpType: .GET,
+                                 apiKey: .carbon,
                                  url: url,
                                  headers: nil,
                                  parameters: nil,

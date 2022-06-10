@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 public protocol NetworkManagerProtocol {
-    func fetchData<T: Decodable>(httpType: HttpType, url: String, headers: [String: String]?, parameters: [String: Any]?, parser: T.Type, completion: @escaping (Result<T?, Error>) -> Void)
+    func fetchData<T: Decodable>(httpType: HttpType, apiKey: ApiKeyTypes, url: String, headers: [String: String]?, parameters: [String: Any]?, parser: T.Type, completion: @escaping (Result<T?, Error>) -> Void)
 }
 
 public enum HttpType {
@@ -20,11 +20,14 @@ public class NetworkManager: NetworkManagerProtocol {
 
     public static let shared = NetworkManager()
 
-    public func fetchData<T: Decodable>(httpType: HttpType, url: String, headers: [String: String]? = nil, parameters: [String: Any]? = nil, parser: T.Type, completion: @escaping (Result<T?, Error>) -> Void) {
+    public func fetchData<T: Decodable>(httpType: HttpType, apiKey: ApiKeyTypes, url: String, headers: [String: String]? = nil, parameters: [String: Any]? = nil, parser: T.Type, completion: @escaping (Result<T?, Error>) -> Void) {
 
         // Initiate headers and adding defaults values like apiKey
         var afHeaders = HTTPHeaders()
-        afHeaders.add(.authorization(bearerToken: Constantes.apiKey))
+
+        if apiKey.rawValue == ApiKeyTypes.carbon.rawValue {
+            afHeaders.add(.authorization(bearerToken: apiKey.rawValue))
+        }
 
         // add all customs headers
         if let headers = headers {

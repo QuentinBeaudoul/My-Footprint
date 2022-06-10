@@ -28,6 +28,13 @@
 		66D2A87628197EB80026F85E /* AirplainAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 66D2A87528197EB80026F85E /* AirplainAnimation.json */; };
 		66D2A87828197ED10026F85E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D2A87728197ED10026F85E /* Assets.xcassets */; };
 		66D2A87C2819801D0026F85E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2A87B2819801D0026F85E /* R.generated.swift */; };
+		66FE5D4328534A7E00FC1E9E /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FE5D4228534A7E00FC1E9E /* Airport.swift */; };
+		66FE5D4528534CD800FC1E9E /* AirportManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FE5D4428534CD800FC1E9E /* AirportManager.swift */; };
+		66FE5D47285370BB00FC1E9E /* Airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 66FE5D46285370BB00FC1E9E /* Airports.json */; };
+		66FE5D4A285371CF00FC1E9E /* SelectAirportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FE5D49285371CF00FC1E9E /* SelectAirportViewModel.swift */; };
+		66FE5D4E285374FE00FC1E9E /* AirportCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66FE5D4D285374FE00FC1E9E /* AirportCell.xib */; };
+		66FE5D502853750E00FC1E9E /* AirportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FE5D4F2853750E00FC1E9E /* AirportCell.swift */; };
+		66FE5D53285381BD00FC1E9E /* AirportAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FE5D52285381BD00FC1E9E /* AirportAnnotation.swift */; };
 		EBF2301BE1E107DAA425536B /* Pods_Shared_MFFlight_MFFlightTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF4AA70D01AF6243A1F5471A /* Pods_Shared_MFFlight_MFFlightTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +89,13 @@
 		66D2A87528197EB80026F85E /* AirplainAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AirplainAnimation.json; sourceTree = "<group>"; };
 		66D2A87728197ED10026F85E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66D2A87B2819801D0026F85E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		66FE5D4228534A7E00FC1E9E /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		66FE5D4428534CD800FC1E9E /* AirportManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportManager.swift; sourceTree = "<group>"; };
+		66FE5D46285370BB00FC1E9E /* Airports.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Airports.json; sourceTree = "<group>"; };
+		66FE5D49285371CF00FC1E9E /* SelectAirportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAirportViewModel.swift; sourceTree = "<group>"; };
+		66FE5D4D285374FE00FC1E9E /* AirportCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AirportCell.xib; sourceTree = "<group>"; };
+		66FE5D4F2853750E00FC1E9E /* AirportCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportCell.swift; sourceTree = "<group>"; };
+		66FE5D52285381BD00FC1E9E /* AirportAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportAnnotation.swift; sourceTree = "<group>"; };
 		9E547CDC1F0139F4EC94D1BB /* Pods_Shared_MFFlight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MFFlight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B68670F53FA9C634D9D7F5 /* Pods-Frameworks-MFFlight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFFlight.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFFlight/Pods-Frameworks-MFFlight.release.xcconfig"; sourceTree = "<group>"; };
 		AF4AA70D01AF6243A1F5471A /* Pods_Shared_MFFlight_MFFlightTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MFFlight_MFFlightTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,7 +154,7 @@
 		4F1C2E9C284F92E30083C2FA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				4F1C2E9D284F932B0083C2FA /* SelectAirportViewController.swift */,
+				66FE5D48285371A600FC1E9E /* SelectAirport */,
 				4F1C2E9F284F937C0083C2FA /* ProcessResultViewController.swift */,
 				4F1C2EA1284F938D0083C2FA /* ResultViewController.swift */,
 			);
@@ -164,6 +178,7 @@
 			children = (
 				6645E7F42810308D002387BB /* FlightNavigationManager.swift */,
 				4F1C2E94284F4F860083C2FA /* StoreManager.swift */,
+				66FE5D4428534CD800FC1E9E /* AirportManager.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -238,6 +253,7 @@
 			children = (
 				66A29D59281292FF0057A787 /* Estimate.swift */,
 				66A29D5B281295860057A787 /* Legs.swift */,
+				66FE5D4228534A7E00FC1E9E /* Airport.swift */,
 			);
 			name = Response;
 			sourceTree = "<group>";
@@ -255,8 +271,45 @@
 			isa = PBXGroup;
 			children = (
 				66D2A87B2819801D0026F85E /* R.generated.swift */,
+				66FE5D46285370BB00FC1E9E /* Airports.json */,
 			);
 			name = Ressources;
+			sourceTree = "<group>";
+		};
+		66FE5D48285371A600FC1E9E /* SelectAirport */ = {
+			isa = PBXGroup;
+			children = (
+				66FE5D4B285374E300FC1E9E /* Views */,
+				4F1C2E9D284F932B0083C2FA /* SelectAirportViewController.swift */,
+				66FE5D49285371CF00FC1E9E /* SelectAirportViewModel.swift */,
+			);
+			name = SelectAirport;
+			sourceTree = "<group>";
+		};
+		66FE5D4B285374E300FC1E9E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				66FE5D512853819C00FC1E9E /* AirportAnnotation */,
+				66FE5D4C285374EC00FC1E9E /* AirportCell */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		66FE5D4C285374EC00FC1E9E /* AirportCell */ = {
+			isa = PBXGroup;
+			children = (
+				66FE5D4D285374FE00FC1E9E /* AirportCell.xib */,
+				66FE5D4F2853750E00FC1E9E /* AirportCell.swift */,
+			);
+			name = AirportCell;
+			sourceTree = "<group>";
+		};
+		66FE5D512853819C00FC1E9E /* AirportAnnotation */ = {
+			isa = PBXGroup;
+			children = (
+				66FE5D52285381BD00FC1E9E /* AirportAnnotation.swift */,
+			);
+			name = AirportAnnotation;
 			sourceTree = "<group>";
 		};
 		C523B8DB25FF5DE306DAB4CE /* Pods */ = {
@@ -375,7 +428,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				66D2A87628197EB80026F85E /* AirplainAnimation.json in Resources */,
+				66FE5D4E285374FE00FC1E9E /* AirportCell.xib in Resources */,
 				66D2A87828197ED10026F85E /* Assets.xcassets in Resources */,
+				66FE5D47285370BB00FC1E9E /* Airports.json in Resources */,
 				6645E7F828103117002387BB /* Flight.storyboard in Resources */,
 				4F1C2E9B284F92DE0083C2FA /* EntryParams.storyboard in Resources */,
 			);
@@ -499,14 +554,19 @@
 			files = (
 				66A29D5C281295860057A787 /* Legs.swift in Sources */,
 				4F1C2EA0284F937C0083C2FA /* ProcessResultViewController.swift in Sources */,
+				66FE5D4A285371CF00FC1E9E /* SelectAirportViewModel.swift in Sources */,
+				66FE5D502853750E00FC1E9E /* AirportCell.swift in Sources */,
 				4F1C2E9E284F932B0083C2FA /* SelectAirportViewController.swift in Sources */,
 				4F1C2E95284F4F860083C2FA /* StoreManager.swift in Sources */,
+				66FE5D4528534CD800FC1E9E /* AirportManager.swift in Sources */,
 				6645E7FC2810313C002387BB /* FlightViewModel.swift in Sources */,
 				66A29D5A281292FF0057A787 /* Estimate.swift in Sources */,
 				6645E7FA28103125002387BB /* FlightViewController.swift in Sources */,
 				6645E7F52810308D002387BB /* FlightNavigationManager.swift in Sources */,
 				66D2A87C2819801D0026F85E /* R.generated.swift in Sources */,
+				66FE5D4328534A7E00FC1E9E /* Airport.swift in Sources */,
 				4F1C2E99284F925F0083C2FA /* Constants.swift in Sources */,
+				66FE5D53285381BD00FC1E9E /* AirportAnnotation.swift in Sources */,
 				4F1C2EA2284F938D0083C2FA /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

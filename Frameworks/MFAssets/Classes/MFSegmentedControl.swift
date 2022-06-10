@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import MFExtensions
 
-class MFSegmentedControl: UISegmentedControl {
+public class MFSegmentedControl: UISegmentedControl {
 
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
         
         // setUp style
@@ -19,10 +20,13 @@ class MFSegmentedControl: UISegmentedControl {
 
         selectedSegmentTintColor = R.color.primaryColor()
 
-        let selectedTitleTextAttributes = [NSAttributedString.Key.foregroundColor: R.color.onPrimaryColor() ?? .white]
+        let font = UIFont.demiBoldFont(withSize: 14)
+        let selectedTitleTextAttributes = [NSAttributedString.Key.foregroundColor: R.color.onPrimaryColor() ?? .white,
+                                           NSAttributedString.Key.font: font]
         setTitleTextAttributes(selectedTitleTextAttributes, for: .selected)
 
-        let normalTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
+        let normalTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black,
+                                         NSAttributedString.Key.font: font]
         setTitleTextAttributes(normalTitleTextAttributes, for: .normal)
 
         // setUp corners

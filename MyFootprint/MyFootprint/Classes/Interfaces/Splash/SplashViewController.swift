@@ -11,6 +11,7 @@ import MFFuelCombustion
 import MFVehicle
 import MFShipping
 import MFElectricity
+import MFFlight
 
 class SplashViewController: UIViewController {
 
@@ -48,7 +49,9 @@ class SplashViewController: UIViewController {
                 MFShipping.StoreManager.shared.loadHistory { [self] _ in
                     MFElectricity.StoreManager.shared.loadHistory { [self] _ in
                         VehicleManager.shared.getVehicleMakes { [self] _ in
-                            segue()
+                            AirportManager.shared.fetchAirports { [self] _ in
+                                segue()
+                            }
                         }
                     }
                 }

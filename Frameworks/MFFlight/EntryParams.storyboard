@@ -18,14 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sCR-Ih-wPu">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" rotateEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sCR-Ih-wPu">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jM0-rr-y9o" customClass="MFView" customModule="MFAssets">
-                                <rect key="frame" x="0.0" y="548" width="414" height="500"/>
+                                <rect key="frame" x="0.0" y="158" width="414" height="500"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="100" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QSp-Cb-8V3">
-                                        <rect key="frame" x="0.0" y="81" width="414" height="403"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="48" estimatedRowHeight="48" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QSp-Cb-8V3">
+                                        <rect key="frame" x="0.0" y="112" width="414" height="372"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                         <userDefinedRuntimeAttributes>
@@ -40,31 +40,6 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ULq-rf-E54">
-                                        <rect key="frame" x="0.0" y="81" width="414" height="403"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No history yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bih-zJ-xZf">
-                                                <rect key="frame" x="142.5" y="88" width="129" height="27"/>
-                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
-                                                <color key="textColor" name="informationTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Sf-Lq-IGu">
-                                                <rect key="frame" x="157" y="147" width="100" height="100"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="0Sf-Lq-IGu" secondAttribute="height" multiplier="1:1" id="0Uf-E4-JoP"/>
-                                                    <constraint firstAttribute="width" constant="100" id="2R2-sE-S8Z"/>
-                                                </constraints>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstItem="0Sf-Lq-IGu" firstAttribute="centerX" secondItem="ULq-rf-E54" secondAttribute="centerX" id="2Or-mz-r1H"/>
-                                            <constraint firstItem="0Sf-Lq-IGu" firstAttribute="top" secondItem="Bih-zJ-xZf" secondAttribute="bottom" constant="32" id="7KP-gC-lz4"/>
-                                            <constraint firstItem="Bih-zJ-xZf" firstAttribute="centerX" secondItem="ULq-rf-E54" secondAttribute="centerX" id="8fy-Gr-vTU"/>
-                                            <constraint firstItem="Bih-zJ-xZf" firstAttribute="centerY" secondItem="ULq-rf-E54" secondAttribute="centerY" constant="-100" id="N7y-Np-JvS"/>
-                                        </constraints>
-                                    </view>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FEJ-p1-J9g" customClass="MFSegmentedControl" customModule="MFAssets">
                                         <rect key="frame" x="219" y="17" width="179" height="32"/>
                                         <segments>
@@ -72,24 +47,49 @@
                                             <segment title="Destination"/>
                                         </segments>
                                         <color key="selectedSegmentTintColor" name="AccentColor"/>
+                                        <connections>
+                                            <action selector="onSegmentedControlTapped" destination="Y6W-OH-hqX" eventType="valueChanged" id="Ufu-Fp-5xp"/>
+                                        </connections>
                                     </segmentedControl>
+                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9s-P1-OVf" customClass="MFButton" customModule="MFAssets">
+                                        <rect key="frame" x="219" y="56" width="179" height="48"/>
+                                        <color key="backgroundColor" name="primaryColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="Srb-xf-z8v"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Process...">
+                                            <color key="titleColor" name="onPrimaryColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="darkPrimaryColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="ULq-rf-E54" secondAttribute="bottom" constant="16" id="1VY-95-RwK"/>
                                     <constraint firstItem="3L7-Qp-zKm" firstAttribute="top" secondItem="jM0-rr-y9o" secondAttribute="top" constant="16" id="6Ee-hR-gZj"/>
-                                    <constraint firstItem="ULq-rf-E54" firstAttribute="leading" secondItem="jM0-rr-y9o" secondAttribute="leading" id="6ce-G2-UoB"/>
-                                    <constraint firstItem="QSp-Cb-8V3" firstAttribute="top" secondItem="3L7-Qp-zKm" secondAttribute="bottom" constant="32" id="BLT-EX-mm2"/>
+                                    <constraint firstItem="FEJ-p1-J9g" firstAttribute="leading" secondItem="q9s-P1-OVf" secondAttribute="leading" id="DAV-jR-FYT"/>
                                     <constraint firstAttribute="trailing" secondItem="QSp-Cb-8V3" secondAttribute="trailing" id="DvZ-tm-pN5"/>
                                     <constraint firstAttribute="bottom" secondItem="QSp-Cb-8V3" secondAttribute="bottom" constant="16" id="I1w-R0-Efl"/>
                                     <constraint firstItem="3L7-Qp-zKm" firstAttribute="leading" secondItem="jM0-rr-y9o" secondAttribute="leading" constant="16" id="M6b-xP-q2d"/>
                                     <constraint firstAttribute="trailing" secondItem="FEJ-p1-J9g" secondAttribute="trailing" constant="16" id="XcU-y4-bXk"/>
+                                    <constraint firstItem="q9s-P1-OVf" firstAttribute="top" secondItem="FEJ-p1-J9g" secondAttribute="bottom" constant="8" id="Xf9-hZ-8hD"/>
+                                    <constraint firstItem="QSp-Cb-8V3" firstAttribute="top" secondItem="q9s-P1-OVf" secondAttribute="bottom" constant="8" id="Zpx-yw-INq"/>
                                     <constraint firstItem="QSp-Cb-8V3" firstAttribute="leading" secondItem="jM0-rr-y9o" secondAttribute="leading" id="bRF-0K-1RL"/>
-                                    <constraint firstItem="ULq-rf-E54" firstAttribute="top" secondItem="3L7-Qp-zKm" secondAttribute="bottom" constant="32" id="ben-RS-isa"/>
                                     <constraint firstAttribute="height" constant="500" id="hx2-te-tpn"/>
                                     <constraint firstItem="FEJ-p1-J9g" firstAttribute="centerY" secondItem="3L7-Qp-zKm" secondAttribute="centerY" id="mdd-7b-hZZ"/>
-                                    <constraint firstAttribute="trailing" secondItem="ULq-rf-E54" secondAttribute="trailing" id="yDb-co-2vx"/>
+                                    <constraint firstItem="q9s-P1-OVf" firstAttribute="trailing" secondItem="FEJ-p1-J9g" secondAttribute="trailing" id="xc0-Ry-8VS"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="gnY-bB-gJF" appends="YES" id="Frl-Jk-1RD"/>
@@ -122,13 +122,17 @@
                             <constraint firstItem="Yow-15-U0P" firstAttribute="top" secondItem="nWb-Jg-ai2" secondAttribute="top" constant="16" id="iFc-Sn-kDE"/>
                             <constraint firstItem="jM0-rr-y9o" firstAttribute="trailing" secondItem="nWb-Jg-ai2" secondAttribute="trailing" id="kAB-hW-4XA"/>
                             <constraint firstItem="nWb-Jg-ai2" firstAttribute="trailing" secondItem="sCR-Ih-wPu" secondAttribute="trailing" id="uqx-fW-7jq"/>
-                            <constraint firstItem="jM0-rr-y9o" firstAttribute="top" secondItem="Yow-15-U0P" secondAttribute="bottom" constant="440" id="zy1-x2-wEQ"/>
+                            <constraint firstItem="jM0-rr-y9o" firstAttribute="top" secondItem="Yow-15-U0P" secondAttribute="bottom" constant="50" id="zy1-x2-wEQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZKq-dV-lwl"/>
                     <connections>
                         <outlet property="airportListHeightConstrainte" destination="hx2-te-tpn" id="Cxz-m4-mWp"/>
                         <outlet property="airportListTopConstrainte" destination="zy1-x2-wEQ" id="stM-HK-E7s"/>
+                        <outlet property="mapView" destination="sCR-Ih-wPu" id="ZrJ-DG-zak"/>
+                        <outlet property="processButton" destination="q9s-P1-OVf" id="ePp-Tz-gvj"/>
+                        <outlet property="segmentedControl" destination="FEJ-p1-J9g" id="BB7-o6-vkQ"/>
+                        <outlet property="tableView" destination="QSp-Cb-8V3" id="BEF-Yf-fdi"/>
                         <segue destination="6yi-wG-HOy" kind="show" identifier="processResultSegue" animates="NO" id="CcZ-la-dik"/>
                     </connections>
                 </viewController>
@@ -205,17 +209,23 @@
         <designable name="Yow-15-U0P">
             <size key="intrinsicContentSize" width="18" height="18"/>
         </designable>
+        <designable name="q9s-P1-OVf">
+            <size key="intrinsicContentSize" width="89" height="22"/>
+        </designable>
     </designables>
     <resources>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="AccentColor">
             <color red="0.99900001287460327" green="0.56699997186660767" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="informationTextColor">
-            <color red="0.72699999809265137" green="0.72699999809265137" blue="0.72699999809265137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="darkPrimaryColor">
+            <color red="0.88200002908706665" green="0.49900001287460327" blue="0.008999999612569809" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="onPrimaryColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryColor">
+            <color red="1" green="0.56300002336502075" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

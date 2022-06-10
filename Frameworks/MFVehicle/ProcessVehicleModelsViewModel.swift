@@ -36,6 +36,7 @@ class ProcessVehicleModelsViewModel {
         let url = String(format: Constants.VehicleModelsUrl, vehicleMake.id)
 
         networkManager.fetchData(httpType: .GET,
+                                 apiKey: .carbon,
                                  url: url,
                                  headers: nil,
                                  parameters: nil,

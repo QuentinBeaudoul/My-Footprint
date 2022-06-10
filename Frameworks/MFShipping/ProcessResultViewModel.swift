@@ -36,6 +36,7 @@ class ProcessResultViewModel {
         let params: [String: Any] = request.build()
 
         networkManager.fetchData(httpType: .POST,
+                                 apiKey: .carbon,
                                  url: url,
                                  headers: nil,
                                  parameters: params,

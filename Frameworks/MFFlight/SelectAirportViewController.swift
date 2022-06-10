@@ -8,12 +8,18 @@
 import UIKit
 import MFExtensions
 import MFAssets
+import MapKit
 
 class SelectAirportViewController: UIViewController {
 
-    @IBOutlet weak var headerView: HeaderView!
+    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var processButton: MFButton!
+    @IBOutlet weak var segmentedControl: MFSegmentedControl!
     @IBOutlet weak var airportListTopConstrainte: NSLayoutConstraint!
     @IBOutlet weak var airportListHeightConstrainte: NSLayoutConstraint!
+
+    let viewModel = SelectAirportViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,17 +41,42 @@ class SelectAirportViewController: UIViewController {
         airportListHeightConstrainte.constant =
         UIScreen.main.bounds.height -
         UIScreen.headerHeight
+
+        // Setup tableView
+        tableView.register(UINib(nibName: AirportCell.getCellIdentifier(),
+                                 bundle: Bundle(for: Self.self)),
+                           forCellReuseIdentifier: AirportCell.getCellIdentifier())
+        tableView.delegate = self
+        tableView.dataSource = self
+
+        // Setup map
+        mapView.delegate = self
+        setAnnotations()
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setAnnotations() {
+        viewModel.airports?.forEach({ airport in
+            mapView.addAnnotation(AirportAnnotation(airport: airport))
+        })
     }
-    */
+
+    private func updateSelectedAirport(airport: Airport) {
+        switch segmentedControl.selectedSegmentIndex {
+        case 0:
+            viewModel.setDeparture(airport)
+        case 1:
+            viewModel.setDestination(airport)
+        default:
+            break
+        }
+    }
+
+    private func enableProcessButton() {
+        if viewModel.departure != nil && viewModel.destination != nil {
+            processButton.isEnabled = true
+            processButton.alpha = 1.0
+        }
+    }
 
     @IBAction func swipeGesture(_ sender: UISwipeGestureRecognizer) {
         switch sender.direction {
@@ -67,5 +98,59 @@ class SelectAirportViewController: UIViewController {
     @IBAction func onCloseButtonTapped() {
         dismiss(animated: true)
     }
+    @IBAction func onSegmentedControlTapped() {
 
+        viewModel.airports?.forEach({ airport in
+            tableView.deselectRow(at: viewModel.getIndexPath(for: airport), animated: false)
+        })
+
+        mapView.annotations.forEach { annotation in
+            mapView.deselectAnnotation(annotation, animated: true)
+        }
+    }
+}
+
+extension SelectAirportViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        viewModel.numberOfItems
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: AirportCell.getCellIdentifier(),
+                                                       for: indexPath) as? AirportCell,
+              let airport = viewModel.getItem(at: indexPath) else { return UITableViewCell() }
+
+        cell.fillCell(airport)
+
+        return cell
+    }
+}
+
+extension SelectAirportViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let airport = viewModel.getItem(at: indexPath) else { return }
+
+        updateSelectedAirport(airport: airport)
+        enableProcessButton()
+
+        if let annotation = mapView.annotations.first(where: { annotation in
+            (annotation as? AirportAnnotation)?.airport == airport
+        }) {
+
+            mapView.setCenter(annotation.coordinate, animated: true)
+            mapView.selectAnnotation(annotation, animated: true)
+        }
+    }
+}
+
+extension SelectAirportViewController: MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        guard let annotation = view.annotation as? AirportAnnotation else { return }
+        mapView.setCenter(annotation.coordinate, animated: true)
+        tableView.selectRow(at: viewModel.getIndexPath(for: annotation.airport),
+                            animated: true,
+                            scrollPosition: .middle)
+        updateSelectedAirport(airport: annotation.airport)
+        enableProcessButton()
+    }
 }
