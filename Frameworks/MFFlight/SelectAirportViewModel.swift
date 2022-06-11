@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import MFNetwork
 
 class SelectAirportViewModel {
     let manager: AirportManager
@@ -37,5 +38,19 @@ class SelectAirportViewModel {
 
     func setDeparture(_ airport: Airport) {
         departure = airport
+    }
+
+    func initRequest() -> Request.Builder? {
+        guard let destination = destination,
+              let departure = departure else {
+            return nil
+        }
+        let request = Request.Builder()
+        let legs = ["departure_airport": departure.iataCode, "destination_airport": destination.iataCode]
+
+        request.addParameter(key: "type", value: "flight")
+        request.addParameter(key: "legs", value: [legs])
+
+        return request
     }
 }

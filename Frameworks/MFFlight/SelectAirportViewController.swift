@@ -54,6 +54,13 @@ class SelectAirportViewController: UIViewController {
         setAnnotations()
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let processResultVC = segue.destination as? ProcessResultViewController,
+        let request = viewModel.initRequest() else { return }
+
+        processResultVC.viewModel.load(request)
+    }
+
     private func setAnnotations() {
         viewModel.airports?.forEach({ airport in
             mapView.addAnnotation(AirportAnnotation(airport: airport))
@@ -99,6 +106,10 @@ class SelectAirportViewController: UIViewController {
         dismiss(animated: true)
     }
     @IBAction func onSegmentedControlTapped() {
+        mapView.setRegion(.init(center: mapView.centerCoordinate,
+                                span: .init(latitudeDelta: 12.0,
+                                            longitudeDelta: 12.0)),
+                          animated: true)
 
         viewModel.airports?.forEach({ airport in
             tableView.deselectRow(at: viewModel.getIndexPath(for: airport), animated: false)
@@ -138,6 +149,10 @@ extension SelectAirportViewController: UITableViewDelegate {
         }) {
 
             mapView.setCenter(annotation.coordinate, animated: true)
+            mapView.setRegion(.init(center: annotation.coordinate,
+                                    span: .init(latitudeDelta: 0.0275,
+                                                longitudeDelta: 0.0275)),
+                              animated: true)
             mapView.selectAnnotation(annotation, animated: true)
         }
     }
@@ -146,7 +161,12 @@ extension SelectAirportViewController: UITableViewDelegate {
 extension SelectAirportViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         guard let annotation = view.annotation as? AirportAnnotation else { return }
+
         mapView.setCenter(annotation.coordinate, animated: true)
+        mapView.setRegion(.init(center: annotation.coordinate,
+                                span: .init(latitudeDelta: 0.0275,
+                                            longitudeDelta: 0.0275)),
+                          animated: true)
         tableView.selectRow(at: viewModel.getIndexPath(for: annotation.airport),
                             animated: true,
                             scrollPosition: .middle)

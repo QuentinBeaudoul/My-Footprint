@@ -48,9 +48,11 @@ class SplashViewController: UIViewController {
             MFVehicle.StoreManager.shared.loadHistory { [self] _ in
                 MFShipping.StoreManager.shared.loadHistory { [self] _ in
                     MFElectricity.StoreManager.shared.loadHistory { [self] _ in
-                        VehicleManager.shared.getVehicleMakes { [self] _ in
-                            AirportManager.shared.fetchAirports { [self] _ in
-                                segue()
+                        MFFlight.StoreManager.shared.loadHistory { [self] _ in
+                            VehicleManager.shared.getVehicleMakes { [self] _ in
+                                AirportManager.shared.fetchAirports { [self] _ in
+                                    segue()
+                                }
                             }
                         }
                     }

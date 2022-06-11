@@ -50,4 +50,10 @@ public final class AirportManager {
                                       in: Bundle(for: Self.self))
         completion(.success(airports))
     }
+
+    func retriveAirport(from iataCode: String) -> Airport? {
+        airports?.first(where: { airport in
+            airport.iataCode == iataCode
+        })
+    }
 }

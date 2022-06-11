@@ -51,9 +51,9 @@ class FlightViewController: UIViewController {
         // Setup history tableView
         tableView.delegate = self
         tableView.dataSource = self
-//        tableView.register(UINib(nibName: HistoryCell.getCellIdentifier(),
-//                                 bundle: Bundle(for: Self.self)),
-//                           forCellReuseIdentifier: HistoryCell.getCellIdentifier())
+        tableView.register(UINib(nibName: HistoryCell.getCellIdentifier(),
+                                 bundle: Bundle(for: Self.self)),
+                           forCellReuseIdentifier: HistoryCell.getCellIdentifier())
 
         publisher.sink { [self] _ in
             print("notification flight")
@@ -74,12 +74,12 @@ class FlightViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == R.segue.electricityViewController.resultSegue.identifier {
-//            guard let viewController = segue.destination as? ResultViewController,
-//                  let estimate = viewModel.chosenEstimate else { return }
-//
-//            viewController.viewModel.load(estimate)
-//        }
+        if segue.identifier == R.segue.flightViewController.resultSegue.identifier {
+            guard let viewController = segue.destination as? ResultViewController,
+                  let estimate = viewModel.chosenEstimate else { return }
+
+            viewController.viewModel.load(estimate)
+        }
     }
 
     @IBAction func swipeGesture(_ sender: UISwipeGestureRecognizer) {
@@ -107,21 +107,20 @@ extension FlightViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        guard let cell = tableView.dequeueReusableCell(withIdentifier: HistoryCell.getCellIdentifier(),
-//                                                       for: indexPath) as? HistoryCell,
-//              let estimate = viewModel.getItem(at: indexPath) else { return UITableViewCell() }
-//
-//        cell.fillCell(estimate)
-//
-//        return cell
-        return UITableViewCell() // TMP
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: HistoryCell.getCellIdentifier(),
+                                                       for: indexPath) as? HistoryCell,
+              let estimate = viewModel.getItem(at: indexPath) else { return UITableViewCell() }
+
+        cell.fillView(estimate)
+
+        return cell
     }
 }
 
 extension FlightViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         viewModel.chosenEstimate = viewModel.getItem(at: indexPath)
-//        performSegue(withIdentifier: R.segue.electricityViewController.resultSegue, sender: nil)
+        performSegue(withIdentifier: R.segue.flightViewController.resultSegue, sender: nil)
     }
 
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

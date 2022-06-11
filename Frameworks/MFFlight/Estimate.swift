@@ -49,7 +49,6 @@ public class Estimate: Decodable, Equatable {
 
     public init(from entity: CDFlight) {
         passengers = entity.passengers?.toInt() ?? 0
-        legs = entity.legs?.array as? [Legs] ?? [Legs]()
         distanceValue = entity.distanceValue?.toDouble() ?? 0
         distanceUnit = entity.distanceUnit ?? ""
         estimatedAt = entity.estimatedAt ?? ""
@@ -57,6 +56,14 @@ public class Estimate: Decodable, Equatable {
         carbonLb = entity.carbonLb?.toDouble() ?? 0
         carbonKg = entity.carbonKg?.toDouble() ?? 0
         carbonMt = entity.carbonMt?.toDouble() ?? 0
+
+        if let cdLegs = entity.legs?.array as? [CDLeg] {
+            legs = cdLegs.map({ leg in
+                Legs(from: leg)
+            })
+        } else {
+            legs = [Legs]()
+        }
     }
 
     public required init(from decoder: Decoder) throws {

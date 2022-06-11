@@ -12,4 +12,6 @@ final class Constants {
 
     static let url = "https://www.carboninterface.com/api/v1/estimates"
     static let airportUrl = "https://app.goflightlabs.com/airports"
+
+    static let distanceUnits = ["km": "Kilometers", "mi": "Miles"]
 }

@@ -22,6 +22,9 @@ public final class StoreManager: StoreManagerProtocol {
     var flightEntity: NSEntityDescription? {
         NSEntityDescription.entity(forEntityName: "CDFlight", in: context)
     }
+    var legEntity: NSEntityDescription? {
+        NSEntityDescription.entity(forEntityName: "CDLeg", in: context)
+    }
 
     init(coreDataService: CoreDataServiceProtocol = CoreDataService.shared) {
         self.context = coreDataService.context
@@ -32,11 +35,12 @@ public final class StoreManager: StoreManagerProtocol {
     private(set) var history: [Estimate]?
 
     func addToHistory(estimate: Estimate) {
-        guard let entity = flightEntity else { return }
+        guard let flightEntity = flightEntity,
+              let legEntity = legEntity
+        else { return }
 
-        let storedEstimate = CDFlight(entity: entity, insertInto: context)
+        let storedEstimate = CDFlight(entity: flightEntity, insertInto: context)
         storedEstimate.passengers = "\(estimate.passengers)"
-        storedEstimate.legs = NSOrderedSet(array: estimate.legs)
         storedEstimate.distanceValue = estimate.distanceValue.toString()
         storedEstimate.distanceUnit = estimate.distanceUnit
         storedEstimate.estimatedAt = estimate.estimatedAt
@@ -44,6 +48,12 @@ public final class StoreManager: StoreManagerProtocol {
         storedEstimate.carbonLb = estimate.carbonLb.toString()
         storedEstimate.carbonKg = estimate.carbonKg.toString()
         storedEstimate.carbonMt = estimate.carbonMt.toString()
+
+        let storedLeg = CDLeg(entity: legEntity, insertInto: context)
+        storedLeg.destinationAirport = estimate.legs.first?.destinationAirport
+        storedLeg.departureAirport = estimate.legs.first?.departureAirport
+
+        storedEstimate.legs = NSOrderedSet(array: [storedLeg])
 
         do {
             try context.save()
