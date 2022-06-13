@@ -9,7 +9,7 @@ import Foundation
 
 class ResultViewModel {
     private(set) var estimate: Estimate?
-    private let manager: AirportManager
+    let manager: AirportManager
 
     init(manager: AirportManager = AirportManager.shared) {
         self.manager = manager

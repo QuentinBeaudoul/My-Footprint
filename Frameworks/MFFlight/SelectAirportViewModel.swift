@@ -10,26 +10,26 @@ import MFNetwork
 
 class SelectAirportViewModel {
     let manager: AirportManager
-    let airports: [Airport]?
+    let airports: [Airport]
 
     private(set) var destination: Airport?
     private(set) var departure: Airport?
 
     var numberOfItems: Int {
-        airports?.count ?? 0
+        airports.count
     }
 
     init(manager: AirportManager = AirportManager.shared) {
         self.manager = manager
-        self.airports = manager.airports
+        self.airports = manager.airports ?? [Airport]()
     }
 
     func getItem(at indexPath: IndexPath) -> Airport? {
-        airports?[indexPath.row]
+        airports[indexPath.row]
     }
 
     func getIndexPath(for airport: Airport) -> IndexPath {
-        IndexPath(row: airports?.firstIndex(of: airport) ?? 0, section: 0)
+        IndexPath(row: airports.firstIndex(of: airport) ?? 0, section: 0)
     }
 
     func setDestination(_ airport: Airport) {

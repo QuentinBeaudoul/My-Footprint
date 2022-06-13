@@ -62,7 +62,7 @@ class SelectAirportViewController: UIViewController {
     }
 
     private func setAnnotations() {
-        viewModel.airports?.forEach({ airport in
+        viewModel.airports.forEach({ airport in
             mapView.addAnnotation(AirportAnnotation(airport: airport))
         })
     }
@@ -111,7 +111,7 @@ class SelectAirportViewController: UIViewController {
                                             longitudeDelta: 12.0)),
                           animated: true)
 
-        viewModel.airports?.forEach({ airport in
+        viewModel.airports.forEach({ airport in
             tableView.deselectRow(at: viewModel.getIndexPath(for: airport), animated: false)
         })
 

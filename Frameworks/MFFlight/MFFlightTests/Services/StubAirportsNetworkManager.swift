@@ -1,14 +1,15 @@
 //
-//  StubNetworkManager.swift
-//  MFVehicleTests
+//  StubAirportsNetworkManager.swift
+//  MFFlightTests
 //
-//  Created by Quentin Beaudoul on 24/05/2022.
+//  Created by Quentin on 13/06/2022.
 //
 
+import Foundation
 import MFNetwork
-@testable import MFVehicle
+@testable import MFFlight
 
-class StubNetworkVehicleModelsManager: NetworkManagerProtocol {
+class StubAirportsNetworkManager: NetworkManagerProtocol {
     func fetchData<T>(httpType: HttpType,
                       apiKey: ApiKeyTypes,
                       url: String,
@@ -16,8 +17,8 @@ class StubNetworkVehicleModelsManager: NetworkManagerProtocol {
                       parameters: [String: Any]?,
                       parser: T.Type,
                       completion: @escaping (Result<T?, Error>) -> Void) where T: Decodable {
-        if let container = Bundle.decode([VehicleModel].self,
-                                         from: "VehicleModels.json",
+        if let container = Bundle.decode(Estimate.self,
+                                         from: "Airports.json",
                                          in: Bundle(for: Self.self)) as? T {
             completion(.success(container))
             return

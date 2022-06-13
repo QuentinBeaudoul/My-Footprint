@@ -23,7 +23,7 @@
 		6645E7FA28103125002387BB /* FlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6645E7F928103125002387BB /* FlightViewController.swift */; };
 		6645E7FC2810313C002387BB /* FlightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6645E7FB2810313C002387BB /* FlightViewModel.swift */; };
 		664A03F92808606B006C40F8 /* MFFlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664A03F02808606B006C40F8 /* MFFlight.framework */; };
-		664A03FE2808606B006C40F8 /* MFFlightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A03FD2808606B006C40F8 /* MFFlightTests.swift */; };
+		664A03FE2808606B006C40F8 /* FlightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A03FD2808606B006C40F8 /* FlightTests.swift */; };
 		664A03FF2808606B006C40F8 /* MFFlight.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A03F32808606B006C40F8 /* MFFlight.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66A29D5A281292FF0057A787 /* Estimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A29D59281292FF0057A787 /* Estimate.swift */; };
 		66A29D5C281295860057A787 /* Legs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A29D5B281295860057A787 /* Legs.swift */; };
@@ -32,6 +32,14 @@
 		66D2A87628197EB80026F85E /* AirplainAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 66D2A87528197EB80026F85E /* AirplainAnimation.json */; };
 		66D2A87828197ED10026F85E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D2A87728197ED10026F85E /* Assets.xcassets */; };
 		66D2A87C2819801D0026F85E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2A87B2819801D0026F85E /* R.generated.swift */; };
+		66ECBFE928571CED00C634AE /* ProcessResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ECBFE828571CED00C634AE /* ProcessResultTests.swift */; };
+		66ECBFEE28571DB700C634AE /* ResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ECBFED28571DB700C634AE /* ResultTests.swift */; };
+		66ECBFF028571DD300C634AE /* SelectAirportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ECBFEF28571DD300C634AE /* SelectAirportTests.swift */; };
+		66ECBFF228571E1600C634AE /* StubCoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ECBFF128571E1600C634AE /* StubCoreDataService.swift */; };
+		66ECBFF528571ED900C634AE /* StubNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ECBFF428571ED900C634AE /* StubNetworkManager.swift */; };
+		66ECBFF728571F2800C634AE /* StubAirportsNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ECBFF628571F2800C634AE /* StubAirportsNetworkManager.swift */; };
+		66ECBFF928571FF700C634AE /* EstimateResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 66ECBFF828571FF700C634AE /* EstimateResponse.json */; };
+		66ECBFFB2857204A00C634AE /* Airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 66ECBFFA2857204A00C634AE /* Airports.json */; };
 		66FE5D4328534A7E00FC1E9E /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FE5D4228534A7E00FC1E9E /* Airport.swift */; };
 		66FE5D4528534CD800FC1E9E /* AirportManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FE5D4428534CD800FC1E9E /* AirportManager.swift */; };
 		66FE5D47285370BB00FC1E9E /* Airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 66FE5D46285370BB00FC1E9E /* Airports.json */; };
@@ -90,13 +98,21 @@
 		664A03F02808606B006C40F8 /* MFFlight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MFFlight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		664A03F32808606B006C40F8 /* MFFlight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFFlight.h; sourceTree = "<group>"; };
 		664A03F82808606B006C40F8 /* MFFlightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFFlightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		664A03FD2808606B006C40F8 /* MFFlightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFFlightTests.swift; sourceTree = "<group>"; };
+		664A03FD2808606B006C40F8 /* FlightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTests.swift; sourceTree = "<group>"; };
 		66A29D59281292FF0057A787 /* Estimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estimate.swift; sourceTree = "<group>"; };
 		66A29D5B281295860057A787 /* Legs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legs.swift; sourceTree = "<group>"; };
 		66A29D782812DB720057A787 /* MFExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66D2A87528197EB80026F85E /* AirplainAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AirplainAnimation.json; sourceTree = "<group>"; };
 		66D2A87728197ED10026F85E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66D2A87B2819801D0026F85E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		66ECBFE828571CED00C634AE /* ProcessResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessResultTests.swift; sourceTree = "<group>"; };
+		66ECBFED28571DB700C634AE /* ResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTests.swift; sourceTree = "<group>"; };
+		66ECBFEF28571DD300C634AE /* SelectAirportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAirportTests.swift; sourceTree = "<group>"; };
+		66ECBFF128571E1600C634AE /* StubCoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubCoreDataService.swift; sourceTree = "<group>"; };
+		66ECBFF428571ED900C634AE /* StubNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubNetworkManager.swift; sourceTree = "<group>"; };
+		66ECBFF628571F2800C634AE /* StubAirportsNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubAirportsNetworkManager.swift; sourceTree = "<group>"; };
+		66ECBFF828571FF700C634AE /* EstimateResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EstimateResponse.json; sourceTree = "<group>"; };
+		66ECBFFA2857204A00C634AE /* Airports.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Airports.json; sourceTree = "<group>"; };
 		66FE5D4228534A7E00FC1E9E /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 		66FE5D4428534CD800FC1E9E /* AirportManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportManager.swift; sourceTree = "<group>"; };
 		66FE5D46285370BB00FC1E9E /* Airports.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Airports.json; sourceTree = "<group>"; };
@@ -287,7 +303,9 @@
 		664A03FC2808606B006C40F8 /* MFFlightTests */ = {
 			isa = PBXGroup;
 			children = (
-				664A03FD2808606B006C40F8 /* MFFlightTests.swift */,
+				66ECBFEC28571D0600C634AE /* Services */,
+				66ECBFEB28571CF900C634AE /* Resources */,
+				66ECBFEA28571CF300C634AE /* Tests */,
 			);
 			path = MFFlightTests;
 			sourceTree = "<group>";
@@ -318,6 +336,36 @@
 				66FE5D46285370BB00FC1E9E /* Airports.json */,
 			);
 			name = Ressources;
+			sourceTree = "<group>";
+		};
+		66ECBFEA28571CF300C634AE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				66ECBFE828571CED00C634AE /* ProcessResultTests.swift */,
+				664A03FD2808606B006C40F8 /* FlightTests.swift */,
+				66ECBFED28571DB700C634AE /* ResultTests.swift */,
+				66ECBFEF28571DD300C634AE /* SelectAirportTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		66ECBFEB28571CF900C634AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				66ECBFF828571FF700C634AE /* EstimateResponse.json */,
+				66ECBFFA2857204A00C634AE /* Airports.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		66ECBFEC28571D0600C634AE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				66ECBFF128571E1600C634AE /* StubCoreDataService.swift */,
+				66ECBFF428571ED900C634AE /* StubNetworkManager.swift */,
+				66ECBFF628571F2800C634AE /* StubAirportsNetworkManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		66FE5D48285371A600FC1E9E /* SelectAirport */ = {
@@ -485,6 +533,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66ECBFF928571FF700C634AE /* EstimateResponse.json in Resources */,
+				66ECBFFB2857204A00C634AE /* Airports.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,7 +673,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				664A03FE2808606B006C40F8 /* MFFlightTests.swift in Sources */,
+				66ECBFF528571ED900C634AE /* StubNetworkManager.swift in Sources */,
+				66ECBFEE28571DB700C634AE /* ResultTests.swift in Sources */,
+				66ECBFE928571CED00C634AE /* ProcessResultTests.swift in Sources */,
+				664A03FE2808606B006C40F8 /* FlightTests.swift in Sources */,
+				66ECBFF728571F2800C634AE /* StubAirportsNetworkManager.swift in Sources */,
+				66ECBFF228571E1600C634AE /* StubCoreDataService.swift in Sources */,
+				66ECBFF028571DD300C634AE /* SelectAirportTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

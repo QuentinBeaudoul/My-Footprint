@@ -10,6 +10,7 @@ import MFNetwork
 
 class StubNetworkManager: NetworkManagerProtocol {
     func fetchData<T>(httpType: HttpType,
+                      apiKey: ApiKeyTypes,
                       url: String,
                       headers: [String: String]?,
                       parameters: [String: Any]?,
