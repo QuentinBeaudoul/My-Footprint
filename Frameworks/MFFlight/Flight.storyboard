@@ -52,6 +52,19 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PeW-3U-ETb" customClass="MFView" customModule="MFAssets">
                                 <rect key="frame" x="0.0" y="499.5" width="414" height="500"/>
                                 <subviews>
+                                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2F2-sW-pwZ">
+                                        <rect key="frame" x="197" y="8" width="20" height="5"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="VhI-oP-HZP"/>
+                                            <constraint firstAttribute="height" constant="5" id="gCT-Kf-TUc"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" estimatedRowHeight="64" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Nyt-lV-obf">
                                         <rect key="frame" x="0.0" y="81" width="414" height="403"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -106,6 +119,8 @@
                                     <constraint firstItem="17b-Ed-97p" firstAttribute="leading" secondItem="PeW-3U-ETb" secondAttribute="leading" constant="16" id="acI-3M-hG9"/>
                                     <constraint firstItem="Izq-xx-k8b" firstAttribute="leading" secondItem="PeW-3U-ETb" secondAttribute="leading" id="foa-p7-0sf"/>
                                     <constraint firstAttribute="trailing" secondItem="Izq-xx-k8b" secondAttribute="trailing" id="fw5-kx-3Gj"/>
+                                    <constraint firstItem="2F2-sW-pwZ" firstAttribute="centerX" secondItem="PeW-3U-ETb" secondAttribute="centerX" id="llm-II-PbW"/>
+                                    <constraint firstItem="2F2-sW-pwZ" firstAttribute="top" secondItem="PeW-3U-ETb" secondAttribute="top" constant="8" id="oLd-Hf-xcA"/>
                                     <constraint firstItem="Nyt-lV-obf" firstAttribute="leading" secondItem="PeW-3U-ETb" secondAttribute="leading" id="rrN-Nv-915"/>
                                     <constraint firstItem="Izq-xx-k8b" firstAttribute="top" secondItem="17b-Ed-97p" secondAttribute="bottom" constant="32" id="zDc-9F-CQe"/>
                                 </constraints>
@@ -188,11 +203,14 @@
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="primaryColor">
-            <color red="1" green="0.56300002336502075" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.56599998474121094" blue="0.0099999997764825821" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="secondaryColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

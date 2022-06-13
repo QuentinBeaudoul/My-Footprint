@@ -52,6 +52,19 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m1I-Dw-9dr" customClass="MFView" customModule="MFAssets">
                                 <rect key="frame" x="0.0" y="499.5" width="414" height="500"/>
                                 <subviews>
+                                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WNB-KU-bJp">
+                                        <rect key="frame" x="197" y="8" width="20" height="5"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="4dv-lC-15D"/>
+                                            <constraint firstAttribute="height" constant="5" id="5Z3-dg-oZ1"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="80" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7WL-9j-ILK">
                                         <rect key="frame" x="0.0" y="81" width="414" height="403"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -101,8 +114,10 @@
                                     <constraint firstItem="lKk-BW-8dx" firstAttribute="top" secondItem="56I-jl-mVx" secondAttribute="bottom" constant="32" id="7dL-ol-X1n"/>
                                     <constraint firstItem="7WL-9j-ILK" firstAttribute="top" secondItem="56I-jl-mVx" secondAttribute="bottom" constant="32" id="Cjp-2u-zKz"/>
                                     <constraint firstItem="lKk-BW-8dx" firstAttribute="leading" secondItem="m1I-Dw-9dr" secondAttribute="leading" id="KoD-uG-Qay"/>
+                                    <constraint firstItem="WNB-KU-bJp" firstAttribute="top" secondItem="m1I-Dw-9dr" secondAttribute="top" constant="8" id="Q0r-ep-laH"/>
                                     <constraint firstAttribute="trailing" secondItem="lKk-BW-8dx" secondAttribute="trailing" id="Spd-Yw-gDp"/>
                                     <constraint firstAttribute="bottom" secondItem="7WL-9j-ILK" secondAttribute="bottom" constant="16" id="Vgp-l6-dAV"/>
+                                    <constraint firstItem="WNB-KU-bJp" firstAttribute="centerX" secondItem="m1I-Dw-9dr" secondAttribute="centerX" id="aYR-na-CtR"/>
                                     <constraint firstAttribute="bottom" secondItem="lKk-BW-8dx" secondAttribute="bottom" constant="16" id="bLV-BZ-XXw"/>
                                     <constraint firstItem="56I-jl-mVx" firstAttribute="leading" secondItem="m1I-Dw-9dr" secondAttribute="leading" constant="16" id="jPg-x7-5ih"/>
                                     <constraint firstAttribute="trailing" secondItem="7WL-9j-ILK" secondAttribute="trailing" id="snx-bo-m5N"/>
@@ -184,11 +199,14 @@
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="primaryColor">
-            <color red="1" green="0.56300002336502075" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.56599998474121094" blue="0.0099999997764825821" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="secondaryColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

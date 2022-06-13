@@ -93,6 +93,19 @@
                                             <constraint firstItem="TFp-aA-q1Q" firstAttribute="centerX" secondItem="FH1-ey-CXO" secondAttribute="centerX" id="OLc-oT-zpp"/>
                                         </constraints>
                                     </view>
+                                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="omu-5e-6iD">
+                                        <rect key="frame" x="197" y="8" width="20" height="5"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="5" id="LGD-Dn-bg7"/>
+                                            <constraint firstAttribute="width" constant="20" id="TfB-uK-FNc"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <gestureRecognizers/>
@@ -101,6 +114,8 @@
                                     <constraint firstItem="Sds-f3-a8M" firstAttribute="top" secondItem="nGZ-cz-DZs" secondAttribute="bottom" constant="32" id="8KN-XB-feR"/>
                                     <constraint firstAttribute="height" constant="500" id="I4V-cj-drm"/>
                                     <constraint firstAttribute="trailing" secondItem="Sds-f3-a8M" secondAttribute="trailing" id="IPj-e0-fRu"/>
+                                    <constraint firstItem="omu-5e-6iD" firstAttribute="centerX" secondItem="7bI-GZ-bGS" secondAttribute="centerX" id="J6M-cZ-68C"/>
+                                    <constraint firstItem="omu-5e-6iD" firstAttribute="top" secondItem="7bI-GZ-bGS" secondAttribute="top" constant="8" id="JLQ-gC-tVs"/>
                                     <constraint firstAttribute="bottom" secondItem="FH1-ey-CXO" secondAttribute="bottom" constant="16" id="MxE-T5-kc0"/>
                                     <constraint firstAttribute="bottom" secondItem="Sds-f3-a8M" secondAttribute="bottom" constant="16" id="N2u-XG-SGd"/>
                                     <constraint firstItem="nGZ-cz-DZs" firstAttribute="top" secondItem="7bI-GZ-bGS" secondAttribute="top" constant="16" id="Ssy-qP-4Xk"/>
@@ -189,6 +204,9 @@
         <namedColor name="secondaryColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -24,6 +24,19 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jM0-rr-y9o" customClass="MFView" customModule="MFAssets">
                                 <rect key="frame" x="0.0" y="158" width="414" height="500"/>
                                 <subviews>
+                                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BVq-PB-4q0">
+                                        <rect key="frame" x="197" y="8" width="20" height="5"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="5" id="URM-dd-G1f"/>
+                                            <constraint firstAttribute="width" constant="20" id="kxB-YI-f3I"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="48" estimatedRowHeight="48" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QSp-Cb-8V3">
                                         <rect key="frame" x="0.0" y="112" width="414" height="372"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -86,12 +99,14 @@
                                     <constraint firstAttribute="trailing" secondItem="QSp-Cb-8V3" secondAttribute="trailing" id="DvZ-tm-pN5"/>
                                     <constraint firstAttribute="bottom" secondItem="QSp-Cb-8V3" secondAttribute="bottom" constant="16" id="I1w-R0-Efl"/>
                                     <constraint firstItem="3L7-Qp-zKm" firstAttribute="leading" secondItem="jM0-rr-y9o" secondAttribute="leading" constant="16" id="M6b-xP-q2d"/>
+                                    <constraint firstItem="BVq-PB-4q0" firstAttribute="top" secondItem="jM0-rr-y9o" secondAttribute="top" constant="8" id="Uz2-QC-f4Q"/>
                                     <constraint firstAttribute="trailing" secondItem="FEJ-p1-J9g" secondAttribute="trailing" constant="16" id="XcU-y4-bXk"/>
                                     <constraint firstItem="q9s-P1-OVf" firstAttribute="top" secondItem="FEJ-p1-J9g" secondAttribute="bottom" constant="8" id="Xf9-hZ-8hD"/>
                                     <constraint firstItem="QSp-Cb-8V3" firstAttribute="top" secondItem="q9s-P1-OVf" secondAttribute="bottom" constant="8" id="Zpx-yw-INq"/>
                                     <constraint firstItem="QSp-Cb-8V3" firstAttribute="leading" secondItem="jM0-rr-y9o" secondAttribute="leading" id="bRF-0K-1RL"/>
                                     <constraint firstAttribute="height" constant="500" id="hx2-te-tpn"/>
                                     <constraint firstItem="FEJ-p1-J9g" firstAttribute="centerY" secondItem="3L7-Qp-zKm" secondAttribute="centerY" id="mdd-7b-hZZ"/>
+                                    <constraint firstItem="BVq-PB-4q0" firstAttribute="centerX" secondItem="jM0-rr-y9o" secondAttribute="centerX" id="o3p-gD-n8j"/>
                                     <constraint firstItem="q9s-P1-OVf" firstAttribute="trailing" secondItem="FEJ-p1-J9g" secondAttribute="trailing" id="xc0-Ry-8VS"/>
                                 </constraints>
                                 <connections>
@@ -416,8 +431,11 @@
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="primaryColor">
-            <color red="1" green="0.56300002336502075" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.56599998474121094" blue="0.0099999997764825821" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

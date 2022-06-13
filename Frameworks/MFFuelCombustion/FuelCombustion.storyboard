@@ -93,6 +93,19 @@
                                             <constraint firstItem="6zu-WF-Ss6" firstAttribute="centerX" secondItem="Sir-Lj-pp3" secondAttribute="centerX" id="e02-yo-ki2"/>
                                         </constraints>
                                     </view>
+                                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hrx-7F-TCk">
+                                        <rect key="frame" x="185" y="7.9999999999999858" width="20" height="5"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="5" id="SXI-5d-CPG"/>
+                                            <constraint firstAttribute="width" constant="20" id="e0X-WS-e0x"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <gestureRecognizers/>
@@ -103,11 +116,13 @@
                                     <constraint firstItem="P2q-r6-Pdn" firstAttribute="leading" secondItem="zvS-kB-UOe" secondAttribute="leading" id="IOQ-oy-Q0z"/>
                                     <constraint firstAttribute="bottom" secondItem="P2q-r6-Pdn" secondAttribute="bottom" constant="16" id="J1X-Hx-zSs"/>
                                     <constraint firstAttribute="trailing" secondItem="Sir-Lj-pp3" secondAttribute="trailing" id="NHv-gc-dZL"/>
+                                    <constraint firstItem="hrx-7F-TCk" firstAttribute="top" secondItem="zvS-kB-UOe" secondAttribute="top" constant="8" id="OEt-Bp-yW8"/>
                                     <constraint firstItem="e1U-hp-Tgy" firstAttribute="top" secondItem="zvS-kB-UOe" secondAttribute="top" constant="16" id="QoQ-8f-C1R"/>
                                     <constraint firstItem="P2q-r6-Pdn" firstAttribute="top" secondItem="e1U-hp-Tgy" secondAttribute="bottom" constant="32" id="Ryu-fO-Wfu"/>
                                     <constraint firstItem="Sir-Lj-pp3" firstAttribute="leading" secondItem="zvS-kB-UOe" secondAttribute="leading" id="TfE-aH-MQR"/>
                                     <constraint firstItem="e1U-hp-Tgy" firstAttribute="leading" secondItem="zvS-kB-UOe" secondAttribute="leading" constant="16" id="UwV-RD-nm1"/>
                                     <constraint firstAttribute="height" constant="500" id="cTu-aV-PtW"/>
+                                    <constraint firstItem="hrx-7F-TCk" firstAttribute="centerX" secondItem="zvS-kB-UOe" secondAttribute="centerX" id="dyt-Aj-LQP"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="GqB-K2-Cdb" appends="YES" id="QNP-Hj-Rs9"/>
@@ -187,11 +202,14 @@
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="primaryColor">
-            <color red="1" green="0.56300002336502075" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.56599998474121094" blue="0.0099999997764825821" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="secondaryColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
