@@ -17,7 +17,7 @@ class StubAirportsNetworkManager: NetworkManagerProtocol {
                       parameters: [String: Any]?,
                       parser: T.Type,
                       completion: @escaping (Result<T?, Error>) -> Void) where T: Decodable {
-        if let container = Bundle.decode(Estimate.self,
+        if let container = Bundle.decode([Airport].self,
                                          from: "Airports.json",
                                          in: Bundle(for: Self.self)) as? T {
             completion(.success(container))

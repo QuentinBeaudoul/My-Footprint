@@ -23,32 +23,26 @@ public final class AirportManager {
         let url = Constants.airportUrl
         let params = ["access_key": ApiKeyTypes.airports.rawValue]
 
-        // TODO: Uncomment this
-//        networkManager.fetchData(httpType: .GET,
-//                                 apiKey: .airports,
-//                                 url: url,
-//                                 headers: nil,
-//                                 parameters: params,
-//                                 parser: [Airport].self) { result in
-//            switch result {
-//            case .success(let airports):
-//                self.airports = airports
-//                completion(.success(airports))
-//            case .failure(let error):
-//                // Backup strat if freeplan is gone
-//                self.airports = Bundle.decode([Airport].self,
-//                                              from: "Airports.json",
-//                                              in: Bundle(for: Self.self))
-//                print(error)
-//                completion(.failure(error))
-//            }
-//        }
-
-        // TMP
-        self.airports = Bundle.decode([Airport].self,
-                                      from: "Airports.json",
-                                      in: Bundle(for: Self.self))
-        completion(.success(airports))
+        networkManager.fetchData(httpType: .GET,
+                                 apiKey: .airports,
+                                 url: url,
+                                 headers: nil,
+                                 parameters: params,
+                                 parser: [Airport].self) { [weak self] result in
+            guard let self = self else { return }
+            switch result {
+            case .success(let airports):
+                self.airports = airports
+                completion(.success(airports))
+            case .failure(let error):
+                // Backup strat if freeplan is gone
+                self.airports = Bundle.decode([Airport].self,
+                                              from: "Airports.json",
+                                              in: Bundle(for: Self.self))
+                print(error)
+                completion(.failure(error))
+            }
+        }
     }
 
     func retriveAirport(from iataCode: String) -> Airport? {
