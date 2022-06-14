@@ -44,7 +44,8 @@ class ProcessViewModel {
                                  url: url,
                                  headers: nil,
                                  parameters: body,
-                                 parser: Estimate.self) { response in
+                                 parser: Estimate.self) { [weak self] response in
+            guard let self = self else { return }
             switch response {
             case .success(let estimate):
                 if let estimate = estimate {

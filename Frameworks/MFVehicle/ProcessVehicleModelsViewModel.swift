@@ -41,7 +41,7 @@ class ProcessVehicleModelsViewModel {
                                  headers: nil,
                                  parameters: nil,
                                  parser: [VehicleModel].self) { [weak self] response in
-            guard let self = self else { return } // TODO: mettre ça dans tous les appels réseau
+            guard let self = self else { return }
             switch response {
             case .success(let vehicleModels):
                 self.vehicleModels = vehicleModels

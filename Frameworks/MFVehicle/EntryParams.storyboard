@@ -344,7 +344,7 @@
                                 <rect key="frame" x="0.0" y="144" width="414" height="718"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z78-Y3-F1e" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="431"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="495"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3bs-k4-QBk" userLabel="Result View" customClass="MFView" customModule="MFAssets">
                                                 <rect key="frame" x="16" y="16" width="382" height="399"/>
@@ -441,7 +441,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="3bs-k4-QBk" secondAttribute="bottom" constant="16" id="Hvh-mI-gYm"/>
+                                            <constraint firstAttribute="bottom" secondItem="3bs-k4-QBk" secondAttribute="bottom" constant="80" id="Hvh-mI-gYm"/>
                                             <constraint firstItem="3bs-k4-QBk" firstAttribute="leading" secondItem="Z78-Y3-F1e" secondAttribute="leading" constant="16" id="apc-27-szH"/>
                                             <constraint firstItem="3bs-k4-QBk" firstAttribute="top" secondItem="Z78-Y3-F1e" secondAttribute="top" constant="16" id="oKe-UK-D9b"/>
                                             <constraint firstAttribute="trailing" secondItem="3bs-k4-QBk" secondAttribute="trailing" constant="16" id="t6W-w7-zHc"/>

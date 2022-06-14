@@ -40,7 +40,8 @@ class ProcessResultViewModel {
                                  url: url,
                                  headers: nil,
                                  parameters: params,
-                                 parser: Estimate.self) { res in
+                                 parser: Estimate.self) { [weak self] res in
+            guard let self = self else { return }
             switch res {
             case .success(let estimate):
                 if let estimate = estimate {

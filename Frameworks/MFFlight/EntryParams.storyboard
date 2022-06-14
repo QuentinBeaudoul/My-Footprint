@@ -219,7 +219,7 @@
                                 <rect key="frame" x="0.0" y="144" width="414" height="718"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAy-eg-5dP" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="431"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="495"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AuK-xn-eP9" userLabel="Result View" customClass="MFView" customModule="MFAssets">
                                                 <rect key="frame" x="16" y="16" width="382" height="399"/>
@@ -319,7 +319,7 @@
                                             <constraint firstAttribute="trailing" secondItem="AuK-xn-eP9" secondAttribute="trailing" constant="16" id="Ozw-ss-1Kr"/>
                                             <constraint firstItem="AuK-xn-eP9" firstAttribute="top" secondItem="cAy-eg-5dP" secondAttribute="top" constant="16" id="bbz-xr-Q3U"/>
                                             <constraint firstItem="AuK-xn-eP9" firstAttribute="leading" secondItem="cAy-eg-5dP" secondAttribute="leading" constant="16" id="y9h-za-d5A"/>
-                                            <constraint firstAttribute="bottom" secondItem="AuK-xn-eP9" secondAttribute="bottom" constant="16" id="ztl-VM-1k8"/>
+                                            <constraint firstAttribute="bottom" secondItem="AuK-xn-eP9" secondAttribute="bottom" constant="80" id="ztl-VM-1k8"/>
                                         </constraints>
                                     </view>
                                 </subviews>
