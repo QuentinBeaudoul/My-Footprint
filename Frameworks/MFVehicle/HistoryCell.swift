@@ -17,7 +17,7 @@ class HistoryCell: UITableViewCell {
         titleLabel.text = String(format: titleLabel.text ?? "",
                                  estimate.vehicleMake,
                                  estimate.vehicleModel,
-                                 "\(estimate.distanceValue)",
+                                 estimate.distanceValue.toString(),
                                  estimate.distanceUnit)
 
         yearLabel.text = "\(estimate.vehicleYear)"

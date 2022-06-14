@@ -31,7 +31,7 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getDistanceValue()
 
         // Then
-        XCTAssertEqual(res, "100.0")
+        XCTAssertEqual(res, "100")
     }
 
     func testDistanceUnitLoaded() {
@@ -108,7 +108,7 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getCarbonG()
 
         // Then
-        XCTAssertEqual(res, "37029.0")
+        XCTAssertEqual(res, "37029")
     }
 
     func testCarbonLbLoaded() {
@@ -151,7 +151,7 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getDistanceValue()
 
         // Then
-        XCTAssertEqual(res, "0.0")
+        XCTAssertEqual(res, "")
     }
 
     func testDistanceUnitNotLoaded() {
@@ -221,7 +221,7 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getCarbonG()
 
         // Then
-        XCTAssertEqual(res, "0.0")
+        XCTAssertEqual(res, "")
     }
 
     func testCarbonLbNotLoaded() {
@@ -231,7 +231,7 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getCarbonLb()
 
         // Then
-        XCTAssertEqual(res, "0.0")
+        XCTAssertEqual(res, "")
     }
 
     func testCarbonKgNotLoaded() {
@@ -241,7 +241,7 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getCarbonKg()
 
         // Then
-        XCTAssertEqual(res, "0.0")
+        XCTAssertEqual(res, "")
     }
 
     func testCarbonMtNotLoaded() {
@@ -251,6 +251,6 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getCarbonMt()
 
         // Then
-        XCTAssertEqual(res, "0.0")
+        XCTAssertEqual(res, "")
     }
 }

@@ -30,7 +30,7 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getDistanceValue()
 
         // Then
-        XCTAssertEqual(res, "2000.0")
+        XCTAssertEqual(res, "2000")
     }
 
     func testDistanceUnitLoaded() {
@@ -74,7 +74,7 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getWeightValue()
 
         // Then
-        XCTAssertEqual(res, "200.0")
+        XCTAssertEqual(res, "200")
     }
 
     func testTransportMethodLoaded() {
@@ -107,7 +107,7 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getCarbonG()
 
         // Then
-        XCTAssertEqual(res, "25.0")
+        XCTAssertEqual(res, "25")
     }
 
     func testCarbonLbLoaded() {
@@ -140,7 +140,7 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getCarbonMt()
 
         // Then
-        XCTAssertEqual(res, "0.0")
+        XCTAssertEqual(res, "0")
     }
 
     func testDistanceValueNotLoaded() {
@@ -150,7 +150,7 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getDistanceValue()
 
         // Then
-        XCTAssertEqual(res, "0.0")
+        XCTAssertEqual(res, "")
     }
 
     func testDistanceUnitNotLoaded() {
@@ -190,7 +190,7 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getWeightValue()
 
         // Then
-        XCTAssertEqual(res, "0.0")
+        XCTAssertEqual(res, "")
     }
 
     func testTransportMethodNotLoaded() {
@@ -220,7 +220,7 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getCarbonG()
 
         // Then
-        XCTAssertEqual(res, "0.0")
+        XCTAssertEqual(res, "")
     }
 
     func testCarbonLbNotLoaded() {
@@ -230,7 +230,7 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getCarbonLb()
 
         // Then
-        XCTAssertEqual(res, "0.0")
+        XCTAssertEqual(res, "")
     }
 
     func testCarbonKgNotLoaded() {
@@ -240,7 +240,7 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getCarbonKg()
 
         // Then
-        XCTAssertEqual(res, "0.0")
+        XCTAssertEqual(res, "")
     }
 
     func testCarbonMtNotLoaded() {
@@ -250,6 +250,6 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getCarbonMt()
 
         // Then
-        XCTAssertEqual(res, "0.0")
+        XCTAssertEqual(res, "")
     }
 }

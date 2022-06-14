@@ -112,7 +112,7 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getSourceValue()
 
         // Then
-        XCTAssertEqual(res, "2.0")
+        XCTAssertEqual(res, "2")
     }
 
     func testGivenEstimate_WhenGettingCarbonLb_ThenCarbonLbStringIsReturned() {
@@ -156,6 +156,6 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getCarbonG()
 
         // Then
-        XCTAssertEqual(res, "146320.0")
+        XCTAssertEqual(res, "146320")
     }
 }

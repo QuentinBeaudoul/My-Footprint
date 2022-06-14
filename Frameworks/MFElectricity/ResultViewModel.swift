@@ -19,7 +19,7 @@ class ResultViewModel {
     }
 
     func getElectricityValue() -> String {
-        "\(estimate?.electricityValue ?? 0)"
+        estimate?.electricityValue.toString() ?? ""
     }
 
     func getCountryCode() -> String {
@@ -35,18 +35,18 @@ class ResultViewModel {
     }
 
     func getCarbonG() -> String {
-        "\(estimate?.carbonG ?? 0)"
+        estimate?.carbonG.toString() ?? ""
     }
 
     func getCarbonLb() -> String {
-        "\(estimate?.carbonLb ?? 0)"
+        estimate?.carbonLb.toString() ?? ""
     }
 
     func getCarbonKg() -> String {
-        "\(estimate?.carbonKg ?? 0)"
+        estimate?.carbonKg.toString() ?? ""
     }
 
     func getCarbonMt() -> String {
-        "\(estimate?.carbonMt ?? 0)"
+        estimate?.carbonMt.toString() ?? ""
     }
 }

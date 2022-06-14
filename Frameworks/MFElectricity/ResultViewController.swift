@@ -41,6 +41,28 @@ class ResultViewController: UIViewController {
                                    viewModel.getElectricityUnit(),
                                    viewModel.getLiteralCountry())
 
+        if let string = contextLabel.text,
+           let electricityValueRange = string.range(of: viewModel.getElectricityValue()),
+           let electicityUnitRange = string.range(of: viewModel.getElectricityUnit()),
+           let literalCountryRange = string.range(of: viewModel.getLiteralCountry()) {
+
+            let nsElectricityValueRange = NSRange(electricityValueRange, in: string)
+            let nsElectricityUnitRange = NSRange(electicityUnitRange, in: string)
+            let nsLiteralCountryRange = NSRange(literalCountryRange, in: string)
+
+            let attributedString = NSMutableAttributedString(string: string)
+            attributedString.addAttributes([.font: UIFont.demiBoldFont(withSize: 23),
+                                            .foregroundColor: UIColor.black],
+                                           range: nsElectricityValueRange)
+            attributedString.addAttributes([.font: UIFont.demiBoldFont(withSize: 23),
+                                            .foregroundColor: UIColor.black],
+                                           range: nsElectricityUnitRange)
+            attributedString.addAttributes([.font: UIFont.demiBoldFont(withSize: 23),
+                                            .foregroundColor: UIColor.black],
+                                           range: nsLiteralCountryRange)
+            contextLabel.attributedText = attributedString
+        }
+
         // Set up labels
         gramsLabel.text = viewModel.getCarbonG()
         poundsLabel.text = viewModel.getCarbonLb()

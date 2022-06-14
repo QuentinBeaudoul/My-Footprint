@@ -103,7 +103,7 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getCarbonG()
 
         // Then
-        XCTAssertEqual(res, "1077098.0")
+        XCTAssertEqual(res, "1.0771e+06")
     }
 
     func testCarbonLbLoaded() {
@@ -114,7 +114,7 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getCarbonLb()
 
         // Then
-        XCTAssertEqual(res, "2374.0")
+        XCTAssertEqual(res, "2374")
     }
 
     func testCarbonKgLoaded() {
@@ -125,7 +125,7 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getCarbonKg()
 
         // Then
-        XCTAssertEqual(res, "1077.0")
+        XCTAssertEqual(res, "1077")
     }
 
     func testCarbonMtLoaded() {
@@ -136,7 +136,7 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getCarbonMt()
 
         // Then
-        XCTAssertEqual(res, "1.0")
+        XCTAssertEqual(res, "1")
     }
 
     func testDistanceValueNotLoaded() {
@@ -146,7 +146,7 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getDistanceValue()
 
         // Then
-        XCTAssertEqual(res, "0.0")
+        XCTAssertEqual(res, "")
     }
 
     func testDistanceUnitNotLoaded() {
@@ -206,7 +206,7 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getCarbonG()
 
         // Then
-        XCTAssertEqual(res, "0.0")
+        XCTAssertEqual(res, "")
     }
 
     func testCarbonLbNotLoaded() {
@@ -216,7 +216,7 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getCarbonLb()
 
         // Then
-        XCTAssertEqual(res, "0.0")
+        XCTAssertEqual(res, "")
     }
 
     func testCarbonKgNotLoaded() {
@@ -226,7 +226,7 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getCarbonKg()
 
         // Then
-        XCTAssertEqual(res, "0.0")
+        XCTAssertEqual(res, "")
     }
 
     func testCarbonMtNotLoaded() {
@@ -236,6 +236,6 @@ class ResultTests: XCTestCase {
         let res = viewModel?.getCarbonMt()
 
         // Then
-        XCTAssertEqual(res, "0.0")
+        XCTAssertEqual(res, "")
     }
 }

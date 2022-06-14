@@ -26,7 +26,6 @@ class DistanceViewController: UIViewController {
         if let topColor = R.color.backgroundGradientTop(), let bottomColor = R.color.backgroundGradientBottom() {
             view.setGradientBackground(colorTop: topColor, colorBottom: bottomColor)
         }
-
         hideKeyboardWhenTappedAround()
 
         // Set up header
@@ -91,17 +90,18 @@ extension DistanceViewController: MFTextfieldDelegate {
     }
 
     func onTextfieldChanged(_ str: String?) {
-        guard let str = str else {
+        guard let str = str, let value = Int(str) else {
             processButton.isEnabled = false
             processButton.alpha = 0.5
+            textField.disableToolBarButton()
             return
         }
 
-        processButton.isEnabled = !str.isEmpty
-        processButton.alpha = !str.isEmpty ? 1.0 : 0.5
-        !str.isEmpty ? textField.enableToolBarButton() : textField.disableToolBarButton()
+        processButton.isEnabled = !str.isEmpty && value >= 1
+        processButton.alpha = !str.isEmpty && value >= 1 ? 1.0 : 0.5
+        !str.isEmpty && value >= 1 ? textField.enableToolBarButton() : textField.disableToolBarButton()
 
-        viewModel.value = Int(str)
+        viewModel.value = value
     }
 
     func onToolBarButtonTapped() {

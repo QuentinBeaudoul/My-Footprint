@@ -41,6 +41,33 @@ class ResultViewController: UIViewController {
                                    viewModel.getDepartureAirport()?.name ?? "",
                                    viewModel.getDestinationAirport()?.name ?? "")
 
+        if let string = contextLabel.text,
+           let departureAirportRange = string.range(of: viewModel.getDepartureAirport()?.name ?? ""),
+           let destinationAirportRange = string.range(of: viewModel.getDestinationAirport()?.name ?? ""),
+           let vehicleDistanceRange = string.range(of: viewModel.getDistanceValue()),
+           let literalDistanceUnitRange = string.range(of: viewModel.getLiteralDistanceUnit()) {
+
+            let nsDepartureAirportRange = NSRange(departureAirportRange, in: string)
+            let nsDestinationAirportRange = NSRange(destinationAirportRange, in: string)
+            let nsVehicleDistanceRange = NSRange(vehicleDistanceRange, in: string)
+            let nsLiteralDistanceUnitRange = NSRange(literalDistanceUnitRange, in: string)
+
+            let attributedString = NSMutableAttributedString(string: string)
+            attributedString.addAttributes([.font: UIFont.demiBoldFont(withSize: 23),
+                                            .foregroundColor: UIColor.black],
+                                           range: nsDepartureAirportRange)
+            attributedString.addAttributes([.font: UIFont.demiBoldFont(withSize: 23),
+                                            .foregroundColor: UIColor.black],
+                                           range: nsDestinationAirportRange)
+            attributedString.addAttributes([.font: UIFont.demiBoldFont(withSize: 23),
+                                            .foregroundColor: UIColor.black],
+                                           range: nsVehicleDistanceRange)
+            attributedString.addAttributes([.font: UIFont.demiBoldFont(withSize: 23),
+                                            .foregroundColor: UIColor.black],
+                                           range: nsLiteralDistanceUnitRange)
+            contextLabel.attributedText = attributedString
+        }
+
         // Set up labels
         gramsLabel.text = viewModel.getCarbonG()
         poundsLabel.text = viewModel.getCarbonLb()

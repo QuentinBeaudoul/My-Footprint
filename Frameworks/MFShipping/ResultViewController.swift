@@ -36,12 +36,7 @@ class ResultViewController: UIViewController {
         headerHeightConstrainte.constant = headerView.isBackButtonVisible() ? 100 : 56
 
         //  Set up context text view
-        contextLabel.text = String(format: contextLabel.text ?? "",
-                                   viewModel.getWeightValue(),
-                                   viewModel.getWeightUnit(),
-                                   viewModel.getTransportMethod(),
-                                   viewModel.getDistanceValue(),
-                                   viewModel.getLiteralDistanceUnit())
+        initContextLabel()
 
         // Set up labels
         gramsLabel.text = viewModel.getCarbonG()
@@ -49,6 +44,47 @@ class ResultViewController: UIViewController {
         kilogramsLabel.text = viewModel.getCarbonKg()
         megatonsLabel.text = viewModel.getCarbonMt()
         estimatedAtLabel.text = viewModel.getEstimatedAt()
+    }
+
+    private func initContextLabel() {
+        contextLabel.text = String(format: contextLabel.text ?? "",
+                                   viewModel.getWeightValue(),
+                                   viewModel.getWeightUnit(),
+                                   viewModel.getTransportMethod(),
+                                   viewModel.getDistanceValue(),
+                                   viewModel.getLiteralDistanceUnit())
+
+        if let string = contextLabel.text,
+           let weightValueRange = string.range(of: viewModel.getWeightValue()),
+           let weightUnitRange = string.range(of: viewModel.getWeightUnit()),
+           let transportMethodRange = string.range(of: viewModel.getTransportMethod()),
+           let vehicleDistanceRange = string.range(of: viewModel.getDistanceValue()),
+           let literalDistanceUnitRange = string.range(of: viewModel.getLiteralDistanceUnit()) {
+
+            let nsWeightValueRange = NSRange(weightValueRange, in: string)
+            let nsWeightUnitRange = NSRange(weightUnitRange, in: string)
+            let nsTransportMethodRange = NSRange(transportMethodRange, in: string)
+            let nsVehicleDistanceRange = NSRange(vehicleDistanceRange, in: string)
+            let nsLiteralDistanceUnitRange = NSRange(literalDistanceUnitRange, in: string)
+
+            let attributedString = NSMutableAttributedString(string: string)
+            attributedString.addAttributes([.font: UIFont.demiBoldFont(withSize: 23),
+                                            .foregroundColor: UIColor.black],
+                                           range: nsWeightValueRange)
+            attributedString.addAttributes([.font: UIFont.demiBoldFont(withSize: 23),
+                                            .foregroundColor: UIColor.black],
+                                           range: nsWeightUnitRange)
+            attributedString.addAttributes([.font: UIFont.demiBoldFont(withSize: 23),
+                                            .foregroundColor: UIColor.black],
+                                           range: nsTransportMethodRange)
+            attributedString.addAttributes([.font: UIFont.demiBoldFont(withSize: 23),
+                                            .foregroundColor: UIColor.black],
+                                           range: nsVehicleDistanceRange)
+            attributedString.addAttributes([.font: UIFont.demiBoldFont(withSize: 23),
+                                            .foregroundColor: UIColor.black],
+                                           range: nsLiteralDistanceUnitRange)
+            contextLabel.attributedText = attributedString
+        }
     }
 
     @IBAction func onDoneButtonTapped() {

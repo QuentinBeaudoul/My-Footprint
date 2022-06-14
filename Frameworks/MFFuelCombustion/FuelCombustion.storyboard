@@ -106,6 +106,19 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
+                                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qbA-4V-Tii">
+                                        <rect key="frame" x="185" y="7.9999999999999858" width="20" height="5"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="IvC-uf-grZ"/>
+                                            <constraint firstAttribute="height" constant="5" id="zTU-4D-Mqb"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <gestureRecognizers/>
@@ -121,8 +134,10 @@
                                     <constraint firstItem="P2q-r6-Pdn" firstAttribute="top" secondItem="e1U-hp-Tgy" secondAttribute="bottom" constant="32" id="Ryu-fO-Wfu"/>
                                     <constraint firstItem="Sir-Lj-pp3" firstAttribute="leading" secondItem="zvS-kB-UOe" secondAttribute="leading" id="TfE-aH-MQR"/>
                                     <constraint firstItem="e1U-hp-Tgy" firstAttribute="leading" secondItem="zvS-kB-UOe" secondAttribute="leading" constant="16" id="UwV-RD-nm1"/>
+                                    <constraint firstItem="qbA-4V-Tii" firstAttribute="top" secondItem="zvS-kB-UOe" secondAttribute="top" constant="8" id="aZ5-xh-vFW"/>
                                     <constraint firstAttribute="height" constant="500" id="cTu-aV-PtW"/>
                                     <constraint firstItem="hrx-7F-TCk" firstAttribute="centerX" secondItem="zvS-kB-UOe" secondAttribute="centerX" id="dyt-Aj-LQP"/>
+                                    <constraint firstItem="qbA-4V-Tii" firstAttribute="centerX" secondItem="zvS-kB-UOe" secondAttribute="centerX" id="x2J-QV-djD"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="GqB-K2-Cdb" appends="YES" id="QNP-Hj-Rs9"/>
@@ -202,7 +217,7 @@
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="primaryColor">
-            <color red="1" green="0.56599998474121094" blue="0.0099999997764825821" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.56300002336502075" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="secondaryColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

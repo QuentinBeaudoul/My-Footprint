@@ -9,6 +9,8 @@ import Foundation
 
 public extension Double {
     func toString() -> String {
-        String(self)
+        let res = String(format: "%g", self)
+
+        return res.isEmpty ? "0" : res
     }
 }

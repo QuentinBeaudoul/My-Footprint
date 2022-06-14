@@ -15,7 +15,7 @@ class ResultViewModel {
     }
 
     func getDistanceValue() -> String {
-        "\(estimate?.distanceValue ?? 0)"
+        estimate?.distanceValue.toString() ?? ""
     }
 
     func getDistanceUnit() -> String {
@@ -43,18 +43,18 @@ class ResultViewModel {
     }
 
     func getCarbonG() -> String {
-        "\(estimate?.carbonG ?? 0)"
+        estimate?.carbonG.toString() ?? ""
     }
 
     func getCarbonLb() -> String {
-        "\(estimate?.carbonLb ?? 0)"
+        estimate?.carbonLb.toString() ?? ""
     }
 
     func getCarbonKg() -> String {
-        "\(estimate?.carbonKg ?? 0)"
+        estimate?.carbonKg.toString() ?? ""
     }
 
     func getCarbonMt() -> String {
-        "\(estimate?.carbonMt ?? 0)"
+        estimate?.carbonMt.toString() ?? ""
     }
 }

@@ -36,12 +36,7 @@ class ResultViewController: UIViewController {
         headerHeightConstrainte.constant = headerView.isBackButtonVisible() ? 100 : 56
 
         //  Set up context text view
-        contextLabel.text = String(format: contextLabel.text ?? "",
-                                   viewModel.getVehicleYear(),
-                                   viewModel.getVehicleMake(),
-                                   viewModel.getVehicleModel(),
-                                   viewModel.getDistanceValue(),
-                                   viewModel.getLiteralDistanceUnit())
+        initContextLabel()
 
         // Set up labels
         gramsLabel.text = viewModel.getCarbonG()
@@ -49,6 +44,48 @@ class ResultViewController: UIViewController {
         kilogramsLabel.text = viewModel.getCarbonKg()
         megatonsLabel.text = viewModel.getCarbonMt()
         estimatedAtLabel.text = viewModel.getEstimatedAt()
+    }
+
+    private func initContextLabel() {
+
+        contextLabel.text = String(format: contextLabel.text ?? "",
+                                   viewModel.getVehicleYear(),
+                                   viewModel.getVehicleMake(),
+                                   viewModel.getVehicleModel(),
+                                   viewModel.getDistanceValue(),
+                                   viewModel.getLiteralDistanceUnit())
+
+        if let string = contextLabel.text,
+           let vehicleYearRange = string.range(of: viewModel.getVehicleYear()),
+           let vehicleMakeRange = string.range(of: viewModel.getVehicleMake()),
+           let vehicleModelRange = string.range(of: viewModel.getVehicleModel()),
+           let vehicleDistanceRange = string.range(of: viewModel.getDistanceValue()),
+           let literalDistanceUnitRange = string.range(of: viewModel.getLiteralDistanceUnit()) {
+
+            let nsVehicleYearRange = NSRange(vehicleYearRange, in: string)
+            let nsVehicleMakeRange = NSRange(vehicleMakeRange, in: string)
+            let nsVehicleModelRange = NSRange(vehicleModelRange, in: string)
+            let nsVehicleDistanceRange = NSRange(vehicleDistanceRange, in: string)
+            let nsLiteralDistanceUnitRange = NSRange(literalDistanceUnitRange, in: string)
+
+            let attributedString = NSMutableAttributedString(string: string)
+            attributedString.addAttributes([.font: UIFont.demiBoldFont(withSize: 23),
+                                            .foregroundColor: UIColor.black],
+                                           range: nsVehicleYearRange)
+            attributedString.addAttributes([.font: UIFont.demiBoldFont(withSize: 23),
+                                            .foregroundColor: UIColor.black],
+                                           range: nsVehicleMakeRange)
+            attributedString.addAttributes([.font: UIFont.demiBoldFont(withSize: 23),
+                                            .foregroundColor: UIColor.black],
+                                           range: nsVehicleModelRange)
+            attributedString.addAttributes([.font: UIFont.demiBoldFont(withSize: 23),
+                                            .foregroundColor: UIColor.black],
+                                           range: nsVehicleDistanceRange)
+            attributedString.addAttributes([.font: UIFont.demiBoldFont(withSize: 23),
+                                            .foregroundColor: UIColor.black],
+                                           range: nsLiteralDistanceUnitRange)
+            contextLabel.attributedText = attributedString
+        }
     }
 
     @IBAction func onDoneButtonTapped() {

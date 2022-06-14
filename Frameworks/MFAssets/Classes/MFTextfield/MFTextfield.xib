@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MFTextfield" customModule="MFFuelCombustion" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MFTextfield" customModule="MFAssets" customModuleProvider="target">
             <connections>
                 <outlet property="textField" destination="gUN-ah-PDb" id="jNN-Zf-FbJ"/>
             </connections>
@@ -28,7 +28,9 @@
                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             <connections>
-                                <action selector="textfieldValueChanged:" destination="-1" eventType="editingChanged" id="PD4-FL-Rmf"/>
+                                <action selector="textfieldValueChanged:" destination="-1" eventType="editingDidBegin" id="BJg-VC-Zpy"/>
+                                <action selector="textfieldValueChanged:" destination="-1" eventType="editingDidEnd" id="cxG-bI-CyL"/>
+                                <action selector="textfieldValueChanged:" destination="-1" eventType="editingChanged" id="xwS-lt-JEz"/>
                             </connections>
                         </textField>
                     </subviews>
