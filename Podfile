@@ -22,6 +22,12 @@ abstract_target 'Shared' do
 		project 'Frameworks/MFNetwork/MFNetwork.xcodeproj'
 
 		pod 'Alamofire'
+
+		target 'MFNetworkTests' do
+			inherit! :complete
+
+			pod 'Mocker'
+		end
 	end
 
 	target 'MFStorage' do
