@@ -18,13 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fuel Combustion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ei-vE-tjx" customClass="MFLabel" customModule="MFAssets">
-                                <rect key="frame" x="15.999999999999986" y="60" width="230.66666666666663" height="39.666666666666657"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Fuel Combustion]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ei-vE-tjx" customClass="MFLabel" customModule="MFAssets">
+                                <rect key="frame" x="15.999999999999986" y="60" width="249.66666666666663" height="39.333333333333343"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
                                 <color key="textColor" name="onPrimaryColor"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="1" height="1"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fromBundle" value="MFFuelCombustion"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="MFFuelCombustion_title"/>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUr-n4-fvf" userLabel="Get Started Button" customClass="MFButton" customModule="MFAssets">
                                 <rect key="frame" x="133" y="399.66666666666669" width="124" height="45"/>
@@ -50,7 +54,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zvS-kB-UOe" customClass="MFView" customModule="MFAssets">
-                                <rect key="frame" x="0.0" y="124.66666666666669" width="390" height="500.00000000000006"/>
+                                <rect key="frame" x="0.0" y="124.33333333333331" width="390" height="499.99999999999994"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="P2q-r6-Pdn">
                                         <rect key="frame" x="0.0" y="81" width="390" height="403"/>
@@ -63,7 +67,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </tableView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1U-hp-Tgy">
-                                        <rect key="frame" x="16" y="15.999999999999986" width="79" height="33"/>
+                                        <rect key="frame" x="16" y="16.000000000000014" width="79" height="33"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -72,7 +76,7 @@
                                         <rect key="frame" x="0.0" y="81" width="390" height="403"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No history yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zu-WF-Ss6">
-                                                <rect key="frame" x="130.66666666666666" y="88.000000000000028" width="128.99999999999997" height="27.333333333333329"/>
+                                                <rect key="frame" x="130.66666666666666" y="87.999999999999972" width="128.99999999999997" height="27.333333333333329"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                                 <color key="textColor" name="informationTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -94,7 +98,7 @@
                                         </constraints>
                                     </view>
                                     <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hrx-7F-TCk">
-                                        <rect key="frame" x="185" y="7.9999999999999858" width="20" height="5"/>
+                                        <rect key="frame" x="185" y="8.0000000000000142" width="20" height="5"/>
                                         <color key="backgroundColor" systemColor="labelColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="5" id="SXI-5d-CPG"/>
@@ -107,7 +111,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qbA-4V-Tii">
-                                        <rect key="frame" x="185" y="7.9999999999999858" width="20" height="5"/>
+                                        <rect key="frame" x="185" y="8.0000000000000142" width="20" height="5"/>
                                         <color key="backgroundColor" systemColor="labelColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="20" id="IvC-uf-grZ"/>
@@ -200,10 +204,7 @@
     </scenes>
     <designables>
         <designable name="9ei-vE-tjx">
-            <size key="intrinsicContentSize" width="230.66666666666666" height="39.333333333333336"/>
-        </designable>
-        <designable name="gUr-n4-fvf">
-            <size key="intrinsicContentSize" width="124" height="45"/>
+            <size key="intrinsicContentSize" width="249.66666666666666" height="39.333333333333336"/>
         </designable>
     </designables>
     <resources>

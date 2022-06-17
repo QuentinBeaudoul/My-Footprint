@@ -38,6 +38,38 @@ import UIKit
         }
     }
 
+    @IBInspectable
+    var localizationKey: String? {
+        get {
+            return objc_getAssociatedObject(self, "localizationKey") as? String
+        } set {
+            if let newValue = newValue {
+                objc_setAssociatedObject(self, "localizationKey", newValue as String?, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+                let split = newValue.split(separator: "_")
+                let localizedString = String(split[1]).localized(bundle: Bundle(identifier: "Quentin.Beaudoul." + String(split[0]))!)
+                updateLocalization(localizedString)
+            }
+        }
+    }
+
+    func updateLocalization(_ localizedString: String?) {
+        guard let string = localizedString else {
+            return
+        }
+        switch self {
+        case let label as UILabel:
+            label.text = string
+        case let button as UIButton:
+            button.setTitle(string, for: UIControl.State())
+        case let textField as UITextField:
+            textField.placeholder = string
+        case let textView as UITextView:
+            textView.text = string
+        default:
+            print("Unsupported localizable object: \(self)")
+        }
+    }
+
     func shake(_ duration: Double = 1) {
         self.transform = CGAffineTransform(translationX: 3, y: 0)
         UIView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: 0.1, initialSpringVelocity: 10, options: .curveEaseOut, animations: {

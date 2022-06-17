@@ -22,4 +22,8 @@ public extension String {
     func toInt() -> Int? {
         return Int(self)
     }
+
+    func localized(bundle: Bundle) -> String {
+        NSLocalizedString(self, bundle: bundle, comment: "")
+    }
 }

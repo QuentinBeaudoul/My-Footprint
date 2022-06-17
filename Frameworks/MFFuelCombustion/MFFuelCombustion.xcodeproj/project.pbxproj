@@ -51,6 +51,7 @@
 		66ED2221281FE8FE00B38079 /* AmountEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66ED2220281FE8FE00B38079 /* AmountEntryViewModel.swift */; };
 		66F200EA281AA14E00422AE9 /* EntryParams.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F200E9281AA14E00422AE9 /* EntryParams.storyboard */; };
 		66F200ED281AC1AA00422AE9 /* FuelSourceTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F200EC281AC1AA00422AE9 /* FuelSourceTypeViewController.swift */; };
+		66FBC09C285CCB1900CEA871 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66FBC09A285CCB1900CEA871 /* Localizable.strings */; };
 		67CA5667B05B6E6B5EB8A58C /* Pods_Shared_MFFuelCombustion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B9E696DA572B7FEEE96C9AD /* Pods_Shared_MFFuelCombustion.framework */; };
 		BA3467A1EEBD09079603C7A4 /* Pods_Shared_MFFuelCombustion_MFFuelCombustionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAAE055EEE9612C05084FD43 /* Pods_Shared_MFFuelCombustion_MFFuelCombustionTests.framework */; };
 /* End PBXBuildFile section */
@@ -126,6 +127,7 @@
 		66ED2220281FE8FE00B38079 /* AmountEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountEntryViewModel.swift; sourceTree = "<group>"; };
 		66F200E9281AA14E00422AE9 /* EntryParams.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EntryParams.storyboard; sourceTree = "<group>"; };
 		66F200EC281AC1AA00422AE9 /* FuelSourceTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelSourceTypeViewController.swift; sourceTree = "<group>"; };
+		66FBC09B285CCB1900CEA871 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6AAA841A977ED1BAB24E7B37 /* Pods-Shared-MFFuelCombustion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFFuelCombustion.release.xcconfig"; path = "Target Support Files/Pods-Shared-MFFuelCombustion/Pods-Shared-MFFuelCombustion.release.xcconfig"; sourceTree = "<group>"; };
 		6B9E696DA572B7FEEE96C9AD /* Pods_Shared_MFFuelCombustion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shared_MFFuelCombustion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF47162D5038BFC0A0B2E14 /* Pods-Shared-MFFuelCombustion-MFFuelCombustionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFFuelCombustion-MFFuelCombustionTests.debug.xcconfig"; path = "Target Support Files/Pods-Shared-MFFuelCombustion-MFFuelCombustionTests/Pods-Shared-MFFuelCombustion-MFFuelCombustionTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -321,6 +323,7 @@
 			children = (
 				66ECF2132819433D00814686 /* EcoFuelAnimation.json */,
 				66ECF2192819508700814686 /* Assets.xcassets */,
+				66FBC09A285CCB1900CEA871 /* Localizable.strings */,
 			);
 			name = Ressources;
 			sourceTree = "<group>";
@@ -523,6 +526,7 @@
 				4F730CDD282A8FB100468D64 /* HistoryCell.xib in Resources */,
 				66ED2214281FD37100B38079 /* FuelSourceTypeCell.xib in Resources */,
 				66ECF2142819433D00814686 /* EcoFuelAnimation.json in Resources */,
+				66FBC09C285CCB1900CEA871 /* Localizable.strings in Resources */,
 				66ECF21A2819508700814686 /* Assets.xcassets in Resources */,
 				6645E83428103A50002387BB /* FuelCombustion.storyboard in Resources */,
 				66F200EA281AA14E00422AE9 /* EntryParams.storyboard in Resources */,
@@ -692,6 +696,17 @@
 			targetProxy = 6645E81128103565002387BB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66FBC09A285CCB1900CEA871 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66FBC09B285CCB1900CEA871 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6645E81728103565002387BB /* Debug */ = {
