@@ -26,7 +26,6 @@
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="fromBundle" value="MFFuelCombustion"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="MFFuelCombustion-title"/>
                                 </userDefinedRuntimeAttributes>
                             </label>

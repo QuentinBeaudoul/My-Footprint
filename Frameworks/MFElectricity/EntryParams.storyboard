@@ -451,6 +451,7 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="f1D-5D-rkn"/>
         <designable name="t65-z1-EEq">
             <size key="intrinsicContentSize" width="49" height="20"/>
         </designable>
