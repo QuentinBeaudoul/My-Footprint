@@ -29,7 +29,7 @@ class WeightViewController: UIViewController {
 
         // Set up header
         headerView.delegate = self
-        headerView.fillView(title: "Which weight ?")
+        headerView.fillView(title: "title_weight".localized(bundle: Bundle(for: Self.self)))
 
         // Set up textfield
         textField.delegate = self
@@ -56,7 +56,9 @@ class WeightViewController: UIViewController {
     }
 
     @IBAction func onUnitButtonTapped() {
-        let actionSheet = UIAlertController(title: "Choose an unit", message: nil, preferredStyle: .actionSheet)
+        let actionSheet = UIAlertController(title: "choose_unit".localized(bundle: Bundle(for: Self.self)),
+                                            message: nil,
+                                            preferredStyle: .actionSheet)
 
         viewModel.units.forEach { (apiName, fullName) in
             let action = UIAlertAction(title: fullName, style: .default) { [self] _ in
@@ -66,7 +68,8 @@ class WeightViewController: UIViewController {
             actionSheet.addAction(action)
         }
 
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { _ in
+        let cancelAction = UIAlertAction(title: "cancel".localized(bundle: Bundle(for: Self.self)),
+                                         style: .cancel) { _ in
             actionSheet.dismiss(animated: true)
         }
         actionSheet.addAction(cancelAction)

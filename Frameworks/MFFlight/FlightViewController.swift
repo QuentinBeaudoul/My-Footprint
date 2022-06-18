@@ -68,7 +68,7 @@ class FlightViewController: UIViewController {
             case .success():
                 tableView.reloadData()
             case .failure(let error):
-                UIAlertController.showAlert(title: "Error", message: error.localizedDescription, on: self)
+                UIAlertController.showAlert(title: "generic_error".localized(bundle: Bundle(for: Self.self)), message: error.localizedDescription, on: self)
             }
         }
     }

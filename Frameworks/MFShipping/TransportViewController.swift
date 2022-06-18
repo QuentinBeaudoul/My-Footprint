@@ -28,7 +28,8 @@ class TransportViewController: UIViewController {
         hideKeyboardWhenTappedAround()
 
         // Set up header
-        headerView.fillView(title: "Which method ?", isBackButtonHidden: false)
+        headerView.fillView(title: "title_transport".localized(bundle: Bundle(for: Self.self)),
+                            isBackButtonHidden: false)
         headerView.delegate = self
         headerHeightConstrainte.constant = headerView.isBackButtonVisible() ? 100 : 56
 

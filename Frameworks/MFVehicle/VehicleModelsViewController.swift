@@ -29,7 +29,8 @@ class VehicleModelsViewController: UIViewController {
 
         // Set up header
         headerView.delegate = self
-        headerView.fillView(title: "title_vehicle_models".localized(bundle: Bundle(for: Self.self)), isBackButtonHidden: false)
+        headerView.fillView(title: "title_vehicle_models".localized(bundle: Bundle(for: Self.self)),
+                            isBackButtonHidden: false)
         headerHeightConstrainte.constant = headerView.isBackButtonVisible() ? 100 : 56
 
         // Set up tableView

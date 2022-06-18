@@ -29,7 +29,7 @@ class CountryViewController: UIViewController {
 
         // Set up header
         headerView.delegate = self
-        headerView.fillView(title: "Which country ?", isBackButtonHidden: false)
+        headerView.fillView(title: "title_country".localized(bundle: Bundle(for: Self.self)), isBackButtonHidden: false)
         headerHeightConstrainte.constant = headerView.isBackButtonVisible() ? 100 : 56
 
         // Set up tableView

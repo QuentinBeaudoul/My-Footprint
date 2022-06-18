@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		30D322B626724E026D37741E /* Pods_Shared_MFFlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E547CDC1F0139F4EC94D1BB /* Pods_Shared_MFFlight.framework */; };
+		4F0575B5285E0190006A88B6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F0575B4285E0190006A88B6 /* Localizable.strings */; };
 		4F1C2E95284F4F860083C2FA /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C2E94284F4F860083C2FA /* StoreManager.swift */; };
 		4F1C2E99284F925F0083C2FA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C2E98284F925F0083C2FA /* Constants.swift */; };
 		4F1C2E9B284F92DE0083C2FA /* EntryParams.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1C2E9A284F92DE0083C2FA /* EntryParams.storyboard */; };
@@ -81,6 +82,7 @@
 		0B583D8939DAC51D79A4D842 /* Pods-Frameworks-MFFlight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFFlight.debug.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFFlight/Pods-Frameworks-MFFlight.debug.xcconfig"; sourceTree = "<group>"; };
 		1CFC86255C611213E5E55CC7 /* Pods-Shared-MFFlight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFFlight.debug.xcconfig"; path = "Target Support Files/Pods-Shared-MFFlight/Pods-Shared-MFFlight.debug.xcconfig"; sourceTree = "<group>"; };
 		295BB260B75A2D7441F73803 /* Pods-MFFlight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFFlight.debug.xcconfig"; path = "Target Support Files/Pods-MFFlight/Pods-MFFlight.debug.xcconfig"; sourceTree = "<group>"; };
+		4F0575B4285E0190006A88B6 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		4F1C2E94284F4F860083C2FA /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		4F1C2E98284F925F0083C2FA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4F1C2E9A284F92DE0083C2FA /* EntryParams.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EntryParams.storyboard; sourceTree = "<group>"; };
@@ -325,6 +327,7 @@
 			children = (
 				66D2A87528197EB80026F85E /* AirplainAnimation.json */,
 				66D2A87728197ED10026F85E /* Assets.xcassets */,
+				4F0575B4285E0190006A88B6 /* Localizable.strings */,
 			);
 			name = Ressources;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 				66FE5D4E285374FE00FC1E9E /* AirportCell.xib in Resources */,
 				66D2A87828197ED10026F85E /* Assets.xcassets in Resources */,
 				66FE5D47285370BB00FC1E9E /* Airports.json in Resources */,
+				4F0575B5285E0190006A88B6 /* Localizable.strings in Resources */,
 				6645E7F828103117002387BB /* Flight.storyboard in Resources */,
 				4F1C2E9B284F92DE0083C2FA /* EntryParams.storyboard in Resources */,
 			);

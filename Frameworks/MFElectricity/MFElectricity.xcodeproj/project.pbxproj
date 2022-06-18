@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F0575B7285E0504006A88B6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F0575B6285E0504006A88B6 /* Localizable.strings */; };
 		4F1C2E80284B40490083C2FA /* AmountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C2E7F284B40490083C2FA /* AmountTests.swift */; };
 		4F1C2E82284B40560083C2FA /* CountryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C2E81284B40560083C2FA /* CountryTests.swift */; };
 		4F1C2E84284B40670083C2FA /* ProcessResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C2E83284B40670083C2FA /* ProcessResultTests.swift */; };
@@ -83,6 +84,7 @@
 /* Begin PBXFileReference section */
 		03BDC5FEDBD313E30D79A4AF /* Pods-Shared-MFElectricity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFElectricity.release.xcconfig"; path = "Target Support Files/Pods-Shared-MFElectricity/Pods-Shared-MFElectricity.release.xcconfig"; sourceTree = "<group>"; };
 		269606CCA6A9D5BF266E6F56 /* Pods-Frameworks-MFElectricity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFElectricity.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFElectricity/Pods-Frameworks-MFElectricity.release.xcconfig"; sourceTree = "<group>"; };
+		4F0575B6285E0504006A88B6 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		4F1C2E7F284B40490083C2FA /* AmountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountTests.swift; sourceTree = "<group>"; };
 		4F1C2E81284B40560083C2FA /* CountryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTests.swift; sourceTree = "<group>"; };
 		4F1C2E83284B40670083C2FA /* ProcessResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessResultTests.swift; sourceTree = "<group>"; };
@@ -318,6 +320,7 @@
 			children = (
 				66D2A87E281980910026F85E /* LightBulbAnimation.json */,
 				66D2A880281980A90026F85E /* Assets.xcassets */,
+				4F0575B6285E0504006A88B6 /* Localizable.strings */,
 			);
 			name = Ressources;
 			sourceTree = "<group>";
@@ -531,6 +534,7 @@
 				66EA1DFC284A3C82008B5470 /* CountryCell.xib in Resources */,
 				66D2A87F281980910026F85E /* LightBulbAnimation.json in Resources */,
 				66D2A881281980A90026F85E /* Assets.xcassets in Resources */,
+				4F0575B7285E0504006A88B6 /* Localizable.strings in Resources */,
 				6645E8282810376E002387BB /* Electricity.storyboard in Resources */,
 				66EA1E04284A50C4008B5470 /* HistoryCell.xib in Resources */,
 				66EA1DD8284A2FF6008B5470 /* EntryParams.storyboard in Resources */,

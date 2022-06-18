@@ -1,0 +1,31 @@
+// General
+"generic_error" = "Something went wrong";
+
+// Electricity
+"title" = "Electricity";
+"get_started" = "Get started !";
+"history" = "History";
+"no_history" = "No history yet";
+
+// Amount
+"title_amount" = "How much ?";
+"process" = "Process...";
+"choose_unit" = "Choose an unit";
+"cancel" = "Cancel";
+
+// Country
+"title_country" = "Which country ?";
+"next" = "Next";
+
+// ProcessResult
+"retry" = "Retry";
+
+// Result
+"title_result" = "Your result !";
+"context" = "For %@ %@ consumed in %@, you generate";
+"grams" = "grams";
+"pounds" = "pounds";
+"kilograms" = "kilograms";
+"megatons" = "megatons";
+"of_carbon" = "of carbon.";
+"done" = "Done";
