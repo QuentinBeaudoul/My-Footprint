@@ -30,7 +30,7 @@ class DistanceViewController: UIViewController {
         hideKeyboardWhenTappedAround()
 
         // Set up header
-        headerView.fillView(title: "How much ?", isBackButtonHidden: false)
+        headerView.fillView(title: "title_vehicle_models".localized(bundle: Bundle(for: Self.self)), isBackButtonHidden: false)
         headerView.delegate = self
         headerHeightConstrainte.constant = headerView.isBackButtonVisible() ? 100 : 56
 
@@ -59,7 +59,7 @@ class DistanceViewController: UIViewController {
     }
 
     @IBAction func onUnitButtonTapped() {
-        let actionSheet = UIAlertController(title: "Choose an unit", message: nil, preferredStyle: .actionSheet)
+        let actionSheet = UIAlertController(title: "choose_unit".localized(bundle: Bundle(for: Self.self)), message: nil, preferredStyle: .actionSheet)
 
         viewModel.units.forEach { (apiName, fullName) in
             let action = UIAlertAction(title: fullName, style: .default) { [self] _ in
@@ -69,7 +69,7 @@ class DistanceViewController: UIViewController {
             actionSheet.addAction(action)
         }
 
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { _ in
+        let cancelAction = UIAlertAction(title: "cancel".localized(bundle: Bundle(for: Self.self)), style: .cancel) { _ in
             actionSheet.dismiss(animated: true)
         }
         actionSheet.addAction(cancelAction)

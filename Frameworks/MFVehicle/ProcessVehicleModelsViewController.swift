@@ -7,6 +7,7 @@
 
 import UIKit
 import Lottie
+import MFExtensions
 
 class ProcessVehicleModelsViewController: UIViewController {
 
@@ -34,11 +35,11 @@ class ProcessVehicleModelsViewController: UIViewController {
 
     private func handleError(_ error: Error) {
 
-        let action = UIAlertAction(title: "Retry", style: .default) { [self] _ in
+        let action = UIAlertAction(title: "retry".localized(bundle: Bundle(for: Self.self)), style: .default) { [self] _ in
             performRequest()
         }
 
-        UIAlertController.showAlert(title: "Error", message: error.localizedDescription, action: action, on: self)
+        UIAlertController.showAlert(title: "generic_error".localized(bundle: Bundle(for: Self.self)), message: error.localizedDescription, action: action, on: self)
     }
 
     private func segue() {

@@ -1,0 +1,37 @@
+// General
+"generic_error" = "Something went wrong";
+"retry" = "retry";
+"next" = "Next";
+"cancel" = "Cancel";
+
+// Vehicle
+"title" = "Vehicle";
+"get_started" = "Get started !";
+"history" = "History";
+"no_history" = "No history yet";
+
+// Result
+"title_result" = "Your result !";
+"context" = "For a %@ %@ %@, driving %@ %@ generate";
+"grams" = "grams";
+"pounds" = "pounds";
+"kilograms" = "kilograms";
+"megatons" = "megatons";
+"of_carbon" = "of carbon.";
+"done" = "Done";
+
+// ProcessResult
+
+// Distance
+"title_distance" = "How much ?";
+"choose_unit" = "Choose an unit";
+"process" = "Process...";
+
+// VehicleModels
+"title_vehicle_models" = "Which model ?";
+
+// ProcessVehicleModels
+
+// VehicleMakes
+"title_vehicle_make" = "Which maker ?";
+

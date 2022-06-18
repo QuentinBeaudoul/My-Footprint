@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1456840673E946449D7C1286 /* Pods_Shared_MFVehicle_MFVehicleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47C754EF0F8A4C0759D21B7 /* Pods_Shared_MFVehicle_MFVehicleTests.framework */; };
 		267FAF1F8222C17889A60A43 /* Pods_Shared_MFVehicle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63170CE261388F59CC9D6446 /* Pods_Shared_MFVehicle.framework */; };
+		4F0575B1285DF10F006A88B6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F0575B0285DF10F006A88B6 /* Localizable.strings */; };
 		4F3C16EE283FBF4F00B48132 /* VehicleMakesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3C16ED283FBF4F00B48132 /* VehicleMakesTests.swift */; };
 		4F3C16F0283FBF7400B48132 /* ProcessVehicleModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3C16EF283FBF7400B48132 /* ProcessVehicleModelsTests.swift */; };
 		4F3C16F2283FBF8700B48132 /* VehicleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3C16F1283FBF8700B48132 /* VehicleTests.swift */; };
@@ -98,6 +99,7 @@
 		2015F27440C849C5AD70ECFF /* Pods-MFVehicle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFVehicle.debug.xcconfig"; path = "Target Support Files/Pods-MFVehicle/Pods-MFVehicle.debug.xcconfig"; sourceTree = "<group>"; };
 		40BF3C0DB7F025A15A05B482 /* Pods-Frameworks-MFVehicul.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFVehicul.debug.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFVehicul/Pods-Frameworks-MFVehicul.debug.xcconfig"; sourceTree = "<group>"; };
 		47471950C1D46B2B3298611D /* Pods-Frameworks-MFVehicul.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-MFVehicul.release.xcconfig"; path = "Target Support Files/Pods-Frameworks-MFVehicul/Pods-Frameworks-MFVehicul.release.xcconfig"; sourceTree = "<group>"; };
+		4F0575B0285DF10F006A88B6 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		4F3C16EA283FBB9200B48132 /* MFAssets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MFAssets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F3C16ED283FBF4F00B48132 /* VehicleMakesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMakesTests.swift; sourceTree = "<group>"; };
 		4F3C16EF283FBF7400B48132 /* ProcessVehicleModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessVehicleModelsTests.swift; sourceTree = "<group>"; };
@@ -462,6 +464,7 @@
 			children = (
 				66D2A866281976690026F85E /* CarAnimation.json */,
 				66D2A868281976810026F85E /* Assets.xcassets */,
+				4F0575B0285DF10F006A88B6 /* Localizable.strings */,
 			);
 			name = Ressources;
 			sourceTree = "<group>";
@@ -577,6 +580,7 @@
 				4F730CF9282FCC4200468D64 /* VehicleMakeCell.xib in Resources */,
 				66D2A869281976810026F85E /* Assets.xcassets in Resources */,
 				4F932A3C2833DAA200F4F12A /* VehicleModelCell.xib in Resources */,
+				4F0575B1285DF10F006A88B6 /* Localizable.strings in Resources */,
 				66D2A867281976690026F85E /* CarAnimation.json in Resources */,
 				4F730CE4282FB11500468D64 /* EntryParams.storyboard in Resources */,
 			);

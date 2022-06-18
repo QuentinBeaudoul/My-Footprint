@@ -30,7 +30,7 @@ class VehicleMakesViewController: UIViewController {
 
         // Set up header
         headerView.delegate = self
-        headerView.fillView(title: "Which maker ?")
+        headerView.fillView(title: "title_vehicle_make".localized(bundle: Bundle(for: Self.self)))
         headerHeightConstrainte.constant = headerView.isBackButtonVisible() ? 100 : 56
 
         // Set up tableView
