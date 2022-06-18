@@ -9,32 +9,32 @@ import Foundation
 import Alamofire
 
 public protocol NetworkManagerProtocol {
-    func fetchData<T: Decodable>(httpType: HttpType, apiKey: ApiKeyTypes, url: String, headers: [String: String]?, parameters: [String: Any]?, parser: T.Type, completion: @escaping (Result<T?, NetworkManagerError>) -> Void)
+    func fetchData<T: Decodable>(httpType: HttpType, apiKey: ApiKeyTypes, url: String, headers: [String: String]?, parameters: [String: Any]?, parser: T.Type, completion: @escaping (Result<T?, Error>) -> Void)
 }
 
 public enum HttpType {
     case GET, POST
 }
 
-public enum NetworkManagerError: LocalizedError {
-    case clientError
-
-    public var recoverySuggestion: String? {
-        var res = ""
-        switch self {
-        case .clientError:
-            res = "toto"
-        }
-
-        return res
-    }
-}
+//public enum NetworkManagerError: LocalizedError {
+//    case clientError
+//
+//    public var recoverySuggestion: String? {
+//        var res = ""
+//        switch self {
+//        case .clientError:
+//            res = "toto"
+//        }
+//
+//        return res
+//    }
+//}
 
 public class NetworkManager: NetworkManagerProtocol {
 
     public static let shared = NetworkManager()
 
-    public func fetchData<T: Decodable>(httpType: HttpType, apiKey: ApiKeyTypes, url: String, headers: [String: String]? = nil, parameters: [String: Any]? = nil, parser: T.Type, completion: @escaping (Result<T?, NetworkManagerError>) -> Void) {
+    public func fetchData<T: Decodable>(httpType: HttpType, apiKey: ApiKeyTypes, url: String, headers: [String: String]? = nil, parameters: [String: Any]? = nil, parser: T.Type, completion: @escaping (Result<T?, Error>) -> Void) {
 
         // Initiate headers and adding defaults values like apiKey
         var afHeaders = HTTPHeaders()
@@ -63,10 +63,10 @@ public class NetworkManager: NetworkManagerProtocol {
         }
     }
 
-    private func handleResponse<T: Decodable>(response: DataResponse<T, AFError>, completion: @escaping (Result<T?, NetworkManagerError>) -> Void) {
+    private func handleResponse<T: Decodable>(response: DataResponse<T, AFError>, completion: @escaping (Result<T?, Error>) -> Void) {
         if let error = response.error {
             print("‼️\(error)‼️")
-            completion(.failure(.clientError))
+            completion(.failure(error))
         } else {
             completion(.success(response.value))
         }

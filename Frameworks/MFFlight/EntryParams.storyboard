@@ -409,6 +409,7 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="AFE-Yu-dN0"/>
         <designable name="FEJ-p1-J9g">
             <size key="intrinsicContentSize" width="179" height="31"/>
         </designable>

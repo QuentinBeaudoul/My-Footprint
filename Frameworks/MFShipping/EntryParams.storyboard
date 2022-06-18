@@ -506,6 +506,7 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="L60-7y-Q9j"/>
         <designable name="MQs-LT-FEb">
             <size key="intrinsicContentSize" width="89" height="22"/>
         </designable>

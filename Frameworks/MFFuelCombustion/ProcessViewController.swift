@@ -44,7 +44,8 @@ class ProcessViewController: UIViewController {
             performRequest()
         }
 
-        UIAlertController.showAlert(title: "Error", message: error.localizedDescription, action: action, on: self)
+        UIAlertController.showAlert(title: "generic_error".localized(bundle: Bundle(for: Self.self)),
+                                    message: error.localizedDescription, action: action, on: self)
     }
 
     private func performRequest() {

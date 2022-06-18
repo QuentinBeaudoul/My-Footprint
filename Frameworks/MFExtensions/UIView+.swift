@@ -45,7 +45,7 @@ import UIKit
         } set {
             if let newValue = newValue {
                 objc_setAssociatedObject(self, "localizationKey", newValue as String?, .OBJC_ASSOCIATION_COPY_NONATOMIC)
-                let split = newValue.split(separator: "_")
+                let split = newValue.split(separator: "-")
                 let localizedString = String(split[1]).localized(bundle: Bundle(identifier: "Quentin.Beaudoul." + String(split[0]))!)
                 updateLocalization(localizedString)
             }

@@ -32,7 +32,7 @@ class ResultViewController: UIViewController {
         }
 
         // Setup header
-        headerView.fillView(title: "Your result !", isBackButtonHidden: false)
+        headerView.fillView(title: "title_result".localized(bundle: Bundle(for: Self.self)), isBackButtonHidden: false)
         headerView.delegate = self
         headerHeightConstrainte.constant = headerView.isBackButtonVisible() ? 100 : 56
 

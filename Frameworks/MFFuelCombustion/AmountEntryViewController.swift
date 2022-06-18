@@ -34,7 +34,7 @@ class AmountEntryViewController: UIViewController {
         hideKeyboardWhenTappedAround()
 
         // SetUp header
-        headerView.fillView(title: "How much ?", isBackButtonHidden: false)
+        headerView.fillView(title: "title_amount".localized(bundle: Bundle(for: Self.self)), isBackButtonHidden: false)
         headerView.delegate = self
         headerHeightConstrainte.constant = headerView.isBackButtonVisible() ? 100 : 56
 
@@ -61,7 +61,7 @@ class AmountEntryViewController: UIViewController {
                 return
             }
             guard let request = viewModel.appendToRequest() else {
-                UIAlertController.showAlert(title: "Something went wrong", on: self)
+                UIAlertController.showAlert(title: "generic_error".localized(bundle: Bundle(for: Self.self)), on: self)
                 return
             }
 
@@ -86,7 +86,9 @@ class AmountEntryViewController: UIViewController {
         performSegue(withIdentifier: R.segue.amountEntryViewController.processSegue, sender: nil)
     }
     @IBAction func unitButtonTapped() {
-        let actionSheet = UIAlertController(title: "Choose an unit", message: nil, preferredStyle: .actionSheet)
+        let actionSheet = UIAlertController(title: "choose_unit".localized(bundle: Bundle(for: Self.self)),
+                                            message: nil,
+                                            preferredStyle: .actionSheet)
 
         viewModel.units?.forEach { unit in
             let action = UIAlertAction(title: unit.name, style: .default) { [self] _ in
@@ -96,7 +98,8 @@ class AmountEntryViewController: UIViewController {
             actionSheet.addAction(action)
         }
 
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { _ in
+        let cancelAction = UIAlertAction(title: "cancel".localized(bundle: Bundle(for: Self.self)),
+                                         style: .cancel) { _ in
             actionSheet.dismiss(animated: true)
         }
         actionSheet.addAction(cancelAction)

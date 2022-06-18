@@ -25,7 +25,7 @@ class FuelSourceTypeViewController: UIViewController {
             view.setGradientBackground(colorTop: topColor, colorBottom: bottomColor)
         }
 
-        headerView.fillView(title: "Which energy ?")
+        headerView.fillView(title: "title_fuel_source".localized(bundle: Bundle(for: Self.self)))
         headerView.delegate = self
         headerHeightConstrainte.constant = headerView.isBackButtonVisible() ? 100 : 56
 
@@ -44,7 +44,7 @@ class FuelSourceTypeViewController: UIViewController {
             if let request = viewModel.initRequest(), let sourceType = viewModel.selectedFuelSource {
                 amountEntryViewController.viewModel.load(fuelSource: sourceType, request)
             } else {
-                UIAlertController.showAlert(title: "Something went wrong", on: self)
+                UIAlertController.showAlert(title: "generic_error".localized(bundle: Bundle(for: Self.self)), on: self)
             }
         }
     }
@@ -54,8 +54,8 @@ class FuelSourceTypeViewController: UIViewController {
         if viewModel.isFuelSourceSelected {
             performSegue(withIdentifier: R.segue.fuelSourceTypeViewController.amountEntrySegue, sender: nil)
         } else {
-            UIAlertController.showAlert(title: "Make a choice",
-                                        message: "You have to select a value to continue",
+            UIAlertController.showAlert(title: "make_choice".localized(bundle: Bundle(for: Self.self)),
+                                        message: "you_have_to_select_a_value".localized(bundle: Bundle(for: Self.self)),
                                         on: self)
         }
     }
