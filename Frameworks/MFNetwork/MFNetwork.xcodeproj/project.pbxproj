@@ -10,6 +10,8 @@
 		2917FD30DFA7A8304B005580 /* Pods_Shared_MFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183AC04D9C6B8815C101EFE4 /* Pods_Shared_MFNetwork.framework */; };
 		6605CD5D28113B5E00B226A5 /* ApiKeyTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6605CD5C28113B5E00B226A5 /* ApiKeyTypes.swift */; };
 		6605CD6428114CC100B226A5 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6605CD6328114CC100B226A5 /* Request.swift */; };
+		662C7ADB2860C1F600C29126 /* Airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 662C7ADA2860C1F600C29126 /* Airports.json */; };
+		662C7ADD2860C40600C29126 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662C7ADC2860C40600C29126 /* Airport.swift */; };
 		664A036528081846006C40F8 /* MFNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 664A036428081846006C40F8 /* MFNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		664A03B3280824D7006C40F8 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A03B2280824D7006C40F8 /* Service.swift */; };
 		664A03B628082522006C40F8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A03B528082522006C40F8 /* NetworkManager.swift */; };
@@ -35,6 +37,8 @@
 		53876DD8FCACA1A00B24953B /* Pods-Shared-MFNetwork-MFNetworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared-MFNetwork-MFNetworkTests.release.xcconfig"; path = "Target Support Files/Pods-Shared-MFNetwork-MFNetworkTests/Pods-Shared-MFNetwork-MFNetworkTests.release.xcconfig"; sourceTree = "<group>"; };
 		6605CD5C28113B5E00B226A5 /* ApiKeyTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeyTypes.swift; sourceTree = "<group>"; };
 		6605CD6328114CC100B226A5 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		662C7ADA2860C1F600C29126 /* Airports.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Airports.json; sourceTree = "<group>"; };
+		662C7ADC2860C40600C29126 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 		664A036128081846006C40F8 /* MFNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MFNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		664A036428081846006C40F8 /* MFNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFNetwork.h; sourceTree = "<group>"; };
 		664A03B2280824D7006C40F8 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
@@ -84,6 +88,23 @@
 				6605CD6328114CC100B226A5 /* Request.swift */,
 			);
 			name = Requests;
+			sourceTree = "<group>";
+		};
+		662C7AD82860C19A00C29126 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				662C7ADA2860C1F600C29126 /* Airports.json */,
+				662C7ADC2860C40600C29126 /* Airport.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		662C7AD92860C1A000C29126 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				667133EB285CB5BF006F9401 /* MFNetworkTests.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		664A035728081846006C40F8 = {
@@ -145,7 +166,8 @@
 		667133EA285CB5BF006F9401 /* MFNetworkTests */ = {
 			isa = PBXGroup;
 			children = (
-				667133EB285CB5BF006F9401 /* MFNetworkTests.swift */,
+				662C7AD92860C1A000C29126 /* Tests */,
+				662C7AD82860C19A00C29126 /* Resources */,
 			);
 			path = MFNetworkTests;
 			sourceTree = "<group>";
@@ -278,6 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				662C7ADB2860C1F600C29126 /* Airports.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				667133EC285CB5BF006F9401 /* MFNetworkTests.swift in Sources */,
+				662C7ADD2860C40600C29126 /* Airport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,7 +598,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52H82A67C3;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Quentin.Beaudoul.MFNetworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -592,7 +616,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52H82A67C3;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Quentin.Beaudoul.MFNetworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

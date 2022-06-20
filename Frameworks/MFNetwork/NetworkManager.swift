@@ -34,6 +34,12 @@ public class NetworkManager: NetworkManagerProtocol {
 
     public static let shared = NetworkManager()
 
+    private let session: Session
+
+    init(session: Session = AF) {
+        self.session = session
+    }
+
     public func fetchData<T: Decodable>(httpType: HttpType, apiKey: ApiKeyTypes, url: String, headers: [String: String]? = nil, parameters: [String: Any]? = nil, parser: T.Type, completion: @escaping (Result<T?, Error>) -> Void) {
 
         // Initiate headers and adding defaults values like apiKey
@@ -53,11 +59,11 @@ public class NetworkManager: NetworkManagerProtocol {
         // Excute request depending of httpType
         switch httpType {
         case .GET:
-            Service.get(url: url, headers: afHeaders, parameters: parameters, parser: parser) { [self] response in
+            Service.get(url: url, headers: afHeaders, parameters: parameters, parser: parser, session: session) { [self] response in
                 handleResponse(response: response, completion: completion)
             }
         case .POST:
-            Service.post(url: url, headers: afHeaders, parameters: parameters, parser: parser) { [self] response in
+            Service.post(url: url, headers: afHeaders, parameters: parameters, parser: parser, session: session) { [self] response in
                 handleResponse(response: response, completion: completion)
             }
         }

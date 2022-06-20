@@ -215,6 +215,16 @@
                ReferencedContainer = "container:../Frameworks/MFFuelCombustion/MFFuelCombustion.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "667133E8285CB5BF006F9401"
+               BuildableName = "MFNetworkTests.xctest"
+               BlueprintName = "MFNetworkTests"
+               ReferencedContainer = "container:../Frameworks/MFNetwork/MFNetwork.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
