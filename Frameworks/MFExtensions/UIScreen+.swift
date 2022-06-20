@@ -15,4 +15,8 @@ public extension UIScreen {
     class var headerHeight: Double {
         UIDevice.current.hasNotch ? 107.5 : 83.5
     }
+
+    class var bottomInsetHeight: Double {
+        UIDevice.current.hasNotch ? 34.0 : 0
+    }
 }

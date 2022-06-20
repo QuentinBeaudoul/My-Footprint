@@ -35,7 +35,7 @@ class SelectAirportViewController: UIViewController {
         }
 
         // Set the historyView in the bottom
-        airportListTopConstrainte.constant =
+        airportListTopConstrainte.constant = UIScreen.bottomInsetHeight +
         UIScreen.main.bounds.height -
         UIScreen.headerHeight -
         UIScreen.tabbarHeight -
@@ -100,7 +100,8 @@ class SelectAirportViewController: UIViewController {
         case.up:
             airportListTopConstrainte.constant = 16
         case.down:
-            airportListTopConstrainte.constant = UIScreen.main.bounds.height -
+            airportListTopConstrainte.constant = UIScreen.bottomInsetHeight +
+            UIScreen.main.bounds.height -
             UIScreen.headerHeight -
             UIScreen.tabbarHeight -
             100
