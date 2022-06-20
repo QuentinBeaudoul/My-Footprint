@@ -17,6 +17,10 @@ class SelectAirportViewController: UIViewController {
     @IBOutlet weak var processButton: MFButton!
     @IBOutlet weak var segmentedControl: MFSegmentedControl!
     @IBOutlet weak var airportListTopConstrainte: NSLayoutConstraint!
+    @IBOutlet weak var departureImageView: UIImageView!
+    @IBOutlet weak var departureLabel: UILabel!
+    @IBOutlet weak var destinationImageView: UIImageView!
+    @IBOutlet weak var destinationLabel: UILabel!
     @IBOutlet weak var airportListHeightConstrainte: NSLayoutConstraint!
 
     let viewModel = SelectAirportViewModel()
@@ -35,12 +39,16 @@ class SelectAirportViewController: UIViewController {
         UIScreen.main.bounds.height -
         UIScreen.headerHeight -
         UIScreen.tabbarHeight -
-        60
+        100
 
         // Set the historyView height contrainte
         airportListHeightConstrainte.constant =
         UIScreen.main.bounds.height -
         UIScreen.headerHeight
+
+        // Setup Icons
+        departureImageView.image = R.image.ic_35_airplane()
+        destinationImageView.image = R.image.ic_35_airplaine_landing()
 
         // Setup tableView
         tableView.register(UINib(nibName: AirportCell.getCellIdentifier(),
@@ -71,8 +79,10 @@ class SelectAirportViewController: UIViewController {
         switch segmentedControl.selectedSegmentIndex {
         case 0:
             viewModel.setDeparture(airport)
+            departureLabel.text = airport.iataCode
         case 1:
             viewModel.setDestination(airport)
+            destinationLabel.text = airport.iataCode
         default:
             break
         }
@@ -93,7 +103,7 @@ class SelectAirportViewController: UIViewController {
             airportListTopConstrainte.constant = UIScreen.main.bounds.height -
             UIScreen.headerHeight -
             UIScreen.tabbarHeight -
-            60
+            100
         default:
             break
         }

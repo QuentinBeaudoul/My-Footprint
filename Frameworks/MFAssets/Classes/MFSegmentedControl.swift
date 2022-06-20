@@ -20,7 +20,7 @@ public class MFSegmentedControl: UISegmentedControl {
 
         selectedSegmentTintColor = R.color.primaryColor()
 
-        let font = UIFont.demiBoldFont(withSize: 14)
+        let font = UIFont.demiBoldFont(withSize: 12)
         let selectedTitleTextAttributes = [NSAttributedString.Key.foregroundColor: R.color.onPrimaryColor() ?? .white,
                                            NSAttributedString.Key.font: font]
         setTitleTextAttributes(selectedTitleTextAttributes, for: .selected)

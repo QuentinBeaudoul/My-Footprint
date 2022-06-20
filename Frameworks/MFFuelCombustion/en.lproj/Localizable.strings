@@ -2,7 +2,7 @@
 "generic_error" = "Something went wrong";
 
 // Fuel Combustion
-"title" = "FuelCombustion";
+"title" = "Fuel combustion";
 "history" = "History";
 "no_history" = "No history yet";
 "get_started" = "Get started !";

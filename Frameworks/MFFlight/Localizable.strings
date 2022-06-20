@@ -12,6 +12,7 @@
 "departure" = "Departure";
 "destination" = "Destination";
 "process" = "Process...";
+"to_be_determinated" = "tbd";
 
 // Process Result
 "retry" = "retry";
