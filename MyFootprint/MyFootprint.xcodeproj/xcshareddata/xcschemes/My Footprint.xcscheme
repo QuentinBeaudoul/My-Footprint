@@ -28,20 +28,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "664A0433280861AF006C40F8"
-               BuildableName = "MFVehicul.framework"
-               BlueprintName = "MFVehicle"
-               ReferencedContainer = "container:../Frameworks/MFVehicul/MFVehicle.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "NO"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "664A03A528081973006C40F8"
                BuildableName = "MFExtensions.framework"
                BlueprintName = "MFExtensions"
@@ -60,6 +46,20 @@
                BuildableName = "MFFlight.framework"
                BlueprintName = "MFFlight"
                ReferencedContainer = "container:../Frameworks/MFFlight/MFFlight.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "664A0433280861AF006C40F8"
+               BuildableName = "MFVehicle.framework"
+               BlueprintName = "MFVehicle"
+               ReferencedContainer = "container:../Frameworks/MFVehicle/MFVehicle.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -162,6 +162,13 @@
             BuildableName = "MFVehicle.framework"
             BlueprintName = "MFVehicle"
             ReferencedContainer = "container:../Frameworks/MFVehicle/MFVehicle.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "664A036028081846006C40F8"
+            BuildableName = "MFNetwork.framework"
+            BlueprintName = "MFNetwork"
+            ReferencedContainer = "container:../Frameworks/MFNetwork/MFNetwork.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
