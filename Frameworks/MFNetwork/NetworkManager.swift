@@ -16,20 +16,6 @@ public enum HttpType {
     case GET, POST
 }
 
-//public enum NetworkManagerError: LocalizedError {
-//    case clientError
-//
-//    public var recoverySuggestion: String? {
-//        var res = ""
-//        switch self {
-//        case .clientError:
-//            res = "toto"
-//        }
-//
-//        return res
-//    }
-//}
-
 public class NetworkManager: NetworkManagerProtocol {
 
     public static let shared = NetworkManager()

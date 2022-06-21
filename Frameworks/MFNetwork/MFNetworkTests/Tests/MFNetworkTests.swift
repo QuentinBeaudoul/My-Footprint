@@ -25,7 +25,7 @@ class MFNetworkTests: XCTestCase {
         manager = NetworkManager(session: sessionManager!)
     }
 
-    func testGivenUrlAndParams_WhenHittingEndpoint_ThenResultIsReturned() {
+    func testGivenUrlAndParams_WhenHittingGetEndpoint_ThenResultIsReturned() {
         // Given
         let originalURL = URL(string: "https://app.goflightlabs.com/airports")!
         let params = ["access_key": ApiKeyTypes.airports.rawValue]
@@ -53,4 +53,36 @@ class MFNetworkTests: XCTestCase {
         wait(for: [expectation], timeout: 10.0)
     }
 
+    func testGivenRequestBuilded_WhenHittingPostEndpoint_ThenEstimateIsReturned() {
+        // Given
+        let request = Request.Builder()
+        request.addParameter(key: "type", value: "fuel_combustion")
+        request.addParameter(key: "fuel_source_type", value: "dfo")
+        request.addParameter(key: "fuel_source_unit", value: "btu")
+        request.addParameter(key: "fuel_source_value", value: 2)
+        let params = request.build()
+
+        let originalURL = URL(string: "https://www.carboninterface.com/api/v1/estimates")!
+
+        // When
+        let expectation = expectation(description: "An EstimateResponse should be returned")
+        let expectedResult = Bundle.decode(Estimate.self, from: "EstimateResponse.json", in: Bundle(for: Self.self))
+        let mockData = try! JSONEncoder().encode(expectedResult)
+        let mock = Mock(url: originalURL, dataType: .json, statusCode: 201, data: [.post: mockData])
+        mock.register()
+
+        manager?.fetchData(httpType: .POST, apiKey: .carbon, url: originalURL.absoluteString, headers: nil, parameters: params, parser: Estimate.self, completion: { response in
+            // Then
+            switch response {
+            case .success(let estimate):
+                XCTAssertEqual(estimate, expectedResult)
+                expectation.fulfill()
+            case .failure(_):
+                XCTFail("error")
+                expectation.fulfill()
+            }
+        })
+
+        wait(for: [expectation], timeout: 10.0)
+    }
 }
