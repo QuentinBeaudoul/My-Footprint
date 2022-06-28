@@ -1,0 +1,28 @@
+// General
+"generic_error" = "Something went wrong";
+
+// Flight
+"title" = "Flight";
+"get_started" = "Get started !";
+"history" = "History";
+"no_history" = "No history yet";
+
+// Select Airport
+"title_select_airport" = "Airports";
+"departure" = "Departure";
+"destination" = "Destination";
+"process" = "Process...";
+"to_be_determinated" = "tbd";
+
+// Process Result
+"retry" = "retry";
+
+// Result
+"title_result" = "Your result !";
+"context" = "For a %@ %@ flight between %@ and %@. You generate";
+"grams" = "grams";
+"pounds" = "pounds";
+"kilograms" = "kilograms";
+"megatons" = "megatons";
+"of_carbon" = "of carbon.";
+"done" = "Done";

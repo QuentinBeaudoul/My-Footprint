@@ -1,0 +1,34 @@
+// General
+"generic_error" = "Something went wrong";
+"retry" = "retry";
+"next" = "Next";
+"cancel" = "Cancel";
+"process" = "Process...";
+"choose_unit" = "Choose an unit";
+
+// Shipping
+"title" = "Shipping";
+"get_started" = "Get started !";
+"history" = "History";
+"no_history" = "No history yet";
+
+// Weight
+"title_weight" = "Which weight ?";
+
+// Distance
+"title_distance" = "Which distance ?";
+
+// Transport
+"title_transport" = "Which method ?";
+
+// ProcessResult
+
+// Result
+"title_result" = "Your result !";
+"context" = "For a %@ %@ parcel transported by %@ over %@ %@. You generate";
+"grams" = "grams";
+"pounds" = "pounds";
+"kilograms" = "kilograms";
+"megatons" = "megatons";
+"of_carbon" = "of carbon.";
+"done" = "Done";

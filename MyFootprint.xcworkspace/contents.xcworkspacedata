@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "Frameworks">
+      <Group
+         location = "container:"
+         name = "Interfaces">
+         <FileRef
+            location = "group:Frameworks/MFAssets/MFAssets.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:Frameworks/MFFuelCombustion/MFFuelCombustion.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:Frameworks/MFVehicle/MFVehicle.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:Frameworks/MFShipping/MFShipping.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:Frameworks/MFFlight/MFFlight.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:Frameworks/MFElectricity/MFElectricity.xcodeproj">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Frameworks/MFExtensions/MFExtensions.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Frameworks/MFStorage/MFStorage.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Frameworks/MFNetwork/MFNetwork.xcodeproj">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:MyFootprint/MyFootprint.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

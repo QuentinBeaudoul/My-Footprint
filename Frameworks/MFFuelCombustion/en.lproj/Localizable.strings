@@ -1,0 +1,33 @@
+// General
+"generic_error" = "Something went wrong";
+
+// Fuel Combustion
+"title" = "Fuel combustion";
+"history" = "History";
+"no_history" = "No history yet";
+"get_started" = "Get started !";
+
+// Fuel Type
+"title_fuel_source" = "Which energy ?";
+"next" = "Next";
+"make_choice" = "Make a choice";
+"you_have_to_select_a_value" = "You have to select a value to continue";
+
+// Amount
+"title_amount" = "How much ?";
+"process" = "Process...";
+"choose_unit" = "Choose an unit";
+"cancel" = "Cancel";
+
+// Process
+"retry" = "Retry";
+
+// Result
+"title_result" = "Your result !";
+"context" = "For %@ %@ burned. You generate";
+"grams" = "grams";
+"pounds" = "pounds";
+"kilograms" = "kilograms";
+"megatons" = "megatons";
+"of_carbon" = "of carbon.";
+"done" = "Done";

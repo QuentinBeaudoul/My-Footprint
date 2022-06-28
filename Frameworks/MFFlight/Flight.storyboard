@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Flight View Controller-->
+        <scene sceneID="FBk-pq-9ya">
+            <objects>
+                <viewController storyboardIdentifier="FlightViewController" id="tDq-DN-Ser" customClass="FlightViewController" customModule="MFFlight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kHW-tO-09o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Flight]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuh-nx-7bY" customClass="MFLabel" customModule="MFAssets">
+                                <rect key="frame" x="16" y="60" width="99.5" height="39.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
+                                <color key="textColor" name="onPrimaryColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="MFFlight-title"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ycr-yO-IQ5" userLabel="Get Started Button" customClass="MFButton" customModule="MFAssets">
+                                <rect key="frame" x="139" y="425.5" width="136" height="45"/>
+                                <color key="backgroundColor" name="primaryColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                <color key="tintColor" name="onPrimaryColor"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="[Get started !]"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="secondaryColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="MFFlight-get_started"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="wRq-bP-K4y" kind="show" id="adW-8X-19m"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PeW-3U-ETb" customClass="MFView" customModule="MFAssets">
+                                <rect key="frame" x="0.0" y="499.5" width="414" height="500"/>
+                                <subviews>
+                                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2F2-sW-pwZ">
+                                        <rect key="frame" x="197" y="8" width="20" height="5"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="VhI-oP-HZP"/>
+                                            <constraint firstAttribute="height" constant="5" id="gCT-Kf-TUc"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" estimatedRowHeight="64" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Nyt-lV-obf">
+                                        <rect key="frame" x="0.0" y="81" width="414" height="403"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </tableView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[History]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17b-Ed-97p">
+                                        <rect key="frame" x="16" y="16" width="95" height="33"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="MFFlight-history"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Izq-xx-k8b">
+                                        <rect key="frame" x="0.0" y="81" width="414" height="403"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[No history yet]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDT-7m-SuZ">
+                                                <rect key="frame" x="136" y="88" width="142" height="27"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                                <color key="textColor" name="informationTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="MFFlight-no_history"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Apc-pF-Fe7">
+                                                <rect key="frame" x="157" y="147" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Apc-pF-Fe7" secondAttribute="height" multiplier="1:1" id="Obz-RI-XW2"/>
+                                                    <constraint firstAttribute="width" constant="100" id="TT9-pb-3nn"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="HDT-7m-SuZ" firstAttribute="centerY" secondItem="Izq-xx-k8b" secondAttribute="centerY" constant="-100" id="L7E-q9-7xt"/>
+                                            <constraint firstItem="Apc-pF-Fe7" firstAttribute="centerX" secondItem="Izq-xx-k8b" secondAttribute="centerX" id="jPa-Bi-Muh"/>
+                                            <constraint firstItem="Apc-pF-Fe7" firstAttribute="top" secondItem="HDT-7m-SuZ" secondAttribute="bottom" constant="32" id="ogm-92-oin"/>
+                                            <constraint firstItem="HDT-7m-SuZ" firstAttribute="centerX" secondItem="Izq-xx-k8b" secondAttribute="centerX" id="xwt-OS-Wd4"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Izq-xx-k8b" secondAttribute="bottom" constant="16" id="09D-s2-e8N"/>
+                                    <constraint firstAttribute="height" constant="500" id="JiV-80-1rc"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nyt-lV-obf" secondAttribute="bottom" constant="16" id="Mz6-F4-Z0W"/>
+                                    <constraint firstItem="Nyt-lV-obf" firstAttribute="top" secondItem="17b-Ed-97p" secondAttribute="bottom" constant="32" id="NxB-PB-4QZ"/>
+                                    <constraint firstItem="17b-Ed-97p" firstAttribute="top" secondItem="PeW-3U-ETb" secondAttribute="top" constant="16" id="Rpg-Wi-Bp2"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nyt-lV-obf" secondAttribute="trailing" id="Zg8-XZ-g1Z"/>
+                                    <constraint firstItem="17b-Ed-97p" firstAttribute="leading" secondItem="PeW-3U-ETb" secondAttribute="leading" constant="16" id="acI-3M-hG9"/>
+                                    <constraint firstItem="Izq-xx-k8b" firstAttribute="leading" secondItem="PeW-3U-ETb" secondAttribute="leading" id="foa-p7-0sf"/>
+                                    <constraint firstAttribute="trailing" secondItem="Izq-xx-k8b" secondAttribute="trailing" id="fw5-kx-3Gj"/>
+                                    <constraint firstItem="2F2-sW-pwZ" firstAttribute="centerX" secondItem="PeW-3U-ETb" secondAttribute="centerX" id="llm-II-PbW"/>
+                                    <constraint firstItem="2F2-sW-pwZ" firstAttribute="top" secondItem="PeW-3U-ETb" secondAttribute="top" constant="8" id="oLd-Hf-xcA"/>
+                                    <constraint firstItem="Nyt-lV-obf" firstAttribute="leading" secondItem="PeW-3U-ETb" secondAttribute="leading" id="rrN-Nv-915"/>
+                                    <constraint firstItem="Izq-xx-k8b" firstAttribute="top" secondItem="17b-Ed-97p" secondAttribute="bottom" constant="32" id="zDc-9F-CQe"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="aP5-6g-bqV" appends="YES" id="ATb-TX-o7c"/>
+                                    <outletCollection property="gestureRecognizers" destination="dPc-WK-orf" appends="YES" id="8TI-G5-uSk"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4Xh-IV-zDJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4Xh-IV-zDJ" firstAttribute="trailing" secondItem="PeW-3U-ETb" secondAttribute="trailing" id="0hU-5P-nra"/>
+                            <constraint firstItem="PeW-3U-ETb" firstAttribute="top" secondItem="zuh-nx-7bY" secondAttribute="bottom" constant="400" id="Xf9-Lq-45p"/>
+                            <constraint firstItem="Ycr-yO-IQ5" firstAttribute="centerY" secondItem="kHW-tO-09o" secondAttribute="centerY" id="Xna-cl-v5z"/>
+                            <constraint firstItem="zuh-nx-7bY" firstAttribute="leading" secondItem="kHW-tO-09o" secondAttribute="leading" constant="16" id="YW0-fV-Eca"/>
+                            <constraint firstItem="Ycr-yO-IQ5" firstAttribute="centerX" secondItem="kHW-tO-09o" secondAttribute="centerX" id="mra-Cy-cqZ"/>
+                            <constraint firstItem="zuh-nx-7bY" firstAttribute="top" secondItem="4Xh-IV-zDJ" secondAttribute="top" constant="16" id="qu9-aC-l87"/>
+                            <constraint firstItem="PeW-3U-ETb" firstAttribute="leading" secondItem="kHW-tO-09o" secondAttribute="leading" id="tEt-pI-s9y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="11P-BD-gr2"/>
+                    <connections>
+                        <outlet property="historyImageView" destination="Apc-pF-Fe7" id="fou-pB-VBg"/>
+                        <outlet property="historyViewHeightConstrainte" destination="JiV-80-1rc" id="ehV-Ov-Tlq"/>
+                        <outlet property="historyViewTopConstrainte" destination="Xf9-Lq-45p" id="kVb-uw-1W8"/>
+                        <outlet property="noHistoryView" destination="Izq-xx-k8b" id="NTE-8P-KAn"/>
+                        <outlet property="tableView" destination="Nyt-lV-obf" id="ENV-8o-dBp"/>
+                        <segue destination="Oft-LU-iAm" kind="show" identifier="resultSegue" id="PIM-FM-f2G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gKg-Vj-QXk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="aP5-6g-bqV">
+                    <connections>
+                        <action selector="swipeGesture:" destination="tDq-DN-Ser" id="YKY-E5-GEl"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="dPc-WK-orf">
+                    <connections>
+                        <action selector="swipeGesture:" destination="tDq-DN-Ser" id="No7-Sn-9wd"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="484" y="65"/>
+        </scene>
+        <!--EntryParamsViewController-->
+        <scene sceneID="jyU-hQ-5V4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EntryParams" referencedIdentifier="EntryParamsViewController" id="wRq-bP-K4y" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="D7j-7o-5yJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5TZ-N7-mHj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1201" y="110"/>
+        </scene>
+        <!--ResultViewController-->
+        <scene sceneID="5L1-PV-pnG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EntryParams" referencedIdentifier="ResultViewController" id="Oft-LU-iAm" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Vud-IA-bZ8"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eD9-w9-Wog" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1176" y="8"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="Ycr-yO-IQ5">
+            <size key="intrinsicContentSize" width="136" height="45"/>
+        </designable>
+        <designable name="zuh-nx-7bY">
+            <size key="intrinsicContentSize" width="99.5" height="39.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="informationTextColor">
+            <color red="0.72699999809265137" green="0.72699999809265137" blue="0.72699999809265137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="onPrimaryColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryColor">
+            <color red="1" green="0.56300002336502075" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondaryColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

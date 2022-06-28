@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Electricity View Controller-->
+        <scene sceneID="gHq-k2-ezZ">
+            <objects>
+                <viewController storyboardIdentifier="ElectricityViewController" id="oPt-Q7-LGr" customClass="ElectricityViewController" customModule="MFElectricity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GpN-eQ-giP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Electricity]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3h-6N-ab5" customClass="MFLabel" customModule="MFAssets">
+                                <rect key="frame" x="16" y="60" width="155" height="39.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="28"/>
+                                <color key="textColor" name="onPrimaryColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="MFElectricity-title"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjN-ig-9f7" userLabel="Get Started Button" customClass="MFButton" customModule="MFAssets">
+                                <rect key="frame" x="139" y="425.5" width="136" height="45"/>
+                                <color key="backgroundColor" name="primaryColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                <color key="tintColor" name="onPrimaryColor"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="[Get started !]"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="secondaryColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="MFElectricity-get_started"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="jKn-4e-HX8" kind="presentation" id="gvY-WA-f8c"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m1I-Dw-9dr" customClass="MFView" customModule="MFAssets">
+                                <rect key="frame" x="0.0" y="499.5" width="414" height="500"/>
+                                <subviews>
+                                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WNB-KU-bJp">
+                                        <rect key="frame" x="197" y="8" width="20" height="5"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="4dv-lC-15D"/>
+                                            <constraint firstAttribute="height" constant="5" id="5Z3-dg-oZ1"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="80" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7WL-9j-ILK">
+                                        <rect key="frame" x="0.0" y="81" width="414" height="403"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </tableView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[History]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56I-jl-mVx">
+                                        <rect key="frame" x="16" y="16" width="95" height="33"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="MFElectricity-history"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lKk-BW-8dx">
+                                        <rect key="frame" x="0.0" y="81" width="414" height="403"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[No history yet]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZV-vg-IQr">
+                                                <rect key="frame" x="136" y="88" width="142" height="27"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                                <color key="textColor" name="informationTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="MFElectricity-no_history"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4jj-fN-XjT">
+                                                <rect key="frame" x="157" y="147" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="4jj-fN-XjT" secondAttribute="height" multiplier="1:1" id="6vj-Un-Y4N"/>
+                                                    <constraint firstAttribute="width" constant="100" id="TR7-Xd-5mK"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="4jj-fN-XjT" firstAttribute="centerX" secondItem="lKk-BW-8dx" secondAttribute="centerX" id="F1A-WK-nED"/>
+                                            <constraint firstItem="lZV-vg-IQr" firstAttribute="centerX" secondItem="lKk-BW-8dx" secondAttribute="centerX" id="L28-02-grW"/>
+                                            <constraint firstItem="lZV-vg-IQr" firstAttribute="centerY" secondItem="lKk-BW-8dx" secondAttribute="centerY" constant="-100" id="Z7P-Im-Ubi"/>
+                                            <constraint firstItem="4jj-fN-XjT" firstAttribute="top" secondItem="lZV-vg-IQr" secondAttribute="bottom" constant="32" id="a6u-Sr-AqH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="7Sm-qj-nt2"/>
+                                    <constraint firstItem="lKk-BW-8dx" firstAttribute="top" secondItem="56I-jl-mVx" secondAttribute="bottom" constant="32" id="7dL-ol-X1n"/>
+                                    <constraint firstItem="7WL-9j-ILK" firstAttribute="top" secondItem="56I-jl-mVx" secondAttribute="bottom" constant="32" id="Cjp-2u-zKz"/>
+                                    <constraint firstItem="lKk-BW-8dx" firstAttribute="leading" secondItem="m1I-Dw-9dr" secondAttribute="leading" id="KoD-uG-Qay"/>
+                                    <constraint firstItem="WNB-KU-bJp" firstAttribute="top" secondItem="m1I-Dw-9dr" secondAttribute="top" constant="8" id="Q0r-ep-laH"/>
+                                    <constraint firstAttribute="trailing" secondItem="lKk-BW-8dx" secondAttribute="trailing" id="Spd-Yw-gDp"/>
+                                    <constraint firstAttribute="bottom" secondItem="7WL-9j-ILK" secondAttribute="bottom" constant="16" id="Vgp-l6-dAV"/>
+                                    <constraint firstItem="WNB-KU-bJp" firstAttribute="centerX" secondItem="m1I-Dw-9dr" secondAttribute="centerX" id="aYR-na-CtR"/>
+                                    <constraint firstAttribute="bottom" secondItem="lKk-BW-8dx" secondAttribute="bottom" constant="16" id="bLV-BZ-XXw"/>
+                                    <constraint firstItem="56I-jl-mVx" firstAttribute="leading" secondItem="m1I-Dw-9dr" secondAttribute="leading" constant="16" id="jPg-x7-5ih"/>
+                                    <constraint firstAttribute="trailing" secondItem="7WL-9j-ILK" secondAttribute="trailing" id="snx-bo-m5N"/>
+                                    <constraint firstItem="7WL-9j-ILK" firstAttribute="leading" secondItem="m1I-Dw-9dr" secondAttribute="leading" id="vTs-VW-OPU"/>
+                                    <constraint firstItem="56I-jl-mVx" firstAttribute="top" secondItem="m1I-Dw-9dr" secondAttribute="top" constant="16" id="zH4-qi-QS3"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="pnO-rV-tuL" appends="YES" id="Lx8-fW-Mkn"/>
+                                    <outletCollection property="gestureRecognizers" destination="Vi5-jY-3DZ" appends="YES" id="GGs-Tb-JF8"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GNu-2L-xja"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="m1I-Dw-9dr" firstAttribute="top" secondItem="m3h-6N-ab5" secondAttribute="bottom" constant="400" id="6UR-vb-PNS"/>
+                            <constraint firstItem="m1I-Dw-9dr" firstAttribute="leading" secondItem="GpN-eQ-giP" secondAttribute="leading" id="LVt-oc-4Iv"/>
+                            <constraint firstItem="m3h-6N-ab5" firstAttribute="leading" secondItem="GpN-eQ-giP" secondAttribute="leading" constant="16" id="gcd-NM-xgr"/>
+                            <constraint firstItem="m3h-6N-ab5" firstAttribute="top" secondItem="GNu-2L-xja" secondAttribute="top" constant="16" id="jqX-Gk-nPs"/>
+                            <constraint firstItem="GNu-2L-xja" firstAttribute="trailing" secondItem="m1I-Dw-9dr" secondAttribute="trailing" id="tph-DA-Y10"/>
+                            <constraint firstItem="PjN-ig-9f7" firstAttribute="centerX" secondItem="GpN-eQ-giP" secondAttribute="centerX" id="ud2-kb-1oZ"/>
+                            <constraint firstItem="PjN-ig-9f7" firstAttribute="centerY" secondItem="GpN-eQ-giP" secondAttribute="centerY" id="vHt-HS-YE8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xe6-zu-Jka"/>
+                    <connections>
+                        <outlet property="historyImageView" destination="4jj-fN-XjT" id="19Q-x8-hE0"/>
+                        <outlet property="historyViewHeightConstrainte" destination="7Sm-qj-nt2" id="6hU-oe-0Gp"/>
+                        <outlet property="historyViewTopConstrainte" destination="6UR-vb-PNS" id="Pfg-Zr-Fr2"/>
+                        <outlet property="noHistoryView" destination="lKk-BW-8dx" id="iZY-gz-OfC"/>
+                        <outlet property="tableView" destination="7WL-9j-ILK" id="NWb-Ht-Ma1"/>
+                        <segue destination="cvI-9J-9cy" kind="presentation" identifier="resultSegue" id="wQe-Gq-0lc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xSh-Ec-DOB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="pnO-rV-tuL">
+                    <connections>
+                        <action selector="swipeGesture:" destination="oPt-Q7-LGr" id="gL2-fB-iWg"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="Vi5-jY-3DZ">
+                    <connections>
+                        <action selector="swipeGesture:" destination="oPt-Q7-LGr" id="3ke-Ut-bFK"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="146" y="97"/>
+        </scene>
+        <!--EntryParamsViewController-->
+        <scene sceneID="O5E-xm-yAy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EntryParams" referencedIdentifier="EntryParamsViewController" id="jKn-4e-HX8" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C41-fA-17k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="829" y="137"/>
+        </scene>
+        <!--ResultViewController-->
+        <scene sceneID="FmD-1K-ukE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EntryParams" referencedIdentifier="ResultViewController" id="cvI-9J-9cy" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hzo-Hp-AMB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="830" y="47"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="PjN-ig-9f7">
+            <size key="intrinsicContentSize" width="136" height="45"/>
+        </designable>
+        <designable name="m3h-6N-ab5">
+            <size key="intrinsicContentSize" width="155" height="39.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="informationTextColor">
+            <color red="0.72699999809265137" green="0.72699999809265137" blue="0.72699999809265137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="onPrimaryColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryColor">
+            <color red="1" green="0.56300002336502075" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondaryColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
