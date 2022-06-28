@@ -70,7 +70,7 @@ class MFNetworkTests: XCTestCase {
         let mockData = try! JSONEncoder().encode(expectedResult)
         let mock = Mock(url: originalURL, dataType: .json, statusCode: 201, data: [.post: mockData])
         mock.register()
-
+        
         manager?.fetchData(httpType: .POST, apiKey: .carbon, url: originalURL.absoluteString, headers: nil, parameters: params, parser: Estimate.self, completion: { response in
             // Then
             switch response {

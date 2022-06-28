@@ -35,6 +35,8 @@ public class Estimate: Codable, Equatable {
     }
 
     enum MetadataContainer: String, CodingKey {
+        case id
+        case type
         case attributes
     }
 
@@ -75,5 +77,23 @@ public class Estimate: Codable, Equatable {
         carbonLb = try attributesContainer.decode(Double.self, forKey: .carbonLb)
         carbonKg = try attributesContainer.decode(Double.self, forKey: .carbonKg)
         carbonMt = try attributesContainer.decode(Double.self, forKey: .carbonMt)
+    }
+
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: ContainerKeys.self)
+
+        var metadataContainer = container.nestedContainer(keyedBy: MetadataContainer.self, forKey: .data)
+        try metadataContainer.encode("2d968fce-859d-4dc1-9489-987e795f42bb", forKey: .id)
+        try metadataContainer.encode("estimate", forKey: .type)
+
+        var attributesContainer = metadataContainer.nestedContainer(keyedBy: AttributesContainer.self, forKey: .attributes)
+        try attributesContainer.encode(fuelSourceType, forKey: .fuelSourceType)
+        try attributesContainer.encode(fuelSourceUnit, forKey: .fuelSourceUnit)
+        try attributesContainer.encode(fuelSourceValue, forKey: .fuelSourceValue)
+        try attributesContainer.encode(estimatedAt, forKey: .estimatedAt)
+        try attributesContainer.encode(carbonG, forKey: .carbonG)
+        try attributesContainer.encode(carbonLb, forKey: .carbonLb)
+        try attributesContainer.encode(carbonKg, forKey: .carbonKg)
+        try attributesContainer.encode(carbonMt, forKey: .carbonMt)
     }
 }
